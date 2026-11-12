@@ -124,64 +124,73 @@
       "id": "presentacion",
       "titulo": "Presentación",
       "icono": "⏳",
-      "video": "",
-      "intro": "Bienvenido a Kronos. Aquí encuentras, resumido y en distintos formatos, lo que normalmente te toma días de lectura: para el pase de visita, la sesión clínica, tu examen profesional y el ENARM."
+      "video": "assets/videos/presentacion.mp4",
+      "intro": "Bienvenido a Kronos. Aquí encuentras, resumido y en distintos formatos, lo que normalmente te toma días de lectura: para el pase de visita, la sesión clínica, tu examen profesional y el ENARM.",
+      "poster": "assets/img/posters/presentacion.jpg"
     },
     {
       "id": "resumenes",
       "titulo": "Resúmenes",
       "icono": "📄",
-      "video": "",
-      "intro": "Resúmenes muy cortos para comprender, reforzar y recordar el tema. La profundidad está en los diagramas de flujo y en las clases grabadas."
+      "video": "assets/videos/resumenes.mp4",
+      "intro": "Resúmenes muy cortos para comprender, reforzar y recordar el tema. La profundidad está en los diagramas de flujo y en las clases grabadas.",
+      "poster": "assets/img/posters/resumenes.jpg"
     },
     {
       "id": "diagramas",
       "titulo": "Diagramas de flujo e infografías",
       "icono": "🧭",
-      "video": "",
-      "intro": "El sistema de diagramas de flujo más grande de la medicina. Te recomendamos leer antes el resumen y repasar las flash cards para aprovecharlo al máximo."
+      "video": "assets/videos/diagramas.mp4",
+      "intro": "El sistema de diagramas de flujo más grande de la medicina. Te recomendamos leer antes el resumen y repasar las flash cards para aprovecharlo al máximo.",
+      "poster": "assets/img/posters/diagramas.jpg"
     },
     {
       "id": "flashcards",
       "titulo": "Flash cards",
       "icono": "🃏",
-      "video": "",
-      "intro": "Para un repaso rápido. Primero lee el resumen o escucha el podcast; después repasa las tarjetas poco a poco durante la semana. No hace falta volver a leer el tema, salvo que te queden dudas."
+      "video": "assets/videos/flashcards.mp4",
+      "intro": "Para un repaso rápido. Primero lee el resumen o escucha el podcast; después repasa las tarjetas poco a poco durante la semana. No hace falta volver a leer el tema, salvo que te queden dudas.",
+      "poster": "assets/img/posters/flashcards.jpg"
     },
     {
       "id": "examenes",
       "titulo": "Exámenes",
       "icono": "⏱️",
-      "video": "",
-      "intro": "¿Ya comprendiste el tema? Mide tu conocimiento. El examen muestra es gratis; el cronometrado te da 20 minutos y trabaja tu agilidad, retención y capacidad de resolución."
+      "video": "assets/videos/examenes.mp4",
+      "intro": "¿Ya comprendiste el tema? Mide tu conocimiento. El examen muestra es gratis; el cronometrado te da 20 minutos y trabaja tu agilidad, retención y capacidad de resolución.",
+      "poster": "assets/img/posters/examenes.jpg"
     },
     {
       "id": "clases-grabadas",
       "titulo": "Clases grabadas",
       "icono": "🎥",
-      "video": "",
-      "intro": "Clases de especialistas con la información a profundidad. Pausa, toma apuntes y repite hasta que te quede claro; después ve a las flash cards."
+      "video": "assets/videos/clases-grabadas.mp4",
+      "intro": "Clases de especialistas con la información a profundidad. Pausa, toma apuntes y repite hasta que te quede claro; después ve a las flash cards.",
+      "poster": "assets/img/posters/clases-grabadas.jpg"
     },
     {
       "id": "clases-vivo",
       "titulo": "Clases en vivo",
       "icono": "🔴",
-      "video": "",
-      "intro": "Clases en vivo con médicos expertos en el tema. Puedes interactuar con ellos y resolver tus dudas: aprendizaje del siglo XXI, en varios lugares a la vez."
+      "video": "assets/videos/clases-vivo.mp4",
+      "intro": "Clases en vivo con médicos expertos en el tema. Puedes interactuar con ellos y resolver tus dudas: aprendizaje del siglo XXI, en varios lugares a la vez.",
+      "poster": "assets/img/posters/clases-vivo.jpg"
     },
     {
       "id": "cirugias",
       "titulo": "Cirugías",
       "icono": "🩺",
-      "video": "",
-      "intro": "Cirugías en vivo y grabadas: aprende de los expertos directamente en el quirófano."
+      "video": "assets/videos/cirugias.mp4",
+      "intro": "Cirugías en vivo y grabadas: aprende de los expertos directamente en el quirófano.",
+      "poster": "assets/img/posters/cirugias.jpg"
     },
     {
       "id": "cursos",
       "titulo": "Cursos y diplomados",
       "icono": "🎓",
-      "video": "",
-      "intro": "Todo para prepararte, desde tus parciales hasta el examen profesional y el ENARM. La competencia es real: una pregunta puede definir tu residencia."
+      "video": "assets/videos/cursos.mp4",
+      "intro": "Todo para prepararte, desde tus parciales hasta el examen profesional y el ENARM. La competencia es real: una pregunta puede definir tu residencia.",
+      "poster": "assets/img/posters/cursos.jpg"
     }
   ],
   "clasesEnVivo": [

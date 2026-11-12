@@ -75,7 +75,7 @@ function mostrarSeccion() {
 
   $('seccionTitulo').textContent = s.titulo;
   $('seccionIntro').textContent = s.intro;
-  $('seccionVideo').innerHTML = mediaHTML(s.video, `Video de la Dra. Torres: ${s.titulo}`, 'Video explicativo pendiente');
+  $('seccionVideo').innerHTML = mediaHTML(s.video, `Video de la Dra. Torres: ${s.titulo}`, 'Video explicativo pendiente', s.poster);
 
   $('anterior').disabled = idx === 0;
   $('siguiente').disabled = idx === secs.length - 1;
@@ -87,10 +87,10 @@ function mostrarSeccion() {
 /* ---------- Medios ---------- */
 
 // Acepta un archivo de video (assets/videos/x.mp4) o una URL de inserción (YouTube/Vimeo).
-function mediaHTML(src, titulo, vacio) {
+function mediaHTML(src, titulo, vacio, poster) {
   if (!src) return `<div class="placeholder">${esc(vacio)}</div>`;
   if (/\.(mp4|webm|mov)$/i.test(src)) {
-    return `<video src="${esc(src)}" controls preload="metadata" playsinline title="${esc(titulo)}"></video>`;
+    return `<video src="${esc(src)}"${poster ? ` poster="${esc(poster)}"` : ''} controls preload="metadata" playsinline title="${esc(titulo)}"></video>`;
   }
   return `<iframe src="${esc(src)}" title="${esc(titulo)}" allowfullscreen loading="lazy"></iframe>`;
 }

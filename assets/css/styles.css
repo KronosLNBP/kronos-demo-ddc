@@ -112,3 +112,12 @@ body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.55; 
 .btn:disabled { opacity: .45; cursor: not-allowed; }
 .pager { display: flex; justify-content: space-between; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--surface-2); }
 @media (max-width: 560px) { .topbar .tag { display: none; } }
+
+/* Videos verticales (9:16) de la Dra. Torres */
+.explainer { grid-template-columns: minmax(200px, 300px) minmax(0, 1fr); gap: 24px; }
+.explainer-video video, .explainer-video .placeholder { aspect-ratio: 9/16; max-height: 70vh; object-fit: cover; background: #000; }
+.explainer-text { font-size: 1.08rem; }
+@media (max-width: 720px) {
+  .explainer { grid-template-columns: 1fr; }
+  .explainer-video { max-width: 320px; margin: 0 auto; width: 100%; }
+}

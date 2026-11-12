@@ -7,3 +7,4 @@ Thumbs.db
 *.fig
 node_modules/
 .vscode/
+!assets/videos/*.mp4
