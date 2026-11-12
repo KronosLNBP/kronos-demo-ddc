@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso | KronosMedicine</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="course">
+  <header class="topbar">
+    <button class="burger" id="burger" aria-label="Abrir menú del curso" aria-controls="drawer" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a class="brand" href="./">Kronos<span>Medicine</span></a>
+    <div class="top-progress" title="Avance del curso">
+      <span id="avanceTxt">0%</span>
+      <span class="bar"><span id="avanceBar"></span></span>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <nav class="drawer" id="drawer" aria-label="Secciones del curso">
+    <a class="back" href="./">← Volver al inicio</a>
+    <p class="drawer-title" id="drawerTitulo"></p>
+    <ol id="menu"></ol>
+  </nav>
+
+  <main class="lesson">
+    <p class="crumb" id="crumb">Cargando curso…</p>
+    <section class="section-head">
+      <h1 id="seccionTitulo"></h1>
+      <div class="explainer" id="explainer">
+        <div class="explainer-video" id="seccionVideo"></div>
+        <p class="explainer-text"><strong>Dra. Torres:</strong> <span id="seccionIntro"></span></p>
+      </div>
+    </section>
+
+    <!-- 1. Inicio -->
+    <section class="panel" data-panel="inicio">
+      <div class="course-hero">
+        <p class="lead" id="subtitulo"></p>
+        <ul class="meta" id="meta"></ul>
+        <ul class="keywords" id="palabras"></ul>
+      </div>
+      <h2 class="h2">Así se reparten tus 4 horas</h2>
+      <div class="mix" id="mix"></div>
+      <div class="cta">
+        <a class="btn" href="#clases">Empezar la ruta de estudio</a>
+        <a class="btn ghost" href="#examenes">Ir directo al examen</a>
+      </div>
+    </section>
+
+    <!-- 2. Ruta -->
+    <section class="panel" data-panel="clases" id="ruta"></section>
+
+    <!-- 3. Podcast -->
+    <section class="panel" data-panel="podcast" id="podcast"></section>
+
+    <!-- 4. Resúmenes -->
+    <section class="panel" data-panel="resumenes" id="resumen"></section>
+
+    <!-- 5. Infografía -->
+    <section class="panel" data-panel="diagramas" id="infografias"></section>
+
+    <!-- 6. Flash cards -->
+    <section class="panel" data-panel="flashcards">
+      <div class="filters" id="filtros"></div>
+      <div class="card-wrap">
+        <div class="flashcard" id="card" tabindex="0" aria-live="polite">
+          <div class="face front"><span class="tema" id="cardTema"></span><span id="cardFront"></span></div>
+          <div class="face back" id="cardBack"></div>
+        </div>
+      </div>
+      <p class="hint">Toca la tarjeta para voltearla</p>
+      <div class="card-actions">
+        <button class="btn ghost" id="repasar">Repasar después</button>
+        <span id="progreso"></span>
+        <button class="btn" id="lase">La sé</button>
+      </div>
+      <p class="center"><button class="link" id="reiniciar">Reiniciar mazo</button></p>
+    </section>
+
+    <!-- 7. Exámenes -->
+    <section class="panel" data-panel="examenes">
+      <div id="examGate" class="exam-options">
+        <div class="gate">
+          <span class="badge ok">Gratis</span>
+          <h3>Examen muestra</h3>
+          <p id="muestraInfo"></p>
+          <button class="btn ghost" id="empezarMuestra">Hacer examen muestra</button>
+        </div>
+        <div class="gate">
+          <span class="badge">Cronometrado</span>
+          <h3>Examen tipo ENARM</h3>
+          <p id="examInfo"></p>
+          <input id="codigo" placeholder="Código de acceso (demo: KRONOS-DEMO)" autocomplete="off">
+          <button class="btn" id="empezar">Empezar</button>
+          <p class="error" id="codigoError"></p>
+        </div>
+      </div>
+      <div id="examBody" hidden>
+        <div class="exam-bar">
+          <span id="contestadas"></span>
+          <span class="timer" id="timer"></span>
+        </div>
+        <form id="examForm"></form>
+        <button class="btn" id="terminar">Terminar y calificar</button>
+      </div>
+      <div id="examResult" hidden></div>
+    </section>
+
+    <nav class="pager">
+      <button class="btn ghost" id="anterior">← Anterior</button>
+      <button class="btn" id="siguiente">Siguiente →</button>
+    </nav>
+  </main>
+
+  <script src="assets/js/curso.js"></script>
+</body>
+</html>

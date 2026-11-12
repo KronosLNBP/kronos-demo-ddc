@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2260" width="1080" height="2260" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c8cff"/><stop offset="1" stop-color="#4fd1c5"/>
+    </linearGradient>
+    <linearGradient id="tl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4fd1c5"/><stop offset=".5" stop-color="#7c8cff"/><stop offset="1" stop-color="#f6ad55"/>
+    </linearGradient>
+    <style>
+      .bg{fill:#0b1020}.card{fill:#141b33}.card2{fill:#1c2547}
+      .h{font-size:30px;font-weight:800;fill:#e8ecf8}
+      .n{font-size:15px;font-weight:800;fill:#0b1020}
+      .t{font-size:19px;fill:#e8ecf8}
+      .tb{font-size:19px;font-weight:700;fill:#e8ecf8}
+      .s{font-size:16px;fill:#9aa4c7}
+      .a{fill:#4fd1c5}.ta{font-size:19px;font-weight:700;fill:#4fd1c5}
+      .big{font-size:58px;font-weight:800;fill:#4fd1c5}
+      .chip{fill:#1c2547;stroke:#4fd1c5;stroke-width:1.5}
+      .ln{stroke:#9aa4c7;stroke-width:2;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1080" height="2260"/>
+
+  <!-- Encabezado -->
+  <rect x="0" y="0" width="1080" height="210" fill="url(#hdr)"/>
+  <text x="60" y="66" font-size="20" font-weight="700" fill="#0b1020" letter-spacing="3">KRONOSMEDICINE · TRAUMATOLOGÍA Y ORTOPEDIA</text>
+  <text x="60" y="128" font-size="46" font-weight="800" fill="#0b1020">Displasia del desarrollo</text>
+  <text x="60" y="180" font-size="46" font-weight="800" fill="#0b1020">de la cadera (DDC) de un vistazo</text>
+
+  <!-- 1. Qué es -->
+  <g transform="translate(60,250)">
+    <circle cx="20" cy="20" r="20" class="a"/><text x="20" y="26" text-anchor="middle" class="n">1</text>
+    <text x="56" y="30" class="h">¿Qué es?</text>
+    <rect y="56" width="960" height="190" rx="18" class="card"/>
+    <text x="28" y="100" class="t">Acetábulo poco profundo y cabeza femoral mal centrada.</text>
+    <text x="28" y="130" class="t">Va de la displasia sola a la subluxación y la luxación completa.</text>
+    <g transform="translate(28,158)">
+      <rect width="190" height="56" rx="28" class="chip"/><text x="95" y="35" text-anchor="middle" class="tb">Luxada</text>
+      <rect x="210" width="190" height="56" rx="28" class="chip"/><text x="305" y="35" text-anchor="middle" class="tb">Luxable</text>
+      <rect x="420" width="190" height="56" rx="28" class="chip"/><text x="515" y="35" text-anchor="middle" class="tb">Subluxable</text>
+      <text x="636" y="24" class="s">Forma teratológica: rígida,</text>
+      <text x="636" y="46" class="s">irreductible, neuromuscular.</text>
+    </g>
+  </g>
+
+  <!-- 2. Epidemiología -->
+  <g transform="translate(60,540)">
+    <circle cx="20" cy="20" r="20" class="a"/><text x="20" y="26" text-anchor="middle" class="n">2</text>
+    <text x="56" y="30" class="h">Epidemiología</text>
+    <rect y="56" width="300" height="200" rx="18" class="card"/>
+    <text x="150" y="150" text-anchor="middle" class="big">2–5</text>
+    <text x="150" y="186" text-anchor="middle" class="s">por cada 1,000</text>
+    <text x="150" y="208" text-anchor="middle" class="s">nacidos vivos</text>
+
+    <rect x="330" y="56" width="250" height="200" rx="18" class="card"/>
+    <text x="455" y="150" text-anchor="middle" font-size="58" font-weight="800" fill="#f687b3">♀</text>
+    <text x="455" y="192" text-anchor="middle" class="tb">Más en niñas</text>
+
+    <rect x="610" y="56" width="350" height="200" rx="18" class="card"/>
+    <text x="634" y="96" class="tb">Lado afectado</text>
+    <text x="634" y="140" class="s">Izquierda</text><rect x="740" y="124" width="190" height="20" rx="10" class="a"/>
+    <text x="634" y="182" class="s">Bilateral</text><rect x="740" y="166" width="120" height="20" rx="10" fill="#7c8cff"/>
+    <text x="634" y="224" class="s">Derecha</text><rect x="740" y="208" width="70" height="20" rx="10" fill="#9aa4c7"/>
+  </g>
+
+  <!-- 3. Factores de riesgo -->
+  <g transform="translate(60,840)">
+    <circle cx="20" cy="20" r="20" class="a"/><text x="20" y="26" text-anchor="middle" class="n">3</text>
+    <text x="56" y="30" class="h">Factores de riesgo</text>
+    <g transform="translate(0,56)">
+      <rect width="306" height="74" rx="14" class="card"/><text x="24" y="46" class="tb">Sexo femenino</text>
+      <rect x="327" width="306" height="74" rx="14" class="card"/><text x="351" y="46" class="tb">Primer embarazo</text>
+      <rect x="654" width="306" height="74" rx="14" class="card"/><text x="678" y="46" class="tb">Presentación pélvica</text>
+      <rect y="92" width="306" height="74" rx="14" class="card"/><text x="24" y="138" class="tb">Antecedente familiar</text>
+      <rect x="327" y="92" width="306" height="74" rx="14" class="card"/><text x="351" y="138" class="tb">Oligohidramnios</text>
+      <rect x="654" y="92" width="306" height="74" rx="14" class="card"/><text x="678" y="124" class="tb">Envolver con piernas</text><text x="678" y="148" class="tb">en extensión</text>
+    </g>
+  </g>
+
+  <!-- 4. Clínica por edad -->
+  <g transform="translate(60,1120)">
+    <circle cx="20" cy="20" r="20" class="a"/><text x="20" y="26" text-anchor="middle" class="n">4</text>
+    <text x="56" y="30" class="h">Clínica por edad</text>
+    <rect y="62" width="960" height="10" rx="5" fill="url(#tl)"/>
+    <g transform="translate(0,92)">
+      <rect width="306" height="250" rx="18" class="card"/>
+      <text x="24" y="40" class="ta">0 a 3 meses</text>
+      <text x="24" y="80" class="tb">Barlow → sale</text><text x="24" y="104" class="s">aducción + presión posterior</text>
+      <text x="24" y="144" class="tb">Ortolani → entra</text><text x="24" y="168" class="s">abducción + trocánter arriba</text>
+      <text x="24" y="210" class="s">El "click" es inocente;</text><text x="24" y="232" class="s">el "clunk" es patológico.</text>
+
+      <rect x="327" width="306" height="250" rx="18" class="card"/>
+      <text x="351" y="40" font-size="19" font-weight="700" fill="#7c8cff">3 a 12 meses</text>
+      <text x="351" y="80" class="tb">Limitación de abducción</text><text x="351" y="104" class="s">el signo más útil</text>
+      <text x="351" y="144" class="t">Galeazzi y pistón</text>
+      <text x="351" y="180" class="t">Pliegues asimétricos</text>
+      <text x="351" y="216" class="t">Acortamiento del muslo</text>
+
+      <rect x="654" width="306" height="250" rx="18" class="card"/>
+      <text x="678" y="40" font-size="19" font-weight="700" fill="#f6ad55">Al caminar</text>
+      <text x="678" y="80" class="tb">Trendelenburg</text><text x="678" y="104" class="s">la pelvis cae al lado sano</text>
+      <text x="678" y="144" class="t">Marcha de Duchenne</text>
+      <text x="678" y="180" class="t">Bilateral: hiperlordosis</text>
+      <text x="678" y="204" class="t">y marcha de pato</text>
+    </g>
+  </g>
+
+  <!-- 5. Imagen -->
+  <g transform="translate(60,1510)">
+    <circle cx="20" cy="20" r="20" class="a"/><text x="20" y="26" text-anchor="middle" class="n">5</text>
+    <text x="56" y="30" class="h">Estudios de imagen</text>
+    <rect y="56" width="440" height="300" rx="18" class="card"/>
+    <text x="24" y="100" class="ta">Menos de 4 meses</text>
+    <text x="24" y="136" class="tb">Ultrasonido</text>
+    <text x="24" y="164" class="s">La cabeza aún no se osifica.</text>
+    <line x1="24" y1="190" x2="416" y2="190" stroke="#1c2547" stroke-width="2"/>
+    <text x="24" y="228" font-size="19" font-weight="700" fill="#7c8cff">4 meses o más</text>
+    <text x="24" y="264" class="tb">Rx AP de pelvis ± Von Rosen</text>
+    <text x="24" y="292" class="s">Índice acetabular normal &lt; 30° al nacer.</text>
+    <text x="24" y="318" class="s">Tríada de Putti desde los 6 meses.</text>
+
+    <!-- Esquema radiográfico -->
+    <rect x="470" y="56" width="490" height="300" rx="18" class="card"/>
+    <text x="494" y="96" class="tb">Líneas en la radiografía</text>
+    <g transform="translate(715,190)">
+      <!-- pelvis esquemática -->
+      <path d="M-200,40 C-190,-10 -120,-20 -70,10 L-40,40 Z" fill="#1c2547" stroke="#9aa4c7" stroke-width="1.5"/>
+      <path d="M200,40 C190,-10 120,-20 70,10 L40,40 Z" fill="#1c2547" stroke="#9aa4c7" stroke-width="1.5"/>
+      <!-- Hilgenreiner -->
+      <line x1="-225" y1="40" x2="225" y2="40" stroke="#4fd1c5" stroke-width="2.5"/>
+      <text x="0" y="32" text-anchor="middle" font-size="14" fill="#4fd1c5">Hilgenreiner</text>
+      <!-- Perkins -->
+      <line x1="-150" y1="0" x2="-150" y2="140" stroke="#7c8cff" stroke-width="2.5"/>
+      <line x1="150" y1="0" x2="150" y2="140" stroke="#7c8cff" stroke-width="2.5"/>
+      <text x="-150" y="160" text-anchor="middle" font-size="14" fill="#7c8cff">Perkins</text>
+      <text x="150" y="160" text-anchor="middle" font-size="14" fill="#7c8cff">Perkins</text>
+      <!-- cadera normal (der. del paciente = izq. de la imagen): núcleo inferomedial -->
+      <circle cx="-120" cy="75" r="17" fill="#48bb78"/>
+      <text x="-120" y="128" text-anchor="middle" font-size="14" fill="#48bb78">Normal</text>
+      <!-- cadera luxada: núcleo superolateral -->
+      <circle cx="185" cy="18" r="13" fill="#f56565"/>
+      <text x="185" y="-6" text-anchor="middle" font-size="14" fill="#f56565">Luxada</text>
+    </g>
+    <text x="494" y="122" class="s">Normal: cuadrante inferomedial.</text>
+  </g>
+
+  <!-- 6. Tratamiento por edad -->
+  <g transform="translate(60,1910)">
+    <circle cx="20" cy="20" r="20" class="a"/><text x="20" y="26" text-anchor="middle" class="n">6</text>
+    <text x="56" y="30" class="h">Tratamiento según la edad</text>
+    <g transform="translate(0,56)">
+      <rect width="306" height="150" rx="18" fill="#4fd1c5"/>
+      <text x="24" y="40" font-size="17" font-weight="700" fill="#0b1020">Menos de 6 meses</text>
+      <text x="24" y="80" font-size="24" font-weight="800" fill="#0b1020">Arnés de Pavlik</text>
+      <text x="24" y="110" font-size="15" fill="#0b1020">Si no reduce en 3–4 semanas,</text>
+      <text x="24" y="130" font-size="15" fill="#0b1020">suspender y referir.</text>
+
+      <rect x="327" width="306" height="150" rx="18" fill="#7c8cff"/>
+      <text x="351" y="40" font-size="17" font-weight="700" fill="#0b1020">6 a 18 meses</text>
+      <text x="351" y="80" font-size="24" font-weight="800" fill="#0b1020">Reducción cerrada</text>
+      <text x="351" y="110" font-size="15" fill="#0b1020">Tenotomía, artrografía y</text>
+      <text x="351" y="130" font-size="15" fill="#0b1020">yeso pelvipodálico.</text>
+
+      <rect x="654" width="306" height="150" rx="18" fill="#f6ad55"/>
+      <text x="678" y="40" font-size="17" font-weight="700" fill="#0b1020">Más de 18 meses</text>
+      <text x="678" y="80" font-size="24" font-weight="800" fill="#0b1020">Reducción abierta</text>
+      <text x="678" y="110" font-size="15" fill="#0b1020">± osteotomías pélvicas</text>
+      <text x="678" y="130" font-size="15" fill="#0b1020">o femorales.</text>
+    </g>
+    <text x="0" y="250" class="s">Pavlik contraindicado en mielomeningocele, artrogriposis, Ehlers-Danlos y forma teratológica.</text>
+    <text x="0" y="278" class="s">Toda sospecha se refiere a segundo nivel. Mejor pronóstico si se trata antes de los 4 meses.</text>
+  </g>
+
+  <text x="540" y="2238" text-anchor="middle" font-size="14" fill="#5b648a">Material educativo de KronosMedicine · Revisar siempre la Guía de Práctica Clínica vigente</text>
+</svg>

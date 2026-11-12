@@ -3,95 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lección demo | KronosMedicine</title>
+  <title>KronosMedicine | Estudia medicina en menos tiempo</title>
+  <meta name="description" content="Resúmenes, diagramas de flujo, flash cards, exámenes cronometrados, clases y podcast para estudiantes de medicina y aspirantes al ENARM.">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
+<body class="landing">
   <header class="topbar">
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-    <a class="brand" href="https://kronosmedicine.com.mx/">Kronos<span>Medicine</span></a>
-    <span class="tag" id="especialidad"></span>
+    <a class="brand" href="./">Kronos<span>Medicine</span></a>
+    <nav class="toplinks" id="toplinks">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#cursos">Cursos</a>
+      <a href="curso.html?id=ddc" class="btn sm">Ver curso demo</a>
+    </nav>
+    <button class="burger only-mobile" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
   </header>
 
-  <div class="scrim" id="scrim" hidden></div>
-  <nav class="drawer" id="drawer" aria-label="Secciones de la lección">
-    <p class="drawer-title" id="drawerTitulo"></p>
-    <ol id="menu"></ol>
-  </nav>
-
-  <main class="lesson">
-    <p class="crumb" id="titulo">Cargando lección…</p>
-
-    <section class="section-head">
-      <h1 id="seccionTitulo"></h1>
-      <div class="explainer">
-        <div class="explainer-video" id="seccionVideo"></div>
-        <p class="explainer-text"><strong>Dra. Torres:</strong> <span id="seccionIntro"></span></p>
+  <main>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Kronos, el dios del tiempo</p>
+        <h1>Lo que te toma días de lectura, <span class="grad">resumido para estudiarlo en horas</span>.</h1>
+        <p class="lead">Más de 30 médicos editores y 20 ingenieros convirtieron los temas de la licenciatura de Médico Cirujano en resúmenes, diagramas de flujo, flash cards, exámenes, clases y podcast. Para el pase de visita, la sesión clínica, tu examen profesional y el ENARM.</p>
+        <div class="cta">
+          <a class="btn" href="curso.html?id=ddc">Probar el curso demo</a>
+          <a class="btn ghost" href="#como-funciona">Cómo funciona</a>
+        </div>
+        <ul class="stats">
+          <li><strong>+30</strong><span>médicos editores</span></li>
+          <li><strong>+20</strong><span>ingenieros</span></li>
+          <li><strong>8</strong><span>formatos de estudio</span></li>
+        </ul>
       </div>
+      <div class="hero-video" id="heroVideo"></div>
     </section>
 
-    <section class="panel" data-panel="presentacion">
-      <ul class="keywords" id="palabras"></ul>
-      <div class="grid" id="mapa"></div>
+    <section class="wrap" id="como-funciona">
+      <p class="eyebrow">Cómo funciona</p>
+      <h2>Un formato para cada momento del día</h2>
+      <p class="lead narrow">Toca cualquier sección para que la Dra. Torres te explique cómo usarla.</p>
+      <div class="feature-grid" id="features"></div>
     </section>
 
-    <section class="panel" data-panel="resumenes" id="resumen"></section>
-    <section class="panel" data-panel="diagramas" id="infografias"></section>
-
-    <section class="panel" data-panel="flashcards">
-      <div class="card-wrap">
-        <div class="flashcard" id="card" tabindex="0" aria-live="polite">
-          <div class="face front" id="cardFront"></div>
-          <div class="face back" id="cardBack"></div>
-        </div>
-      </div>
-      <p class="hint">Toca la tarjeta para voltearla</p>
-      <div class="card-actions">
-        <button class="btn ghost" id="repasar">Repasar</button>
-        <span id="progreso"></span>
-        <button class="btn" id="lase">La sé</button>
-      </div>
+    <section class="wrap" id="cursos">
+      <p class="eyebrow">Cursos</p>
+      <h2>Empieza por el curso demo</h2>
+      <div class="course-grid" id="catalogo"></div>
     </section>
 
-    <section class="panel" data-panel="examenes">
-      <div id="examGate" class="exam-options">
-        <div class="gate">
-          <h3>Examen muestra</h3>
-          <p>Gratis · <span id="muestraInfo"></span> · sin límite de tiempo</p>
-          <button class="btn ghost" id="empezarMuestra">Hacer examen muestra</button>
-        </div>
-        <div class="gate">
-          <h3>Examen cronometrado</h3>
-          <p id="examInfo"></p>
-          <input id="codigo" placeholder="Código de acceso" autocomplete="off">
-          <button class="btn" id="empezar">Empezar</button>
-          <p class="error" id="codigoError"></p>
-        </div>
-      </div>
-      <div id="examBody" hidden>
-        <div class="timer" id="timer"></div>
-        <div id="examResult" hidden></div>
-        <form id="examForm"></form>
-        <div class="exam-end">
-          <button class="btn" id="terminar">Terminar examen</button>
-          <button class="btn ghost" id="otraVez" hidden>Volver a exámenes</button>
-        </div>
-      </div>
+    <section class="wrap final-cta">
+      <h2>Deja de desvelarte para preparar un tema.</h2>
+      <p class="lead">Estudia con video, podcast y flash cards mientras te arreglas, vas en el transporte o estás en el gym.</p>
+      <a class="btn" href="curso.html?id=ddc">Entrar al curso demo</a>
     </section>
-
-    <section class="panel" data-panel="clases-grabadas" id="clasesGrabadas"></section>
-    <section class="panel" data-panel="clases-vivo" id="clasesVivo"></section>
-    <section class="panel" data-panel="cirugias" id="cirugias"></section>
-    <section class="panel" data-panel="cursos" id="cursos"></section>
-
-    <nav class="pager">
-      <button class="btn ghost" id="anterior">← Anterior</button>
-      <button class="btn" id="siguiente">Siguiente →</button>
-    </nav>
   </main>
 
-  <script src="assets/js/app.js"></script>
+  <footer class="footer wrap">
+    <span>© 2026 KronosMedicine</span>
+    <a href="https://kronosmedicine.com.mx/">kronosmedicine.com.mx</a>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <div class="modal-video" id="modalVideo"></div>
+      <div class="modal-text">
+        <p class="eyebrow" id="modalIcono"></p>
+        <h3 id="modalTitulo"></h3>
+        <p id="modalTexto"></p>
+        <a class="btn" href="curso.html?id=ddc" id="modalCta">Verlo en el curso demo</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/landing.js"></script>
 </body>
 </html>

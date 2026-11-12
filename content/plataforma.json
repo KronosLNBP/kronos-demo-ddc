@@ -1,0 +1,23 @@
+{
+  "presentacion": {
+    "titulo": "Modelo de estudio: cómo funciona la plataforma",
+    "video": "assets/videos/presentacion.mp4",
+    "poster": "assets/img/posters/presentacion.jpg"
+  },
+  "secciones": [
+    { "id": "resumenes", "titulo": "Resúmenes", "icono": "📄", "video": "assets/videos/resumenes.mp4", "poster": "assets/img/posters/resumenes.jpg", "texto": "Resúmenes muy cortos para comprender, reforzar y recordar cada tema." },
+    { "id": "diagramas", "titulo": "Diagramas de flujo e infografías", "icono": "🧭", "video": "assets/videos/diagramas.mp4", "poster": "assets/img/posters/diagramas.jpg", "texto": "El sistema de diagramas de flujo más grande de la medicina, más infografías de cada tema." },
+    { "id": "flashcards", "titulo": "Flash cards", "icono": "🃏", "video": "assets/videos/flashcards.mp4", "poster": "assets/img/posters/flashcards.jpg", "texto": "Repaso rápido para fijar lo que leíste. Unos minutos al día durante la semana." },
+    { "id": "examenes", "titulo": "Exámenes", "icono": "⏱️", "video": "assets/videos/examenes.mp4", "poster": "assets/img/posters/examenes.jpg", "texto": "Examen muestra gratis y cronometrados tipo ENARM con resultados completos por tema." },
+    { "id": "clases-grabadas", "titulo": "Clases grabadas", "icono": "🎥", "video": "assets/videos/clases-grabadas.mp4", "poster": "assets/img/posters/clases-grabadas.jpg", "texto": "Especialistas explicando cada tema a profundidad. Pausa, toma apuntes y repite." },
+    { "id": "clases-vivo", "titulo": "Clases en vivo", "icono": "🔴", "video": "assets/videos/clases-vivo.mp4", "poster": "assets/img/posters/clases-vivo.jpg", "texto": "Interactúa con médicos expertos y resuelve tus dudas en tiempo real." },
+    { "id": "cirugias", "titulo": "Cirugías en vivo y grabadas", "icono": "🩺", "video": "assets/videos/cirugias.mp4", "poster": "assets/img/posters/cirugias.jpg", "texto": "Aprende de los expertos directamente en el quirófano." },
+    { "id": "cursos", "titulo": "Cursos y diplomados", "icono": "🎓", "video": "assets/videos/cursos.mp4", "poster": "assets/img/posters/cursos.jpg", "texto": "Desde tus parciales hasta el examen profesional y el ENARM." }
+  ],
+  "cursos": [
+    { "id": "ddc", "titulo": "Displasia del desarrollo de la cadera", "especialidad": "Traumatología y Ortopedia", "horas": 4, "recursos": ["8 módulos", "Video", "Podcast", "Infografía", "25 flash cards", "Examen de 20 preguntas"], "disponible": true },
+    { "id": "perthes", "titulo": "Enfermedad de Legg-Calvé-Perthes", "especialidad": "Traumatología y Ortopedia", "horas": 3, "recursos": [], "disponible": false },
+    { "id": "epifisiolistesis", "titulo": "Epifisiólisis femoral proximal", "especialidad": "Traumatología y Ortopedia", "horas": 3, "recursos": [], "disponible": false },
+    { "id": "supracondilea", "titulo": "Fractura supracondílea de húmero", "especialidad": "Traumatología y Ortopedia", "horas": 3, "recursos": [], "disponible": false }
+  ]
+}

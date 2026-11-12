@@ -1,109 +1,956 @@
 {
-  "_nota": "CONTENIDO DE EJEMPLO para probar los componentes. El Creador de producto debe reemplazarlo con la versión validada (redacción propia + GPC). No copiar texto ni imágenes de terceros.",
+  "_nota": "Contenido redactado por Kronos a partir de los temas del PDF de referencia y la GPC. Debe validarlo el Creador de producto antes de publicarse como versión final.",
   "id": "ddc",
   "titulo": "Displasia del desarrollo de la cadera",
+  "subtitulo": "Del tamizaje del recién nacido al tratamiento quirúrgico, con enfoque ENARM",
   "especialidad": "Traumatología y Ortopedia",
+  "duracionMin": 240,
+  "nivel": "Pregrado, internado y preparación ENARM",
   "palabrasClave": [
     "Niñas",
     "Primigesta",
-    "Pélvico",
+    "Presentación pélvica",
     "BarlOUT / OrtolaIN",
     "USG < 4 meses",
-    "Pavlik"
+    "Rx desde 4 meses",
+    "Pavlik < 6 meses",
+    "Reducción abierta > 18 meses"
+  ],
+  "secciones": [
+    {
+      "id": "inicio",
+      "titulo": "Inicio del curso",
+      "icono": "⏳",
+      "video": "",
+      "intro": ""
+    },
+    {
+      "id": "clases",
+      "titulo": "Ruta de estudio (4 h)",
+      "icono": "🗺️",
+      "video": "assets/videos/clases-grabadas.mp4",
+      "poster": "assets/img/posters/clases-grabadas.jpg",
+      "intro": "Ocho módulos que combinan video, lectura, infografía, podcast, flash cards y examen. Sigue el orden, marca cada actividad al terminarla y en 4 horas dominas el tema."
+    },
+    {
+      "id": "podcast",
+      "titulo": "Podcast",
+      "icono": "🎧",
+      "video": "",
+      "intro": "Escucha el tema mientras te arreglas, vas en el transporte o estás en el gym. Siete episodios cortos que siguen la ruta de estudio."
+    },
+    {
+      "id": "resumenes",
+      "titulo": "Resúmenes",
+      "icono": "📄",
+      "video": "assets/videos/resumenes.mp4",
+      "poster": "assets/img/posters/resumenes.jpg",
+      "intro": "Resúmenes cortos para comprender, reforzar y recordar. La profundidad está en las clases y en los diagramas de flujo."
+    },
+    {
+      "id": "diagramas",
+      "titulo": "Infografía y diagrama de flujo",
+      "icono": "🧭",
+      "video": "assets/videos/diagramas.mp4",
+      "poster": "assets/img/posters/diagramas.jpg",
+      "intro": "Todo el tema en una imagen y el algoritmo de diagnóstico y tratamiento por edad. Léelos después del resumen para aprovecharlos al máximo."
+    },
+    {
+      "id": "flashcards",
+      "titulo": "Flash cards",
+      "icono": "🃏",
+      "video": "assets/videos/flashcards.mp4",
+      "poster": "assets/img/posters/flashcards.jpg",
+      "intro": "Para un repaso rápido. Después de leer el resumen, repasa las tarjetas poco a poco durante la semana."
+    },
+    {
+      "id": "examenes",
+      "titulo": "Exámenes",
+      "icono": "⏱️",
+      "video": "assets/videos/examenes.mp4",
+      "poster": "assets/img/posters/examenes.jpg",
+      "intro": "Mide lo que aprendiste. El examen muestra es gratis; el cronometrado tiene 20 preguntas en 20 minutos y al final te da tu resultado completo por tema."
+    }
+  ],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Concepto, clasificación y fisiopatología",
+      "minutos": 25,
+      "video": "",
+      "objetivos": [
+        "Definir la displasia del desarrollo de la cadera (DDC)",
+        "Distinguir cadera luxada, luxable y subluxable",
+        "Explicar por qué la cadera inmadura se luxa"
+      ],
+      "temas": [
+        "De \"luxación congénita\" a \"displasia del desarrollo\": por qué cambió el nombre",
+        "Espectro: displasia acetabular, subluxación y luxación",
+        "Formas típica y teratológica",
+        "Malformaciones asociadas: pie equino varo, tortícolis congénita",
+        "Relación entre la cabeza femoral centrada y el desarrollo del acetábulo"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: concepto y fisiopatología",
+          "minutos": 10,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: definición y clasificación",
+          "minutos": 4,
+          "destino": "definicion"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 1: ¿por qué se luxa una cadera?",
+          "minutos": 8,
+          "destino": "p1"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: definición",
+          "minutos": 3,
+          "destino": "Definición"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Epidemiología y factores de riesgo",
+      "minutos": 20,
+      "video": "",
+      "objetivos": [
+        "Conocer la incidencia y el lado más afectado",
+        "Identificar a los recién nacidos de alto riesgo"
+      ],
+      "temas": [
+        "Incidencia: 2 a 5 por cada 1,000 nacidos vivos",
+        "Lado: izquierda > bilateral > derecha",
+        "Factores mayores: sexo femenino, primer embarazo, presentación pélvica, antecedente familiar",
+        "Oligohidramnios, laxitud ligamentaria y envoltura con piernas en extensión",
+        "Clasificación del riesgo: alto, intermedio y bajo"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: epidemiología y factores de riesgo",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: epidemiología",
+          "minutos": 3,
+          "destino": "epidemiologia"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Infografía: factores de riesgo",
+          "minutos": 2,
+          "destino": "infografia"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 2: el bebé de alto riesgo",
+          "minutos": 5,
+          "destino": "p2"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: epidemiología",
+          "minutos": 2,
+          "destino": "Epidemiología"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Tamizaje y exploración en menores de 3 meses",
+      "minutos": 35,
+      "video": "",
+      "objetivos": [
+        "Realizar e interpretar Barlow y Ortolani",
+        "Aplicar el calendario de tamizaje"
+      ],
+      "temas": [
+        "Cuándo explorar: primera semana de vida y luego al mes, 2, 4, 6, 9 y 12 meses",
+        "Maniobra de Barlow: luxa una cadera inestable (BarlOUT)",
+        "Maniobra de Ortolani: reduce una cadera luxada (OrtolaIN)",
+        "\"Clunk\" patológico frente a \"click\" inocente",
+        "Por qué pierden utilidad después de los 3 meses"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: tamizaje, Barlow y Ortolani",
+          "minutos": 15,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: tamizaje y clínica",
+          "minutos": 4,
+          "destino": "tamizaje"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Infografía: clínica por edad",
+          "minutos": 3,
+          "destino": "infografia"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 3: BarlOUT y OrtolaIN sin confundirte",
+          "minutos": 10,
+          "destino": "p3"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: tamizaje",
+          "minutos": 3,
+          "destino": "Tamizaje"
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "titulo": "Clínica en el lactante mayor y al caminar",
+      "minutos": 25,
+      "video": "",
+      "objetivos": [
+        "Reconocer los signos tardíos de DDC",
+        "Interpretar la marcha del niño con cadera luxada"
+      ],
+      "temas": [
+        "Limitación de la abducción: el signo más útil después de los 3 meses",
+        "Asimetría de pliegues y acortamiento aparente",
+        "Signo de Galeazzi (Allis) y signo del pistón",
+        "Marcha de Trendelenburg y de Duchenne",
+        "Luxación bilateral: hiperlordosis y marcha de pato"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: signos tardíos y marcha",
+          "minutos": 10,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: cuadro clínico por edad",
+          "minutos": 3,
+          "destino": "clinica"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 4: el niño que camina raro",
+          "minutos": 8,
+          "destino": "p4"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: clínica",
+          "minutos": 4,
+          "destino": "Clínica"
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "titulo": "Estudios de imagen",
+      "minutos": 40,
+      "video": "",
+      "objetivos": [
+        "Elegir entre ultrasonido y radiografía según la edad",
+        "Trazar e interpretar las líneas radiográficas"
+      ],
+      "temas": [
+        "Ultrasonido antes de los 4 meses: indicaciones y por qué no es tamizaje universal",
+        "Radiografía AP de pelvis desde los 4 meses y proyección de Von Rosen",
+        "Línea de Hilgenreiner, línea de Perkins y cuadrantes",
+        "Índice acetabular: menos de 30° al nacer",
+        "Línea de Shenton y tríada de Putti"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: ultrasonido y radiografía",
+          "minutos": 18,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: estudios de imagen",
+          "minutos": 5,
+          "destino": "imagen"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Infografía: líneas radiográficas",
+          "minutos": 5,
+          "destino": "infografia"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 5: cómo leer la radiografía de cadera",
+          "minutos": 8,
+          "destino": "p5"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: imagen",
+          "minutos": 4,
+          "destino": "Imagen"
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "titulo": "Tratamiento conservador",
+      "minutos": 35,
+      "video": "",
+      "objetivos": [
+        "Indicar y vigilar el arnés de Pavlik",
+        "Reconocer sus contraindicaciones y complicaciones"
+      ],
+      "temas": [
+        "Resolución espontánea en las primeras 6 semanas: no todo se trata al nacer",
+        "Arnés de Pavlik: primera elección antes de los 6 meses",
+        "Uso, vigilancia y criterio de falla a las 3–4 semanas",
+        "Contraindicaciones: mielomeningocele, artrogriposis, Ehlers-Danlos, displasia teratológica",
+        "Complicaciones: necrosis avascular, lesión del nervio femoral, úlceras por presión"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: arnés de Pavlik",
+          "minutos": 15,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: tratamiento",
+          "minutos": 4,
+          "destino": "tratamiento"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Diagrama de flujo: tratamiento por edad",
+          "minutos": 4,
+          "destino": "algoritmo"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 6: Pavlik, cuándo sí y cuándo no",
+          "minutos": 8,
+          "destino": "p6"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: tratamiento",
+          "minutos": 4,
+          "destino": "Tratamiento"
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "titulo": "Tratamiento quirúrgico",
+      "minutos": 30,
+      "video": "",
+      "objetivos": [
+        "Indicar reducción cerrada o abierta según la edad",
+        "Conocer los obstáculos a la reducción y las complicaciones"
+      ],
+      "temas": [
+        "Reducción cerrada (6–18 meses o falla del Pavlik): tenotomía de aductores, artrografía y yeso pelvipodálico",
+        "Reducción abierta (> 18 meses o falla de la cerrada)",
+        "Obstáculos: psoas, ligamento redondo, ligamento transverso, pulvinar, limbo invertido, cápsula",
+        "Osteotomías pélvicas y femorales en niños mayores",
+        "Complicaciones: displasia residual, necrosis avascular y artrosis temprana"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: reducción cerrada y abierta",
+          "minutos": 14,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: tratamiento quirúrgico",
+          "minutos": 4,
+          "destino": "tratamiento"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Diagrama de flujo: falla del tratamiento",
+          "minutos": 4,
+          "destino": "algoritmo"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 7: del quirófano a la consulta",
+          "minutos": 8,
+          "destino": "p7"
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "titulo": "Referencia, pronóstico y casos ENARM",
+      "minutos": 30,
+      "video": "",
+      "objetivos": [
+        "Saber cuándo y a qué nivel referir",
+        "Resolver casos clínicos tipo ENARM"
+      ],
+      "temas": [
+        "Criterios de referencia a segundo nivel",
+        "Criterios de referencia a tercer nivel",
+        "Factores de buen pronóstico: diagnóstico y tratamiento tempranos",
+        "Errores frecuentes en el examen",
+        "Resolución guiada de 6 casos clínicos"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: casos clínicos ENARM",
+          "minutos": 6,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: referencia y pronóstico",
+          "minutos": 2,
+          "destino": "referencia"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Repaso final de flash cards",
+          "minutos": 2,
+          "destino": ""
+        },
+        {
+          "tipo": "examen",
+          "titulo": "Examen cronometrado: 20 preguntas",
+          "minutos": 20,
+          "destino": ""
+        }
+      ]
+    }
   ],
   "resumen": [
     {
       "id": "definicion",
       "titulo": "Definición y clasificación",
-      "texto": "Conjunto de alteraciones de la articulación coxofemoral en desarrollo: acetábulo displásico y cabeza femoral mal posicionada, desde la subluxación hasta la luxación. Se clasifica en cadera luxada, luxable y subluxable."
+      "puntos": [
+        "Alteración del desarrollo de la articulación coxofemoral: el acetábulo es poco profundo (displasia) y la cabeza femoral no está bien centrada.",
+        "Va de la displasia acetabular sola a la subluxación y la luxación completa; puede aparecer en la etapa embrionaria, fetal o en la infancia.",
+        "Según la exploración, la cadera puede estar luxada, ser luxable o ser subluxable.",
+        "La forma teratológica (luxada desde el útero, rígida e irreductible) se asocia a enfermedades neuromusculares y a síndromes."
+      ],
+      "perla": "El nombre actual es \"displasia del desarrollo\" porque la alteración puede aparecer o empeorar después del nacimiento."
+    },
+    {
+      "id": "epidemiologia",
+      "titulo": "Epidemiología y factores de riesgo",
+      "puntos": [
+        "Incidencia de 2 a 5 por cada 1,000 nacidos vivos; es más frecuente en niñas.",
+        "La cadera izquierda es la más afectada, seguida de la afección bilateral y después la derecha.",
+        "Factores de riesgo: sexo femenino, primer embarazo, presentación pélvica, antecedente familiar, oligohidramnios y laxitud ligamentaria.",
+        "Envolver al bebé con las piernas juntas y en extensión (\"como taquito\") aumenta el riesgo."
+      ],
+      "perla": "Niña + primigesta + pélvico es la combinación clásica de los casos clínicos."
+    },
+    {
+      "id": "tamizaje",
+      "titulo": "Tamizaje",
+      "puntos": [
+        "La primera exploración de caderas se hace en la primera semana de vida.",
+        "Se repite al mes y a los 2, 4, 6, 9 y 12 meses.",
+        "Una cadera normal al nacer puede volverse inestable después: la exploración se repite en cada consulta."
+      ],
+      "perla": "Si la cadera no se reduce antes de los 6 meses, aparecen cambios que suelen requerir cirugía."
     },
     {
       "id": "clinica",
-      "titulo": "Clínica por edad",
-      "texto": "Menores de 3 meses: Barlow (luxa) y Ortolani (reduce). Mayores de 6 meses: asimetría de pliegues, limitación de la abducción, Galeazzi y pistón. Al caminar: marcha de Trendelenburg."
+      "titulo": "Cuadro clínico por edad",
+      "puntos": [
+        "Menores de 3 meses: Barlow (aducción y presión posterior; la cadera sale) y Ortolani (abducción y presión sobre el trocánter; la cadera entra con un \"clunk\").",
+        "Los \"clicks\" de cadera son frecuentes, inocentes y no indican displasia.",
+        "Después de los 3 meses, Barlow y Ortolani pierden sensibilidad: el signo más útil es la limitación de la abducción.",
+        "Lactante mayor: asimetría de pliegues, acortamiento, signo de Galeazzi y signo del pistón.",
+        "Al caminar: claudicación, marcha de Trendelenburg o de Duchenne; si es bilateral, hiperlordosis y marcha de pato."
+      ],
+      "perla": "BarlOUT saca la cadera; OrtolaIN la mete."
+    },
+    {
+      "id": "imagen",
+      "titulo": "Estudios de imagen",
+      "puntos": [
+        "Antes de los 4 meses: ultrasonido, porque la cabeza femoral todavía no está osificada.",
+        "El ultrasonido no se usa como tamizaje en todos los recién nacidos sanos; se indica ante exploración anormal o factores de riesgo.",
+        "Desde los 4 meses: radiografía AP de pelvis en posición neutra; la proyección de Von Rosen (abducción de 45° y rotación interna) ayuda a evidenciar la luxación.",
+        "Líneas: Hilgenreiner (horizontal por los cartílagos trirradiados) y Perkins (vertical por el borde lateral del acetábulo). La cabeza normal queda en el cuadrante inferomedial.",
+        "Índice acetabular: menor de 30° al nacer. La línea de Shenton se rompe cuando la cadera está subluxada o luxada.",
+        "Tríada de Putti (desde los 6 meses): ascenso y lateralización de la cabeza femoral, núcleo de osificación pequeño y acetábulo displásico."
+      ],
+      "perla": "Ultrasonido antes de los 4 meses; radiografía después."
+    },
+    {
+      "id": "tratamiento",
+      "titulo": "Tratamiento",
+      "puntos": [
+        "Muchas caderas inestables se estabilizan solas en las primeras 6 semanas; el momento del tratamiento se individualiza.",
+        "Menores de 6 meses: arnés de Pavlik, de primera elección. Logra reducir la mayoría de las caderas tratadas a tiempo.",
+        "El Pavlik se vigila con exploración y ultrasonido; si la cadera no se ha reducido a las 3–4 semanas, se suspende y se refiere.",
+        "Contraindicaciones del Pavlik: mielomeningocele, artrogriposis, Ehlers-Danlos y displasia teratológica.",
+        "Complicaciones del Pavlik: necrosis avascular de la cabeza femoral, lesión del nervio femoral y úlceras por presión.",
+        "6 a 18 meses o falla del Pavlik: reducción cerrada bajo anestesia, tenotomía de aductores (± psoas), artrografía y yeso pelvipodálico.",
+        "Mayores de 18 meses o falla de la reducción cerrada: reducción abierta; en niños mayores se agregan osteotomías pélvicas o femorales."
+      ],
+      "perla": "Edad decide el tratamiento: < 6 meses Pavlik · 6–18 meses reducción cerrada · > 18 meses reducción abierta."
+    },
+    {
+      "id": "referencia",
+      "titulo": "Referencia y pronóstico",
+      "puntos": [
+        "A segundo nivel: toda sospecha de DDC, niño con factores de riesgo para estudio de imagen, falla del tratamiento conservador o necrosis avascular.",
+        "A tercer nivel: cuando el segundo nivel no cuenta con recursos, falla la reducción o se requiere tratamiento quirúrgico.",
+        "El pronóstico es mejor cuanto más temprano se diagnostica y trata; idealmente antes de los 4 meses.",
+        "La complicación tardía más importante es la displasia residual, que lleva a artrosis temprana de cadera."
+      ],
+      "perla": "En el ENARM, ante sospecha en primer nivel, la respuesta casi siempre es referir."
     }
   ],
   "infografias": [
     {
-      "id": "clinica-edad",
-      "titulo": "Clínica por edad",
-      "imagen": "assets/img/infografias/clinica-edad.webp",
-      "alt": "Infografía de signos clínicos por grupo de edad"
-    }
-  ],
-  "videos": [
-    {
-      "id": "intro",
-      "titulo": "Introducción — Dra. Torres",
-      "duracion": "1:00",
-      "embed": ""
+      "id": "infografia",
+      "titulo": "DDC de un vistazo",
+      "imagen": "assets/img/infografias/ddc-infografia.svg",
+      "alt": "Infografía de displasia del desarrollo de la cadera: definición, factores de riesgo, clínica por edad, imagen, tratamiento y referencia"
     },
     {
-      "id": "clase",
-      "titulo": "Clase grabada",
-      "duracion": "10:00",
-      "embed": ""
-    },
-    {
-      "id": "maniobras",
-      "titulo": "Maniobras de Barlow y Ortolani",
-      "duracion": "1:30",
-      "embed": ""
+      "id": "algoritmo",
+      "titulo": "Diagrama de flujo: diagnóstico y tratamiento",
+      "imagen": "assets/img/infografias/ddc-algoritmo.svg",
+      "alt": "Diagrama de flujo de diagnóstico y tratamiento de la displasia del desarrollo de la cadera según la edad"
     }
   ],
   "flashcards": [
     {
+      "tema": "Definición",
+      "frente": "¿Cuáles son las tres formas de inestabilidad de la cadera en la DDC?",
+      "reverso": "Cadera luxada, luxable y subluxable."
+    },
+    {
+      "tema": "Definición",
+      "frente": "¿Qué es la displasia teratológica de cadera?",
+      "reverso": "Luxación presente desde el útero, rígida e irreductible, asociada a enfermedades neuromusculares o síndromes."
+    },
+    {
+      "tema": "Definición",
+      "frente": "Malformación del pie que se asocia a DDC",
+      "reverso": "Pie equino varo (también se asocia la tortícolis congénita)."
+    },
+    {
+      "tema": "Epidemiología",
+      "frente": "Incidencia de la DDC",
+      "reverso": "2 a 5 por cada 1,000 nacidos vivos."
+    },
+    {
+      "tema": "Epidemiología",
+      "frente": "¿Qué cadera se afecta con más frecuencia?",
+      "reverso": "La izquierda; después la afección bilateral y por último la derecha."
+    },
+    {
+      "tema": "Epidemiología",
+      "frente": "Combinación clásica de factores de riesgo",
+      "reverso": "Niña, primer embarazo y presentación pélvica (más antecedente familiar)."
+    },
+    {
+      "tema": "Epidemiología",
+      "frente": "¿Qué práctica de crianza aumenta el riesgo de DDC?",
+      "reverso": "Envolver al bebé con las piernas juntas y en extensión."
+    },
+    {
+      "tema": "Tamizaje",
+      "frente": "¿Cuándo se hace la primera exploración de caderas?",
+      "reverso": "En la primera semana de vida."
+    },
+    {
+      "tema": "Tamizaje",
+      "frente": "Calendario de exploración de caderas después del nacimiento",
+      "reverso": "Al mes y a los 2, 4, 6, 9 y 12 meses."
+    },
+    {
+      "tema": "Clínica",
       "frente": "¿Qué maniobra luxa una cadera inestable?",
-      "reverso": "Barlow: aducción con presión posterior sobre la rodilla. Mnemotecnia: BarlOUT."
+      "reverso": "Barlow: aducción con presión posterior. BarlOUT."
     },
     {
+      "tema": "Clínica",
       "frente": "¿Qué maniobra reduce una cadera luxada?",
-      "reverso": "Ortolani: abducción con presión sobre el trocánter mayor. Mnemotecnia: OrtolaIN."
+      "reverso": "Ortolani: abducción con presión sobre el trocánter mayor. OrtolaIN."
     },
     {
-      "frente": "¿Hasta qué edad son confiables Barlow y Ortolani?",
+      "tema": "Clínica",
+      "frente": "¿Hasta qué edad son útiles Barlow y Ortolani?",
       "reverso": "Hasta los 3 meses; después pueden dar falsos negativos."
     },
     {
-      "frente": "¿Qué estudio de imagen se usa antes de los 4 meses?",
-      "reverso": "Ultrasonido de cadera, porque la cabeza femoral aún no está osificada."
+      "tema": "Clínica",
+      "frente": "¿Qué significa un \"click\" de cadera en el recién nacido?",
+      "reverso": "Suele ser inocente y no indica displasia; lo patológico es el \"clunk\" de luxación o reducción."
     },
     {
+      "tema": "Clínica",
+      "frente": "Signo más útil de DDC después de los 3 meses",
+      "reverso": "Limitación de la abducción de la cadera."
+    },
+    {
+      "tema": "Clínica",
+      "frente": "¿Qué es el signo de Galeazzi?",
+      "reverso": "Con caderas y rodillas flexionadas, una rodilla queda más baja por acortamiento del fémur del lado luxado."
+    },
+    {
+      "tema": "Clínica",
+      "frente": "Marcha típica del niño con luxación unilateral",
+      "reverso": "Marcha de Trendelenburg (o de Duchenne)."
+    },
+    {
+      "tema": "Imagen",
+      "frente": "Estudio de imagen antes de los 4 meses",
+      "reverso": "Ultrasonido de cadera, porque la cabeza femoral no está osificada."
+    },
+    {
+      "tema": "Imagen",
+      "frente": "¿El ultrasonido es tamizaje para todos los recién nacidos?",
+      "reverso": "No. Se indica ante exploración anormal o factores de riesgo."
+    },
+    {
+      "tema": "Imagen",
+      "frente": "Línea de Hilgenreiner",
+      "reverso": "Línea horizontal que pasa por ambos cartílagos trirradiados."
+    },
+    {
+      "tema": "Imagen",
+      "frente": "Valor normal del índice acetabular al nacer",
+      "reverso": "Menos de 30°."
+    },
+    {
+      "tema": "Imagen",
+      "frente": "Tríada de Putti",
+      "reverso": "Cabeza femoral ascendida y lateralizada, núcleo de osificación pequeño y acetábulo displásico."
+    },
+    {
+      "tema": "Tratamiento",
       "frente": "Tratamiento de primera elección en menores de 6 meses",
       "reverso": "Arnés de Pavlik."
+    },
+    {
+      "tema": "Tratamiento",
+      "frente": "Complicación más grave del arnés de Pavlik",
+      "reverso": "Necrosis avascular de la cabeza femoral."
+    },
+    {
+      "tema": "Tratamiento",
+      "frente": "Tratamiento entre los 6 y 18 meses",
+      "reverso": "Reducción cerrada con tenotomía de aductores, artrografía y yeso pelvipodálico."
+    },
+    {
+      "tema": "Tratamiento",
+      "frente": "Tratamiento en mayores de 18 meses",
+      "reverso": "Reducción abierta (± osteotomías en niños mayores)."
     }
   ],
   "examen": {
     "minutos": 20,
+    "aprobatorio": 70,
     "codigoDemo": "KRONOS-DEMO",
+    "muestra": [
+      0,
+      4,
+      9,
+      13,
+      17
+    ],
     "preguntas": [
       {
-        "caso": "Recién nacida de 10 días, producto de primera gesta con presentación pélvica. En la exploración, la maniobra de Ortolani es positiva en la cadera izquierda.",
-        "pregunta": "¿Cuál es la conducta más adecuada?",
+        "tema": "Definición",
+        "modulo": "m1",
+        "caso": "Durante la exploración de un recién nacido, la cadera derecha se desplaza fuera del acetábulo con una maniobra de provocación, pero en reposo está en su lugar.",
+        "pregunta": "¿Cómo se clasifica esta cadera?",
+        "opciones": [
+          "Luxada",
+          "Luxable",
+          "Subluxable",
+          "Teratológica"
+        ],
+        "correcta": 1,
+        "explicacion": "Una cadera que está reducida en reposo pero se puede sacar con la maniobra de Barlow es una cadera luxable."
+      },
+      {
+        "tema": "Definición",
+        "modulo": "m1",
+        "caso": "Recién nacido con mielomeningocele lumbar. Ambas caderas están luxadas, rígidas, y no se reducen con la maniobra de Ortolani.",
+        "pregunta": "¿Qué tipo de displasia presenta?",
+        "opciones": [
+          "Típica",
+          "Subluxable",
+          "Transitoria",
+          "Teratológica"
+        ],
+        "correcta": 3,
+        "explicacion": "La displasia teratológica está luxada desde el útero, es rígida e irreductible y se asocia a enfermedades neuromusculares como el mielomeningocele."
+      },
+      {
+        "tema": "Epidemiología",
+        "modulo": "m2",
+        "caso": "En la consulta de un recién nacido se revisan sus factores de riesgo para DDC.",
+        "pregunta": "¿Cuál de los siguientes NO es un factor de riesgo para DDC?",
+        "opciones": [
+          "Presentación pélvica",
+          "Sexo femenino",
+          "Antecedente familiar de DDC",
+          "Polihidramnios"
+        ],
+        "correcta": 3,
+        "explicacion": "El factor de riesgo es el oligohidramnios, porque reduce el espacio intrauterino. El polihidramnios no se asocia a DDC."
+      },
+      {
+        "tema": "Epidemiología",
+        "modulo": "m2",
+        "caso": "Se analiza la distribución de casos de DDC en un hospital pediátrico.",
+        "pregunta": "¿Cuál es la localización más frecuente?",
+        "opciones": [
+          "Cadera derecha",
+          "Bilateral",
+          "Cadera izquierda",
+          "Es igual en ambos lados"
+        ],
+        "correcta": 2,
+        "explicacion": "La cadera izquierda es la más afectada, seguida de la afección bilateral y por último la derecha."
+      },
+      {
+        "tema": "Epidemiología",
+        "modulo": "m2",
+        "caso": "Recién nacida de 3 días, producto de primera gesta, obtenida por cesárea por presentación pélvica. Su madre tuvo displasia de cadera.",
+        "pregunta": "¿Cuál es su riesgo de DDC?",
+        "opciones": [
+          "Bajo",
+          "Intermedio",
+          "No tiene riesgo si la exploración es normal",
+          "Alto"
+        ],
+        "correcta": 3,
+        "explicacion": "Sexo femenino, primer embarazo, presentación pélvica y antecedente familiar la colocan en riesgo alto, aunque la exploración inicial sea normal."
+      },
+      {
+        "tema": "Tamizaje",
+        "modulo": "m3",
+        "caso": "Médico pasante en un centro de salud que inicia el control del niño sano.",
+        "pregunta": "¿Cuándo debe realizarse la primera exploración de caderas?",
+        "opciones": [
+          "Al mes de vida",
+          "A los 3 meses",
+          "En la primera semana de vida",
+          "Cuando el niño empiece a caminar"
+        ],
+        "correcta": 2,
+        "explicacion": "El tamizaje clínico se hace en la primera semana de vida y se repite al mes y a los 2, 4, 6, 9 y 12 meses."
+      },
+      {
+        "tema": "Clínica",
+        "modulo": "m3",
+        "caso": "Recién nacido de 5 días. Con la cadera flexionada a 90°, se abduce suavemente y se empuja el trocánter mayor hacia arriba; se percibe un \"clunk\".",
+        "pregunta": "¿Qué maniobra se realizó y qué indica?",
+        "opciones": [
+          "Barlow; cadera luxable",
+          "Galeazzi; acortamiento femoral",
+          "Pistón; inestabilidad crónica",
+          "Ortolani; cadera luxada que se reduce"
+        ],
+        "correcta": 3,
+        "explicacion": "Ortolani reduce una cadera luxada (OrtolaIN). El \"clunk\" es la cabeza femoral entrando al acetábulo."
+      },
+      {
+        "tema": "Clínica",
+        "modulo": "m3",
+        "caso": "En la exploración de un recién nacido sano se escucha un chasquido agudo en la cadera, sin sensación de desplazamiento. Barlow y Ortolani son negativos.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Arnés de Pavlik",
+          "Ultrasonido urgente",
+          "Radiografía de pelvis",
+          "Tranquilizar a los padres y continuar el tamizaje habitual"
+        ],
+        "correcta": 3,
+        "explicacion": "Los \"clicks\" de cadera son frecuentes e inocentes; no indican displasia si las maniobras son negativas."
+      },
+      {
+        "tema": "Clínica",
+        "modulo": "m4",
+        "caso": "Lactante de 7 meses. La madre nota que un pliegue del muslo es distinto. Barlow y Ortolani son negativos.",
+        "pregunta": "¿Qué hallazgo de la exploración es el más útil para sospechar DDC a esta edad?",
+        "opciones": [
+          "Signo de Ortolani",
+          "Click de cadera",
+          "Limitación de la abducción de la cadera",
+          "Reflejo de Moro asimétrico"
+        ],
+        "correcta": 2,
+        "explicacion": "Después de los 3 meses, Barlow y Ortolani pierden sensibilidad. La limitación de la abducción es el signo más útil."
+      },
+      {
+        "tema": "Clínica",
+        "modulo": "m4",
+        "caso": "Lactante de 9 meses acostado boca arriba con caderas y rodillas flexionadas; la rodilla izquierda queda más baja que la derecha.",
+        "pregunta": "¿Cómo se llama este signo?",
+        "opciones": [
+          "Signo de Galeazzi",
+          "Signo de Trendelenburg",
+          "Signo de Ortolani",
+          "Signo de Barlow"
+        ],
+        "correcta": 0,
+        "explicacion": "El signo de Galeazzi (o de Allis) muestra el acortamiento del fémur del lado luxado."
+      },
+      {
+        "tema": "Clínica",
+        "modulo": "m4",
+        "caso": "Niña de 2 años que camina desde los 14 meses. Al apoyarse sobre la pierna derecha, la pelvis cae hacia el lado izquierdo.",
+        "pregunta": "¿Qué signo presenta y en qué cadera está el problema?",
+        "opciones": [
+          "Trendelenburg; cadera izquierda",
+          "Trendelenburg; cadera derecha",
+          "Galeazzi; cadera derecha",
+          "Duchenne; cadera izquierda"
+        ],
+        "correcta": 1,
+        "explicacion": "En el signo de Trendelenburg, al apoyar sobre la cadera enferma, los abductores débiles no sostienen la pelvis y esta cae hacia el lado contrario."
+      },
+      {
+        "tema": "Imagen",
+        "modulo": "m5",
+        "caso": "Lactante de 6 semanas con Ortolani dudoso en la cadera izquierda.",
+        "pregunta": "¿Cuál es el estudio de imagen indicado?",
         "opciones": [
           "Radiografía AP de pelvis",
-          "Ultrasonido de cadera y envío a ortopedia",
-          "Observación hasta los 6 meses",
-          "Yeso pelvipodálico"
+          "Ultrasonido de cadera",
+          "Tomografía",
+          "Resonancia magnética"
         ],
         "correcta": 1,
-        "explicacion": "Antes de los 4 meses el estudio indicado es el ultrasonido; toda sospecha de displasia se refiere a segundo nivel."
+        "explicacion": "Antes de los 4 meses la cabeza femoral no está osificada, así que el ultrasonido es el estudio de elección."
       },
       {
-        "caso": "Lactante de 4 meses con displasia unilateral confirmada por ultrasonido, sin otras malformaciones.",
+        "tema": "Imagen",
+        "modulo": "m5",
+        "caso": "En una campaña de salud se propone hacer ultrasonido de cadera a todos los recién nacidos sanos y sin factores de riesgo.",
+        "pregunta": "¿Qué es lo correcto?",
+        "opciones": [
+          "No se recomienda como tamizaje universal; se indica ante exploración anormal o factores de riesgo",
+          "Es lo recomendado para todos",
+          "Solo se hace a los varones",
+          "Se sustituye por radiografía al nacer"
+        ],
+        "correcta": 0,
+        "explicacion": "El ultrasonido no es tamizaje universal en recién nacidos sanos; se reserva para casos con sospecha clínica o factores de riesgo."
+      },
+      {
+        "tema": "Imagen",
+        "modulo": "m5",
+        "caso": "Lactante de 5 meses con limitación de la abducción de la cadera derecha.",
+        "pregunta": "¿Qué estudio solicitas?",
+        "opciones": [
+          "Radiografía AP de pelvis",
+          "Ultrasonido de cadera",
+          "Gammagrafía ósea",
+          "No se requiere estudio"
+        ],
+        "correcta": 0,
+        "explicacion": "Después de los 4 meses, con el núcleo de osificación presente, la radiografía AP de pelvis es el estudio indicado."
+      },
+      {
+        "tema": "Imagen",
+        "modulo": "m5",
+        "caso": "En la radiografía de pelvis de un lactante, el núcleo de osificación femoral está por fuera de la línea de Perkins y por arriba de la línea de Hilgenreiner.",
+        "pregunta": "¿Qué indica este hallazgo?",
+        "opciones": [
+          "Cadera normal",
+          "Cadera luxada",
+          "Fractura de cadera",
+          "Sinovitis transitoria"
+        ],
+        "correcta": 1,
+        "explicacion": "La cabeza femoral normal está en el cuadrante inferomedial. Fuera de Perkins y arriba de Hilgenreiner indica luxación."
+      },
+      {
+        "tema": "Imagen",
+        "modulo": "m5",
+        "caso": "Se mide el índice acetabular en la radiografía de un recién nacido.",
+        "pregunta": "¿Qué valor se considera normal al nacer?",
+        "opciones": [
+          "Entre 40° y 50°",
+          "Más de 45°",
+          "Menos de 30°",
+          "Exactamente 60°"
+        ],
+        "correcta": 2,
+        "explicacion": "El índice acetabular debe ser menor de 30° al nacer y disminuye con el crecimiento."
+      },
+      {
+        "tema": "Tratamiento",
+        "modulo": "m6",
+        "caso": "Lactante de 3 meses con DDC izquierda confirmada por ultrasonido, sin otras malformaciones.",
         "pregunta": "¿Cuál es el tratamiento de elección?",
         "opciones": [
-          "Reducción abierta",
-          "Arnés de Pavlik",
           "Doble pañal",
-          "Osteotomía acetabular"
+          "Arnés de Pavlik",
+          "Reducción cerrada y yeso",
+          "Reducción abierta"
         ],
         "correcta": 1,
-        "explicacion": "En menores de 6 meses el manejo conservador de primera elección es el arnés de Pavlik."
+        "explicacion": "En menores de 6 meses, el arnés de Pavlik es el tratamiento de primera elección."
       },
       {
-        "caso": "Niño de 2 años con marcha claudicante; se diagnostica luxación de cadera por primera vez.",
-        "pregunta": "¿Qué tratamiento corresponde?",
+        "tema": "Tratamiento",
+        "modulo": "m6",
+        "caso": "Lactante de 2 meses con DDC y artrogriposis múltiple congénita.",
+        "pregunta": "¿Por qué no está indicado el arnés de Pavlik?",
+        "opciones": [
+          "Porque la rigidez articular es contraindicación",
+          "Porque es mayor de 6 meses",
+          "Porque la DDC es izquierda",
+          "Sí está indicado"
+        ],
+        "correcta": 0,
+        "explicacion": "La artrogriposis, el mielomeningocele, el Ehlers-Danlos y la displasia teratológica contraindican el Pavlik."
+      },
+      {
+        "tema": "Tratamiento",
+        "modulo": "m6",
+        "caso": "Lactante de 4 meses que usa arnés de Pavlik desde hace 4 semanas; el ultrasonido muestra que la cadera sigue luxada.",
+        "pregunta": "¿Qué conducta es la correcta?",
+        "opciones": [
+          "Suspender el arnés y referir para reducción cerrada",
+          "Continuar el arnés hasta los 12 meses",
+          "Cambiar a doble pañal",
+          "Observación sin tratamiento"
+        ],
+        "correcta": 0,
+        "explicacion": "Si la cadera no se reduce a las 3–4 semanas, el Pavlik ha fallado: se suspende para no dañar el acetábulo y se refiere para reducción cerrada."
+      },
+      {
+        "tema": "Tratamiento",
+        "modulo": "m7",
+        "caso": "Niño de 2 años y medio con diagnóstico reciente de luxación de cadera derecha.",
+        "pregunta": "¿Cuál es el tratamiento indicado?",
         "opciones": [
           "Arnés de Pavlik",
           "Cojín de Frejka",
@@ -111,118 +958,52 @@
           "Fisioterapia"
         ],
         "correcta": 2,
-        "explicacion": "Con diagnóstico tardío, después de los 18 meses, el tratamiento de elección es la reducción abierta."
+        "explicacion": "Con diagnóstico tardío, después de los 18 meses, el tratamiento es la reducción abierta, a menudo con osteotomías."
       }
-    ],
-    "muestra": [
-      0,
-      1
     ]
   },
-  "secciones": [
+  "podcast": [
     {
-      "id": "presentacion",
-      "titulo": "Presentación",
-      "icono": "⏳",
-      "video": "assets/videos/presentacion.mp4",
-      "intro": "Bienvenido a Kronos. Aquí encuentras, resumido y en distintos formatos, lo que normalmente te toma días de lectura: para el pase de visita, la sesión clínica, tu examen profesional y el ENARM.",
-      "poster": "assets/img/posters/presentacion.jpg"
+      "id": "p1",
+      "titulo": "¿Por qué se luxa una cadera?",
+      "minutos": 8,
+      "audio": ""
     },
     {
-      "id": "resumenes",
-      "titulo": "Resúmenes",
-      "icono": "📄",
-      "video": "assets/videos/resumenes.mp4",
-      "intro": "Resúmenes muy cortos para comprender, reforzar y recordar el tema. La profundidad está en los diagramas de flujo y en las clases grabadas.",
-      "poster": "assets/img/posters/resumenes.jpg"
+      "id": "p2",
+      "titulo": "El bebé de alto riesgo",
+      "minutos": 5,
+      "audio": ""
     },
     {
-      "id": "diagramas",
-      "titulo": "Diagramas de flujo e infografías",
-      "icono": "🧭",
-      "video": "assets/videos/diagramas.mp4",
-      "intro": "El sistema de diagramas de flujo más grande de la medicina. Te recomendamos leer antes el resumen y repasar las flash cards para aprovecharlo al máximo.",
-      "poster": "assets/img/posters/diagramas.jpg"
+      "id": "p3",
+      "titulo": "BarlOUT y OrtolaIN sin confundirte",
+      "minutos": 10,
+      "audio": ""
     },
     {
-      "id": "flashcards",
-      "titulo": "Flash cards",
-      "icono": "🃏",
-      "video": "assets/videos/flashcards.mp4",
-      "intro": "Para un repaso rápido. Primero lee el resumen o escucha el podcast; después repasa las tarjetas poco a poco durante la semana. No hace falta volver a leer el tema, salvo que te queden dudas.",
-      "poster": "assets/img/posters/flashcards.jpg"
+      "id": "p4",
+      "titulo": "El niño que camina raro",
+      "minutos": 8,
+      "audio": ""
     },
     {
-      "id": "examenes",
-      "titulo": "Exámenes",
-      "icono": "⏱️",
-      "video": "assets/videos/examenes.mp4",
-      "intro": "¿Ya comprendiste el tema? Mide tu conocimiento. El examen muestra es gratis; el cronometrado te da 20 minutos y trabaja tu agilidad, retención y capacidad de resolución.",
-      "poster": "assets/img/posters/examenes.jpg"
+      "id": "p5",
+      "titulo": "Cómo leer la radiografía de cadera",
+      "minutos": 8,
+      "audio": ""
     },
     {
-      "id": "clases-grabadas",
-      "titulo": "Clases grabadas",
-      "icono": "🎥",
-      "video": "assets/videos/clases-grabadas.mp4",
-      "intro": "Clases de especialistas con la información a profundidad. Pausa, toma apuntes y repite hasta que te quede claro; después ve a las flash cards.",
-      "poster": "assets/img/posters/clases-grabadas.jpg"
+      "id": "p6",
+      "titulo": "Pavlik: cuándo sí y cuándo no",
+      "minutos": 8,
+      "audio": ""
     },
     {
-      "id": "clases-vivo",
-      "titulo": "Clases en vivo",
-      "icono": "🔴",
-      "video": "assets/videos/clases-vivo.mp4",
-      "intro": "Clases en vivo con médicos expertos en el tema. Puedes interactuar con ellos y resolver tus dudas: aprendizaje del siglo XXI, en varios lugares a la vez.",
-      "poster": "assets/img/posters/clases-vivo.jpg"
-    },
-    {
-      "id": "cirugias",
-      "titulo": "Cirugías",
-      "icono": "🩺",
-      "video": "assets/videos/cirugias.mp4",
-      "intro": "Cirugías en vivo y grabadas: aprende de los expertos directamente en el quirófano.",
-      "poster": "assets/img/posters/cirugias.jpg"
-    },
-    {
-      "id": "cursos",
-      "titulo": "Cursos y diplomados",
-      "icono": "🎓",
-      "video": "assets/videos/cursos.mp4",
-      "intro": "Todo para prepararte, desde tus parciales hasta el examen profesional y el ENARM. La competencia es real: una pregunta puede definir tu residencia.",
-      "poster": "assets/img/posters/cursos.jpg"
-    }
-  ],
-  "clasesEnVivo": [
-    {
-      "titulo": "Displasia de cadera: del tamizaje al tratamiento",
-      "ponente": "Ortopedista pediatra (por confirmar)",
-      "fecha": "Por definir",
-      "enlace": ""
-    }
-  ],
-  "cirugias": [
-    {
-      "titulo": "Reducción cerrada y yeso pelvipodálico",
-      "tipo": "Grabada",
-      "embed": ""
-    },
-    {
-      "titulo": "Reducción abierta de cadera",
-      "tipo": "Grabada",
-      "embed": ""
-    }
-  ],
-  "cursos": [
-    {
-      "titulo": "Curso ENARM: Traumatología y Ortopedia",
-      "descripcion": "Temas de alta frecuencia, casos clínicos y simuladores.",
-      "precio": "Por definir"
-    },
-    {
-      "titulo": "Diplomado en Ortopedia Pediátrica",
-      "descripcion": "Para médicos generales y residentes.",
-      "precio": "Por definir"
+      "id": "p7",
+      "titulo": "Del quirófano a la consulta",
+      "minutos": 8,
+      "audio": ""
     }
   ]
 }

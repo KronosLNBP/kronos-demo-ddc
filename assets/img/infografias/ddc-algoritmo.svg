@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1560" width="1200" height="1560" font-family="Inter, 'Segoe UI', Roboto, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9aa4c7"/>
+    </marker>
+    <style>
+      .bg{fill:#0b1020}
+      .box{fill:#141b33;stroke:#2a3563;stroke-width:1.5}
+      .dec{fill:#1c2547;stroke:#7c8cff;stroke-width:2}
+      .act{fill:#4fd1c5}
+      .end{fill:#141b33;stroke:#48bb78;stroke-width:2}
+      .warn{fill:#141b33;stroke:#f56565;stroke-width:2}
+      .t{font-size:18px;fill:#e8ecf8;text-anchor:middle}
+      .tb{font-size:18px;font-weight:700;fill:#e8ecf8;text-anchor:middle}
+      .td{font-size:18px;font-weight:700;fill:#0b1020;text-anchor:middle}
+      .s{font-size:15px;fill:#9aa4c7;text-anchor:middle}
+      .l{font-size:15px;font-weight:700;fill:#9aa4c7}
+      .e{stroke:#9aa4c7;stroke-width:2;fill:none;marker-end:url(#ar)}
+    </style>
+  </defs>
+  <rect class="bg" width="1200" height="1560"/>
+
+  <text x="600" y="58" text-anchor="middle" font-size="34" font-weight="800" fill="#e8ecf8">DDC: diagnóstico y tratamiento</text>
+  <text x="600" y="92" text-anchor="middle" font-size="17" fill="#9aa4c7">Diagrama de flujo · KronosMedicine</text>
+
+  <!-- Tamizaje -->
+  <rect x="380" y="120" width="440" height="78" rx="14" class="box"/>
+  <text x="600" y="153" class="tb">Exploración de caderas</text>
+  <text x="600" y="179" class="s">1.ª semana · 1, 2, 4, 6, 9 y 12 meses</text>
+  <path d="M600,198 V236" class="e"/>
+
+  <!-- Decisión 1 -->
+  <polygon points="600,240 800,310 600,380 400,310" class="dec"/>
+  <text x="600" y="304" class="tb">¿Exploración anormal</text>
+  <text x="600" y="328" class="tb">o factores de riesgo?</text>
+  <path d="M400,310 H220 V420" class="e"/><text x="300" y="300" class="l">No</text>
+  <rect x="70" y="424" width="300" height="78" rx="14" class="end"/>
+  <text x="220" y="457" class="tb">Continuar tamizaje</text>
+  <text x="220" y="482" class="s">en cada consulta</text>
+  <path d="M600,380 V420" class="e"/><text x="612" y="406" class="l">Sí</text>
+
+  <!-- Referir -->
+  <rect x="420" y="424" width="360" height="62" rx="14" class="act"/>
+  <text x="600" y="462" class="td">Referir a segundo nivel</text>
+  <path d="M600,486 V524" class="e"/>
+
+  <!-- Decisión edad imagen -->
+  <polygon points="600,528 740,588 600,648 460,588" class="dec"/>
+  <text x="600" y="594" class="tb">¿Edad?</text>
+  <path d="M460,588 H330 V680" class="e"/><text x="350" y="578" class="l">&lt; 4 meses</text>
+  <path d="M740,588 H870 V680" class="e"/><text x="770" y="578" class="l">≥ 4 meses</text>
+  <rect x="190" y="684" width="280" height="62" rx="14" class="box"/><text x="330" y="722" class="tb">Ultrasonido de cadera</text>
+  <rect x="720" y="684" width="300" height="62" rx="14" class="box"/><text x="870" y="712" class="tb">Rx AP de pelvis</text><text x="870" y="734" class="s">± proyección de Von Rosen</text>
+  <path d="M330,746 V790 H600 V812" class="e"/>
+  <path d="M870,746 V790 H600" stroke="#9aa4c7" stroke-width="2" fill="none"/>
+
+  <!-- Confirmada -->
+  <polygon points="600,816 760,876 600,936 440,876" class="dec"/>
+  <text x="600" y="882" class="tb">¿DDC confirmada?</text>
+  <path d="M760,876 H990 V900" class="e"/><text x="800" y="866" class="l">No</text>
+  <rect x="860" y="904" width="260" height="62" rx="14" class="end"/><text x="990" y="942" class="tb">Vigilancia clínica</text>
+  <path d="M600,936 V976" class="e"/><text x="612" y="962" class="l">Sí</text>
+
+  <!-- Tratamiento por edad -->
+  <rect x="380" y="980" width="440" height="56" rx="14" class="box"/><text x="600" y="1015" class="tb">Tratamiento según la edad</text>
+  <path d="M600,1036 V1060 H200 V1090" class="e"/>
+  <path d="M600,1060 V1090" class="e"/>
+  <path d="M600,1060 H1000 V1090" class="e"/>
+
+  <rect x="60" y="1094" width="280" height="96" rx="14" class="act"/>
+  <text x="200" y="1128" class="td">&lt; 6 meses</text><text x="200" y="1158" class="td">Arnés de Pavlik</text>
+  <rect x="460" y="1094" width="280" height="96" rx="14" fill="#7c8cff"/>
+  <text x="600" y="1128" class="td">6 a 18 meses</text><text x="600" y="1158" class="td">Reducción cerrada</text>
+  <rect x="860" y="1094" width="280" height="96" rx="14" fill="#f6ad55"/>
+  <text x="1000" y="1122" class="td">&gt; 18 meses</text><text x="1000" y="1150" class="td">Reducción abierta</text><text x="1000" y="1176" font-size="15" fill="#0b1020" text-anchor="middle">± osteotomías</text>
+
+  <!-- Pavlik check -->
+  <path d="M200,1190 V1236" class="e"/>
+  <polygon points="200,1240 330,1300 200,1360 70,1300" class="dec"/>
+  <text x="200" y="1294" class="tb">¿Reducida a las</text><text x="200" y="1318" class="tb">3–4 semanas?</text>
+  <path d="M200,1360 V1400" class="e"/><text x="212" y="1388" class="l">Sí</text>
+  <rect x="60" y="1404" width="280" height="78" rx="14" class="end"/><text x="200" y="1437" class="tb">Continuar y vigilar</text><text x="200" y="1462" class="s">con ultrasonido</text>
+  <path d="M330,1300 H460 V1190" class="e"/><text x="350" y="1290" class="l">No: suspender</text>
+
+  <!-- Cerrada check -->
+  <path d="M600,1190 V1210" class="e"/>
+  <rect x="460" y="1214" width="280" height="56" rx="14" class="box"/><text x="600" y="1239" class="s">Tenotomía · artrografía</text><text x="600" y="1260" class="s">yeso pelvipodálico 6–12 sem</text>
+  <path d="M600,1270 V1300" class="e"/>
+  <polygon points="600,1304 720,1354 600,1404 480,1354" class="dec"/>
+  <text x="600" y="1360" class="tb">¿Estable?</text>
+  <path d="M720,1354 H1000 V1194" class="e"/><text x="760" y="1344" class="l">No</text>
+  <path d="M600,1404 V1430" class="e"/><text x="612" y="1422" class="l">Sí</text>
+  <rect x="460" y="1434" width="280" height="56" rx="14" class="end"/><text x="600" y="1469" class="tb">Aparato abductor</text>
+
+  <rect x="800" y="1404" width="340" height="96" rx="14" class="warn"/>
+  <text x="970" y="1438" class="tb">Seguimiento hasta la madurez</text>
+  <text x="970" y="1464" class="s">Displasia residual o necrosis</text>
+  <text x="970" y="1486" class="s">avascular → tercer nivel</text>
+</svg>

@@ -16,22 +16,36 @@ Abre http://localhost:8000. Tiene que ser con un servidor local, porque si abres
 
 El código del examen demo es `KRONOS-DEMO`.
 
-## Las 9 secciones
+## Páginas
 
-La lección tiene un menú hamburguesa con 9 secciones, y cada una abre con un video corto de la Dra. Torres que la explica:
+- **`index.html`: landing de la plataforma.** Presenta Kronos con el video "Modelo de estudio", las 8 secciones de la plataforma (cada una abre el video de la Dra. Torres que la explica) y el catálogo de cursos.
+- **`curso.html?id=ddc`: página de un curso.** Tiene menú hamburguesa con 7 secciones:
+  1. Inicio
+  2. Ruta de estudio de 4 h
+  3. Podcast
+  4. Resúmenes
+  5. Infografía y diagrama de flujo
+  6. Flash cards
+  7. Exámenes
 
-1. Presentación · 2. Resúmenes · 3. Diagramas de flujo e infografías · 4. Flash cards · 5. Exámenes · 6. Clases grabadas · 7. Clases en vivo · 8. Cirugías · 9. Cursos y diplomados
+  Cada sección tiene su enlace directo, por ejemplo `#flashcards/Clínica` o `#clases/m5`.
 
-Cada sección se abre con su enlace directo, por ejemplo `#flashcards` o `#examenes`. Se configuran en `secciones` dentro de `content/ddc.json`; el video explicativo va en el campo `video` (un archivo `assets/videos/<nombre>.mp4` o una URL de YouTube o Vimeo).
+La ruta de estudio suma 240 min en 8 módulos que mezclan video (96 min), podcast (55), lectura (29), flash cards (22), examen (20) e infografía (18). El alumno marca cada actividad y su avance se guarda en el navegador.
+
+Los guiones de las clases y del podcast están en `docs/guiones-curso-ddc.md`.
+
+Para agregar un curso nuevo, crea `content/<id>.json` con la misma estructura que `ddc.json` y agrégalo al catálogo en `content/plataforma.json`.
 
 ## Estructura y quién es dueño de qué
 
 | Carpeta / archivo | Qué contiene | Área responsable |
 | --- | --- | --- |
-| `content/ddc.json` | Resumen, flash cards, preguntas, lista de videos e infografías | Creador de producto |
-| `assets/img/infografias/` | Infografías exportadas en `.webp` o `.svg` | Diseño |
+| `content/ddc.json` | Curso: módulos, resúmenes, flash cards, preguntas, podcast | Creador de producto |
+| `content/plataforma.json` | Secciones de la landing y catálogo de cursos | Creador de producto |
+| `docs/guiones-curso-ddc.md` | Guiones de clases y podcast | Videos + Creador de producto |
+| `assets/img/infografias/` | Infografía y diagrama de flujo en SVG | Diseño |
 | `assets/css/styles.css` | Colores, tipografía y componentes visuales | Diseño |
-| `index.html`, `assets/js/app.js` | Estructura de la página y lógica (pestañas, flash cards, examen) | Programación |
+| `index.html`, `curso.html`, `assets/js/` | Landing, página de curso y su lógica | Programación |
 | Campo `embed` de `videos` en el JSON | URL de inserción de YouTube o Vimeo (no listado) | Videos |
 | `.github/workflows/deploy.yml`, `.htaccess` | Publicación en el hosting Apache | Programación |
 
@@ -58,6 +72,6 @@ Más adelante, para publicar en el hosting Apache de kronosmedicine.com.mx, est�
 
 ## Contenido
 
-El contenido actual de `content/ddc.json` es **de ejemplo** y solo sirve para probar los componentes. El Creador de producto lo reemplaza con la versión validada, escrita con redacción propia a partir de la GPC. No se copia texto ni imágenes de material de terceros.
+El contenido de `content/ddc.json` está redactado con palabras propias a partir de los temas del PDF de referencia. Antes de considerarlo final, el Creador de producto lo valida contra la GPC vigente. No se copia texto ni imágenes de material de terceros.
 
 Para agregar otra lección, crea `content/<id>.json` con la misma estructura y ábrela con `index.html?leccion=<id>`.
