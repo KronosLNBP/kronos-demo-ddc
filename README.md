@@ -34,18 +34,19 @@ Los videos **no se suben al repositorio**. Se suben como "no listados" a YouTube
 1. Cada área trabaja en su propia rama: `diseno`, `programacion`, `videos` o `contenido`.
 2. Al terminar algo, abre un Pull Request hacia `main`.
 3. El responsable de esa área lo revisa y lo aprueba. Si toca contenido médico, también lo revisa el Creador de producto.
-4. Todo lo que entra a `main` se publica solo en el hosting (ver la sección siguiente).
+4. Todo lo que entra a `main` se publica solo en GitHub Pages (ver la sección siguiente).
 
 ## Publicación
 
-Cada push a `main` ejecuta el workflow **Publicar demo**, que valida el JSON y sube los archivos por FTP al hosting Apache. Para activarlo, en GitHub entra a **Settings → Secrets and variables → Actions** y agrega:
+El demo se publica con **GitHub Pages** desde la rama `main`, carpeta raíz. Cada cambio que entra a `main` aparece en un par de minutos en:
 
-- `FTP_SERVER`
-- `FTP_USERNAME`
-- `FTP_PASSWORD`
-- `FTP_DIR`: carpeta destino, por ejemplo `/public_html/demo/`
+**https://kronoslnbp.github.io/kronos-demo-ddc/**
 
-Con eso el demo queda en `https://kronosmedicine.com.mx/demo/`.
+Configuración (una sola vez): **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `(root)` → Save**.
+
+El archivo `.nojekyll` evita que GitHub procese el sitio con Jekyll; se publica tal cual.
+
+Más adelante, para publicar en el hosting Apache de kronosmedicine.com.mx, está listo el workflow `.github/workflows/deploy.yml` (FTP). Solo se activa si se agregan los secretos `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD` y `FTP_DIR`; mientras no existan, no hace nada.
 
 ## Contenido
 
