@@ -1,0 +1,66 @@
+{
+  "_nota": "CONTENIDO DE EJEMPLO para probar los componentes. El Creador de producto debe reemplazarlo con la versión validada (redacción propia + GPC). No copiar texto ni imágenes de terceros.",
+  "id": "ddc",
+  "titulo": "Displasia del desarrollo de la cadera",
+  "especialidad": "Traumatología y Ortopedia",
+  "palabrasClave": ["Niñas", "Primigesta", "Pélvico", "BarlOUT / OrtolaIN", "USG < 4 meses", "Pavlik"],
+
+  "resumen": [
+    {
+      "id": "definicion",
+      "titulo": "Definición y clasificación",
+      "texto": "Conjunto de alteraciones de la articulación coxofemoral en desarrollo: acetábulo displásico y cabeza femoral mal posicionada, desde la subluxación hasta la luxación. Se clasifica en cadera luxada, luxable y subluxable."
+    },
+    {
+      "id": "clinica",
+      "titulo": "Clínica por edad",
+      "texto": "Menores de 3 meses: Barlow (luxa) y Ortolani (reduce). Mayores de 6 meses: asimetría de pliegues, limitación de la abducción, Galeazzi y pistón. Al caminar: marcha de Trendelenburg."
+    }
+  ],
+
+  "infografias": [
+    { "id": "clinica-edad", "titulo": "Clínica por edad", "imagen": "assets/img/infografias/clinica-edad.webp", "alt": "Infografía de signos clínicos por grupo de edad" }
+  ],
+
+  "videos": [
+    { "id": "intro", "titulo": "Introducción — Dra. Torres", "duracion": "1:00", "embed": "" },
+    { "id": "clase", "titulo": "Clase grabada", "duracion": "10:00", "embed": "" },
+    { "id": "maniobras", "titulo": "Maniobras de Barlow y Ortolani", "duracion": "1:30", "embed": "" }
+  ],
+
+  "flashcards": [
+    { "frente": "¿Qué maniobra luxa una cadera inestable?", "reverso": "Barlow: aducción con presión posterior sobre la rodilla. Mnemotecnia: BarlOUT." },
+    { "frente": "¿Qué maniobra reduce una cadera luxada?", "reverso": "Ortolani: abducción con presión sobre el trocánter mayor. Mnemotecnia: OrtolaIN." },
+    { "frente": "¿Hasta qué edad son confiables Barlow y Ortolani?", "reverso": "Hasta los 3 meses; después pueden dar falsos negativos." },
+    { "frente": "¿Qué estudio de imagen se usa antes de los 4 meses?", "reverso": "Ultrasonido de cadera, porque la cabeza femoral aún no está osificada." },
+    { "frente": "Tratamiento de primera elección en menores de 6 meses", "reverso": "Arnés de Pavlik." }
+  ],
+
+  "examen": {
+    "minutos": 20,
+    "codigoDemo": "KRONOS-DEMO",
+    "preguntas": [
+      {
+        "caso": "Recién nacida de 10 días, producto de primera gesta con presentación pélvica. En la exploración, la maniobra de Ortolani es positiva en la cadera izquierda.",
+        "pregunta": "¿Cuál es la conducta más adecuada?",
+        "opciones": ["Radiografía AP de pelvis", "Ultrasonido de cadera y envío a ortopedia", "Observación hasta los 6 meses", "Yeso pelvipodálico"],
+        "correcta": 1,
+        "explicacion": "Antes de los 4 meses el estudio indicado es el ultrasonido; toda sospecha de displasia se refiere a segundo nivel."
+      },
+      {
+        "caso": "Lactante de 4 meses con displasia unilateral confirmada por ultrasonido, sin otras malformaciones.",
+        "pregunta": "¿Cuál es el tratamiento de elección?",
+        "opciones": ["Reducción abierta", "Arnés de Pavlik", "Doble pañal", "Osteotomía acetabular"],
+        "correcta": 1,
+        "explicacion": "En menores de 6 meses el manejo conservador de primera elección es el arnés de Pavlik."
+      },
+      {
+        "caso": "Niño de 2 años con marcha claudicante; se diagnostica luxación de cadera por primera vez.",
+        "pregunta": "¿Qué tratamiento corresponde?",
+        "opciones": ["Arnés de Pavlik", "Cojín de Frejka", "Reducción abierta", "Fisioterapia"],
+        "correcta": 2,
+        "explicacion": "Con diagnóstico tardío, después de los 18 meses, el tratamiento de elección es la reducción abierta."
+      }
+    ]
+  }
+}

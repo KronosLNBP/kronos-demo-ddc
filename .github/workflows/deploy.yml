@@ -1,0 +1,50 @@
+# Publica el demo en el hosting Apache de kronosmedicine.com.mx por FTP
+# cada vez que se sube un cambio a la rama main.
+#
+# Configurar una vez en GitHub → Settings → Secrets and variables → Actions:
+#   FTP_SERVER     servidor FTP del hosting (ej. ftp.kronosmedicine.com.mx)
+#   FTP_USERNAME   usuario FTP
+#   FTP_PASSWORD   contraseña FTP
+#   FTP_DIR        carpeta destino, con / al final (ej. /public_html/demo/)
+# Mientras no existan, el workflow se salta la publicación sin fallar.
+
+name: Publicar demo
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validar JSON de contenido
+        run: for f in content/*.json; do python3 -m json.tool "$f" > /dev/null || exit 1; done
+
+      - name: Aviso si falta configurar FTP
+        if: env.FTP_SERVER == ''
+        run: echo "::notice::Faltan los secretos FTP; no se publicó. Ver instrucciones en deploy.yml."
+
+      - name: Subir por FTP
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_DIR }}
+          protocol: ftps
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            README.md

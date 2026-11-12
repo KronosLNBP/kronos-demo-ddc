@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+*.mp4
+*.mov
+*.psd
+*.ai
+*.fig
+node_modules/
+.vscode/

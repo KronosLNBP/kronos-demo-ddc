@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección demo | KronosMedicine</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://kronosmedicine.com.mx/">Kronos<span>Medicine</span></a>
+    <span class="tag" id="especialidad"></span>
+  </header>
+
+  <main class="lesson">
+    <section class="hero">
+      <h1 id="titulo">Cargando lección…</h1>
+      <ul class="keywords" id="palabras"></ul>
+    </section>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="resumen">Resumen</button>
+      <button class="tab" data-tab="infografias">Infografías</button>
+      <button class="tab" data-tab="videos">Videos</button>
+      <button class="tab" data-tab="flashcards">Flash cards</button>
+      <button class="tab" data-tab="examen">Examen</button>
+    </nav>
+
+    <section class="panel active" id="resumen"></section>
+    <section class="panel" id="infografias"></section>
+    <section class="panel" id="videos"></section>
+
+    <section class="panel" id="flashcards">
+      <div class="card-wrap">
+        <div class="flashcard" id="card" tabindex="0" aria-live="polite">
+          <div class="face front" id="cardFront"></div>
+          <div class="face back" id="cardBack"></div>
+        </div>
+      </div>
+      <p class="hint">Toca la tarjeta para voltearla</p>
+      <div class="card-actions">
+        <button class="btn ghost" id="repasar">Repasar</button>
+        <span id="progreso"></span>
+        <button class="btn" id="lase">La sé</button>
+      </div>
+    </section>
+
+    <section class="panel" id="examen">
+      <div id="examGate" class="gate">
+        <p>Examen cronometrado: <strong id="examInfo"></strong></p>
+        <input id="codigo" placeholder="Código de acceso" autocomplete="off">
+        <button class="btn" id="empezar">Empezar</button>
+        <p class="error" id="codigoError"></p>
+      </div>
+      <div id="examBody" hidden>
+        <div class="timer" id="timer">20:00</div>
+        <form id="examForm"></form>
+        <button class="btn" id="terminar">Terminar examen</button>
+      </div>
+      <div id="examResult" hidden></div>
+    </section>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
