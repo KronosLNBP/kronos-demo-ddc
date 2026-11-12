@@ -16,6 +16,14 @@ Abre http://localhost:8000. Tiene que ser con un servidor local, porque si abres
 
 El código del examen demo es `KRONOS-DEMO`.
 
+## Las 9 secciones
+
+La lección tiene un menú hamburguesa con 9 secciones, y cada una abre con un video corto de la Dra. Torres que la explica:
+
+1. Presentación · 2. Resúmenes · 3. Diagramas de flujo e infografías · 4. Flash cards · 5. Exámenes · 6. Clases grabadas · 7. Clases en vivo · 8. Cirugías · 9. Cursos y diplomados
+
+Cada sección se abre con su enlace directo, por ejemplo `#flashcards` o `#examenes`. Se configuran en `secciones` dentro de `content/ddc.json`; el video explicativo va en el campo `video` (un archivo `assets/videos/<nombre>.mp4` o una URL de YouTube o Vimeo).
+
 ## Estructura y quién es dueño de qué
 
 | Carpeta / archivo | Qué contiene | Área responsable |

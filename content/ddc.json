@@ -3,8 +3,14 @@
   "id": "ddc",
   "titulo": "Displasia del desarrollo de la cadera",
   "especialidad": "Traumatología y Ortopedia",
-  "palabrasClave": ["Niñas", "Primigesta", "Pélvico", "BarlOUT / OrtolaIN", "USG < 4 meses", "Pavlik"],
-
+  "palabrasClave": [
+    "Niñas",
+    "Primigesta",
+    "Pélvico",
+    "BarlOUT / OrtolaIN",
+    "USG < 4 meses",
+    "Pavlik"
+  ],
   "resumen": [
     {
       "id": "definicion",
@@ -17,25 +23,56 @@
       "texto": "Menores de 3 meses: Barlow (luxa) y Ortolani (reduce). Mayores de 6 meses: asimetría de pliegues, limitación de la abducción, Galeazzi y pistón. Al caminar: marcha de Trendelenburg."
     }
   ],
-
   "infografias": [
-    { "id": "clinica-edad", "titulo": "Clínica por edad", "imagen": "assets/img/infografias/clinica-edad.webp", "alt": "Infografía de signos clínicos por grupo de edad" }
+    {
+      "id": "clinica-edad",
+      "titulo": "Clínica por edad",
+      "imagen": "assets/img/infografias/clinica-edad.webp",
+      "alt": "Infografía de signos clínicos por grupo de edad"
+    }
   ],
-
   "videos": [
-    { "id": "intro", "titulo": "Introducción — Dra. Torres", "duracion": "1:00", "embed": "" },
-    { "id": "clase", "titulo": "Clase grabada", "duracion": "10:00", "embed": "" },
-    { "id": "maniobras", "titulo": "Maniobras de Barlow y Ortolani", "duracion": "1:30", "embed": "" }
+    {
+      "id": "intro",
+      "titulo": "Introducción — Dra. Torres",
+      "duracion": "1:00",
+      "embed": ""
+    },
+    {
+      "id": "clase",
+      "titulo": "Clase grabada",
+      "duracion": "10:00",
+      "embed": ""
+    },
+    {
+      "id": "maniobras",
+      "titulo": "Maniobras de Barlow y Ortolani",
+      "duracion": "1:30",
+      "embed": ""
+    }
   ],
-
   "flashcards": [
-    { "frente": "¿Qué maniobra luxa una cadera inestable?", "reverso": "Barlow: aducción con presión posterior sobre la rodilla. Mnemotecnia: BarlOUT." },
-    { "frente": "¿Qué maniobra reduce una cadera luxada?", "reverso": "Ortolani: abducción con presión sobre el trocánter mayor. Mnemotecnia: OrtolaIN." },
-    { "frente": "¿Hasta qué edad son confiables Barlow y Ortolani?", "reverso": "Hasta los 3 meses; después pueden dar falsos negativos." },
-    { "frente": "¿Qué estudio de imagen se usa antes de los 4 meses?", "reverso": "Ultrasonido de cadera, porque la cabeza femoral aún no está osificada." },
-    { "frente": "Tratamiento de primera elección en menores de 6 meses", "reverso": "Arnés de Pavlik." }
+    {
+      "frente": "¿Qué maniobra luxa una cadera inestable?",
+      "reverso": "Barlow: aducción con presión posterior sobre la rodilla. Mnemotecnia: BarlOUT."
+    },
+    {
+      "frente": "¿Qué maniobra reduce una cadera luxada?",
+      "reverso": "Ortolani: abducción con presión sobre el trocánter mayor. Mnemotecnia: OrtolaIN."
+    },
+    {
+      "frente": "¿Hasta qué edad son confiables Barlow y Ortolani?",
+      "reverso": "Hasta los 3 meses; después pueden dar falsos negativos."
+    },
+    {
+      "frente": "¿Qué estudio de imagen se usa antes de los 4 meses?",
+      "reverso": "Ultrasonido de cadera, porque la cabeza femoral aún no está osificada."
+    },
+    {
+      "frente": "Tratamiento de primera elección en menores de 6 meses",
+      "reverso": "Arnés de Pavlik."
+    }
   ],
-
   "examen": {
     "minutos": 20,
     "codigoDemo": "KRONOS-DEMO",
@@ -43,24 +80,140 @@
       {
         "caso": "Recién nacida de 10 días, producto de primera gesta con presentación pélvica. En la exploración, la maniobra de Ortolani es positiva en la cadera izquierda.",
         "pregunta": "¿Cuál es la conducta más adecuada?",
-        "opciones": ["Radiografía AP de pelvis", "Ultrasonido de cadera y envío a ortopedia", "Observación hasta los 6 meses", "Yeso pelvipodálico"],
+        "opciones": [
+          "Radiografía AP de pelvis",
+          "Ultrasonido de cadera y envío a ortopedia",
+          "Observación hasta los 6 meses",
+          "Yeso pelvipodálico"
+        ],
         "correcta": 1,
         "explicacion": "Antes de los 4 meses el estudio indicado es el ultrasonido; toda sospecha de displasia se refiere a segundo nivel."
       },
       {
         "caso": "Lactante de 4 meses con displasia unilateral confirmada por ultrasonido, sin otras malformaciones.",
         "pregunta": "¿Cuál es el tratamiento de elección?",
-        "opciones": ["Reducción abierta", "Arnés de Pavlik", "Doble pañal", "Osteotomía acetabular"],
+        "opciones": [
+          "Reducción abierta",
+          "Arnés de Pavlik",
+          "Doble pañal",
+          "Osteotomía acetabular"
+        ],
         "correcta": 1,
         "explicacion": "En menores de 6 meses el manejo conservador de primera elección es el arnés de Pavlik."
       },
       {
         "caso": "Niño de 2 años con marcha claudicante; se diagnostica luxación de cadera por primera vez.",
         "pregunta": "¿Qué tratamiento corresponde?",
-        "opciones": ["Arnés de Pavlik", "Cojín de Frejka", "Reducción abierta", "Fisioterapia"],
+        "opciones": [
+          "Arnés de Pavlik",
+          "Cojín de Frejka",
+          "Reducción abierta",
+          "Fisioterapia"
+        ],
         "correcta": 2,
         "explicacion": "Con diagnóstico tardío, después de los 18 meses, el tratamiento de elección es la reducción abierta."
       }
+    ],
+    "muestra": [
+      0,
+      1
     ]
-  }
+  },
+  "secciones": [
+    {
+      "id": "presentacion",
+      "titulo": "Presentación",
+      "icono": "⏳",
+      "video": "",
+      "intro": "Bienvenido a Kronos. Aquí encuentras, resumido y en distintos formatos, lo que normalmente te toma días de lectura: para el pase de visita, la sesión clínica, tu examen profesional y el ENARM."
+    },
+    {
+      "id": "resumenes",
+      "titulo": "Resúmenes",
+      "icono": "📄",
+      "video": "",
+      "intro": "Resúmenes muy cortos para comprender, reforzar y recordar el tema. La profundidad está en los diagramas de flujo y en las clases grabadas."
+    },
+    {
+      "id": "diagramas",
+      "titulo": "Diagramas de flujo e infografías",
+      "icono": "🧭",
+      "video": "",
+      "intro": "El sistema de diagramas de flujo más grande de la medicina. Te recomendamos leer antes el resumen y repasar las flash cards para aprovecharlo al máximo."
+    },
+    {
+      "id": "flashcards",
+      "titulo": "Flash cards",
+      "icono": "🃏",
+      "video": "",
+      "intro": "Para un repaso rápido. Primero lee el resumen o escucha el podcast; después repasa las tarjetas poco a poco durante la semana. No hace falta volver a leer el tema, salvo que te queden dudas."
+    },
+    {
+      "id": "examenes",
+      "titulo": "Exámenes",
+      "icono": "⏱️",
+      "video": "",
+      "intro": "¿Ya comprendiste el tema? Mide tu conocimiento. El examen muestra es gratis; el cronometrado te da 20 minutos y trabaja tu agilidad, retención y capacidad de resolución."
+    },
+    {
+      "id": "clases-grabadas",
+      "titulo": "Clases grabadas",
+      "icono": "🎥",
+      "video": "",
+      "intro": "Clases de especialistas con la información a profundidad. Pausa, toma apuntes y repite hasta que te quede claro; después ve a las flash cards."
+    },
+    {
+      "id": "clases-vivo",
+      "titulo": "Clases en vivo",
+      "icono": "🔴",
+      "video": "",
+      "intro": "Clases en vivo con médicos expertos en el tema. Puedes interactuar con ellos y resolver tus dudas: aprendizaje del siglo XXI, en varios lugares a la vez."
+    },
+    {
+      "id": "cirugias",
+      "titulo": "Cirugías",
+      "icono": "🩺",
+      "video": "",
+      "intro": "Cirugías en vivo y grabadas: aprende de los expertos directamente en el quirófano."
+    },
+    {
+      "id": "cursos",
+      "titulo": "Cursos y diplomados",
+      "icono": "🎓",
+      "video": "",
+      "intro": "Todo para prepararte, desde tus parciales hasta el examen profesional y el ENARM. La competencia es real: una pregunta puede definir tu residencia."
+    }
+  ],
+  "clasesEnVivo": [
+    {
+      "titulo": "Displasia de cadera: del tamizaje al tratamiento",
+      "ponente": "Ortopedista pediatra (por confirmar)",
+      "fecha": "Por definir",
+      "enlace": ""
+    }
+  ],
+  "cirugias": [
+    {
+      "titulo": "Reducción cerrada y yeso pelvipodálico",
+      "tipo": "Grabada",
+      "embed": ""
+    },
+    {
+      "titulo": "Reducción abierta de cadera",
+      "tipo": "Grabada",
+      "embed": ""
+    }
+  ],
+  "cursos": [
+    {
+      "titulo": "Curso ENARM: Traumatología y Ortopedia",
+      "descripcion": "Temas de alta frecuencia, casos clínicos y simuladores.",
+      "precio": "Por definir"
+    },
+    {
+      "titulo": "Diplomado en Ortopedia Pediátrica",
+      "descripcion": "Para médicos generales y residentes.",
+      "precio": "Por definir"
+    }
+  ]
 }

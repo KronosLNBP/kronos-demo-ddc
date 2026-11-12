@@ -8,29 +8,39 @@
 </head>
 <body>
   <header class="topbar">
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-controls="drawer" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
     <a class="brand" href="https://kronosmedicine.com.mx/">Kronos<span>Medicine</span></a>
     <span class="tag" id="especialidad"></span>
   </header>
 
+  <div class="scrim" id="scrim" hidden></div>
+  <nav class="drawer" id="drawer" aria-label="Secciones de la lección">
+    <p class="drawer-title" id="drawerTitulo"></p>
+    <ol id="menu"></ol>
+  </nav>
+
   <main class="lesson">
-    <section class="hero">
-      <h1 id="titulo">Cargando lección…</h1>
-      <ul class="keywords" id="palabras"></ul>
+    <p class="crumb" id="titulo">Cargando lección…</p>
+
+    <section class="section-head">
+      <h1 id="seccionTitulo"></h1>
+      <div class="explainer">
+        <div class="explainer-video" id="seccionVideo"></div>
+        <p class="explainer-text"><strong>Dra. Torres:</strong> <span id="seccionIntro"></span></p>
+      </div>
     </section>
 
-    <nav class="tabs" role="tablist">
-      <button class="tab active" data-tab="resumen">Resumen</button>
-      <button class="tab" data-tab="infografias">Infografías</button>
-      <button class="tab" data-tab="videos">Videos</button>
-      <button class="tab" data-tab="flashcards">Flash cards</button>
-      <button class="tab" data-tab="examen">Examen</button>
-    </nav>
+    <section class="panel" data-panel="presentacion">
+      <ul class="keywords" id="palabras"></ul>
+      <div class="grid" id="mapa"></div>
+    </section>
 
-    <section class="panel active" id="resumen"></section>
-    <section class="panel" id="infografias"></section>
-    <section class="panel" id="videos"></section>
+    <section class="panel" data-panel="resumenes" id="resumen"></section>
+    <section class="panel" data-panel="diagramas" id="infografias"></section>
 
-    <section class="panel" id="flashcards">
+    <section class="panel" data-panel="flashcards">
       <div class="card-wrap">
         <div class="flashcard" id="card" tabindex="0" aria-live="polite">
           <div class="face front" id="cardFront"></div>
@@ -45,20 +55,41 @@
       </div>
     </section>
 
-    <section class="panel" id="examen">
-      <div id="examGate" class="gate">
-        <p>Examen cronometrado: <strong id="examInfo"></strong></p>
-        <input id="codigo" placeholder="Código de acceso" autocomplete="off">
-        <button class="btn" id="empezar">Empezar</button>
-        <p class="error" id="codigoError"></p>
+    <section class="panel" data-panel="examenes">
+      <div id="examGate" class="exam-options">
+        <div class="gate">
+          <h3>Examen muestra</h3>
+          <p>Gratis · <span id="muestraInfo"></span> · sin límite de tiempo</p>
+          <button class="btn ghost" id="empezarMuestra">Hacer examen muestra</button>
+        </div>
+        <div class="gate">
+          <h3>Examen cronometrado</h3>
+          <p id="examInfo"></p>
+          <input id="codigo" placeholder="Código de acceso" autocomplete="off">
+          <button class="btn" id="empezar">Empezar</button>
+          <p class="error" id="codigoError"></p>
+        </div>
       </div>
       <div id="examBody" hidden>
-        <div class="timer" id="timer">20:00</div>
+        <div class="timer" id="timer"></div>
+        <div id="examResult" hidden></div>
         <form id="examForm"></form>
-        <button class="btn" id="terminar">Terminar examen</button>
+        <div class="exam-end">
+          <button class="btn" id="terminar">Terminar examen</button>
+          <button class="btn ghost" id="otraVez" hidden>Volver a exámenes</button>
+        </div>
       </div>
-      <div id="examResult" hidden></div>
     </section>
+
+    <section class="panel" data-panel="clases-grabadas" id="clasesGrabadas"></section>
+    <section class="panel" data-panel="clases-vivo" id="clasesVivo"></section>
+    <section class="panel" data-panel="cirugias" id="cirugias"></section>
+    <section class="panel" data-panel="cursos" id="cursos"></section>
+
+    <nav class="pager">
+      <button class="btn ghost" id="anterior">← Anterior</button>
+      <button class="btn" id="siguiente">Siguiente →</button>
+    </nav>
   </main>
 
   <script src="assets/js/app.js"></script>
