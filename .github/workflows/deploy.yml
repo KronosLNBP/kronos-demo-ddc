@@ -6,6 +6,7 @@
 #   FTP_USERNAME   usuario FTP
 #   FTP_PASSWORD   contraseña FTP
 #   FTP_DIR        carpeta destino, con / al final (ej. /public_html/demo/)
+#   FTP_PROTOCOL   (opcional) ftps o ftp. Por defecto ftps; usa ftp solo si tu hosting no acepta TLS.
 # Mientras no existan, el workflow se salta la publicación sin fallar.
 
 name: Publicar demo
@@ -30,6 +31,13 @@ jobs:
       - name: Validar JSON de contenido
         run: for f in content/*.json; do python3 -m json.tool "$f" > /dev/null || exit 1; done
 
+      - name: Validar sintaxis PHP
+        run: for f in php/*.php; do php -l "$f" || exit 1; done
+
+      - name: Verificar que no se suban contraseñas
+        run: |
+          if [ -f php/config.php ]; then echo "::error::php/config.php no debe estar en el repositorio"; exit 1; fi
+
       - name: Aviso si falta configurar FTP
         if: env.FTP_SERVER == ''
         run: echo "::notice::Faltan los secretos FTP; no se publicó. Ver instrucciones en deploy.yml."
@@ -42,9 +50,13 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_DIR }}
-          protocol: ftps
+          protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
           exclude: |
             **/.git*
             **/.git*/**
             .github/**
-            README.md
+            docs/**
+            functions/**
+            firestore.rules
+            **/README.md
+            php/config.example.php
