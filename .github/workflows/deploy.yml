@@ -6,7 +6,8 @@
 #   FTP_USERNAME   usuario FTP
 #   FTP_PASSWORD   contraseña FTP
 #   FTP_DIR        carpeta destino, con / al final (ej. /public_html/demo/)
-#   FTP_PROTOCOL   (opcional) ftps o ftp. Por defecto ftps; usa ftp solo si tu hosting no acepta TLS.
+#   FTP_PROTOCOL   (opcional) ftps, ftp o ftps-legacy. Por defecto ftps.
+#   FTP_PORT       (opcional) puerto. Por defecto 21 (usa 990 con ftps-legacy).
 # Mientras no existan, el workflow se salta la publicación sin fallar.
 
 name: Publicar demo
@@ -51,6 +52,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_DIR }}
           protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          timeout: 120000
+          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
