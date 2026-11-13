@@ -147,5 +147,79 @@
       "disponible": true,
       "premium": true
     }
+  ],
+  "videos3d": [
+    {
+      "id": "consolidacion-fractura",
+      "titulo": "Consolidación de una fractura",
+      "especialidad": "Ortopedia",
+      "curso": "ddc",
+      "video": "assets/videos/3d/3d-consolidacion-fractura.mp4",
+      "poster": "assets/img/posters/3d-consolidacion-fractura.jpg"
+    },
+    {
+      "id": "ciclo-cardiaco",
+      "titulo": "El ciclo cardiaco",
+      "especialidad": "Cardiología",
+      "curso": "cardiologia",
+      "video": "assets/videos/3d/3d-ciclo-cardiaco.mp4",
+      "poster": "assets/img/posters/3d-ciclo-cardiaco.jpg"
+    },
+    {
+      "id": "conduccion-cardiaca",
+      "titulo": "Sistema de conducción del corazón",
+      "especialidad": "Cardiología",
+      "curso": "cardiologia",
+      "video": "assets/videos/3d/3d-conduccion-cardiaca.mp4",
+      "poster": "assets/img/posters/3d-conduccion-cardiaca.jpg"
+    },
+    {
+      "id": "conduccion-cardiaca-2",
+      "titulo": "Del nodo sinusal al ventrículo",
+      "especialidad": "Cardiología",
+      "curso": "cardiologia",
+      "video": "assets/videos/3d/3d-conduccion-cardiaca-2.mp4",
+      "poster": "assets/img/posters/3d-conduccion-cardiaca-2.jpg"
+    },
+    {
+      "id": "ddc",
+      "titulo": "Displasia del desarrollo de cadera",
+      "especialidad": "Ortopedia pediátrica",
+      "curso": "ddc",
+      "video": "assets/videos/3d/3d-ddc.mp4",
+      "poster": "assets/img/posters/3d-ddc.jpg"
+    },
+    {
+      "id": "anafilaxia",
+      "titulo": "Anafilaxia",
+      "especialidad": "Alergología",
+      "curso": "alergologia",
+      "video": "assets/videos/3d/3d-anafilaxia.mp4",
+      "poster": "assets/img/posters/3d-anafilaxia.jpg"
+    },
+    {
+      "id": "iam",
+      "titulo": "Infarto agudo de miocardio",
+      "especialidad": "Cardiología",
+      "curso": "cardiologia",
+      "video": "assets/videos/3d/3d-iam.mp4",
+      "poster": "assets/img/posters/3d-iam.jpg"
+    },
+    {
+      "id": "colecistitis",
+      "titulo": "Colecistitis aguda",
+      "especialidad": "Cirugía",
+      "curso": "cirugia",
+      "video": "assets/videos/3d/3d-colecistitis.mp4",
+      "poster": "assets/img/posters/3d-colecistitis.jpg"
+    },
+    {
+      "id": "melanoma",
+      "titulo": "Melanoma",
+      "especialidad": "Dermatología",
+      "curso": "dermatologia",
+      "video": "assets/videos/3d/3d-melanoma.mp4",
+      "poster": "assets/img/posters/3d-melanoma.jpg"
+    }
   ]
 }

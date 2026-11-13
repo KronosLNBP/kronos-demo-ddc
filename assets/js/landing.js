@@ -29,6 +29,20 @@ function init(data) {
     if (b) abrirModal(data.secciones[Number(b.dataset.i)]);
   });
 
+  const v3d = data.videos3d || [];
+  $('v3d').innerHTML = v3d.map((v, i) => `
+    <button class="v3d" data-i="${i}" style="background-image:url('${esc(v.poster)}')" aria-label="Ver video: ${esc(v.titulo)}">
+      <span class="play">▶</span>
+      <span class="v3d-txt"><small>${esc(v.especialidad)}</small><strong>${esc(v.titulo)}</strong></span>
+    </button>`).join('');
+  $('v3d').addEventListener('click', (e) => {
+    const b = e.target.closest('.v3d');
+    if (!b) return;
+    const v = v3d[Number(b.dataset.i)];
+    abrirModal({ video: v.video, poster: v.poster, icono: v.especialidad, titulo: v.titulo,
+      texto: v.curso === 'ddc' ? 'Forma parte del curso demo gratuito.' : 'Forma parte del curso completo para miembros Premium.', curso: v.curso });
+  });
+
   $('catalogo').innerHTML = data.cursos.map((c) => c.disponible ? `
     <a class="course-card" href="curso.html?id=${esc(c.id)}">
       <span class="badge ${c.premium ? '' : 'ok'}">${c.premium ? 'Premium' : 'Demo gratis'}</span>
@@ -61,8 +75,15 @@ function abrirModal(s) {
   $('modalTitulo').textContent = s.titulo;
   $('modalTexto').textContent = s.texto;
   const destino = EN_CURSO[s.id];
-  $('modalCta').hidden = !destino;
-  if (destino) $('modalCta').href = `curso.html?id=ddc#${destino}`;
+  if (s.curso) {
+    $('modalCta').hidden = false;
+    $('modalCta').textContent = 'Ver el curso';
+    $('modalCta').href = `curso.html?id=${encodeURIComponent(s.curso)}`;
+  } else {
+    $('modalCta').textContent = 'Verlo en el curso demo';
+    $('modalCta').hidden = !destino;
+    if (destino) $('modalCta').href = `curso.html?id=ddc#${destino}`;
+  }
   $('modal').hidden = false;
   document.body.classList.add('no-scroll');
 }

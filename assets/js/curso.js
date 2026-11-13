@@ -120,7 +120,21 @@ function mostrarSeccion() {
 }
 
 /* ---------- Inicio ---------- */
+function renderVideos3d() {
+  fetch('content/plataforma.json').then((r) => r.json()).then((d) => {
+    const lista = (d.videos3d || []).filter((v) => v.curso === CURSO);
+    if (!lista.length) return;
+    $('v3dLista').innerHTML = lista.map((v) => `
+      <figure class="v3d-item">
+        <video src="${esc(v.video)}" poster="${esc(v.poster)}" controls preload="none" playsinline></video>
+        <figcaption><small>${esc(v.especialidad)}</small>${esc(v.titulo)}</figcaption>
+      </figure>`).join('');
+    $('v3dCurso').hidden = false;
+  }).catch(() => {});
+}
+
 function renderInicio() {
+  renderVideos3d();
   const acts = DATA.modulos.flatMap((m) => m.actividades);
   $('subtitulo').textContent = DATA.subtitulo;
   $('meta').innerHTML = [
