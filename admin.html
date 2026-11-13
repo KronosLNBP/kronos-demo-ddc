@@ -55,8 +55,10 @@
         requireUser(async (user) => {
             $('who').textContent = user.email;
             let esAdmin = false;
-            try { esAdmin = (await getDoc(doc(db, 'admins', user.uid))).exists(); } catch (e) { esAdmin = false; }
-            if (!esAdmin) { $('uid').textContent = user.uid; $('no-admin').classList.remove('hidden'); return; }
+            let motivo = '';
+            try { esAdmin = (await getDoc(doc(db, 'admins', user.uid))).exists(); if (!esAdmin) motivo = 'No existe el documento admins/' + user.uid + ' (revisa que el ID sea idéntico, letra por letra).'; }
+            catch (e) { esAdmin = false; motivo = e.code === 'permission-denied' ? 'Las reglas de Firestore no permiten leer la colección admins. Agrega el bloque de reglas de admins y publícalas.' : 'Error: ' + (e.code || e.message); }
+            if (!esAdmin) { $('uid').textContent = user.uid; $('no-admin').classList.remove('hidden'); $('no-admin').insertAdjacentHTML('beforeend', '<p class="mt-3 text-sm font-semibold text-red-300">Motivo: ' + esc(motivo) + '</p>'); return; }
             $('panel').classList.remove('hidden');
             catalogo = (await fetch('content/catalogo.json?' + Date.now()).then((r) => r.json())).cursos;
             $('nuevos').innerHTML = catalogo.map((c) => `
