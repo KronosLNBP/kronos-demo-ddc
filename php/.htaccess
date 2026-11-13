@@ -1,0 +1,4 @@
+# Impide que alguien descargue config.php o db.php desde el navegador
+<FilesMatch "^(config|config\.example|db)\.php$">
+  Require all denied
+</FilesMatch>

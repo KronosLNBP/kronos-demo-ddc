@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Premium | KronosMedicine</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans min-h-screen flex flex-col hidden" id="app-body">
+
+    <nav class="bg-slate-800 border-b border-slate-700 px-4 md:px-6 py-3 flex justify-between items-center shrink-0">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-2"><img src="assets/img/logo.png" alt="" class="h-9"><span class="text-xl font-bold text-white hidden sm:block">Kronos<span class="text-teal-300">Medicine</span></span></a>
+            <div class="h-6 w-px bg-slate-700 hidden sm:block mx-2"></div>
+            <a href="catalogo.html" class="text-slate-400 hover:text-white transition bg-slate-700/50 hover:bg-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">← Volver al catálogo</a>
+        </div>
+        <div class="flex items-center space-x-3">
+            <span id="nav-user-name" class="text-sm font-medium text-slate-300 hidden md:inline">Cargando...</span>
+            <button id="logout-btn" class="bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white px-3 py-1.5 rounded-lg text-sm font-semibold transition">Cerrar sesión</button>
+        </div>
+    </nav>
+
+    <main class="flex-1 bg-slate-950 p-6 flex flex-col items-center justify-center">
+        <div class="text-center max-w-2xl mb-12 mt-6">
+            <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Desbloquea tu potencial médico</h1>
+            <p class="text-slate-400 text-lg">Acceso ilimitado a todos los diplomados, rutas de estudio, exámenes cronometrados y visor anatómico 3D.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full">
+            <div class="bg-slate-800 border border-slate-700 rounded-3xl p-8 flex flex-col hover:border-slate-500 transition">
+                <h3 class="text-xl font-bold text-white mb-2">Suscripción mensual</h3>
+                <p class="text-slate-400 text-sm mb-6">Ideal para repasar antes de tus exámenes.</p>
+                <div class="mb-6"><span class="text-4xl font-extrabold text-white">$199</span> <span class="text-slate-500 font-medium">MXN al mes</span></div>
+                <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                    <li>✔ Todos los cursos y diplomados</li>
+                    <li>✔ Cápsulas, podcast, flash cards e infografías</li>
+                    <li>✔ Exámenes cronometrados con resultados por tema</li>
+                    <li>✔ Laboratorios 3D interactivos</li>
+                </ul>
+                <a id="pay-mensual" href="#" class="w-full bg-slate-700 hover:bg-blue-600 text-white py-3 rounded-xl font-bold transition text-center">Pagar suscripción mensual</a>
+            </div>
+
+            <div class="bg-gradient-to-b from-amber-500/10 to-slate-800 border-2 border-amber-500 rounded-3xl p-8 flex flex-col relative md:-translate-y-4 shadow-2xl shadow-amber-500/10">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider">Más popular</div>
+                <h3 class="text-xl font-bold text-amber-500 mb-2">Suscripción anual</h3>
+                <p class="text-slate-400 text-sm mb-6">Para internos, aspirantes al ENARM y residentes.</p>
+                <div class="mb-6"><span class="text-4xl font-extrabold text-white">$1,599</span> <span class="text-slate-500 font-medium">MXN al año</span></div>
+                <ul class="space-y-3 mb-8 flex-1 text-sm text-slate-300">
+                    <li><b class="text-white">✔ Todo lo del plan mensual</b></li>
+                    <li>✔ Ahorras 4 meses de suscripción</li>
+                    <li>✔ Emulador ENARM y examen tipo profesional</li>
+                </ul>
+                <a id="pay-anual" href="#" class="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 py-3 rounded-xl font-bold transition text-center">Pagar suscripción anual</a>
+            </div>
+        </div>
+        <p class="text-xs text-slate-500 mt-10 text-center max-w-xl">Pago seguro con Stripe. Tu cuenta se activa en cuanto Stripe confirma el pago.</p>
+    </main>
+
+    <script type="module">
+        import { db, requireUser, salir } from "./assets/js/firebase.js";
+        import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+        // Enlaces de pago de Stripe (modo de prueba). Cámbialos por los de producción al lanzar.
+        const STRIPE = {
+            mensual: 'https://buy.stripe.com/test_6oU8wI8yn9yAdUPe5W7AI01',
+            anual:   'https://buy.stripe.com/test_28E9AM3e3aCE5oj1ja7AI02'
+        };
+
+        requireUser(async (user) => {
+            try {
+                const snap = await getDoc(doc(db, 'users', user.uid));
+                document.getElementById('nav-user-name').textContent = (snap.exists() && snap.data().nombre) || user.email;
+            } catch (e) { document.getElementById('nav-user-name').textContent = user.email; }
+            // client_reference_id le dice al webhook de Stripe qué usuario pagó.
+            for (const plan of ['mensual', 'anual']) {
+                const url = new URL(STRIPE[plan]);
+                url.searchParams.set('client_reference_id', user.uid);
+                if (user.email) url.searchParams.set('prefilled_email', user.email);
+                document.getElementById(`pay-${plan}`).href = url.toString();
+            }
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', salir);
+    </script>
+</body>
+</html>

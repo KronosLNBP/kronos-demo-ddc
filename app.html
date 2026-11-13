@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi perfil | KronosMedicine</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans h-screen flex flex-col overflow-hidden hidden" id="app-body">
+
+    <nav class="bg-slate-800 border-b border-slate-700 px-4 md:px-6 py-3 flex justify-between items-center shrink-0">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-2"><img src="assets/img/logo.png" alt="" class="h-9"><span class="text-xl font-bold text-white hidden sm:block">Kronos<span class="text-teal-300">Medicine</span></span></a>
+            <div class="h-6 w-px bg-slate-700 hidden sm:block mx-2"></div>
+            <a href="catalogo.html" class="text-slate-400 hover:text-white transition bg-slate-700/50 hover:bg-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Explorar catálogo</a>
+        </div>
+        <div class="flex items-center space-x-3">
+            <span id="nav-user-name" class="text-sm font-medium text-slate-300 hidden md:inline">Cargando...</span>
+            <button id="logout-btn" class="bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white px-3 py-1.5 rounded-lg text-sm font-semibold transition">Cerrar sesión</button>
+        </div>
+    </nav>
+
+    <main class="flex-1 overflow-y-auto bg-slate-950 p-4 md:p-6">
+        <div class="max-w-6xl mx-auto space-y-10 pb-12">
+
+            <!-- Perfil -->
+            <section class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl">
+                <div class="flex items-center justify-between flex-wrap gap-4 mb-6 border-b border-slate-800 pb-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-xl overflow-hidden" id="profile-avatar">👤</div>
+                        <div>
+                            <h2 class="text-xl font-bold text-white">Mi perfil</h2>
+                            <p class="text-slate-400 text-xs" id="profile-email"></p>
+                        </div>
+                    </div>
+                    <div id="plan-box" class="text-sm"></div>
+                </div>
+                <form id="profile-form" class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-1">Nombre completo</label>
+                        <input type="text" id="input-nombre" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-1">Perfil</label>
+                        <select id="input-rol" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+                            <option value="" disabled selected>Selecciona...</option>
+                            <option value="Estudiante de Medicina">Estudiante de Medicina</option>
+                            <option value="Médico Interno">Médico Interno</option>
+                            <option value="Médico General">Médico General</option>
+                            <option value="Residente">Residente</option>
+                            <option value="Especialista">Médico Especialista</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-1">Institución</label>
+                        <div class="flex space-x-2">
+                            <input type="text" id="input-institucion" required class="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white focus:outline-none focus:border-teal-400">
+                            <button type="submit" id="btn-submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-bold transition">Guardar</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="status-msg" class="hidden mt-3 text-center p-2 rounded-lg text-xs font-medium"></div>
+            </section>
+
+            <!-- Curso demo: avance y último examen -->
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">Curso demo</h2>
+                <a href="curso.html?id=ddc" class="flex flex-col md:flex-row gap-6 items-center bg-slate-800 border border-slate-700 hover:border-teal-400 rounded-2xl p-5 transition">
+                    <img src="assets/img/posters/capsula-m1.jpg" alt="" class="w-full md:w-60 rounded-xl">
+                    <div class="flex-1 w-full">
+                        <h3 class="text-lg font-bold text-white">Displasia del desarrollo de la cadera</h3>
+                        <div class="flex justify-between text-xs text-slate-400 mt-3 mb-1"><span>Avance de la ruta</span><span id="ddc-pct">0%</span></div>
+                        <div class="w-full bg-slate-700 rounded-full h-2"><div id="ddc-bar" class="bg-teal-400 h-2 rounded-full" style="width:0%"></div></div>
+                        <p class="text-sm text-slate-400 mt-3" id="ddc-examen">Aún no has hecho el examen cronometrado.</p>
+                    </div>
+                    <span class="bg-teal-400 text-slate-900 font-bold px-5 py-2.5 rounded-xl whitespace-nowrap">Continuar →</span>
+                </a>
+            </section>
+
+            <!-- Mis cursos activos -->
+            <section>
+                <h2 class="text-2xl font-bold text-white mb-4">Mis cursos activos</h2>
+                <div id="cursos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <p class="text-slate-400 text-sm animate-pulse">Cargando tus cursos...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module">
+        import { db, requireUser, salir } from "./assets/js/firebase.js";
+        import { doc, setDoc, getDoc, collection, getDocs, query, orderBy, limit, serverTimestamp, arrayRemove } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+        const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        let currentUser = null, misCursos = [];
+
+        requireUser(async (user) => {
+            currentUser = user;
+            document.getElementById('profile-email').textContent = user.email;
+            if (user.photoURL) document.getElementById('profile-avatar').innerHTML = `<img src="${esc(user.photoURL)}" class="w-full h-full rounded-full" referrerpolicy="no-referrer">`;
+            try {
+                const snap = await getDoc(doc(db, 'users', user.uid));
+                const d = snap.exists() ? snap.data() : {};
+                document.getElementById('input-nombre').value = d.nombre || user.displayName || '';
+                document.getElementById('input-rol').value = d.rol || '';
+                document.getElementById('input-institucion').value = d.institucion || '';
+                document.getElementById('nav-user-name').textContent = d.nombre || user.displayName || user.email;
+                misCursos = d.cursosInscritos || [];
+                pintarPlan(d);
+                pintarDemo(d);
+            } catch (e) { console.error('Error al cargar perfil:', e); }
+            cargarCursos();
+        });
+
+        function pintarPlan(d) {
+            const box = document.getElementById('plan-box');
+            const exp = d.fechaExpiracion ? d.fechaExpiracion.toDate() : null;
+            if (d.isPremium && (!exp || exp > new Date())) {
+                box.innerHTML = `<span class="bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">PREMIUM ${esc((d.tipoPlan || '').toUpperCase())}</span>${exp ? `<span class="text-slate-400 ml-2">vence el ${exp.toLocaleDateString('es-MX')}</span>` : ''}`;
+            } else {
+                box.innerHTML = `<span class="text-slate-400 mr-3">Plan gratuito</span><a href="planes.html" class="bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-4 py-2 rounded-lg text-xs">Ver planes</a>`;
+            }
+        }
+
+        async function pintarDemo(d) {
+            const hechos = (d.progreso && d.progreso.ddc) || [];
+            try {
+                const curso = await fetch('content/ddc.json').then((r) => r.json());
+                let total = 0, listos = 0;
+                curso.modulos.forEach((m) => m.actividades.forEach((a, i) => { total += a.minutos; if (hechos.includes(`${m.id}-${i}`)) listos += a.minutos; }));
+                const pct = Math.round((listos / total) * 100);
+                document.getElementById('ddc-pct').textContent = `${pct}%`;
+                document.getElementById('ddc-bar').style.width = `${pct}%`;
+            } catch (e) { /* sin contenido */ }
+            try {
+                const qs = await getDocs(query(collection(db, 'users', currentUser.uid, 'resultados'), orderBy('fecha', 'desc'), limit(1)));
+                qs.forEach((r) => {
+                    const x = r.data();
+                    document.getElementById('ddc-examen').textContent = `Último examen ${x.modo}: ${x.correctas}/${x.total} (${x.porcentaje}%) · ${x.aprobado ? 'Aprobado' : 'No aprobado'}`;
+                });
+            } catch (e) { /* sin resultados */ }
+        }
+
+        async function cargarCursos() {
+            const grid = document.getElementById('cursos-grid');
+            if (!misCursos.length) {
+                grid.innerHTML = `<div class="col-span-full py-10 text-center bg-slate-800/30 rounded-2xl border border-slate-700/50">
+                    <h3 class="text-lg font-bold text-white mb-2">Aún no tienes diplomados activos</h3>
+                    <p class="text-slate-400 mb-5 text-sm">Visita el catálogo para inscribirte.</p>
+                    <a href="catalogo.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2.5 rounded-lg text-sm font-bold">Ir al catálogo</a></div>`;
+                return;
+            }
+            try {
+                const qs = await getDocs(collection(db, 'cursos'));
+                let html = '';
+                qs.forEach((d) => {
+                    if (!misCursos.includes(d.id)) return;
+                    const c = d.data();
+                    html += `
+                    <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-green-500 transition flex flex-col relative">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase z-10 border border-slate-700">${esc(c.nivel || 'General')}</span>
+                        ${c.videoUrl ? `<iframe class="w-full h-48 bg-black pointer-events-none" src="${esc(c.videoUrl)}?controls=0&mute=1" frameborder="0" loading="lazy"></iframe>` : `<div class="h-48 bg-slate-700"></div>`}
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-lg font-bold text-white mb-2">${esc(c.titulo || 'Curso')}</h3>
+                            <p class="text-slate-400 text-sm mb-6 flex-1 line-clamp-3">${esc(c.descripcion || '')}</p>
+                            <a href="aula.html?id=${d.id}" class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-lg text-sm font-semibold text-center">Continuar aprendiendo →</a>
+                            <button id="btn-remove-${d.id}" onclick="quitarCurso('${d.id}')" class="w-full text-slate-500 hover:text-red-400 hover:bg-red-500/10 py-2 mt-2 rounded-lg text-xs font-medium">Quitar de mis cursos</button>
+                        </div>
+                    </div>`;
+                });
+                grid.innerHTML = html || `<p class="text-slate-400 text-sm col-span-full">No tienes cursos activos en este momento.</p>`;
+            } catch (e) {
+                console.error('Error al cargar los cursos:', e);
+                grid.innerHTML = `<p class="text-red-400 text-sm col-span-full">Ocurrió un error al cargar tus cursos.</p>`;
+            }
+        }
+
+        window.quitarCurso = async (id) => {
+            const btn = document.getElementById(`btn-remove-${id}`);
+            if (btn) { btn.textContent = 'Quitando...'; btn.disabled = true; }
+            try {
+                await setDoc(doc(db, 'users', currentUser.uid), { cursosInscritos: arrayRemove(id) }, { merge: true });
+                misCursos = misCursos.filter((x) => x !== id);
+                cargarCursos();
+            } catch (e) { console.error(e); if (btn) btn.textContent = 'Error al quitar'; }
+        };
+
+        document.getElementById('profile-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('btn-submit'), msg = document.getElementById('status-msg');
+            btn.textContent = '...'; btn.disabled = true;
+            const nombre = document.getElementById('input-nombre').value;
+            try {
+                await setDoc(doc(db, 'users', currentUser.uid), {
+                    email: currentUser.email, nombre,
+                    rol: document.getElementById('input-rol').value,
+                    institucion: document.getElementById('input-institucion').value,
+                    ultimaActualizacion: serverTimestamp()
+                }, { merge: true });
+                document.getElementById('nav-user-name').textContent = nombre;
+                msg.textContent = '¡Perfil actualizado!';
+                msg.className = 'mt-3 text-center p-2 rounded-lg text-xs font-medium bg-green-500/20 text-green-400 border border-green-500/30 block';
+            } catch (err) {
+                msg.textContent = 'Error al guardar.';
+                msg.className = 'mt-3 text-center p-2 rounded-lg text-xs font-medium bg-red-500/20 text-red-400 border border-red-500/30 block';
+            } finally {
+                btn.textContent = 'Guardar'; btn.disabled = false;
+                setTimeout(() => msg.classList.add('hidden'), 3000);
+            }
+        });
+
+        document.getElementById('logout-btn').addEventListener('click', salir);
+    </script>
+</body>
+</html>

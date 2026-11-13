@@ -279,3 +279,9 @@ a.course-card:hover { border-color: var(--accent); transform: translateY(-3px); 
 .capsula video{width:100%;aspect-ratio:16/9;border-radius:12px;background:#000;display:block}
 .capsula p{font-size:.85rem;margin:6px 0 0}
 .downloads{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}
+
+.hidden{display:none!important}
+.top-user{display:flex;align-items:center;gap:10px;margin-left:16px;font-size:.88rem}
+.top-user a{text-decoration:none;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media (max-width:620px){.top-user a{display:none}.top-progress .bar{width:60px}}
+.brand{display:inline-flex;align-items:center;gap:8px}.brand-logo{height:34px;width:auto}

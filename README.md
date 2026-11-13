@@ -38,6 +38,38 @@ Cada módulo abre con una **cápsula animada** de unos 2 minutos (`assets/videos
 
 Para agregar un curso nuevo, crea `content/<id>.json` con la misma estructura que `ddc.json` y agrégalo al catálogo en `content/plataforma.json`.
 
+## Plataforma con cuentas (Firebase)
+
+| Página | Qué hace |
+| --- | --- |
+| `index.html` | Landing pública |
+| `login.html` | Inicio de sesión con Google; crea el perfil en Firestore. Opción "Ver el curso demo sin cuenta" |
+| `catalogo.html` | Curso demo destacado + diplomados de Firestore (bloqueados si no es Premium) |
+| `app.html` | Perfil, plan, avance del curso demo, último examen y diplomados inscritos |
+| `curso.html?id=ddc` | Curso demo (gratis con cuenta o como invitado); guarda avance y resultados en la cuenta |
+| `aula.html?id=…` | Aula de los diplomados de Firestore (solo Premium) |
+| `planes.html` → Stripe → `exito.html` | Membresía mensual ($199) o anual ($1,599) |
+| `shorts.html` | Videos cortos tipo reels desde Firestore |
+
+Datos en Firestore: `users/{uid}` (perfil, `cursosInscritos`, `isPremium`, `tipoPlan`, `fechaExpiracion`, `progreso.ddc`) y `users/{uid}/resultados` (cada examen con calificación y desglose por tema).
+
+### Pasos de configuración (una sola vez)
+
+1. **Firebase → Authentication → Configuración → Dominios autorizados:** agrega `kronoslnbp.github.io`. Sin esto, el botón de Google falla en GitHub Pages.
+2. **Stripe → cada enlace de pago → Después del pago:** redirige a `https://kronoslnbp.github.io/kronos-demo-ddc/exito.html?plan=mensual` (o `?plan=anual`).
+3. **Para cobrar de verdad (producción):**
+   - despliega el webhook `functions/index.js` (plan Blaze de Firebase) y regístralo en Stripe;
+   - publica `firestore.rules`;
+   - cambia `MODO_DEMO` a `false` en `exito.html`.
+
+   Mientras `MODO_DEMO` sea `true`, abrir `exito.html` activa Premium sin pagar. Sirve solo para la demo con Stripe en modo de prueba.
+
+### Versión PHP + MySQL
+
+La carpeta `php/` tiene la versión con MySQL para el hosting Apache, sin contraseñas en el código. Instrucciones en `php/README.md`.
+
+Las páginas `generador.html` e `inyector.html` (carga masiva de cursos) **no se publican**, porque permitirían a cualquiera escribir en la base de datos. Los cursos se cargan desde la consola de Firebase o desde un script de servidor.
+
 ## Estructura y quién es dueño de qué
 
 | Carpeta / archivo | Qué contiene | Área responsable |

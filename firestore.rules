@@ -1,0 +1,36 @@
+rules_version = '2';
+// Reglas de seguridad de Firestore para KronosMedicine.
+// Publícalas en Firebase Console → Firestore → Reglas (o con `firebase deploy --only firestore:rules`)
+// JUNTO con el webhook de Stripe (functions/) y con MODO_DEMO = false en exito.html.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Perfil del usuario: solo su dueño lo lee y lo edita.
+    // Los campos de pago (isPremium, tipoPlan, fechaExpiracion, stripeCustomerId)
+    // solo los escribe el webhook de Stripe con credenciales de servidor.
+    match /users/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.get('isPremium', false) == false
+        && !request.resource.data.keys().hasAny(['tipoPlan', 'fechaExpiracion', 'stripeCustomerId']);
+      allow update: if request.auth != null && request.auth.uid == uid
+        && !request.resource.data.diff(resource.data).affectedKeys()
+              .hasAny(['isPremium', 'tipoPlan', 'fechaExpiracion', 'stripeCustomerId']);
+
+      // Resultados de exámenes: el alumno los crea y los lee; no se pueden editar.
+      match /resultados/{id} {
+        allow read, create: if request.auth != null && request.auth.uid == uid;
+      }
+    }
+
+    // Catálogo y shorts: lectura para usuarios con sesión; escritura solo desde la consola o el servidor.
+    match /cursos/{id} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    match /shorts/{id} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+  }
+}

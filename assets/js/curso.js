@@ -22,7 +22,23 @@ let DATA;
 const KEY = `kronos-${CURSO}-hecho`;
 let hecho = new Set();
 try { hecho = new Set(JSON.parse(localStorage.getItem(KEY) || '[]')); } catch (e) { /* sin almacenamiento */ }
-function guardar() { try { localStorage.setItem(KEY, JSON.stringify([...hecho])); } catch (e) { /* sin almacenamiento */ } }
+function guardar() {
+  try { localStorage.setItem(KEY, JSON.stringify([...hecho])); } catch (e) { /* sin almacenamiento */ }
+  if (window.KronosCuenta) window.KronosCuenta.guardarProgreso([...hecho]);
+}
+
+// Avance guardado en la cuenta (Firebase): se suma al de este navegador.
+let progresoNube = null;
+window.addEventListener('kronos-user', (e) => { progresoNube = e.detail.progreso || []; aplicarNube(); });
+function aplicarNube() {
+  if (!progresoNube || !DATA) return;
+  const antes = hecho.size;
+  progresoNube.forEach((id) => hecho.add(id));
+  hecho.forEach((id) => { const li = document.querySelector(`.act[data-id="${id}"]`); if (li) { li.classList.add('is-done'); li.querySelector('input').checked = true; } });
+  actualizarAvance();
+  if (hecho.size !== antes || progresoNube.length !== hecho.size) guardar();
+  progresoNube = null;
+}
 
 fetch(`content/${CURSO}.json`)
   .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -49,6 +65,7 @@ function init(data) {
 
   window.addEventListener('hashchange', mostrarSeccion);
   mostrarSeccion();
+  aplicarNube();
 }
 
 /* ---------- Navegación ---------- */
@@ -349,6 +366,14 @@ function setupExamen() {
     });
     const repasar = Object.entries(temas).filter(([, t]) => t.ok / t.n < 0.7);
     const modIdx = (id) => DATA.modulos.findIndex((m) => m.id === id) + 1;
+
+    if (window.KronosCuenta) {
+      window.KronosCuenta.guardarResultado({
+        modo, correctas: ok, incorrectas: mal, sinResponder: sin, total: res.length, porcentaje: pct, aprobado,
+        segundos: Math.min(usados, segundosTotal ?? usados),
+        porTema: Object.fromEntries(Object.entries(temas).map(([k, v]) => [k, { ok: v.ok, n: v.n }])),
+      });
+    }
 
     if (modo === 'cronometrado') {
       DATA.modulos.forEach((m) => m.actividades.forEach((a, ai) => { if (a.tipo === 'examen') marcar(`${m.id}-${ai}`, true); }));

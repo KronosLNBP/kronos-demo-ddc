@@ -8,3 +8,5 @@ Thumbs.db
 node_modules/
 .vscode/
 !assets/videos/*.mp4
+
+php/config.php

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Cursos | KronosMedicine</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans h-screen flex flex-col overflow-hidden hidden" id="app-body">
+
+    <nav class="bg-slate-800 border-b border-slate-700 px-4 md:px-6 py-3 flex justify-between items-center shrink-0">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-2"><img src="assets/img/logo.png" alt="" class="h-9"><span class="text-xl font-bold text-white hidden sm:block">Kronos<span class="text-teal-300">Medicine</span></span></a>
+            <div class="h-6 w-px bg-slate-700 hidden sm:block mx-2"></div>
+            <a href="app.html" class="text-slate-400 hover:text-white transition bg-slate-700/50 hover:bg-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">Mi perfil</a>
+            <a href="shorts.html" class="text-slate-400 hover:text-white transition bg-slate-700/50 hover:bg-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium hidden sm:inline">Shorts</a>
+        </div>
+        <div class="flex items-center space-x-3">
+            <span id="badge-premium" class="hidden bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">PREMIUM</span>
+            <span id="nav-user-name" class="text-sm font-medium text-slate-300 hidden md:inline">Cargando...</span>
+            <button id="logout-btn" class="bg-red-500/10 text-red-400 hover:bg-red-500 hover:text-white px-3 py-1.5 rounded-lg text-sm font-semibold transition">Salir</button>
+        </div>
+    </nav>
+
+    <main class="flex-1 overflow-y-auto bg-slate-950 p-4 md:p-6 relative">
+
+        <div id="banner-free" class="hidden max-w-7xl mx-auto bg-gradient-to-r from-amber-500/10 to-amber-600/5 border border-amber-500/20 rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div>
+                <h3 class="text-lg font-bold text-amber-500">Estás en la versión gratuita</h3>
+                <p class="text-slate-300 text-sm">El curso demo de Displasia de cadera es gratis. Desbloquea todos los diplomados con la membresía mensual o anual.</p>
+            </div>
+            <a href="planes.html" class="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-slate-900 px-6 py-3 rounded-xl text-sm font-bold transition whitespace-nowrap">Ver planes</a>
+        </div>
+
+        <div class="max-w-7xl mx-auto space-y-10 pb-12">
+
+            <!-- Curso demo (contenido propio del repositorio) -->
+            <section>
+                <p class="text-teal-300 font-bold tracking-widest uppercase text-xs mb-3">Curso demo · gratis</p>
+                <a href="curso.html?id=ddc" class="group grid md:grid-cols-[1.2fr_1fr] bg-slate-800 border border-slate-700 hover:border-teal-400 rounded-3xl overflow-hidden transition">
+                    <div class="relative bg-black aspect-video md:aspect-auto">
+                        <img src="assets/img/posters/capsula-m1.jpg" alt="" class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition">
+                        <span class="absolute inset-0 flex items-center justify-center"><span class="w-16 h-16 rounded-full bg-teal-400/90 text-slate-900 flex items-center justify-center text-2xl pl-1">▶</span></span>
+                    </div>
+                    <div class="p-6 md:p-8 flex flex-col">
+                        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">Traumatología y Ortopedia · 4 horas</span>
+                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-3">Displasia del desarrollo de la cadera</h2>
+                        <p class="text-slate-400 text-sm mb-5">Ruta de estudio de 8 módulos con cápsulas animadas, podcast, resúmenes, infografía, 25 flash cards y examen cronometrado tipo ENARM.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-slate-900 text-teal-300 px-3 py-1 rounded-full">8 cápsulas</span>
+                            <span class="text-xs bg-slate-900 text-teal-300 px-3 py-1 rounded-full">Flash cards</span>
+                            <span class="text-xs bg-slate-900 text-teal-300 px-3 py-1 rounded-full">Examen 20 preguntas</span>
+                            <span class="text-xs bg-slate-900 text-teal-300 px-3 py-1 rounded-full">PDF imprimibles</span>
+                        </div>
+                        <span class="mt-auto inline-flex justify-center bg-teal-400 group-hover:bg-teal-300 text-slate-900 font-bold py-3 rounded-xl">Entrar al curso</span>
+                    </div>
+                </a>
+            </section>
+
+            <section class="flex flex-col md:flex-row md:items-end justify-between border-b border-slate-800 pb-4">
+                <div>
+                    <h1 class="text-3xl font-bold text-white mb-1">Explorar catálogo</h1>
+                    <p class="text-slate-400">Diplomados y cursos de la plataforma. Agrégalos a tu perfil.</p>
+                </div>
+            </section>
+
+            <section>
+                <div id="cursos-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="col-span-full py-12 flex flex-col items-center justify-center">
+                        <div class="w-12 h-12 border-4 border-slate-700 border-t-teal-400 rounded-full animate-spin mb-4"></div>
+                        <p class="text-slate-400 text-sm animate-pulse">Verificando suscripción y cargando catálogo...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script type="module">
+        import { db, requireUser, salir } from "./assets/js/firebase.js";
+        import { doc, getDoc, collection, getDocs, setDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+        const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        let currentUser = null, misCursos = [], isPremium = false;
+
+        requireUser(async (user) => {
+            currentUser = user;
+            try {
+                const snap = await getDoc(doc(db, 'users', user.uid));
+                if (snap.exists()) {
+                    const d = snap.data();
+                    document.getElementById('nav-user-name').textContent = d.nombre || user.email;
+                    misCursos = d.cursosInscritos || [];
+                    const vigente = !d.fechaExpiracion || d.fechaExpiracion.toDate() > new Date();
+                    isPremium = d.isPremium === true && vigente;
+                } else {
+                    document.getElementById('nav-user-name').textContent = user.displayName || user.email;
+                }
+            } catch (e) { document.getElementById('nav-user-name').textContent = user.email; }
+            document.getElementById(isPremium ? 'badge-premium' : 'banner-free').classList.remove('hidden');
+            cargarCursos();
+        });
+
+        async function cargarCursos() {
+            const grid = document.getElementById('cursos-grid');
+            try {
+                const qs = await getDocs(collection(db, 'cursos'));
+                if (qs.empty) { grid.innerHTML = `<p class="text-slate-400 col-span-full py-12 text-center">No hay cursos disponibles.</p>`; return; }
+                let html = '';
+                qs.forEach((d) => {
+                    const c = d.data(), id = d.id;
+                    const titulo = esc(c.titulo || 'Curso sin título'), desc = esc(c.descripcion || 'Sin descripción disponible.'), nivel = esc(c.nivel || 'General');
+                    const inscrito = misCursos.includes(id);
+                    const media = c.videoUrl
+                        ? `<iframe class="w-full h-48 bg-black pointer-events-none" src="${esc(c.videoUrl)}?controls=0&mute=1" title="${titulo}" frameborder="0" loading="lazy"></iframe>`
+                        : `<div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center"><img src="assets/img/logo.png" alt="" class="h-20 opacity-40"></div>`;
+                    let boton;
+                    if (!isPremium) boton = `<a href="planes.html" class="w-full bg-slate-800 hover:bg-amber-500 border border-slate-700 hover:border-amber-400 text-slate-300 hover:text-slate-900 py-2.5 rounded-lg text-sm font-bold transition text-center mt-auto">🔒 Desbloquear Premium</a>`;
+                    else if (inscrito) boton = `<a href="aula.html?id=${id}" class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-lg text-sm font-semibold transition text-center mt-auto">Continuar aprendiendo →</a>`;
+                    else boton = `<button id="btn-add-${id}" onclick="agregarCurso('${id}')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-lg text-sm font-semibold transition mt-auto">Agregar a mis cursos +</button>`;
+                    html += `
+                    <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 transition flex flex-col relative ${!isPremium ? 'opacity-80' : ''}">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider z-10 border border-slate-700">${nivel}</span>
+                        <div class="relative">${media}</div>
+                        <div class="p-6 flex-1 flex flex-col">
+                            <h3 class="text-lg font-bold text-white mb-2 leading-tight">${titulo}</h3>
+                            <p class="text-slate-400 text-sm mb-6 flex-1 line-clamp-3">${desc}</p>
+                            ${boton}
+                        </div>
+                    </div>`;
+                });
+                grid.innerHTML = html;
+            } catch (error) {
+                console.error('Error al cargar los cursos:', error);
+                grid.innerHTML = `<p class="text-red-400 text-sm col-span-full">Ocurrió un error al cargar el catálogo.</p>`;
+            }
+        }
+
+        window.agregarCurso = async (id) => {
+            const btn = document.getElementById(`btn-add-${id}`);
+            btn.textContent = 'Agregando...'; btn.disabled = true;
+            try {
+                await setDoc(doc(db, 'users', currentUser.uid), { cursosInscritos: arrayUnion(id) }, { merge: true });
+                misCursos.push(id); cargarCursos();
+            } catch (e) { console.error(e); btn.textContent = 'Error al agregar'; }
+        };
+
+        document.getElementById('logout-btn').addEventListener('click', salir);
+    </script>
+</body>
+</html>

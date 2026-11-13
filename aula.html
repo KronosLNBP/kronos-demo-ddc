@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula virtual | KronosMedicine</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans h-screen flex flex-col hidden" id="app-body">
+
+    <!-- Barra de navegación -->
+    <nav class="bg-slate-800 border-b border-slate-700 px-6 py-4 flex justify-between items-center shrink-0">
+        <div class="flex items-center space-x-4">
+            <button onclick="window.location.href='catalogo.html'" class="text-slate-400 hover:text-white transition flex items-center bg-slate-700/50 hover:bg-slate-700 px-3 py-1.5 rounded-lg text-sm font-medium">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                Catálogo
+            </button>
+            <div class="h-6 w-px bg-slate-700 hidden md:block"></div>
+            <div class="items-center space-x-2 hidden md:flex">
+                <img src="assets/img/logo.png" alt="" class="h-7">
+                <span class="text-sm font-bold text-white">Aula Virtual</span>
+            </div>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+            <span id="nav-user-name" class="text-sm font-medium text-slate-300">Cargando...</span>
+            <button id="logout-btn" class="bg-red-500/10 text-red-500 hover:bg-red-500 hover:text-white px-3 py-1.5 rounded-lg text-sm font-semibold transition">
+                Salir
+            </button>
+        </div>
+    </nav>
+
+    <!-- Área Principal de Clases -->
+    <main class="flex-1 overflow-hidden flex flex-col lg:flex-row bg-slate-950">
+        
+        <!-- Columna Izquierda: Reproductor y Detalles (75%) -->
+        <section class="flex-1 overflow-y-auto flex flex-col">
+            <div id="video-container" class="w-full bg-black aspect-video relative flex items-center justify-center border-b border-slate-800">
+                <!-- El contenido se inyectará aquí -->
+            </div>
+
+            <div class="p-6 max-w-5xl">
+                <div class="flex items-center space-x-3 mb-3">
+                    <span id="curso-nivel" class="bg-blue-600 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">...</span>
+                    <span id="curso-modulo-texto" class="text-slate-500 text-sm font-medium">Módulo Principal</span>
+                </div>
+                <h1 id="clase-titulo" class="text-2xl md:text-3xl font-bold text-white mb-4">Cargando...</h1>
+                <p id="clase-descripcion" class="text-slate-400 text-sm md:text-base leading-relaxed max-w-3xl">
+                    Por favor espera...
+                </p>
+                
+                <div class="mt-8 pt-6 border-t border-slate-800">
+                    <button class="bg-slate-800 hover:bg-blue-600 border border-slate-700 hover:border-blue-500 text-white px-6 py-3 rounded-xl text-sm font-bold transition flex items-center shadow-lg">
+                        <svg class="w-5 h-5 mr-3 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                        Abrir visor anatómico 3D de esta lección
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Columna Derecha: Temario de Clases (25%) -->
+        <aside class="w-full lg:w-80 bg-slate-900 border-l border-slate-800 flex flex-col h-64 lg:h-auto shrink-0">
+            <div class="p-4 border-b border-slate-800 bg-slate-900 z-10 sticky top-0">
+                <h3 class="font-bold text-white flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path></svg>
+                    Contenido del Curso
+                </h3>
+            </div>
+            <!-- Contenedor Dinámico del Temario -->
+            <div class="overflow-y-auto flex-1 p-2 space-y-1" id="lista-clases">
+                <div class="p-4 text-center">
+                    <div class="w-6 h-6 border-2 border-slate-600 border-t-blue-500 rounded-full animate-spin mx-auto mb-2"></div>
+                    <p class="text-xs text-slate-500">Cargando temario...</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- LÓGICA DE FIREBASE Y REPRODUCTOR -->
+    <script type="module">
+        import { db, requireUser, salir } from "./assets/js/firebase.js";
+        import { doc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+        const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+        // Variable global para almacenar el curso y poder cambiar de clase
+        window.cursoData = null;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const cursoId = urlParams.get('id');
+
+        if (!cursoId) window.location.href = "catalogo.html";
+
+        requireUser(async (user) => {
+            let premium = false;
+            try {
+                const userDoc = await getDoc(doc(db, "users", user.uid));
+                const d = userDoc.exists() ? userDoc.data() : {};
+                document.getElementById('nav-user-name').textContent = d.nombre || user.email;
+                const vigente = !d.fechaExpiracion || d.fechaExpiracion.toDate() > new Date();
+                premium = d.isPremium === true && vigente;
+            } catch (e) { document.getElementById('nav-user-name').textContent = user.email; }
+            // Los diplomados del catálogo son Premium; el curso demo (curso.html?id=ddc) es gratis.
+            if (!premium) { window.location.href = "planes.html"; return; }
+            cargarDetallesCurso(cursoId);
+        });
+
+        async function cargarDetallesCurso(id) {
+            try {
+                const docRef = doc(db, "cursos", id);
+                const docSnap = await getDoc(docRef);
+
+                if (docSnap.exists()) {
+                    window.cursoData = docSnap.data();
+                    document.getElementById('curso-nivel').textContent = window.cursoData.nivel || "General";
+                    
+                    // Renderizar la lista de clases en la barra lateral
+                    renderizarTemario();
+                    
+                    // Seleccionar automáticamente la primera clase (índice 0)
+                    window.seleccionarClase(0);
+                } else {
+                    window.location.href = "catalogo.html";
+                }
+            } catch (error) {
+                console.error("Error al obtener el curso:", error);
+            }
+        }
+
+        function renderizarTemario() {
+            const listaClases = document.getElementById('lista-clases');
+            const temario = window.cursoData.temario || [];
+            
+            if (temario.length > 0) {
+                let htmlTemario = '';
+                temario.forEach((item, index) => {
+                    htmlTemario += `
+                    <button onclick="seleccionarClase(${index})" id="btn-clase-${index}" class="w-full text-left p-3 rounded-lg border flex items-start group transition border-transparent hover:bg-slate-800">
+                        <div class="mt-0.5 mr-3" id="icon-container-${index}">
+                            <div class="w-5 h-5 rounded-full border-2 border-slate-600 flex items-center justify-center text-[10px] text-slate-400 font-bold">${esc(item.clase)}</div>
+                        </div>
+                        <div>
+                            <p id="titulo-btn-${index}" class="text-sm transition font-medium text-slate-300 group-hover:text-white">${esc(item.clase)}. ${esc(item.titulo)}</p>
+                            <p class="text-xs text-slate-500 mt-1 capitalize">${esc(item.duracion)} • ${esc(item.tipo)}</p>
+                        </div>
+                    </button>
+                    `;
+                });
+                listaClases.innerHTML = htmlTemario;
+            } else {
+                listaClases.innerHTML = `<div class="p-4 text-center text-sm text-slate-500">Este curso no tiene temario.</div>`;
+            }
+        }
+
+        // FUNCIÓN GLOBAL PARA MANEJAR LOS CLICS EN LAS CLASES
+        window.seleccionarClase = function(index) {
+            const temario = window.cursoData.temario;
+            if (!temario || !temario[index]) return;
+            
+            const claseActiva = temario[index];
+
+            // 1. Reiniciar los colores de TODOS los botones
+            temario.forEach((_, i) => {
+                const btn = document.getElementById(`btn-clase-${i}`);
+                const icon = document.getElementById(`icon-container-${i}`);
+                const title = document.getElementById(`titulo-btn-${i}`);
+                if (btn) {
+                    btn.className = "w-full text-left p-3 rounded-lg border flex items-start group transition border-transparent hover:bg-slate-800";
+                    icon.innerHTML = `<div class="w-5 h-5 rounded-full border-2 border-slate-600 flex items-center justify-center text-[10px] text-slate-400 font-bold">${i + 1}</div>`;
+                    title.className = "text-sm transition font-medium text-slate-300 group-hover:text-white";
+                }
+            });
+
+            // 2. Pintar de azul el botón seleccionado
+            const btnActivo = document.getElementById(`btn-clase-${index}`);
+            const iconActivo = document.getElementById(`icon-container-${index}`);
+            const titleActivo = document.getElementById(`titulo-btn-${index}`);
+            if (btnActivo) {
+                btnActivo.className = "w-full text-left p-3 rounded-lg border flex items-start group transition bg-blue-600/10 border-blue-500/30";
+                iconActivo.innerHTML = `<div class="w-5 h-5 rounded-full bg-blue-600 flex items-center justify-center"><svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path></svg></div>`;
+                titleActivo.className = "text-sm transition font-semibold text-blue-400";
+            }
+
+            // 3. Actualizar textos principales
+            document.getElementById('clase-titulo').textContent = claseActiva.titulo;
+            document.getElementById('curso-modulo-texto').textContent = `${window.cursoData.titulo} • Clase ${claseActiva.clase}`;
+            
+            if (index === 0) {
+                document.getElementById('clase-descripcion').textContent = window.cursoData.descripcion;
+            } else {
+                document.getElementById('clase-descripcion').textContent = `Estás viendo: ${claseActiva.titulo}. Asegúrate de completar los apuntes de este módulo antes de continuar.`;
+            }
+
+            // 4. Actualizar Reproductor leyendo el videoUrl específico
+            const videoContainer = document.getElementById('video-container');
+            
+            if (claseActiva.tipo === "visor3d") {
+                videoContainer.innerHTML = `
+                    <div class="text-slate-400 flex flex-col items-center bg-slate-900 w-full h-full justify-center absolute inset-0 z-10">
+                        <svg class="w-16 h-16 mb-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"></path></svg>
+                        <p class="text-xl font-bold text-white mb-2">Entorno de Práctica 3D</p>
+                        <p class="text-sm max-w-md text-center">En esta sección no hay video. Debes abrir el visor anatómico usando el botón inferior para explorar los modelos en 3D de forma interactiva.</p>
+                    </div>`;
+            } 
+            else if (claseActiva.videoUrl) {
+                videoContainer.innerHTML = `<iframe class="w-full h-full absolute inset-0" src="${esc(claseActiva.videoUrl)}" title="${esc(claseActiva.titulo)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            } 
+            else if (window.cursoData.videoUrl) {
+                videoContainer.innerHTML = `<iframe class="w-full h-full absolute inset-0" src="${esc(window.cursoData.videoUrl)}" title="${esc(claseActiva.titulo)}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+            } 
+            else {
+                videoContainer.innerHTML = `<div class="text-slate-500 flex flex-col items-center absolute inset-0 justify-center"><p>Video no disponible para esta clase.</p></div>`;
+            }
+        };
+
+        document.getElementById('logout-btn').addEventListener('click', salir);
+    </script>
+</body>
+</html>

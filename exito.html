@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesando pago | KronosMedicine</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white flex flex-col items-center justify-center min-h-screen p-6">
+
+    <div class="bg-slate-800 p-8 rounded-3xl border border-slate-700 max-w-md text-center shadow-2xl flex flex-col items-center">
+        <img src="assets/img/logo.png" alt="" class="h-16 mb-4">
+        <div id="icono-estado" class="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mb-6">
+            <div class="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+        </div>
+        <h1 id="titulo-estado" class="text-2xl font-bold mb-2">Verificando pago...</h1>
+        <p id="texto-estado" class="text-slate-400 text-sm mb-2">Estamos confirmando tu pago con Stripe. No cierres esta ventana.</p>
+        <p id="aviso-demo" class="hidden text-xs text-amber-400 mt-3">Modo demostración: la cuenta se activa sin verificar el pago.</p>
+    </div>
+
+    <script type="module">
+        import { auth, db } from "./assets/js/firebase.js";
+        import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+        import { doc, setDoc, onSnapshot, Timestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+        // ⚠ MODO_DEMO = true activa Premium desde el navegador SIN verificar el pago:
+        // cualquiera que abra esta página se vuelve Premium. Úsalo solo con Stripe en modo de prueba.
+        // Para producción: despliega el webhook (functions/index.js), publica firestore.rules
+        // y cambia esto a false. Entonces esta página solo ESPERA a que el webhook active la cuenta.
+        const MODO_DEMO = true;
+
+        const plan = new URLSearchParams(location.search).get('plan') === 'anual' ? 'anual' : 'mensual';
+        const $ = (id) => document.getElementById(id);
+
+        function listo() {
+            $('icono-estado').className = 'w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-6';
+            $('icono-estado').innerHTML = '<span class="text-green-400 text-3xl">✔</span>';
+            $('titulo-estado').textContent = '¡Pago exitoso!';
+            $('titulo-estado').className = 'text-2xl font-bold mb-2 text-green-400';
+            $('texto-estado').textContent = 'Tu cuenta ya es Premium. Redirigiendo al catálogo...';
+            setTimeout(() => { location.href = 'catalogo.html'; }, 2500);
+        }
+        function error(t) {
+            $('titulo-estado').textContent = 'No pudimos confirmar tu pago';
+            $('texto-estado').textContent = t;
+        }
+
+        onAuthStateChanged(auth, async (user) => {
+            if (!user) { location.href = 'login.html?next=' + encodeURIComponent('exito.html' + location.search); return; }
+            const ref = doc(db, 'users', user.uid);
+            if (MODO_DEMO) {
+                $('aviso-demo').classList.remove('hidden');
+                const exp = new Date(); exp.setDate(exp.getDate() + (plan === 'anual' ? 365 : 30));
+                try {
+                    await setDoc(ref, { isPremium: true, tipoPlan: plan, fechaExpiracion: Timestamp.fromDate(exp) }, { merge: true });
+                    listo();
+                } catch (e) {
+                    console.error(e);
+                    error('Las reglas de seguridad no permiten activar la cuenta desde el navegador. Activa el webhook de Stripe.');
+                }
+                return;
+            }
+            // Producción: espera a que el webhook de Stripe marque la cuenta como Premium.
+            const stop = onSnapshot(ref, (snap) => {
+                const d = snap.data() || {};
+                if (d.isPremium && (!d.fechaExpiracion || d.fechaExpiracion.toDate() > new Date())) { stop(); listo(); }
+            });
+            setTimeout(() => { stop(); error('El pago puede tardar unos minutos en reflejarse. Si no se activa, escríbenos a soporte.'); }, 45000);
+        });
+    </script>
+</body>
+</html>

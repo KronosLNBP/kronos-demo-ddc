@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curso | KronosMedicine</title>
+  <link rel="icon" href="assets/img/logo.png">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body class="course">
+<body class="course hidden" id="app-body">
   <header class="topbar">
     <button class="burger" id="burger" aria-label="Abrir menú del curso" aria-controls="drawer" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <a class="brand" href="./">Kronos<span>Medicine</span></a>
+    <a class="brand" href="./"><img src="assets/img/logo.png" alt="" class="brand-logo">Kronos<span>Medicine</span></a>
     <div class="top-progress" title="Avance del curso">
       <span id="avanceTxt">0%</span>
       <span class="bar"><span id="avanceBar"></span></span>
+    </div>
+    <div class="top-user">
+      <a href="app.html" id="userName" class="muted"></a>
+      <button class="btn sm ghost" id="salir">Salir</button>
     </div>
   </header>
 
   <div class="scrim" id="scrim" hidden></div>
   <nav class="drawer" id="drawer" aria-label="Secciones del curso">
-    <a class="back" href="./">← Volver al inicio</a>
+    <a class="back" href="catalogo.html">← Volver al catálogo</a>
     <p class="drawer-title" id="drawerTitulo"></p>
     <ol id="menu"></ol>
   </nav>
@@ -116,5 +121,49 @@
   </main>
 
   <script src="assets/js/curso.js"></script>
+  <script>
+    // Modo invitado (sin depender de Firebase): el curso demo se ve sin cuenta y el avance queda en este navegador.
+    (function () {
+      var p = new URLSearchParams(location.search);
+      function invitado() {
+        window.KRONOS_INVITADO = true;
+        document.getElementById('app-body').classList.remove('hidden');
+        document.getElementById('userName').textContent = 'Invitado';
+        var b = document.getElementById('salir'); b.textContent = 'Crear cuenta';
+        b.onclick = function () { location.href = 'login.html?next=' + encodeURIComponent('curso.html?id=ddc'); };
+      }
+      if (p.get('invitado') === '1' && (p.get('id') || 'ddc') === 'ddc') invitado();
+      // Si Firebase no carga (sin conexión a sus servidores), el curso demo sigue disponible como invitado.
+      setTimeout(function () { if (document.getElementById('app-body').classList.contains('hidden') && !window.KronosCuenta) invitado(); }, 8000);
+    })();
+  </script>
+  <script type="module">
+    // Sesión con Firebase: el curso demo es gratis, pero requiere cuenta para guardar avance y resultados.
+    import { db, requireUser, salir } from "./assets/js/firebase.js";
+    import { doc, getDoc, setDoc, addDoc, collection, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+    const params = new URLSearchParams(location.search);
+    const curso = (params.get('id') || 'ddc').replace(/[^a-z0-9-]/gi, '');
+    if (!window.KRONOS_INVITADO) requireUser(async (user) => {
+      let progreso = [];
+      let nombre = user.displayName || user.email;
+      try {
+        const snap = await getDoc(doc(db, 'users', user.uid));
+        if (snap.exists()) { const d = snap.data(); nombre = d.nombre || nombre; progreso = (d.progreso && d.progreso[curso]) || []; }
+      } catch (e) { console.warn('Sin acceso al perfil:', e); }
+      document.getElementById('userName').textContent = nombre;
+      let t = null;
+      window.KronosCuenta = {
+        guardarProgreso(ids) {
+          clearTimeout(t);
+          t = setTimeout(() => setDoc(doc(db, 'users', user.uid), { progreso: { [curso]: ids } }, { merge: true }).catch(console.warn), 800);
+        },
+        guardarResultado(r) {
+          return addDoc(collection(db, 'users', user.uid, 'resultados'), { ...r, curso, fecha: serverTimestamp() }).catch(console.warn);
+        },
+      };
+      window.dispatchEvent(new CustomEvent('kronos-user', { detail: { progreso } }));
+    });
+    if (!window.KRONOS_INVITADO) document.getElementById('salir').addEventListener('click', salir);
+  </script>
 </body>
 </html>
