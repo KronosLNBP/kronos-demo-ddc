@@ -45,6 +45,23 @@ jobs:
         if: env.FTP_SERVER == ''
         run: echo "::notice::Faltan los secretos FTP; no se publicó. Ver instrucciones en deploy.yml."
 
+      - name: Diagnóstico de conexión FTP
+        if: env.FTP_SERVER != ''
+        continue-on-error: true
+        env:
+          U: ${{ secrets.FTP_USERNAME }}
+          P: ${{ secrets.FTP_PASSWORD }}
+          PORT: ${{ secrets.FTP_PORT || 21 }}
+        run: |
+          echo "== 1) ¿Responde el puerto $PORT? =="
+          timeout 15 bash -c "exec 3<>/dev/tcp/$FTP_SERVER/$PORT && head -c 200 <&3" && echo "OK: el servidor responde" || echo "FALLA: no hay conexión (firewall del hosting o servidor incorrecto)"
+          echo "== 2) Inicio de sesión con FTPS explícito (TLS) =="
+          curl -sS --max-time 30 --ssl-reqd --insecure --user "$U:$P" "ftp://$FTP_SERVER:$PORT/" --list-only -o /dev/null && echo "OK: FTPS funciona" || echo "FALLA con FTPS"
+          echo "== 3) Inicio de sesión con FTP sin cifrar =="
+          curl -sS --max-time 30 --user "$U:$P" "ftp://$FTP_SERVER:$PORT/" --list-only -o /dev/null && echo "OK: FTP funciona" || echo "FALLA con FTP"
+          echo "== IP de este servidor de GitHub (por si el hosting la bloquea) =="
+          curl -s --max-time 10 https://api.ipify.org || true; echo
+
       - name: Subir por FTP
         if: env.FTP_SERVER != ''
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
