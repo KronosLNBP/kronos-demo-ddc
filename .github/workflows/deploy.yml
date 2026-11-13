@@ -84,3 +84,5 @@ jobs:
             firestore.rules
             **/README.md
             php/config.example.php
+            .nojekyll
+            **/.gitkeep
