@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Administración del catálogo | KronosMedicine</title>
+    <link rel="icon" href="assets/img/logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen hidden" id="app-body">
+    <nav class="bg-slate-800 border-b border-slate-700 px-6 py-3 flex justify-between items-center">
+        <div class="flex items-center gap-3"><img src="assets/img/logo.png" alt="" class="h-9"><span class="font-bold">Administración del catálogo</span></div>
+        <div class="flex items-center gap-3"><a href="catalogo.html" class="text-sm text-slate-300 hover:text-white">Ver catálogo</a><span id="who" class="text-sm text-slate-400"></span></div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto p-6 space-y-8">
+        <div id="no-admin" class="hidden bg-amber-500/10 border border-amber-500/40 rounded-2xl p-6">
+            <h2 class="text-lg font-bold text-amber-400 mb-2">Tu cuenta aún no es administradora</h2>
+            <p class="text-sm text-slate-300 mb-3">Para activarla, en Firebase Console → Firestore crea la colección <b>admins</b> y dentro un documento cuyo ID sea tu UID (puede quedar vacío o con un campo <code>nombre</code>):</p>
+            <p class="font-mono text-teal-300 bg-slate-900 rounded-lg p-3 select-all" id="uid"></p>
+            <p class="text-xs text-slate-500 mt-3">Después recarga esta página.</p>
+        </div>
+
+        <section id="panel" class="hidden space-y-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold">Cursos publicados en Firestore</h2>
+                    <button id="btn-borrar" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-sm font-bold">Borrar todos</button>
+                </div>
+                <div id="actuales" class="space-y-2 text-sm text-slate-300">Cargando...</div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h2 class="text-xl font-bold">Cursos listos para publicar</h2>
+                        <p class="text-sm text-slate-400">Vienen de <code>content/catalogo.json</code>. Publicar reemplaza la ficha de cada curso, sin duplicarla.</p>
+                    </div>
+                    <button id="btn-publicar" class="bg-teal-500 hover:bg-teal-400 text-slate-900 px-4 py-2 rounded-lg text-sm font-bold">Publicar todos</button>
+                </div>
+                <div id="nuevos" class="grid md:grid-cols-2 gap-3 text-sm"></div>
+            </div>
+            <p id="log" class="text-sm font-medium"></p>
+        </section>
+    </main>
+
+    <script type="module">
+        import { db, requireUser } from "./assets/js/firebase.js";
+        import { doc, getDoc, getDocs, collection, setDoc, deleteDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+        const $ = (id) => document.getElementById(id);
+        const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        let catalogo = [];
+
+        requireUser(async (user) => {
+            $('who').textContent = user.email;
+            let esAdmin = false;
+            try { esAdmin = (await getDoc(doc(db, 'admins', user.uid))).exists(); } catch (e) { esAdmin = false; }
+            if (!esAdmin) { $('uid').textContent = user.uid; $('no-admin').classList.remove('hidden'); return; }
+            $('panel').classList.remove('hidden');
+            catalogo = (await fetch('content/catalogo.json?' + Date.now()).then((r) => r.json())).cursos;
+            $('nuevos').innerHTML = catalogo.map((c) => `
+                <div class="flex gap-3 bg-slate-800 rounded-xl p-3 border border-slate-700">
+                    <img src="${esc(c.poster)}" alt="" class="w-24 h-16 object-cover rounded-lg">
+                    <div><b class="text-white">${esc(c.titulo)}</b><br><span class="text-slate-400">${esc(c.modulos)} módulos · ${esc(c.horas)} h · ${esc(c.preguntas)} preguntas</span></div>
+                </div>`).join('');
+            listar();
+        });
+
+        async function listar() {
+            const qs = await getDocs(collection(db, 'cursos'));
+            $('actuales').innerHTML = qs.empty ? '<p class="text-slate-500">No hay cursos publicados.</p>' :
+                qs.docs.map((d) => `<div class="flex justify-between bg-slate-800 rounded-lg px-3 py-2"><span>${esc(d.data().titulo || '(sin título)')}</span><span class="text-slate-500 font-mono text-xs">${esc(d.id)}</span></div>`).join('');
+        }
+
+        $('btn-borrar').addEventListener('click', async () => {
+            const b = $('btn-borrar');
+            if (b.dataset.ok !== '1') { b.dataset.ok = '1'; b.textContent = '¿Seguro? Toca otra vez'; setTimeout(() => { b.dataset.ok = ''; b.textContent = 'Borrar todos'; }, 4000); return; }
+            b.disabled = true; b.textContent = 'Borrando...';
+            try {
+                const qs = await getDocs(collection(db, 'cursos'));
+                await Promise.all(qs.docs.map((d) => deleteDoc(d.ref)));
+                $('log').className = 'text-sm font-medium text-green-400'; $('log').textContent = `Se borraron ${qs.size} cursos.`;
+            } catch (e) { console.error(e); $('log').className = 'text-sm font-medium text-red-400'; $('log').textContent = 'No se pudo borrar: revisa las reglas de Firestore.'; }
+            b.disabled = false; b.dataset.ok = ''; b.textContent = 'Borrar todos'; listar();
+        });
+
+        $('btn-publicar').addEventListener('click', async () => {
+            const b = $('btn-publicar'); b.disabled = true; b.textContent = 'Publicando...';
+            try {
+                for (const [i, c] of catalogo.entries()) {
+                    await setDoc(doc(db, 'cursos', c.id), {
+                        titulo: c.titulo, descripcion: c.descripcion, nivel: c.nivel, especialidad: c.especialidad,
+                        estado: 'activo', contenido: c.id, poster: c.poster, modulos: c.modulos, horas: c.horas,
+                        preguntas: c.preguntas, flashcards: c.flashcards, orden: i + 1, fechaCreacion: serverTimestamp(),
+                    });
+                }
+                $('log').className = 'text-sm font-medium text-green-400'; $('log').textContent = `Se publicaron ${catalogo.length} cursos.`;
+            } catch (e) { console.error(e); $('log').className = 'text-sm font-medium text-red-400'; $('log').textContent = 'No se pudo publicar: revisa las reglas de Firestore.'; }
+            b.disabled = false; b.textContent = 'Publicar todos'; listar();
+        });
+    </script>
+</body>
+</html>

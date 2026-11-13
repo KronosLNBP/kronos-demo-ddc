@@ -1,0 +1,2065 @@
+{
+  "_nota": "Contenido redactado por Kronos a partir de los temas de los resúmenes de referencia y las GPC. Debe validarlo el Creador de producto.",
+  "id": "cirugia",
+  "titulo": "Cirugía General",
+  "subtitulo": "Abdomen agudo, vía biliar, hernias, patología anorrectal, vascular y quemaduras con enfoque ENARM",
+  "especialidad": "Cirugía General",
+  "duracionMin": 375,
+  "nivel": "Pregrado, internado y preparación ENARM",
+  "palabrasClave": [
+    "Alvarado",
+    "Murphy",
+    "Charcot / Reynolds",
+    "Tokio 2018",
+    "Parkland",
+    "ITB < 0.9",
+    "Goodsall"
+  ],
+  "secciones": [
+    {
+      "id": "inicio",
+      "titulo": "Inicio del curso",
+      "icono": "⏳",
+      "video": "",
+      "intro": ""
+    },
+    {
+      "id": "clases",
+      "titulo": "Ruta de estudio",
+      "icono": "🗺️",
+      "video": "assets/videos/clases-grabadas.mp4",
+      "intro": "Sigue los módulos en orden: video, lectura, podcast y flash cards. Marca cada actividad al terminarla.",
+      "poster": "assets/img/posters/clases-grabadas.jpg"
+    },
+    {
+      "id": "podcast",
+      "titulo": "Podcast",
+      "icono": "🎧",
+      "video": "",
+      "intro": "Escucha cada tema mientras te arreglas, vas en el transporte o estás en el gym."
+    },
+    {
+      "id": "resumenes",
+      "titulo": "Resúmenes",
+      "icono": "📄",
+      "video": "assets/videos/resumenes.mp4",
+      "intro": "Resúmenes cortos para comprender, reforzar y recordar. Cada tema cierra con su perla ENARM.",
+      "poster": "assets/img/posters/resumenes.jpg"
+    },
+    {
+      "id": "diagramas",
+      "titulo": "Infografía y diagrama de flujo",
+      "icono": "🧭",
+      "video": "assets/videos/diagramas.mp4",
+      "intro": "Lo esencial del curso en una imagen y el algoritmo clave. Léelos después del resumen.",
+      "poster": "assets/img/posters/diagramas.jpg"
+    },
+    {
+      "id": "flashcards",
+      "titulo": "Flash cards",
+      "icono": "🃏",
+      "video": "assets/videos/flashcards.mp4",
+      "intro": "Repaso rápido por tema. Después de leer el resumen, repasa las tarjetas poco a poco durante la semana.",
+      "poster": "assets/img/posters/flashcards.jpg"
+    },
+    {
+      "id": "examenes",
+      "titulo": "Exámenes",
+      "icono": "⏱️",
+      "video": "assets/videos/examenes.mp4",
+      "intro": "Cada intento saca preguntas distintas del banco del curso. Al final tienes tu resultado completo por tema.",
+      "poster": "assets/img/posters/examenes.jpg"
+    }
+  ],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Oclusión intestinal",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Identificar la causa más probable de la oclusión",
+        "Decidir manejo conservador o quirúrgico"
+      ],
+      "temas": [
+        "Causas en delgado y colon",
+        "Clínica y radiografía",
+        "Manejo inicial y criterios quirúrgicos"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Oclusión intestinal",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Oclusión intestinal",
+          "minutos": 5,
+          "destino": "m1"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 1: Oclusión intestinal",
+          "minutos": 6,
+          "destino": "p1"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Oclusión intestinal",
+          "minutos": 3,
+          "destino": "Oclusión intestinal"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Colecistitis y colelitiasis",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar colecistitis aguda con criterios de Tokio",
+        "Indicar la colecistectomía"
+      ],
+      "temas": [
+        "Colelitiasis y cólico biliar",
+        "Colecistitis aguda: Murphy y ultrasonido",
+        "Tratamiento y momento de la cirugía"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Colecistitis y colelitiasis",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Colecistitis",
+          "minutos": 5,
+          "destino": "m2"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 2: Colecistitis",
+          "minutos": 6,
+          "destino": "p2"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Colecistitis",
+          "minutos": 3,
+          "destino": "Colecistitis"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Complicaciones de la litiasis biliar",
+      "minutos": 25,
+      "video": "",
+      "objetivos": [
+        "Reconocer coledocolitiasis y colangitis",
+        "Indicar CPRE y drenaje"
+      ],
+      "temas": [
+        "Coledocolitiasis",
+        "Colangitis: Charcot y Reynolds",
+        "Íleo biliar y pancreatitis biliar"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Complicaciones de la litiasis biliar",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Complicaciones biliares",
+          "minutos": 5,
+          "destino": "m3"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Diagrama de flujo: enfermedad litiásica biliar",
+          "minutos": 3,
+          "destino": "algoritmo"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 3: Complicaciones biliares",
+          "minutos": 6,
+          "destino": "p3"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Complicaciones biliares",
+          "minutos": 3,
+          "destino": "Complicaciones biliares"
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "titulo": "Hernias: generalidades e inguinales",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diferenciar hernia inguinal directa, indirecta y femoral",
+        "Indicar la reparación"
+      ],
+      "temas": [
+        "Reducible, encarcelada y estrangulada",
+        "Directa vs indirecta (Hesselbach)",
+        "Hernia femoral y técnicas de reparación"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Hernias: generalidades e inguinales",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Hernias inguinales",
+          "minutos": 5,
+          "destino": "m4"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 4: Hernias inguinales",
+          "minutos": 6,
+          "destino": "p4"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Hernias inguinales",
+          "minutos": 3,
+          "destino": "Hernias inguinales"
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "titulo": "Hernias ventrales, umbilical y especiales",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer hernias umbilical, incisional y epigástrica",
+        "Identificar hernias especiales"
+      ],
+      "temas": [
+        "Hernia umbilical en niños y adultos",
+        "Hernia incisional",
+        "Littré, Richter y obturatriz"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Hernias ventrales, umbilical y especiales",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Hernias ventrales",
+          "minutos": 5,
+          "destino": "m5"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 5: Hernias ventrales",
+          "minutos": 6,
+          "destino": "p5"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Hernias ventrales",
+          "minutos": 3,
+          "destino": "Hernias ventrales"
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "titulo": "Vólvulo de colon",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer el vólvulo de sigmoides en la radiografía",
+        "Indicar la descompresión endoscópica"
+      ],
+      "temas": [
+        "Sigmoides vs ciego",
+        "Signo del grano de café",
+        "Destorsión y cirugía"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Vólvulo de colon",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Vólvulo",
+          "minutos": 5,
+          "destino": "m6"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 6: Vólvulo",
+          "minutos": 6,
+          "destino": "p6"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Vólvulo",
+          "minutos": 3,
+          "destino": "Vólvulo"
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "titulo": "Apendicitis aguda",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar apendicitis con la clínica y la escala de Alvarado",
+        "Indicar el estudio de imagen según el paciente"
+      ],
+      "temas": [
+        "Cronología del dolor y signos",
+        "Escala de Alvarado",
+        "Imagen y tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Apendicitis aguda",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Apendicitis",
+          "minutos": 5,
+          "destino": "m7"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 7: Apendicitis",
+          "minutos": 6,
+          "destino": "p7"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Apendicitis",
+          "minutos": 3,
+          "destino": "Apendicitis"
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "titulo": "Enfermedad diverticular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diferenciar diverticulosis de diverticulitis",
+        "Clasificar con Hinchey y tratar"
+      ],
+      "temas": [
+        "Diverticulosis y sangrado",
+        "Diverticulitis no complicada y complicada",
+        "Clasificación de Hinchey"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Enfermedad diverticular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Diverticulitis",
+          "minutos": 5,
+          "destino": "m8"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 8: Diverticulitis",
+          "minutos": 6,
+          "destino": "p8"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Diverticulitis",
+          "minutos": 3,
+          "destino": "Diverticulitis"
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "titulo": "Enfermedad hemorroidal",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Clasificar las hemorroides internas",
+        "Elegir tratamiento según el grado"
+      ],
+      "temas": [
+        "Internas vs externas",
+        "Grados I–IV",
+        "Tratamiento conservador, ligadura y hemorroidectomía"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Enfermedad hemorroidal",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Hemorroides",
+          "minutos": 5,
+          "destino": "m9"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 9: Hemorroides",
+          "minutos": 6,
+          "destino": "p9"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Hemorroides",
+          "minutos": 3,
+          "destino": "Hemorroides"
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "titulo": "Fístula perianal",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Aplicar la regla de Goodsall",
+        "Elegir la cirugía según la relación con el esfínter"
+      ],
+      "temas": [
+        "Origen criptoglandular",
+        "Clasificación de Parks",
+        "Fistulotomía y sedal"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Fístula perianal",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Fístula perianal",
+          "minutos": 5,
+          "destino": "m10"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 10: Fístula perianal",
+          "minutos": 6,
+          "destino": "p10"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Fístula perianal",
+          "minutos": 3,
+          "destino": "Fístula perianal"
+        }
+      ]
+    },
+    {
+      "id": "m11",
+      "titulo": "Absceso perianal",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar el absceso anorrectal",
+        "Indicar el drenaje"
+      ],
+      "temas": [
+        "Origen criptoglandular",
+        "Localizaciones",
+        "Drenaje y antibiótico"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Absceso perianal",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Absceso perianal",
+          "minutos": 5,
+          "destino": "m11"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 11: Absceso perianal",
+          "minutos": 6,
+          "destino": "p11"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Absceso perianal",
+          "minutos": 3,
+          "destino": "Absceso perianal"
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "titulo": "Fisura anal",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la fisura aguda y crónica",
+        "Aplicar el tratamiento escalonado"
+      ],
+      "temas": [
+        "Localización y clínica",
+        "Fisura crónica: tríada",
+        "Tratamiento médico y esfinterotomía"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Fisura anal",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Fisura anal",
+          "minutos": 5,
+          "destino": "m12"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 12: Fisura anal",
+          "minutos": 6,
+          "destino": "p12"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Fisura anal",
+          "minutos": 3,
+          "destino": "Fisura anal"
+        }
+      ]
+    },
+    {
+      "id": "m13",
+      "titulo": "Úlceras por presión",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Estadificar las úlceras por presión",
+        "Indicar prevención y tratamiento"
+      ],
+      "temas": [
+        "Factores de riesgo y escala de Braden",
+        "Estadios 1–4",
+        "Prevención y curación"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Úlceras por presión",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Úlceras por presión",
+          "minutos": 5,
+          "destino": "m13"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 13: Úlceras por presión",
+          "minutos": 6,
+          "destino": "p13"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Úlceras por presión",
+          "minutos": 3,
+          "destino": "Úlceras por presión"
+        }
+      ]
+    },
+    {
+      "id": "m14",
+      "titulo": "Enfermedad arterial periférica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar la EAP con el índice tobillo-brazo",
+        "Diferenciar claudicación de isquemia crítica y aguda"
+      ],
+      "temas": [
+        "Claudicación intermitente",
+        "Índice tobillo-brazo",
+        "Isquemia aguda: las 6 P"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Enfermedad arterial periférica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Enfermedad arterial",
+          "minutos": 5,
+          "destino": "m14"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 14: Enfermedad arterial",
+          "minutos": 6,
+          "destino": "p14"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Enfermedad arterial",
+          "minutos": 3,
+          "destino": "Enfermedad arterial"
+        }
+      ]
+    },
+    {
+      "id": "m15",
+      "titulo": "Insuficiencia venosa crónica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Clasificar con CEAP",
+        "Indicar compresión y tratamiento de várices"
+      ],
+      "temas": [
+        "Fisiopatología y factores de riesgo",
+        "Clasificación CEAP",
+        "Compresión, escleroterapia y cirugía"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Insuficiencia venosa crónica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Insuficiencia venosa",
+          "minutos": 5,
+          "destino": "m15"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 15: Insuficiencia venosa",
+          "minutos": 6,
+          "destino": "p15"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Insuficiencia venosa",
+          "minutos": 3,
+          "destino": "Insuficiencia venosa"
+        }
+      ]
+    },
+    {
+      "id": "m16",
+      "titulo": "Quemaduras",
+      "minutos": 42,
+      "video": "",
+      "objetivos": [
+        "Clasificar la profundidad y calcular la superficie quemada",
+        "Aplicar la reanimación con Parkland"
+      ],
+      "temas": [
+        "Profundidad",
+        "Regla de los 9 y Lund-Browder",
+        "Reanimación hídrica y criterios de referencia"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Quemaduras",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Quemaduras",
+          "minutos": 5,
+          "destino": "m16"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 16: Quemaduras",
+          "minutos": 6,
+          "destino": "p16"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Quemaduras",
+          "minutos": 3,
+          "destino": "Quemaduras"
+        },
+        {
+          "tipo": "examen",
+          "titulo": "Examen cronometrado: 20 preguntas",
+          "minutos": 20,
+          "destino": ""
+        }
+      ]
+    }
+  ],
+  "resumen": [
+    {
+      "id": "m1",
+      "titulo": "Oclusión intestinal",
+      "puntos": [
+        "Causa más común de oclusión de intestino delgado: adherencias (bridas) por cirugía previa; seguidas de hernias. En colon: cáncer colorrectal, después vólvulo.",
+        "Clínica: dolor cólico, distensión, vómito (temprano si es alta) y ausencia de evacuaciones y gases. Radiografía: asas dilatadas con niveles hidroaéreos en escalera; TC confirma y localiza.",
+        "Manejo inicial: ayuno, sonda nasogástrica, soluciones IV, corrección de electrolitos y vigilancia. La oclusión por bridas sin datos de complicación puede resolverse sin cirugía.",
+        "Cirugía urgente si hay datos de estrangulación: fiebre, taquicardia, dolor continuo, irritación peritoneal, leucocitosis, acidosis láctica o hernia encarcelada."
+      ],
+      "perla": "Oclusión en paciente sin cirugías previas: busca una hernia encarcelada."
+    },
+    {
+      "id": "m2",
+      "titulo": "Colecistitis y colelitiasis",
+      "puntos": [
+        "Factores de riesgo de litiasis: mujer, 40 años, obesidad, multiparidad, embarazo, pérdida rápida de peso. Los cálculos más comunes son de colesterol.",
+        "Cólico biliar: dolor en hipocondrio derecho o epigastrio tras comidas grasas, que dura < 6 h, sin fiebre. Colecistitis aguda: dolor > 6 h, fiebre, signo de Murphy positivo y leucocitosis.",
+        "Estudio de elección: ultrasonido de hígado y vías biliares (lito, pared engrosada > 4 mm, líquido perivesicular, Murphy ecográfico). Si es dudoso: gammagrafía HIDA.",
+        "Tratamiento: ayuno, líquidos, analgesia, antibiótico y colecistectomía laparoscópica temprana (idealmente < 72 h). Litiasis asintomática: no requiere cirugía, salvo excepciones (vesícula en porcelana, lito > 3 cm)."
+      ],
+      "perla": "Colelitiasis asintomática no se opera, excepto vesícula en porcelana o lito mayor de 3 cm."
+    },
+    {
+      "id": "m3",
+      "titulo": "Complicaciones de la litiasis biliar",
+      "puntos": [
+        "Coledocolitiasis: lito en el colédoco. Ictericia, coluria, acolia, elevación de bilirrubina directa y fosfatasa alcalina; colédoco dilatado (> 6 mm) en el ultrasonido. Tratamiento: CPRE con extracción y después colecistectomía.",
+        "Colangitis aguda: infección por obstrucción biliar. Tríada de Charcot: fiebre, ictericia y dolor en hipocondrio derecho. Péntada de Reynolds: + hipotensión y alteración del estado mental (grave).",
+        "Manejo de colangitis: antibióticos, líquidos y drenaje biliar (CPRE) urgente en casos graves o sin respuesta.",
+        "Íleo biliar: oclusión intestinal por un lito que pasa por una fístula colecistoentérica, más en mujeres mayores. Tríada de Rigler: neumobilia, asas dilatadas y lito ectópico (suele impactarse en íleon terminal)."
+      ],
+      "perla": "Charcot = fiebre + ictericia + dolor. Reynolds = Charcot + hipotensión + confusión: drenaje urgente."
+    },
+    {
+      "id": "m4",
+      "titulo": "Hernias: generalidades e inguinales",
+      "puntos": [
+        "Hernia reducible: el contenido regresa; encarcelada: no se reduce; estrangulada: compromiso vascular (dolor intenso, piel eritematosa, signos sistémicos). La estrangulada es urgencia quirúrgica.",
+        "La hernia más común en ambos sexos es la inguinal indirecta. Indirecta: pasa por el anillo inguinal profundo, lateral a los vasos epigástricos inferiores (persistencia del conducto peritoneovaginal). Directa: por el triángulo de Hesselbach, medial a los epigástricos.",
+        "Hernia femoral: por debajo del ligamento inguinal, más en mujeres mayores; alto riesgo de estrangulación, se repara siempre.",
+        "Reparación: técnica sin tensión con malla (Lichtenstein) o laparoscópica (TEP/TAPP, útil en bilateral o recurrente). En hernia inguinal asintomática en hombres, la vigilancia es una opción válida."
+      ],
+      "perla": "Indirecta: lateral a los vasos epigástricos inferiores. Directa: medial (triángulo de Hesselbach)."
+    },
+    {
+      "id": "m5",
+      "titulo": "Hernias ventrales, umbilical y especiales",
+      "puntos": [
+        "Hernia umbilical en niños: frecuente, la mayoría cierra espontáneamente antes de los 4–5 años; se opera si persiste, es > 1.5–2 cm o se complica. En adultos se asocia a obesidad, embarazo y ascitis.",
+        "Hernia incisional: en una cicatriz quirúrgica; factores: infección de herida, obesidad, tabaquismo, diabetes. Reparación con malla.",
+        "Hernia de Richter: solo se atrapa parte del borde antimesentérico del intestino; puede estrangularse sin causar oclusión completa. Hernia de Littré: contiene un divertículo de Meckel.",
+        "Hernia obturatriz: mujeres mayores y delgadas; dolor en la cara interna del muslo que aumenta con la rotación (signo de Howship-Romberg); suele presentarse como oclusión."
+      ],
+      "perla": "Mujer anciana y delgada con oclusión y dolor en la cara interna del muslo: hernia obturatriz."
+    },
+    {
+      "id": "m6",
+      "titulo": "Vólvulo de colon",
+      "puntos": [
+        "Torsión del colon sobre su mesenterio. El más común es el de sigmoides (adultos mayores, estreñimiento crónico, institucionalizados, enfermedad de Chagas); después el de ciego (más jóvenes).",
+        "Clínica: distensión abdominal importante, dolor y ausencia de evacuaciones. Radiografía: asa dilatada en 'grano de café' o 'U invertida'; enema con contraste: 'pico de pájaro'.",
+        "Vólvulo de sigmoides sin datos de isquemia: destorsión endoscópica (rectosigmoidoscopia) y después sigmoidectomía electiva por alta recurrencia.",
+        "Vólvulo de ciego, o cualquier vólvulo con perforación o isquemia: cirugía (hemicolectomía derecha en el de ciego)."
+      ],
+      "perla": "Vólvulo de sigmoides: primero destorsión endoscópica; vólvulo de ciego: cirugía."
+    },
+    {
+      "id": "m7",
+      "titulo": "Apendicitis aguda",
+      "puntos": [
+        "Causa más común de abdomen agudo quirúrgico. Causa: obstrucción de la luz (hiperplasia linfoide en jóvenes, fecalito en adultos).",
+        "Cronología de Murphy: dolor periumbilical que migra a fosa iliaca derecha, náusea/vómito y después fiebre. Signos: McBurney, Rovsing, psoas, obturador, rebote (Blumberg).",
+        "Escala de Alvarado (10 puntos): migración del dolor, anorexia, náusea/vómito, dolor en FID (2), rebote, fiebre, leucocitosis (2), desviación a la izquierda. ≥ 7: alta probabilidad.",
+        "Imagen si hay duda: ultrasonido en niños y embarazadas; TC en adultos. Tratamiento: apendicectomía (laparoscópica preferida) con antibiótico profiláctico; plastrón o absceso: antibióticos y drenaje percutáneo."
+      ],
+      "perla": "En niños y embarazadas el primer estudio de imagen es el ultrasonido; en adultos, la TC."
+    },
+    {
+      "id": "m8",
+      "titulo": "Enfermedad diverticular",
+      "puntos": [
+        "Diverticulosis: sacos de mucosa en el colon (sigmoides en occidente), por dieta baja en fibra y edad. Puede causar sangrado indoloro abundante.",
+        "Diverticulitis: inflamación del divertículo. Dolor en fosa iliaca izquierda, fiebre y leucocitosis ('apendicitis del lado izquierdo'). Estudio de elección: TC de abdomen.",
+        "No complicada: antibióticos orales y dieta (en casos seleccionados solo vigilancia). Absceso > 4 cm: drenaje percutáneo. Hinchey III–IV (peritonitis purulenta o fecal): cirugía urgente (Hartmann).",
+        "No se hace colonoscopia en la fase aguda (riesgo de perforación); se realiza 6–8 semanas después para descartar cáncer."
+      ],
+      "perla": "Colonoscopia contraindicada en diverticulitis aguda; hacerla 6–8 semanas después."
+    },
+    {
+      "id": "m9",
+      "titulo": "Enfermedad hemorroidal",
+      "puntos": [
+        "Internas: por arriba de la línea dentada, indoloras, sangrado rojo brillante. Externas: por debajo, dolorosas sobre todo si se trombosan.",
+        "Grados de las internas: I sangran sin prolapso; II prolapsan y reducen solas; III requieren reducción manual; IV prolapso irreductible.",
+        "Tratamiento: fibra, líquidos y baños de asiento para todos. Grados I–II (y algunos III): ligadura con banda elástica. Grados III–IV: hemorroidectomía.",
+        "Hemorroide externa trombosada con menos de 72 h: escisión del trombo; después de 72 h: manejo conservador."
+      ],
+      "perla": "Todo sangrado rectal en mayores de 40–45 años obliga a descartar cáncer de colon, aunque haya hemorroides."
+    },
+    {
+      "id": "m10",
+      "titulo": "Fístula perianal",
+      "puntos": [
+        "Trayecto entre el canal anal (cripta) y la piel perianal; casi siempre secuela de un absceso. Clínica: secreción purulenta crónica por un orificio perianal.",
+        "Regla de Goodsall: orificio externo posterior a la línea transanal → trayecto curvo hacia la línea media posterior; anterior → trayecto recto y radial.",
+        "Clasificación de Parks: interesfintérica (la más común), transesfintérica, supraesfintérica y extraesfintérica.",
+        "Tratamiento: fistulotomía en fístulas bajas; sedal (seton), colgajo de avance o LIFT en altas para proteger la continencia. Fístulas complejas o múltiples: descartar enfermedad de Crohn."
+      ],
+      "perla": "Fístulas perianales múltiples o recurrentes: piensa en enfermedad de Crohn."
+    },
+    {
+      "id": "m11",
+      "titulo": "Absceso perianal",
+      "puntos": [
+        "Infección de las glándulas anales (criptas), la fase aguda de la enfermedad cuya fase crónica es la fístula. Localización más común: perianal; otras: isquiorrectal, interesfintérica, supraelevador.",
+        "Clínica: dolor perianal intenso y constante, que empeora al sentarse; masa eritematosa, caliente y fluctuante; puede haber fiebre.",
+        "Tratamiento: incisión y drenaje en cuanto se diagnostica, aunque no haya fluctuación. No esperar a que 'madure'.",
+        "Antibióticos solo si hay celulitis extensa, inmunosupresión, diabetes, valvulopatía o datos sistémicos. Hasta 30–50 % evoluciona a fístula."
+      ],
+      "perla": "El absceso perianal se drena; los antibióticos solos no son tratamiento."
+    },
+    {
+      "id": "m12",
+      "titulo": "Fisura anal",
+      "puntos": [
+        "Desgarro lineal del anodermo, casi siempre en la línea media posterior, por paso de heces duras e hipertonía del esfínter interno. Clínica: dolor intenso al evacuar y sangrado rojo escaso.",
+        "Crónica (> 6–8 semanas): tríada de úlcera con fibras del esfínter expuestas, papila hipertrófica y hemorroide centinela.",
+        "Tratamiento inicial: fibra, líquidos, baños de asiento y analgésico tópico; después relajantes del esfínter (nifedipino o diltiazem tópico, nitroglicerina tópica) o toxina botulínica.",
+        "Fisura crónica que no responde: esfinterotomía lateral interna. Fisuras laterales o múltiples: descartar Crohn, VIH, sífilis, tuberculosis o cáncer."
+      ],
+      "perla": "Fisura fuera de la línea media: busca causa secundaria (Crohn, VIH, sífilis, cáncer)."
+    },
+    {
+      "id": "m13",
+      "titulo": "Úlceras por presión",
+      "puntos": [
+        "Lesión de piel y tejidos por presión sostenida sobre prominencias óseas (sacro el más común, talones, trocánteres). Riesgo: inmovilidad, desnutrición, humedad, edad avanzada.",
+        "Escala de Braden para evaluar riesgo (menor puntaje = mayor riesgo; ≤ 12 alto riesgo).",
+        "Estadios: 1 eritema que no blanquea con piel íntegra; 2 pérdida parcial (úlcera superficial o ampolla); 3 pérdida total de piel con grasa visible; 4 exposición de músculo, tendón o hueso. No estadificable: cubierta por escara.",
+        "Prevención: cambios de posición cada 2 h, superficies de redistribución de presión, manejo de humedad y nutrición. Tratamiento: limpieza, desbridamiento del tejido necrótico, apósitos que mantengan humedad y tratar infección."
+      ],
+      "perla": "La mejor intervención es la prevención: cambios de posición cada 2 horas."
+    },
+    {
+      "id": "m14",
+      "titulo": "Enfermedad arterial periférica",
+      "puntos": [
+        "Aterosclerosis de las arterias de las extremidades. Factores: tabaquismo (el más importante), diabetes, HTA, dislipidemia, edad.",
+        "Claudicación intermitente: dolor en la pantorrilla al caminar que cede con el reposo. Isquemia crítica: dolor en reposo, úlceras o gangrena.",
+        "Índice tobillo-brazo (ITB): normal 1.0–1.4; < 0.9 diagnóstico de EAP; < 0.4 isquemia grave; > 1.4 arterias no compresibles (calcificación en diabéticos).",
+        "Tratamiento: dejar de fumar, ejercicio supervisado, antiagregante, estatina; cilostazol para la claudicación. Revascularización en isquemia crítica. Isquemia aguda (6 P: dolor, palidez, ausencia de pulso, parestesias, parálisis, poiquilotermia): heparina y revascularización urgente."
+      ],
+      "perla": "Isquemia arterial aguda: heparina IV inmediata y revascularización urgente; las 6 P lo orientan."
+    },
+    {
+      "id": "m15",
+      "titulo": "Insuficiencia venosa crónica",
+      "puntos": [
+        "Hipertensión venosa por válvulas incompetentes. Factores: edad, sexo femenino, embarazo, obesidad, bipedestación prolongada, antecedente familiar y trombosis venosa previa.",
+        "Clínica: pesadez, edema vespertino, várices, prurito, hiperpigmentación (dermatitis ocre), lipodermatoesclerosis y úlcera venosa (región maleolar medial).",
+        "Clasificación CEAP: C0 sin signos; C1 telangiectasias; C2 várices; C3 edema; C4 cambios de piel; C5 úlcera cicatrizada; C6 úlcera activa. Estudio de elección: ultrasonido Doppler venoso.",
+        "Tratamiento: medidas generales y medias de compresión graduada; flebotónicos para síntomas; escleroterapia en telangiectasias; ablación endovenosa o cirugía en várices sintomáticas; úlcera: compresión y cuidado local."
+      ],
+      "perla": "Antes de indicar compresión fuerte, descarta enfermedad arterial (ITB < 0.6 la contraindica)."
+    },
+    {
+      "id": "m16",
+      "titulo": "Quemaduras",
+      "puntos": [
+        "Profundidad: superficial (epidermis, eritema doloroso, sin ampollas); espesor parcial superficial (ampollas, rosada, muy dolorosa); parcial profunda (blanquecina, menos dolor); espesor total (acartonada, indolora, no blanquea).",
+        "Superficie corporal quemada (SCQ): regla de los 9 en adultos (cabeza 9, cada brazo 9, cada pierna 18, tronco anterior 18, posterior 18, periné 1); en niños, Lund-Browder. La palma del paciente equivale a 1 %. No se cuentan las superficiales.",
+        "Parkland: 4 mL × kg × % SCQ de Ringer lactato en 24 h; la mitad en las primeras 8 h desde la quemadura y el resto en 16 h. Meta: diuresis 0.5 mL/kg/h en adultos (1 mL/kg/h en niños).",
+        "Vía aérea: intubación temprana si hay quemadura facial, esputo carbonáceo, estridor o ronquera. Referir a unidad de quemados: > 10–20 % SCQ, cara, manos, pies, genitales, articulaciones, eléctricas, químicas, inhalación o circunferenciales."
+      ],
+      "perla": "Parkland: 4 mL × kg × % SCQ; la mitad en las primeras 8 horas contadas desde la quemadura, no desde la llegada."
+    }
+  ],
+  "infografias": [
+    {
+      "id": "infografia",
+      "titulo": "Cirugía General de un vistazo",
+      "imagen": "assets/img/infografias/cirugia-infografia.svg",
+      "alt": "Infografía de Cirugía General: abdomen agudo, vía biliar, hernias, anorrectal y quemaduras"
+    },
+    {
+      "id": "algoritmo",
+      "titulo": "Diagrama de flujo: enfermedad litiásica biliar",
+      "imagen": "assets/img/infografias/cirugia-algoritmo.svg",
+      "alt": "Algoritmo de la enfermedad litiásica biliar"
+    }
+  ],
+  "flashcards": [
+    {
+      "tema": "Oclusión intestinal",
+      "frente": "Causa más común de oclusión de intestino delgado",
+      "reverso": "Adherencias (bridas) posquirúrgicas."
+    },
+    {
+      "tema": "Oclusión intestinal",
+      "frente": "Causa más común de oclusión de colon",
+      "reverso": "Cáncer colorrectal."
+    },
+    {
+      "tema": "Oclusión intestinal",
+      "frente": "Radiografía de oclusión intestinal",
+      "reverso": "Asas dilatadas con niveles hidroaéreos en escalera."
+    },
+    {
+      "tema": "Oclusión intestinal",
+      "frente": "Datos de estrangulación",
+      "reverso": "Fiebre, taquicardia, dolor continuo, peritonitis, leucocitosis, lactato elevado."
+    },
+    {
+      "tema": "Colecistitis",
+      "frente": "Estudio de elección en patología vesicular",
+      "reverso": "Ultrasonido de hígado y vías biliares."
+    },
+    {
+      "tema": "Colecistitis",
+      "frente": "Signo de Murphy",
+      "reverso": "Detención de la inspiración por dolor al palpar el hipocondrio derecho."
+    },
+    {
+      "tema": "Colecistitis",
+      "frente": "Tratamiento de la colecistitis aguda",
+      "reverso": "Colecistectomía laparoscópica temprana (< 72 h)."
+    },
+    {
+      "tema": "Colecistitis",
+      "frente": "Factores de riesgo clásicos de litiasis",
+      "reverso": "Mujer, cuarentona, obesa, fértil (multípara)."
+    },
+    {
+      "tema": "Complicaciones biliares",
+      "frente": "Tríada de Charcot",
+      "reverso": "Fiebre, ictericia y dolor en hipocondrio derecho."
+    },
+    {
+      "tema": "Complicaciones biliares",
+      "frente": "Péntada de Reynolds",
+      "reverso": "Charcot + hipotensión + alteración del estado mental."
+    },
+    {
+      "tema": "Complicaciones biliares",
+      "frente": "Tratamiento de la coledocolitiasis",
+      "reverso": "CPRE con extracción del lito y después colecistectomía."
+    },
+    {
+      "tema": "Complicaciones biliares",
+      "frente": "Tríada de Rigler (íleo biliar)",
+      "reverso": "Neumobilia, oclusión intestinal y lito ectópico."
+    },
+    {
+      "tema": "Hernias inguinales",
+      "frente": "Hernia más común en hombres y mujeres",
+      "reverso": "Inguinal indirecta."
+    },
+    {
+      "tema": "Hernias inguinales",
+      "frente": "Límites del triángulo de Hesselbach",
+      "reverso": "Vasos epigástricos inferiores, borde del recto y ligamento inguinal."
+    },
+    {
+      "tema": "Hernias inguinales",
+      "frente": "Hernia con mayor riesgo de estrangulación",
+      "reverso": "Femoral."
+    },
+    {
+      "tema": "Hernias inguinales",
+      "frente": "Técnica abierta sin tensión más usada",
+      "reverso": "Lichtenstein (con malla)."
+    },
+    {
+      "tema": "Hernias ventrales",
+      "frente": "Hernia de Richter",
+      "reverso": "Atrapamiento parcial de la pared antimesentérica; puede estrangularse sin oclusión."
+    },
+    {
+      "tema": "Hernias ventrales",
+      "frente": "Hernia de Littré",
+      "reverso": "Contiene un divertículo de Meckel."
+    },
+    {
+      "tema": "Hernias ventrales",
+      "frente": "Signo de Howship-Romberg",
+      "reverso": "Dolor en la cara interna del muslo por hernia obturatriz."
+    },
+    {
+      "tema": "Hernias ventrales",
+      "frente": "Hernia umbilical en niños: conducta",
+      "reverso": "Observación; la mayoría cierra antes de los 4–5 años."
+    },
+    {
+      "tema": "Vólvulo",
+      "frente": "Vólvulo de colon más frecuente",
+      "reverso": "Sigmoides."
+    },
+    {
+      "tema": "Vólvulo",
+      "frente": "Signo radiográfico del vólvulo de sigmoides",
+      "reverso": "Grano de café (U invertida)."
+    },
+    {
+      "tema": "Vólvulo",
+      "frente": "Tratamiento inicial del vólvulo de sigmoides sin isquemia",
+      "reverso": "Destorsión endoscópica, luego sigmoidectomía electiva."
+    },
+    {
+      "tema": "Vólvulo",
+      "frente": "Tratamiento del vólvulo de ciego",
+      "reverso": "Cirugía (hemicolectomía derecha)."
+    },
+    {
+      "tema": "Apendicitis",
+      "frente": "Escala de Alvarado: puntaje de alta probabilidad",
+      "reverso": "7 o más (de 10)."
+    },
+    {
+      "tema": "Apendicitis",
+      "frente": "Signo de Rovsing",
+      "reverso": "Dolor en FID al presionar la fosa iliaca izquierda."
+    },
+    {
+      "tema": "Apendicitis",
+      "frente": "Causa de obstrucción apendicular en niños",
+      "reverso": "Hiperplasia linfoide."
+    },
+    {
+      "tema": "Apendicitis",
+      "frente": "Imagen en embarazada con sospecha de apendicitis",
+      "reverso": "Ultrasonido (resonancia si no es concluyente)."
+    },
+    {
+      "tema": "Diverticulitis",
+      "frente": "Estudio de elección en diverticulitis",
+      "reverso": "Tomografía de abdomen con contraste."
+    },
+    {
+      "tema": "Diverticulitis",
+      "frente": "Localización más común en occidente",
+      "reverso": "Colon sigmoides."
+    },
+    {
+      "tema": "Diverticulitis",
+      "frente": "Hinchey III y IV",
+      "reverso": "Peritonitis purulenta (III) y fecal (IV): cirugía urgente."
+    },
+    {
+      "tema": "Diverticulitis",
+      "frente": "¿Cuándo hacer colonoscopia?",
+      "reverso": "6–8 semanas después del episodio agudo."
+    },
+    {
+      "tema": "Hemorroides",
+      "frente": "Hemorroides grado III",
+      "reverso": "Prolapsan y requieren reducción manual."
+    },
+    {
+      "tema": "Hemorroides",
+      "frente": "Tratamiento de hemorroides internas grado I–II",
+      "reverso": "Fibra + ligadura con banda elástica."
+    },
+    {
+      "tema": "Hemorroides",
+      "frente": "Hemorroide externa trombosada < 72 h",
+      "reverso": "Escisión del trombo."
+    },
+    {
+      "tema": "Hemorroides",
+      "frente": "Diferencia clínica interna vs externa",
+      "reverso": "Interna: indolora y sangra. Externa: dolorosa."
+    },
+    {
+      "tema": "Fístula perianal",
+      "frente": "Regla de Goodsall",
+      "reverso": "Orificio posterior: trayecto curvo a la línea media posterior. Anterior: recto y radial."
+    },
+    {
+      "tema": "Fístula perianal",
+      "frente": "Fístula perianal más común (Parks)",
+      "reverso": "Interesfintérica."
+    },
+    {
+      "tema": "Fístula perianal",
+      "frente": "Tratamiento de la fístula baja",
+      "reverso": "Fistulotomía."
+    },
+    {
+      "tema": "Fístula perianal",
+      "frente": "Fístulas perianales complejas: descartar…",
+      "reverso": "Enfermedad de Crohn."
+    },
+    {
+      "tema": "Absceso perianal",
+      "frente": "Origen del absceso perianal",
+      "reverso": "Infección de las glándulas anales (criptoglandular)."
+    },
+    {
+      "tema": "Absceso perianal",
+      "frente": "Tratamiento del absceso perianal",
+      "reverso": "Incisión y drenaje inmediatos."
+    },
+    {
+      "tema": "Absceso perianal",
+      "frente": "¿Cuándo agregar antibióticos?",
+      "reverso": "Celulitis extensa, inmunosupresión, diabetes, valvulopatía o sepsis."
+    },
+    {
+      "tema": "Absceso perianal",
+      "frente": "Evolución crónica del absceso",
+      "reverso": "Fístula perianal (30–50 %)."
+    },
+    {
+      "tema": "Fisura anal",
+      "frente": "Localización más común de la fisura anal",
+      "reverso": "Línea media posterior."
+    },
+    {
+      "tema": "Fisura anal",
+      "frente": "Tríada de la fisura crónica",
+      "reverso": "Úlcera, papila hipertrófica y hemorroide centinela."
+    },
+    {
+      "tema": "Fisura anal",
+      "frente": "Tratamiento médico de la fisura",
+      "reverso": "Fibra, baños de asiento y relajantes del esfínter (nifedipino/diltiazem tópico)."
+    },
+    {
+      "tema": "Fisura anal",
+      "frente": "Cirugía de la fisura crónica refractaria",
+      "reverso": "Esfinterotomía lateral interna."
+    },
+    {
+      "tema": "Úlceras por presión",
+      "frente": "Sitio más común de úlcera por presión",
+      "reverso": "Región sacra."
+    },
+    {
+      "tema": "Úlceras por presión",
+      "frente": "Escala para evaluar el riesgo",
+      "reverso": "Braden (menor puntaje, mayor riesgo)."
+    },
+    {
+      "tema": "Úlceras por presión",
+      "frente": "Úlcera estadio 4",
+      "reverso": "Pérdida total con exposición de músculo, tendón o hueso."
+    },
+    {
+      "tema": "Úlceras por presión",
+      "frente": "Frecuencia de cambios de posición",
+      "reverso": "Cada 2 horas."
+    },
+    {
+      "tema": "Enfermedad arterial",
+      "frente": "ITB diagnóstico de enfermedad arterial periférica",
+      "reverso": "< 0.9."
+    },
+    {
+      "tema": "Enfermedad arterial",
+      "frente": "Factor de riesgo más importante de EAP",
+      "reverso": "Tabaquismo."
+    },
+    {
+      "tema": "Enfermedad arterial",
+      "frente": "Fármaco para mejorar la distancia de claudicación",
+      "reverso": "Cilostazol."
+    },
+    {
+      "tema": "Enfermedad arterial",
+      "frente": "Las 6 P de la isquemia aguda",
+      "reverso": "Dolor, palidez, ausencia de pulso, parestesias, parálisis y frialdad."
+    },
+    {
+      "tema": "Insuficiencia venosa",
+      "frente": "Estudio de elección en insuficiencia venosa",
+      "reverso": "Ultrasonido Doppler venoso."
+    },
+    {
+      "tema": "Insuficiencia venosa",
+      "frente": "CEAP C6",
+      "reverso": "Úlcera venosa activa."
+    },
+    {
+      "tema": "Insuficiencia venosa",
+      "frente": "Localización típica de la úlcera venosa",
+      "reverso": "Región maleolar medial."
+    },
+    {
+      "tema": "Insuficiencia venosa",
+      "frente": "Base del tratamiento",
+      "reverso": "Compresión graduada."
+    },
+    {
+      "tema": "Quemaduras",
+      "frente": "Fórmula de Parkland",
+      "reverso": "4 mL × kg × % SCQ de Ringer lactato en 24 h (mitad en las primeras 8 h)."
+    },
+    {
+      "tema": "Quemaduras",
+      "frente": "Regla de los 9: una pierna completa",
+      "reverso": "18 %."
+    },
+    {
+      "tema": "Quemaduras",
+      "frente": "Meta de diuresis en adulto quemado",
+      "reverso": "0.5 mL/kg/h."
+    },
+    {
+      "tema": "Quemaduras",
+      "frente": "Quemadura de espesor total",
+      "reverso": "Acartonada, blanquecina o negra, indolora."
+    }
+  ],
+  "podcast": [
+    {
+      "id": "p1",
+      "titulo": "Oclusión intestinal",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p2",
+      "titulo": "Colecistitis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p3",
+      "titulo": "Complicaciones biliares",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p4",
+      "titulo": "Hernias inguinales",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p5",
+      "titulo": "Hernias ventrales",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p6",
+      "titulo": "Vólvulo",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p7",
+      "titulo": "Apendicitis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p8",
+      "titulo": "Diverticulitis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p9",
+      "titulo": "Hemorroides",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p10",
+      "titulo": "Fístula perianal",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p11",
+      "titulo": "Absceso perianal",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p12",
+      "titulo": "Fisura anal",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p13",
+      "titulo": "Úlceras por presión",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p14",
+      "titulo": "Enfermedad arterial",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p15",
+      "titulo": "Insuficiencia venosa",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p16",
+      "titulo": "Quemaduras",
+      "minutos": 6,
+      "audio": ""
+    }
+  ],
+  "examen": {
+    "minutos": 20,
+    "cantidad": 20,
+    "muestraCantidad": 5,
+    "aprobatorio": 70,
+    "codigoDemo": "KRONOS-DEMO",
+    "preguntas": [
+      {
+        "tema": "Oclusión intestinal",
+        "modulo": "m1",
+        "caso": "Hombre de 50 años con antecedente de apendicectomía, con dolor cólico, distensión, vómito y sin canalizar gases. Estable, sin peritonitis.",
+        "pregunta": "¿Cuál es el manejo inicial?",
+        "opciones": [
+          "Laparotomía inmediata",
+          "Laxantes",
+          "Ayuno, sonda nasogástrica y soluciones IV",
+          "Colonoscopia urgente"
+        ],
+        "correcta": 2,
+        "explicacion": "Oclusión por bridas sin datos de complicación: manejo conservador con vigilancia."
+      },
+      {
+        "tema": "Oclusión intestinal",
+        "modulo": "m1",
+        "caso": "Mujer de 70 años sin cirugías previas con oclusión de intestino delgado y masa dolorosa en la ingle.",
+        "pregunta": "¿Cuál es la causa más probable?",
+        "opciones": [
+          "Adherencias",
+          "Cáncer gástrico",
+          "Hernia encarcelada",
+          "Íleo paralítico"
+        ],
+        "correcta": 2,
+        "explicacion": "Sin cirugías previas, la hernia es la causa principal; buscarla siempre en la exploración."
+      },
+      {
+        "tema": "Oclusión intestinal",
+        "modulo": "m1",
+        "caso": "Paciente con oclusión que presenta fiebre, taquicardia, dolor continuo y lactato elevado.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Seguir el manejo conservador 72 h",
+          "Cirugía urgente",
+          "Enema",
+          "Alta con analgésico"
+        ],
+        "correcta": 1,
+        "explicacion": "Datos de estrangulación obligan a cirugía urgente."
+      },
+      {
+        "tema": "Colecistitis",
+        "modulo": "m2",
+        "caso": "Mujer de 42 años con dolor en hipocondrio derecho de 12 h, fiebre de 38.5 °C y Murphy positivo.",
+        "pregunta": "¿Qué estudio solicitas primero?",
+        "opciones": [
+          "Tomografía de abdomen",
+          "Ultrasonido de vías biliares",
+          "CPRE",
+          "Colonoscopia"
+        ],
+        "correcta": 1,
+        "explicacion": "El ultrasonido es el estudio inicial y de elección para colecistitis."
+      },
+      {
+        "tema": "Colecistitis",
+        "modulo": "m2",
+        "caso": "El ultrasonido confirma colecistitis aguda litiásica en paciente sin comorbilidades.",
+        "pregunta": "¿Cuál es el tratamiento definitivo?",
+        "opciones": [
+          "Colecistectomía laparoscópica temprana",
+          "Ácido ursodesoxicólico",
+          "Litotricia",
+          "Solo antibióticos"
+        ],
+        "correcta": 0,
+        "explicacion": "La colecistectomía temprana reduce complicaciones y estancia."
+      },
+      {
+        "tema": "Colecistitis",
+        "modulo": "m2",
+        "caso": "Hombre de 50 años con litos vesiculares pequeños hallados de forma incidental, asintomático.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Colecistectomía urgente",
+          "CPRE",
+          "Antibióticos",
+          "Observación"
+        ],
+        "correcta": 3,
+        "explicacion": "La colelitiasis asintomática no requiere cirugía en la mayoría de los casos."
+      },
+      {
+        "tema": "Complicaciones biliares",
+        "modulo": "m3",
+        "caso": "Mujer de 60 años con fiebre, ictericia y dolor en hipocondrio derecho; colédoco de 10 mm en el ultrasonido.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Cólico biliar",
+          "Hepatitis viral",
+          "Colangitis aguda",
+          "Pancreatitis crónica"
+        ],
+        "correcta": 2,
+        "explicacion": "Tríada de Charcot con colédoco dilatado: colangitis por obstrucción."
+      },
+      {
+        "tema": "Complicaciones biliares",
+        "modulo": "m3",
+        "caso": "La paciente anterior evoluciona con hipotensión y confusión pese a antibióticos.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Seguir solo con antibióticos",
+          "Colecistectomía electiva en 6 semanas",
+          "Alta",
+          "Drenaje biliar urgente por CPRE"
+        ],
+        "correcta": 3,
+        "explicacion": "Péntada de Reynolds (colangitis grave): drenaje biliar urgente."
+      },
+      {
+        "tema": "Complicaciones biliares",
+        "modulo": "m3",
+        "caso": "Mujer de 78 años con oclusión intestinal; la radiografía muestra aire en la vía biliar y una imagen cálcica en fosa iliaca derecha.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Vólvulo de sigmoides",
+          "Apendicitis",
+          "Íleo biliar",
+          "Cáncer de colon"
+        ],
+        "correcta": 2,
+        "explicacion": "Neumobilia + oclusión + lito ectópico (tríada de Rigler) = íleo biliar."
+      },
+      {
+        "tema": "Hernias inguinales",
+        "modulo": "m4",
+        "caso": "Hombre de 25 años con hernia inguinal derecha; en la cirugía el saco sale lateral a los vasos epigástricos inferiores.",
+        "pregunta": "¿Qué tipo de hernia es?",
+        "opciones": [
+          "Inguinal directa",
+          "Femoral",
+          "Spiegel",
+          "Inguinal indirecta"
+        ],
+        "correcta": 3,
+        "explicacion": "Lateral a los epigástricos inferiores, por el anillo profundo: indirecta."
+      },
+      {
+        "tema": "Hernias inguinales",
+        "modulo": "m4",
+        "caso": "Mujer de 75 años con masa dolorosa debajo del ligamento inguinal, irreductible.",
+        "pregunta": "¿Cuál es el diagnóstico más probable?",
+        "opciones": [
+          "Linfadenitis",
+          "Hernia femoral encarcelada",
+          "Hernia umbilical",
+          "Lipoma"
+        ],
+        "correcta": 1,
+        "explicacion": "La hernia femoral es más frecuente en mujeres mayores y tiende a encarcelarse."
+      },
+      {
+        "tema": "Hernias inguinales",
+        "modulo": "m4",
+        "caso": "Hombre con hernia inguinal de 8 h, irreductible, con piel eritematosa, fiebre y leucocitosis.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Cirugía urgente",
+          "Reducción forzada en urgencias y alta",
+          "Faja",
+          "Cirugía electiva en 3 meses"
+        ],
+        "correcta": 0,
+        "explicacion": "Datos de estrangulación: cirugía urgente; no intentar reducir."
+      },
+      {
+        "tema": "Hernias ventrales",
+        "modulo": "m5",
+        "caso": "Lactante de 8 meses con hernia umbilical de 1 cm, reducible y asintomática.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Cirugía inmediata",
+          "Faja compresiva",
+          "Observación",
+          "Moneda sobre el ombligo"
+        ],
+        "correcta": 2,
+        "explicacion": "La mayoría cierra sola en los primeros años de vida."
+      },
+      {
+        "tema": "Hernias ventrales",
+        "modulo": "m5",
+        "caso": "Mujer de 82 años, delgada, con oclusión intestinal y dolor en la cara medial del muslo derecho.",
+        "pregunta": "¿Cuál es la hernia más probable?",
+        "opciones": [
+          "Obturatriz",
+          "Inguinal directa",
+          "Epigástrica",
+          "Spiegel"
+        ],
+        "correcta": 0,
+        "explicacion": "Signo de Howship-Romberg en mujer anciana y delgada."
+      },
+      {
+        "tema": "Hernias ventrales",
+        "modulo": "m5",
+        "caso": "En la cirugía de una hernia se encuentra que solo una parte de la pared intestinal está atrapada y necrótica, sin oclusión completa.",
+        "pregunta": "¿Cómo se llama esta hernia?",
+        "opciones": [
+          "Richter",
+          "Littré",
+          "Amyand",
+          "Spiegel"
+        ],
+        "correcta": 0,
+        "explicacion": "La hernia de Richter atrapa parte de la pared antimesentérica."
+      },
+      {
+        "tema": "Vólvulo",
+        "modulo": "m6",
+        "caso": "Hombre de 80 años con estreñimiento crónico, distensión importante y radiografía con asa en 'grano de café'.",
+        "pregunta": "¿Cuál es el manejo inicial si no hay datos de isquemia?",
+        "opciones": [
+          "Laparotomía inmediata",
+          "Destorsión endoscópica",
+          "Laxantes orales",
+          "Antibióticos solos"
+        ],
+        "correcta": 1,
+        "explicacion": "Vólvulo de sigmoides no complicado: destorsión endoscópica."
+      },
+      {
+        "tema": "Vólvulo",
+        "modulo": "m6",
+        "caso": "Tras la destorsión exitosa del paciente anterior.",
+        "pregunta": "¿Qué se recomienda?",
+        "opciones": [
+          "Nada más",
+          "Colocación de sonda permanente",
+          "Dieta rica en fibra únicamente",
+          "Sigmoidectomía electiva"
+        ],
+        "correcta": 3,
+        "explicacion": "La recurrencia es alta; se programa sigmoidectomía."
+      },
+      {
+        "tema": "Vólvulo",
+        "modulo": "m6",
+        "caso": "Mujer de 40 años con oclusión; la radiografía muestra un ciego muy dilatado desplazado al cuadrante superior izquierdo.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Destorsión endoscópica",
+          "Enema",
+          "Observación",
+          "Cirugía (hemicolectomía derecha)"
+        ],
+        "correcta": 3,
+        "explicacion": "El vólvulo de ciego se trata quirúrgicamente."
+      },
+      {
+        "tema": "Apendicitis",
+        "modulo": "m7",
+        "caso": "Joven de 19 años con dolor periumbilical que migró a fosa iliaca derecha, anorexia, fiebre de 38 °C, rebote positivo y leucocitosis con neutrofilia.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Tomografía y alta",
+          "Antibiótico oral y vigilar en casa",
+          "Colonoscopia",
+          "Apendicectomía"
+        ],
+        "correcta": 3,
+        "explicacion": "Cuadro típico con Alvarado alto: apendicectomía."
+      },
+      {
+        "tema": "Apendicitis",
+        "modulo": "m7",
+        "caso": "Embarazada de 20 semanas con dolor en flanco derecho y sospecha de apendicitis.",
+        "pregunta": "¿Qué estudio solicitas primero?",
+        "opciones": [
+          "Tomografía con contraste",
+          "Radiografía simple",
+          "Colon por enema",
+          "Ultrasonido"
+        ],
+        "correcta": 3,
+        "explicacion": "En embarazadas se inicia con ultrasonido para evitar radiación."
+      },
+      {
+        "tema": "Apendicitis",
+        "modulo": "m7",
+        "caso": "Paciente con 6 días de dolor en FID y masa palpable; la TC muestra un absceso apendicular de 5 cm.",
+        "pregunta": "¿Cuál es el manejo inicial?",
+        "opciones": [
+          "Apendicectomía inmediata",
+          "Alta",
+          "Laxantes",
+          "Antibióticos y drenaje percutáneo"
+        ],
+        "correcta": 3,
+        "explicacion": "Absceso apendicular: drenaje percutáneo y antibióticos; cirugía diferida si se requiere."
+      },
+      {
+        "tema": "Diverticulitis",
+        "modulo": "m8",
+        "caso": "Hombre de 65 años con dolor en fosa iliaca izquierda, fiebre y leucocitosis.",
+        "pregunta": "¿Qué estudio solicitas?",
+        "opciones": [
+          "Colonoscopia urgente",
+          "Tomografía de abdomen",
+          "Colon por enema",
+          "Ultrasonido transvaginal"
+        ],
+        "correcta": 1,
+        "explicacion": "La TC confirma la diverticulitis y descarta complicaciones."
+      },
+      {
+        "tema": "Diverticulitis",
+        "modulo": "m8",
+        "caso": "La TC muestra un absceso pericólico de 6 cm en paciente estable.",
+        "pregunta": "¿Cuál es el manejo?",
+        "opciones": [
+          "Colonoscopia",
+          "Alta con analgésico",
+          "Solo dieta",
+          "Antibióticos y drenaje percutáneo"
+        ],
+        "correcta": 3,
+        "explicacion": "Absceso > 4 cm: drenaje percutáneo guiado por imagen más antibióticos."
+      },
+      {
+        "tema": "Diverticulitis",
+        "modulo": "m8",
+        "caso": "Paciente con diverticulitis y peritonitis fecal generalizada.",
+        "pregunta": "¿Qué procedimiento es el indicado?",
+        "opciones": [
+          "Drenaje percutáneo",
+          "Cirugía urgente (p. ej., Hartmann)",
+          "Antibióticos orales",
+          "Colonoscopia"
+        ],
+        "correcta": 1,
+        "explicacion": "Hinchey IV: cirugía urgente."
+      },
+      {
+        "tema": "Hemorroides",
+        "modulo": "m9",
+        "caso": "Hombre de 35 años con sangrado rojo brillante al evacuar y hemorroides que prolapsan y se reducen solas.",
+        "pregunta": "¿Qué grado son?",
+        "opciones": [
+          "I",
+          "III",
+          "IV",
+          "II"
+        ],
+        "correcta": 3,
+        "explicacion": "Prolapso con reducción espontánea: grado II."
+      },
+      {
+        "tema": "Hemorroides",
+        "modulo": "m9",
+        "caso": "Mujer con hemorroides internas que prolapsan permanentemente y no se pueden reducir.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Hemorroidectomía",
+          "Solo fibra",
+          "Ligadura con banda",
+          "Esclerosis"
+        ],
+        "correcta": 0,
+        "explicacion": "Grado IV: tratamiento quirúrgico."
+      },
+      {
+        "tema": "Hemorroides",
+        "modulo": "m9",
+        "caso": "Paciente con nódulo perianal violáceo muy doloroso desde hace 24 h.",
+        "pregunta": "¿Qué tratamiento indicas?",
+        "opciones": [
+          "Hemorroidectomía radical",
+          "Escisión del trombo",
+          "Solo antibiótico",
+          "Colonoscopia urgente"
+        ],
+        "correcta": 1,
+        "explicacion": "Hemorroide externa trombosada de < 72 h: escisión."
+      },
+      {
+        "tema": "Fístula perianal",
+        "modulo": "m10",
+        "caso": "Hombre con secreción purulenta crónica por un orificio perianal posterior.",
+        "pregunta": "Según Goodsall, ¿dónde estará el orificio interno?",
+        "opciones": [
+          "En el mismo radio, trayecto recto",
+          "En la línea media anterior",
+          "No hay orificio interno",
+          "En la línea media posterior, por un trayecto curvo"
+        ],
+        "correcta": 3,
+        "explicacion": "Los orificios posteriores siguen un trayecto curvo hacia la línea media posterior."
+      },
+      {
+        "tema": "Fístula perianal",
+        "modulo": "m10",
+        "caso": "Fístula interesfintérica baja en paciente continente.",
+        "pregunta": "¿Cuál es el tratamiento de elección?",
+        "opciones": [
+          "Fistulotomía",
+          "Colectomía",
+          "Solo antibiótico",
+          "Colostomía"
+        ],
+        "correcta": 0,
+        "explicacion": "Las fístulas bajas se tratan con fistulotomía con bajo riesgo de incontinencia."
+      },
+      {
+        "tema": "Fístula perianal",
+        "modulo": "m10",
+        "caso": "Joven con varias fístulas perianales recurrentes, diarrea crónica y pérdida de peso.",
+        "pregunta": "¿Qué enfermedad debes descartar?",
+        "opciones": [
+          "Síndrome de intestino irritable",
+          "Diverticulitis",
+          "Enfermedad de Crohn",
+          "Hemorroides"
+        ],
+        "correcta": 2,
+        "explicacion": "La enfermedad perianal compleja es característica del Crohn."
+      },
+      {
+        "tema": "Absceso perianal",
+        "modulo": "m11",
+        "caso": "Hombre de 35 años con dolor perianal intenso desde hace 3 días y masa eritematosa fluctuante a las 5 del reloj.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Incisión y drenaje",
+          "Solo antibióticos orales",
+          "Baños de asiento y esperar",
+          "Hemorroidectomía"
+        ],
+        "correcta": 0,
+        "explicacion": "El absceso perianal requiere drenaje."
+      },
+      {
+        "tema": "Absceso perianal",
+        "modulo": "m11",
+        "caso": "Diabético descontrolado con absceso perianal y celulitis extensa.",
+        "pregunta": "¿Qué se agrega al drenaje?",
+        "opciones": [
+          "Nada",
+          "Esteroides",
+          "Anticoagulantes",
+          "Antibióticos"
+        ],
+        "correcta": 3,
+        "explicacion": "Diabetes y celulitis extensa son indicaciones de antibiótico además del drenaje."
+      },
+      {
+        "tema": "Absceso perianal",
+        "modulo": "m11",
+        "caso": "Tras drenar un absceso perianal, el paciente presenta secreción crónica por la herida a los 3 meses.",
+        "pregunta": "¿Cuál es la complicación?",
+        "opciones": [
+          "Fisura anal",
+          "Fístula perianal",
+          "Hemorroides",
+          "Cáncer anal"
+        ],
+        "correcta": 1,
+        "explicacion": "La fístula es la evolución crónica del absceso."
+      },
+      {
+        "tema": "Fisura anal",
+        "modulo": "m12",
+        "caso": "Mujer de 28 años con dolor anal intenso al evacuar y sangrado escaso; desgarro en la línea media posterior.",
+        "pregunta": "¿Cuál es el tratamiento inicial?",
+        "opciones": [
+          "Esfinterotomía inmediata",
+          "Hemorroidectomía",
+          "Antibiótico IV",
+          "Fibra, baños de asiento y nifedipino tópico"
+        ],
+        "correcta": 3,
+        "explicacion": "La fisura aguda se trata primero de forma conservadora con relajantes del esfínter."
+      },
+      {
+        "tema": "Fisura anal",
+        "modulo": "m12",
+        "caso": "Paciente con fisura de 4 meses con papila hipertrófica y hemorroide centinela, sin respuesta a tratamiento médico.",
+        "pregunta": "¿Qué cirugía indicas?",
+        "opciones": [
+          "Fistulotomía",
+          "Colostomía",
+          "Ligadura con banda",
+          "Esfinterotomía lateral interna"
+        ],
+        "correcta": 3,
+        "explicacion": "Fisura crónica refractaria: esfinterotomía lateral interna."
+      },
+      {
+        "tema": "Fisura anal",
+        "modulo": "m12",
+        "caso": "Hombre con fisura anal en posición lateral, indolora, y lesiones genitales.",
+        "pregunta": "¿Qué debes descartar?",
+        "opciones": [
+          "Hemorroides grado I",
+          "Sífilis o VIH",
+          "Absceso",
+          "Apendicitis"
+        ],
+        "correcta": 1,
+        "explicacion": "Las fisuras atípicas obligan a buscar causas secundarias."
+      },
+      {
+        "tema": "Úlceras por presión",
+        "modulo": "m13",
+        "caso": "Adulto mayor encamado con zona sacra eritematosa que no blanquea a la presión, piel íntegra.",
+        "pregunta": "¿Qué estadio es?",
+        "opciones": [
+          "2",
+          "3",
+          "4",
+          "1"
+        ],
+        "correcta": 3,
+        "explicacion": "Eritema que no blanquea con piel intacta: estadio 1."
+      },
+      {
+        "tema": "Úlceras por presión",
+        "modulo": "m13",
+        "caso": "Úlcera sacra con exposición de hueso.",
+        "pregunta": "¿Qué estadio es?",
+        "opciones": [
+          "3",
+          "2",
+          "No estadificable",
+          "4"
+        ],
+        "correcta": 3,
+        "explicacion": "Exposición de hueso, tendón o músculo: estadio 4."
+      },
+      {
+        "tema": "Úlceras por presión",
+        "modulo": "m13",
+        "caso": "Paciente con secuelas de EVC, inmóvil y desnutrido.",
+        "pregunta": "¿Qué medida preventiva es la más importante?",
+        "opciones": [
+          "Antibiótico profiláctico",
+          "Masaje vigoroso de prominencias",
+          "Reposo absoluto sin movilizar",
+          "Cambios de posición cada 2 horas"
+        ],
+        "correcta": 3,
+        "explicacion": "Los cambios de posición frecuentes evitan la presión sostenida."
+      },
+      {
+        "tema": "Enfermedad arterial",
+        "modulo": "m14",
+        "caso": "Fumador de 65 años con dolor en pantorrillas al caminar 200 m que cede al detenerse.",
+        "pregunta": "¿Qué estudio inicial confirma el diagnóstico?",
+        "opciones": [
+          "Índice tobillo-brazo",
+          "Venografía",
+          "Electromiografía",
+          "Radiografía de rodilla"
+        ],
+        "correcta": 0,
+        "explicacion": "La claudicación intermitente se confirma con ITB < 0.9."
+      },
+      {
+        "tema": "Enfermedad arterial",
+        "modulo": "m14",
+        "caso": "Diabético con ITB de 1.6.",
+        "pregunta": "¿Cómo se interpreta?",
+        "opciones": [
+          "Normal",
+          "EAP grave",
+          "Arterias no compresibles por calcificación",
+          "Insuficiencia venosa"
+        ],
+        "correcta": 2,
+        "explicacion": "ITB > 1.4 indica arterias rígidas; se usa índice dedo-brazo u otros estudios."
+      },
+      {
+        "tema": "Enfermedad arterial",
+        "modulo": "m14",
+        "caso": "Paciente con FA sin anticoagulación con dolor súbito, palidez, frialdad y ausencia de pulsos en la pierna izquierda.",
+        "pregunta": "¿Cuál es la conducta inmediata?",
+        "opciones": [
+          "Cilostazol",
+          "Heparina IV y valoración vascular urgente",
+          "Elevación y analgésico",
+          "Medias de compresión"
+        ],
+        "correcta": 1,
+        "explicacion": "Isquemia arterial aguda embólica: anticoagular y revascularizar de urgencia."
+      },
+      {
+        "tema": "Insuficiencia venosa",
+        "modulo": "m15",
+        "caso": "Mujer de 50 años con várices, edema vespertino y úlcera activa en el maléolo medial.",
+        "pregunta": "¿Qué clase CEAP tiene?",
+        "opciones": [
+          "C2",
+          "C4",
+          "C5",
+          "C6"
+        ],
+        "correcta": 3,
+        "explicacion": "Úlcera venosa activa: C6."
+      },
+      {
+        "tema": "Insuficiencia venosa",
+        "modulo": "m15",
+        "caso": "Paciente con sospecha de insuficiencia venosa.",
+        "pregunta": "¿Qué estudio confirma el reflujo?",
+        "opciones": [
+          "Angiotomografía arterial",
+          "Radiografía",
+          "Ultrasonido Doppler venoso",
+          "Gammagrafía ósea"
+        ],
+        "correcta": 2,
+        "explicacion": "El Doppler venoso evalúa reflujo y obstrucción."
+      },
+      {
+        "tema": "Insuficiencia venosa",
+        "modulo": "m15",
+        "caso": "Paciente con úlcera venosa y pulsos pedios presentes, ITB 1.0.",
+        "pregunta": "¿Cuál es la base del tratamiento?",
+        "opciones": [
+          "Terapia de compresión",
+          "Antibiótico oral prolongado",
+          "Amputación",
+          "Reposo absoluto"
+        ],
+        "correcta": 0,
+        "explicacion": "La compresión es la piedra angular para cicatrizar la úlcera venosa."
+      },
+      {
+        "tema": "Quemaduras",
+        "modulo": "m16",
+        "caso": "Hombre de 70 kg con quemaduras de segundo y tercer grado en el 30 % de la superficie corporal.",
+        "pregunta": "¿Cuántos mililitros de Ringer lactato requiere en las primeras 24 h según Parkland?",
+        "opciones": [
+          "4,200 mL",
+          "2,100 mL",
+          "8,400 mL",
+          "16,800 mL"
+        ],
+        "correcta": 2,
+        "explicacion": "4 × 70 × 30 = 8,400 mL; la mitad (4,200) en las primeras 8 h."
+      },
+      {
+        "tema": "Quemaduras",
+        "modulo": "m16",
+        "caso": "Paciente rescatado de un incendio en lugar cerrado, con quemaduras faciales, vibrisas chamuscadas y ronquera.",
+        "pregunta": "¿Cuál es la prioridad?",
+        "opciones": [
+          "Calcular la superficie quemada",
+          "Asegurar la vía aérea con intubación temprana",
+          "Curar las heridas",
+          "Dar antibióticos"
+        ],
+        "correcta": 1,
+        "explicacion": "Datos de lesión por inhalación: intubación temprana antes de que el edema la impida."
+      },
+      {
+        "tema": "Quemaduras",
+        "modulo": "m16",
+        "caso": "Quemadura con ampollas, base rosada, húmeda y muy dolorosa.",
+        "pregunta": "¿Qué profundidad tiene?",
+        "opciones": [
+          "Superficial (primer grado)",
+          "Espesor total",
+          "Cuarto grado",
+          "Espesor parcial superficial"
+        ],
+        "correcta": 3,
+        "explicacion": "Ampollas con dolor intenso: espesor parcial superficial."
+      }
+    ]
+  },
+  "descargas": {
+    "flashcards": [
+      {
+        "titulo": "Flash cards para imprimir (PDF)",
+        "archivo": "assets/descargas/cirugia_flash-cards.pdf"
+      }
+    ],
+    "diagramas": [
+      {
+        "titulo": "Infografía (PDF)",
+        "archivo": "assets/descargas/cirugia_infografia.pdf"
+      },
+      {
+        "titulo": "Diagrama de flujo (PDF)",
+        "archivo": "assets/descargas/cirugia_diagrama.pdf"
+      }
+    ],
+    "examenes": [
+      {
+        "titulo": "Examen para imprimir (PDF)",
+        "archivo": "assets/descargas/cirugia_examen.pdf"
+      },
+      {
+        "titulo": "Hoja de respuestas (PDF)",
+        "archivo": "assets/descargas/cirugia_hoja.pdf"
+      }
+    ]
+  }
+}

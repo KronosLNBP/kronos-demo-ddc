@@ -88,28 +88,64 @@
       "disponible": true
     },
     {
-      "id": "perthes",
-      "titulo": "Enfermedad de Legg-Calvé-Perthes",
-      "especialidad": "Traumatología y Ortopedia",
-      "horas": 3,
-      "recursos": [],
-      "disponible": false
+      "id": "alergologia",
+      "titulo": "Alergología",
+      "especialidad": "Alergología e Inmunología",
+      "horas": 1.9,
+      "recursos": [
+        "4 módulos",
+        "28 flash cards",
+        "Banco de 20 preguntas",
+        "Infografía",
+        "PDF imprimibles"
+      ],
+      "disponible": true,
+      "premium": true
     },
     {
-      "id": "epifisiolistesis",
-      "titulo": "Epifisiólisis femoral proximal",
-      "especialidad": "Traumatología y Ortopedia",
-      "horas": 3,
-      "recursos": [],
-      "disponible": false
+      "id": "cardiologia",
+      "titulo": "Cardiología",
+      "especialidad": "Cardiología",
+      "horas": 7.8,
+      "recursos": [
+        "20 módulos",
+        "80 flash cards",
+        "Banco de 60 preguntas",
+        "Infografía",
+        "PDF imprimibles"
+      ],
+      "disponible": true,
+      "premium": true
     },
     {
-      "id": "supracondilea",
-      "titulo": "Fractura supracondílea de húmero",
-      "especialidad": "Traumatología y Ortopedia",
-      "horas": 3,
-      "recursos": [],
-      "disponible": false
+      "id": "cirugia",
+      "titulo": "Cirugía General",
+      "especialidad": "Cirugía General",
+      "horas": 6.2,
+      "recursos": [
+        "16 módulos",
+        "64 flash cards",
+        "Banco de 48 preguntas",
+        "Infografía",
+        "PDF imprimibles"
+      ],
+      "disponible": true,
+      "premium": true
+    },
+    {
+      "id": "dermatologia",
+      "titulo": "Dermatología",
+      "especialidad": "Dermatología",
+      "horas": 7.7,
+      "recursos": [
+        "20 módulos",
+        "80 flash cards",
+        "Banco de 60 preguntas",
+        "Infografía",
+        "PDF imprimibles"
+      ],
+      "disponible": true,
+      "premium": true
     }
   ]
 }

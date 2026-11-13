@@ -1,0 +1,2551 @@
+{
+  "_nota": "Contenido redactado por Kronos a partir de los temas de los resúmenes de referencia y las GPC. Debe validarlo el Creador de producto.",
+  "id": "cardiologia",
+  "titulo": "Cardiología",
+  "subtitulo": "De la hipertensión al síndrome coronario agudo, arritmias, valvulopatías y aorta, con enfoque ENARM",
+  "especialidad": "Cardiología",
+  "duracionMin": 466,
+  "nivel": "Pregrado, internado y preparación ENARM",
+  "palabrasClave": [
+    "HTA ≥ 130/80",
+    "SICA CEST: reperfusión",
+    "Troponina",
+    "CHA₂DS₂-VASc",
+    "IC: 4 pilares",
+    "Duke",
+    "Stanford A = cirugía"
+  ],
+  "secciones": [
+    {
+      "id": "inicio",
+      "titulo": "Inicio del curso",
+      "icono": "⏳",
+      "video": "",
+      "intro": ""
+    },
+    {
+      "id": "clases",
+      "titulo": "Ruta de estudio",
+      "icono": "🗺️",
+      "video": "assets/videos/clases-grabadas.mp4",
+      "intro": "Sigue los módulos en orden: video, lectura, podcast y flash cards. Marca cada actividad al terminarla.",
+      "poster": "assets/img/posters/clases-grabadas.jpg"
+    },
+    {
+      "id": "podcast",
+      "titulo": "Podcast",
+      "icono": "🎧",
+      "video": "",
+      "intro": "Escucha cada tema mientras te arreglas, vas en el transporte o estás en el gym."
+    },
+    {
+      "id": "resumenes",
+      "titulo": "Resúmenes",
+      "icono": "📄",
+      "video": "assets/videos/resumenes.mp4",
+      "intro": "Resúmenes cortos para comprender, reforzar y recordar. Cada tema cierra con su perla ENARM.",
+      "poster": "assets/img/posters/resumenes.jpg"
+    },
+    {
+      "id": "diagramas",
+      "titulo": "Infografía y diagrama de flujo",
+      "icono": "🧭",
+      "video": "assets/videos/diagramas.mp4",
+      "intro": "Lo esencial del curso en una imagen y el algoritmo clave. Léelos después del resumen.",
+      "poster": "assets/img/posters/diagramas.jpg"
+    },
+    {
+      "id": "flashcards",
+      "titulo": "Flash cards",
+      "icono": "🃏",
+      "video": "assets/videos/flashcards.mp4",
+      "intro": "Repaso rápido por tema. Después de leer el resumen, repasa las tarjetas poco a poco durante la semana.",
+      "poster": "assets/img/posters/flashcards.jpg"
+    },
+    {
+      "id": "examenes",
+      "titulo": "Exámenes",
+      "icono": "⏱️",
+      "video": "assets/videos/examenes.mp4",
+      "intro": "Cada intento saca preguntas distintas del banco del curso. Al final tienes tu resultado completo por tema.",
+      "poster": "assets/img/posters/examenes.jpg"
+    }
+  ],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Hipertensión arterial sistémica",
+      "minutos": 25,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar y clasificar la HTA",
+        "Elegir el tratamiento inicial"
+      ],
+      "temas": [
+        "Diagnóstico y clasificación",
+        "Cambios en el estilo de vida",
+        "Fármacos de primera línea y combinaciones"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Hipertensión arterial sistémica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: HTA",
+          "minutos": 5,
+          "destino": "m1"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Infografía: Cardiología de un vistazo",
+          "minutos": 3,
+          "destino": "infografia"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 1: HTA",
+          "minutos": 6,
+          "destino": "p1"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: HTA",
+          "minutos": 3,
+          "destino": "HTA"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Crisis hipertensiva",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Distinguir urgencia de emergencia hipertensiva",
+        "Manejar la reducción de la TA"
+      ],
+      "temas": [
+        "Urgencia vs emergencia",
+        "Daño a órgano blanco",
+        "Fármacos y metas de descenso"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Crisis hipertensiva",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Crisis hipertensiva",
+          "minutos": 5,
+          "destino": "m2"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 2: Crisis hipertensiva",
+          "minutos": 6,
+          "destino": "p2"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Crisis hipertensiva",
+          "minutos": 3,
+          "destino": "Crisis hipertensiva"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Angina de pecho",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la angina típica",
+        "Indicar el tratamiento antianginoso"
+      ],
+      "temas": [
+        "Angina estable vs inestable",
+        "Prueba de esfuerzo",
+        "Tratamiento: nitratos, betabloqueadores"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Angina de pecho",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Angina",
+          "minutos": 5,
+          "destino": "m3"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 3: Angina",
+          "minutos": 6,
+          "destino": "p3"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Angina",
+          "minutos": 3,
+          "destino": "Angina"
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "titulo": "SICA sin elevación del ST",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diferenciar angina inestable de IAM SEST",
+        "Estratificar el riesgo e indicar el tratamiento"
+      ],
+      "temas": [
+        "Troponina y ECG",
+        "Escalas GRACE y TIMI",
+        "Antiagregación y estrategia invasiva"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: SICA sin elevación del ST",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: SICA SEST",
+          "minutos": 5,
+          "destino": "m4"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 4: SICA SEST",
+          "minutos": 6,
+          "destino": "p4"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: SICA SEST",
+          "minutos": 3,
+          "destino": "SICA SEST"
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "titulo": "SICA con elevación del ST",
+      "minutos": 25,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar el IAM CEST en el ECG",
+        "Elegir la estrategia de reperfusión a tiempo"
+      ],
+      "temas": [
+        "Criterios electrocardiográficos y localización",
+        "Angioplastia primaria vs trombólisis",
+        "Complicaciones mecánicas"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: SICA con elevación del ST",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: SICA CEST",
+          "minutos": 5,
+          "destino": "m5"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Diagrama de flujo: dolor torácico y SICA",
+          "minutos": 3,
+          "destino": "algoritmo"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 5: SICA CEST",
+          "minutos": 6,
+          "destino": "p5"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: SICA CEST",
+          "minutos": 3,
+          "destino": "SICA CEST"
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "titulo": "Riesgo cardiovascular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Calcular e interpretar el riesgo cardiovascular",
+        "Indicar estatinas según el riesgo"
+      ],
+      "temas": [
+        "Factores de riesgo modificables",
+        "Escalas de riesgo",
+        "Metas de colesterol LDL"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Riesgo cardiovascular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Riesgo CV",
+          "minutos": 5,
+          "destino": "m6"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 6: Riesgo CV",
+          "minutos": 6,
+          "destino": "p6"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Riesgo CV",
+          "minutos": 3,
+          "destino": "Riesgo CV"
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "titulo": "Cardiopatía isquémica crónica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Comprender la fisiopatología de la isquemia",
+        "Indicar revascularización y prevención secundaria"
+      ],
+      "temas": [
+        "Aterosclerosis y desequilibrio oferta-demanda",
+        "Tratamiento médico óptimo",
+        "Revascularización: angioplastia o cirugía"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Cardiopatía isquémica crónica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Cardiopatía isquémica",
+          "minutos": 5,
+          "destino": "m7"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 7: Cardiopatía isquémica",
+          "minutos": 6,
+          "destino": "p7"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Cardiopatía isquémica",
+          "minutos": 3,
+          "destino": "Cardiopatía isquémica"
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "titulo": "Insuficiencia cardiaca crónica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Clasificar la IC por fracción de eyección y NYHA",
+        "Indicar los fármacos que reducen mortalidad"
+      ],
+      "temas": [
+        "FEVI reducida, levemente reducida y preservada",
+        "Criterios de Framingham y BNP",
+        "Los 4 pilares del tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Insuficiencia cardiaca crónica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: IC crónica",
+          "minutos": 5,
+          "destino": "m8"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 8: IC crónica",
+          "minutos": 6,
+          "destino": "p8"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: IC crónica",
+          "minutos": 3,
+          "destino": "IC crónica"
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "titulo": "Insuficiencia cardiaca aguda",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Clasificar al paciente por perfil hemodinámico",
+        "Tratar el edema agudo pulmonar"
+      ],
+      "temas": [
+        "Perfiles caliente/frío y húmedo/seco",
+        "Edema agudo pulmonar",
+        "Choque cardiogénico"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Insuficiencia cardiaca aguda",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: IC aguda",
+          "minutos": 5,
+          "destino": "m9"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 9: IC aguda",
+          "minutos": 6,
+          "destino": "p9"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: IC aguda",
+          "minutos": 3,
+          "destino": "IC aguda"
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "titulo": "Fibrilación auricular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la FA en el ECG",
+        "Decidir anticoagulación y control de frecuencia o ritmo"
+      ],
+      "temas": [
+        "ECG y clasificación",
+        "CHA₂DS₂-VASc y HAS-BLED",
+        "Control de frecuencia vs ritmo"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Fibrilación auricular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Fibrilación auricular",
+          "minutos": 5,
+          "destino": "m10"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 10: Fibrilación auricular",
+          "minutos": 6,
+          "destino": "p10"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Fibrilación auricular",
+          "minutos": 3,
+          "destino": "Fibrilación auricular"
+        }
+      ]
+    },
+    {
+      "id": "m11",
+      "titulo": "Taquicardia supraventricular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la taquicardia de QRS estrecho regular",
+        "Aplicar el tratamiento escalonado"
+      ],
+      "temas": [
+        "Reentrada nodal y AV",
+        "Maniobras vagales y adenosina",
+        "Ablación"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Taquicardia supraventricular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: TSV",
+          "minutos": 5,
+          "destino": "m11"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 11: TSV",
+          "minutos": 6,
+          "destino": "p11"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: TSV",
+          "minutos": 3,
+          "destino": "TSV"
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "titulo": "Bloqueo auriculoventricular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Identificar los grados de bloqueo AV en el ECG",
+        "Indicar atropina y marcapasos"
+      ],
+      "temas": [
+        "Primer grado",
+        "Segundo grado Mobitz I y II",
+        "Tercer grado (completo)"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Bloqueo auriculoventricular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Bloqueo AV",
+          "minutos": 5,
+          "destino": "m12"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 12: Bloqueo AV",
+          "minutos": 6,
+          "destino": "p12"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Bloqueo AV",
+          "minutos": 3,
+          "destino": "Bloqueo AV"
+        }
+      ]
+    },
+    {
+      "id": "m13",
+      "titulo": "Síndrome de Wolff-Parkinson-White",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la preexcitación en el ECG",
+        "Evitar fármacos peligrosos en FA preexcitada"
+      ],
+      "temas": [
+        "Vía accesoria (haz de Kent)",
+        "PR corto y onda delta",
+        "Tratamiento y ablación"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Síndrome de Wolff-Parkinson-White",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: WPW",
+          "minutos": 5,
+          "destino": "m13"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 13: WPW",
+          "minutos": 6,
+          "destino": "p13"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: WPW",
+          "minutos": 3,
+          "destino": "WPW"
+        }
+      ]
+    },
+    {
+      "id": "m14",
+      "titulo": "Endocarditis infecciosa",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Aplicar los criterios de Duke",
+        "Elegir el tratamiento empírico y la profilaxis"
+      ],
+      "temas": [
+        "Agentes según el escenario",
+        "Criterios de Duke",
+        "Tratamiento, cirugía y profilaxis"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Endocarditis infecciosa",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Endocarditis",
+          "minutos": 5,
+          "destino": "m14"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 14: Endocarditis",
+          "minutos": 6,
+          "destino": "p14"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Endocarditis",
+          "minutos": 3,
+          "destino": "Endocarditis"
+        }
+      ]
+    },
+    {
+      "id": "m15",
+      "titulo": "Pericarditis y derrame pericárdico",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar la pericarditis aguda",
+        "Reconocer y tratar el taponamiento"
+      ],
+      "temas": [
+        "Clínica y ECG de la pericarditis",
+        "Tratamiento con AINE y colchicina",
+        "Taponamiento cardiaco"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Pericarditis y derrame pericárdico",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Pericarditis",
+          "minutos": 5,
+          "destino": "m15"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 15: Pericarditis",
+          "minutos": 6,
+          "destino": "p15"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Pericarditis",
+          "minutos": 3,
+          "destino": "Pericarditis"
+        }
+      ]
+    },
+    {
+      "id": "m16",
+      "titulo": "Válvula aórtica: estenosis e insuficiencia",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer los soplos aórticos",
+        "Indicar el reemplazo valvular"
+      ],
+      "temas": [
+        "Estenosis aórtica: tríada clínica",
+        "Insuficiencia aórtica: signos periféricos",
+        "Indicaciones de cirugía o TAVI"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Válvula aórtica: estenosis e insuficiencia",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Valvulopatía aórtica",
+          "minutos": 5,
+          "destino": "m16"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 16: Valvulopatía aórtica",
+          "minutos": 6,
+          "destino": "p16"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Valvulopatía aórtica",
+          "minutos": 3,
+          "destino": "Valvulopatía aórtica"
+        }
+      ]
+    },
+    {
+      "id": "m17",
+      "titulo": "Válvula mitral: estenosis e insuficiencia",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Relacionar la fiebre reumática con la estenosis mitral",
+        "Distinguir los soplos mitrales"
+      ],
+      "temas": [
+        "Estenosis mitral reumática",
+        "Insuficiencia mitral aguda y crónica",
+        "Tratamiento percutáneo y quirúrgico"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Válvula mitral: estenosis e insuficiencia",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Valvulopatía mitral",
+          "minutos": 5,
+          "destino": "m17"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 17: Valvulopatía mitral",
+          "minutos": 6,
+          "destino": "p17"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Valvulopatía mitral",
+          "minutos": 3,
+          "destino": "Valvulopatía mitral"
+        }
+      ]
+    },
+    {
+      "id": "m18",
+      "titulo": "Válvula tricúspide: estenosis e insuficiencia",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer los soplos tricuspídeos",
+        "Identificar sus causas"
+      ],
+      "temas": [
+        "Insuficiencia tricuspídea funcional",
+        "Signo de Rivero-Carvallo",
+        "Endocarditis y carcinoide"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Válvula tricúspide: estenosis e insuficiencia",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Valvulopatía tricuspídea",
+          "minutos": 5,
+          "destino": "m18"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 18: Valvulopatía tricuspídea",
+          "minutos": 6,
+          "destino": "p18"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Valvulopatía tricuspídea",
+          "minutos": 3,
+          "destino": "Valvulopatía tricuspídea"
+        }
+      ]
+    },
+    {
+      "id": "m19",
+      "titulo": "Coartación de la aorta",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Sospechar coartación por diferencia de pulsos y TA",
+        "Conocer sus hallazgos de imagen"
+      ],
+      "temas": [
+        "Clínica: HTA en brazos, pulsos femorales débiles",
+        "Signo del 3 y muescas costales",
+        "Tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Coartación de la aorta",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Coartación aórtica",
+          "minutos": 5,
+          "destino": "m19"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 19: Coartación aórtica",
+          "minutos": 6,
+          "destino": "p19"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Coartación aórtica",
+          "minutos": 3,
+          "destino": "Coartación aórtica"
+        }
+      ]
+    },
+    {
+      "id": "m20",
+      "titulo": "Disección aórtica",
+      "minutos": 42,
+      "video": "",
+      "objetivos": [
+        "Sospechar disección ante dolor torácico desgarrante",
+        "Clasificarla y decidir el tratamiento"
+      ],
+      "temas": [
+        "Factores de riesgo",
+        "Clasificación de Stanford",
+        "Tratamiento médico y quirúrgico"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Disección aórtica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Disección aórtica",
+          "minutos": 5,
+          "destino": "m20"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 20: Disección aórtica",
+          "minutos": 6,
+          "destino": "p20"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Disección aórtica",
+          "minutos": 3,
+          "destino": "Disección aórtica"
+        },
+        {
+          "tipo": "examen",
+          "titulo": "Examen cronometrado: 20 preguntas",
+          "minutos": 20,
+          "destino": ""
+        }
+      ]
+    }
+  ],
+  "resumen": [
+    {
+      "id": "m1",
+      "titulo": "Hipertensión arterial sistémica",
+      "puntos": [
+        "Diagnóstico: TA ≥ 130/80 mmHg en al menos 2 mediciones en 2 visitas distintas (o confirmación con MAPA/automedición). La mayoría es primaria (esencial).",
+        "Estilo de vida para todos: reducir sodio (< 2 g/día), dieta DASH, peso saludable, ejercicio aeróbico 150 min/semana, moderar alcohol y dejar de fumar.",
+        "Primera línea: IECA o ARA II, calcioantagonista dihidropiridínico (amlodipino) o diurético tiazídico. Si la TA está ≥ 20/10 por arriba de la meta, iniciar con combinación de 2 fármacos.",
+        "Indicaciones especiales: diabético con proteinuria o ERC → IECA/ARA II; embarazo → metildopa, labetalol o nifedipino (IECA/ARA II contraindicados); afroamericano → calcioantagonista o tiazida."
+      ],
+      "perla": "Nunca combines IECA con ARA II. En el embarazo, IECA y ARA II están contraindicados."
+    },
+    {
+      "id": "m2",
+      "titulo": "Crisis hipertensiva",
+      "puntos": [
+        "Crisis hipertensiva: TA ≥ 180/120 mmHg. Urgencia: sin daño agudo a órgano blanco. Emergencia: con daño agudo (encefalopatía, EVC, SICA, edema agudo pulmonar, disección aórtica, eclampsia, falla renal aguda).",
+        "Urgencia: fármacos orales y reducción gradual en 24–48 h (captopril, amlodipino, labetalol). No se recomienda nifedipino sublingual.",
+        "Emergencia: hospitalización y fármacos IV (labetalol, nitroprusiato, nicardipino, esmolol). Bajar la TA media no más de 25 % en la primera hora.",
+        "Excepciones: disección aórtica → TAS < 120 en 20 min (betabloqueador primero); EVC isquémico → solo tratar si > 220/120 o si recibirá trombólisis (< 185/110)."
+      ],
+      "perla": "Lo que define la emergencia es el daño agudo a órgano blanco, no la cifra de TA."
+    },
+    {
+      "id": "m3",
+      "titulo": "Angina de pecho",
+      "puntos": [
+        "Angina estable: dolor opresivo retroesternal desencadenado por esfuerzo o estrés, dura < 20 min y cede con reposo o nitroglicerina. Causa más común: aterosclerosis coronaria.",
+        "Angina típica cumple 3 criterios: dolor retroesternal característico, provocado por esfuerzo o estrés, y que cede con reposo o nitratos.",
+        "Estudios: ECG en reposo, prueba de esfuerzo (inicial en pacientes que pueden caminar con ECG interpretable) o imagen de estrés; coronariografía si hay alto riesgo o síntomas refractarios.",
+        "Tratamiento: nitroglicerina sublingual para las crisis; betabloqueador como antianginoso de primera línea; aspirina y estatina de alta intensidad para prevenir eventos."
+      ],
+      "perla": "Angina que aparece en reposo, de reciente inicio o en aumento ya no es estable: es un SICA (angina inestable)."
+    },
+    {
+      "id": "m4",
+      "titulo": "SICA sin elevación del ST",
+      "puntos": [
+        "Incluye angina inestable (troponina normal) e IAM sin elevación del ST (troponina elevada). El ECG puede mostrar infradesnivel del ST o inversión de T, o ser normal.",
+        "Troponina ultrasensible: biomarcador de elección; se repite a las 1–3 h. Estratificar con GRACE o TIMI.",
+        "Tratamiento: aspirina + segundo antiagregante (inhibidor P2Y12: ticagrelor o clopidogrel), anticoagulación (enoxaparina o fondaparinux), estatina de alta intensidad, betabloqueador si no hay contraindicación.",
+        "Coronariografía: inmediata (< 2 h) si hay inestabilidad hemodinámica o eléctrica o dolor refractario; temprana (< 24 h) en alto riesgo. En el SEST NO se trombolisa."
+      ],
+      "perla": "La trombólisis solo se usa en el SICA CON elevación del ST. En el SEST está contraindicada."
+    },
+    {
+      "id": "m5",
+      "titulo": "SICA con elevación del ST",
+      "puntos": [
+        "Elevación del ST ≥ 1 mm en 2 derivaciones contiguas (en V2–V3: ≥ 2 mm en hombres, ≥ 1.5 mm en mujeres) o BRIHH nuevo con clínica de isquemia. No esperar la troponina para reperfundir.",
+        "Localización: inferior (DII, DIII, aVF) → coronaria derecha; anterior (V1–V4) → descendente anterior; lateral (DI, aVL, V5–V6) → circunfleja. En IAM inferior toma V3R–V4R (VD).",
+        "Reperfusión: angioplastia primaria si puede hacerse en < 120 min desde el diagnóstico; si no, trombólisis (tenecteplasa, alteplasa) idealmente en < 10 min y dentro de 12 h de inicio de síntomas.",
+        "Complicaciones: arritmias (FV, la causa más común de muerte temprana), choque cardiogénico, ruptura del músculo papilar (IM aguda), comunicación interventricular y ruptura de pared libre (taponamiento)."
+      ],
+      "perla": "IAM inferior con hipotensión: piensa en infarto del VD; da volumen y evita nitratos y diuréticos."
+    },
+    {
+      "id": "m6",
+      "titulo": "Riesgo cardiovascular",
+      "puntos": [
+        "Factores modificables: HTA, tabaquismo, diabetes, dislipidemia, obesidad, sedentarismo. No modificables: edad, sexo masculino, antecedente familiar de enfermedad CV prematura.",
+        "El riesgo a 10 años se estima con escalas (ASCVD/Pooled Cohort, SCORE2, Framingham) en adultos de 40–75 años sin enfermedad CV establecida.",
+        "Estatina de alta intensidad (atorvastatina 40–80 mg, rosuvastatina 20–40 mg) en prevención secundaria, LDL ≥ 190 mg/dL y diabéticos de alto riesgo.",
+        "Metas de LDL: < 55 mg/dL en muy alto riesgo (enfermedad CV establecida); < 70 en alto riesgo; < 100 en riesgo moderado."
+      ],
+      "perla": "El tabaquismo es el factor de riesgo modificable cuyo abandono reduce más rápido el riesgo cardiovascular."
+    },
+    {
+      "id": "m7",
+      "titulo": "Cardiopatía isquémica crónica",
+      "puntos": [
+        "Es el desequilibrio entre aporte y demanda de oxígeno del miocardio, casi siempre por aterosclerosis coronaria. Se manifiesta como angina estable, isquemia silente o insuficiencia cardiaca.",
+        "Tratamiento médico óptimo: aspirina, estatina de alta intensidad, betabloqueador, control de TA, glucosa y tabaquismo, y rehabilitación cardiaca.",
+        "Revascularización si hay síntomas que no se controlan con tratamiento médico o anatomía de alto riesgo.",
+        "Cirugía de revascularización (bypass) preferida en enfermedad del tronco de la coronaria izquierda, enfermedad de 3 vasos y diabéticos con enfermedad multivaso."
+      ],
+      "perla": "Diabético con enfermedad de 3 vasos o del tronco: la cirugía de revascularización supera a la angioplastia."
+    },
+    {
+      "id": "m8",
+      "titulo": "Insuficiencia cardiaca crónica",
+      "puntos": [
+        "Síndrome por incapacidad del corazón para mantener el gasto. Según FEVI: reducida (≤ 40 %), levemente reducida (41–49 %), preservada (≥ 50 %). Clase funcional NYHA I–IV.",
+        "Diagnóstico: clínica (criterios de Framingham), péptidos natriuréticos (BNP/NT-proBNP) y ecocardiograma para medir la FEVI. Causa más común: cardiopatía isquémica.",
+        "IC con FEVI reducida, 4 pilares que bajan mortalidad: IECA/ARA II o, mejor, sacubitrilo-valsartán; betabloqueador (carvedilol, bisoprolol, metoprolol succinato); antagonista de mineralocorticoides (espironolactona); iSGLT2 (dapagliflozina, empagliflozina).",
+        "Diuréticos de asa para la congestión (alivian síntomas, no cambian mortalidad). Digoxina e ivabradina en casos seleccionados. DAI si FEVI ≤ 35 % pese a tratamiento óptimo."
+      ],
+      "perla": "Los diuréticos de asa mejoran síntomas pero no reducen mortalidad; los 4 pilares sí."
+    },
+    {
+      "id": "m9",
+      "titulo": "Insuficiencia cardiaca aguda",
+      "puntos": [
+        "Aparición o empeoramiento rápido de síntomas de IC. Clasificación clínica de Stevenson: congestión (húmedo/seco) y perfusión (caliente/frío). El más común: caliente y húmedo.",
+        "Edema agudo pulmonar: disnea súbita, ortopnea, estertores, hipoxemia. Manejo: sentar al paciente, oxígeno o ventilación no invasiva, diurético de asa IV y vasodilatador (nitroglicerina) si la TAS > 110 mmHg.",
+        "Frío y húmedo (hipoperfusión con congestión) o choque cardiogénico: inotrópicos (dobutamina) y vasopresores (norepinefrina); buscar y tratar la causa (IAM, arritmia, valvular).",
+        "Desencadenantes frecuentes: SICA, arritmias (FA), HTA descontrolada, infecciones, falta de apego al tratamiento y exceso de sal."
+      ],
+      "perla": "En la IC aguda no suspendas el betabloqueador de base salvo choque o bajo gasto grave."
+    },
+    {
+      "id": "m10",
+      "titulo": "Fibrilación auricular",
+      "puntos": [
+        "Arritmia sostenida más frecuente. ECG: ritmo irregularmente irregular, sin ondas P, con ondas f. Clasificación: paroxística (< 7 días), persistente (> 7 días), permanente.",
+        "Anticoagulación según CHA₂DS₂-VASc: indicada con ≥ 2 en hombres o ≥ 3 en mujeres (considerar con 1/2). Preferir anticoagulantes directos (apixabán, rivaroxabán) sobre warfarina, excepto en estenosis mitral moderada-grave o válvula mecánica.",
+        "Inestable (hipotensión, choque, isquemia, IC aguda): cardioversión eléctrica sincronizada inmediata.",
+        "Estable: control de frecuencia con betabloqueador o calcioantagonista no dihidropiridínico (diltiazem); digoxina si hay IC. Para cardioversión electiva con > 48 h de evolución: anticoagular 3 semanas antes o descartar trombo con ecocardiograma transesofágico."
+      ],
+      "perla": "FA con válvula mecánica o estenosis mitral moderada-grave: anticoagular con warfarina, no con anticoagulantes directos."
+    },
+    {
+      "id": "m11",
+      "titulo": "Taquicardia supraventricular",
+      "puntos": [
+        "Taquicardia de QRS estrecho (< 120 ms) y regular, generalmente por reentrada en el nodo AV (la más común) o por vía accesoria. Inicio y fin súbitos; palpitaciones, a veces mareo.",
+        "Paciente estable: primero maniobras vagales (Valsalva modificada, masaje carotídeo si no hay soplo), después adenosina IV en bolo rápido (6 mg, luego 12 mg).",
+        "Si la adenosina falla o está contraindicada (asma grave): betabloqueador o calcioantagonista no dihidropiridínico (verapamilo, diltiazem).",
+        "Paciente inestable: cardioversión eléctrica sincronizada. La ablación con catéter es el tratamiento definitivo en episodios recurrentes."
+      ],
+      "perla": "Adenosina: bolo IV rápido seguido de bolo de solución; produce una pausa breve que es esperada."
+    },
+    {
+      "id": "m12",
+      "titulo": "Bloqueo auriculoventricular",
+      "puntos": [
+        "Primer grado: PR > 200 ms constante; todas las P conducen. Benigno, solo vigilancia.",
+        "Segundo grado Mobitz I (Wenckebach): PR que se alarga progresivamente hasta que una P no conduce; suele ser nodal y benigno. Mobitz II: PR constante con P que súbitamente no conducen; infranodal, puede progresar a bloqueo completo.",
+        "Tercer grado: disociación AV completa; P y QRS van cada uno a su ritmo. Bradicardia con riesgo de síncope (Stokes-Adams).",
+        "Bradicardia sintomática: atropina; si no responde, marcapasos transcutáneo o dopamina/epinefrina. Marcapasos definitivo en Mobitz II y bloqueo completo."
+      ],
+      "perla": "Mobitz II y bloqueo AV completo requieren marcapasos definitivo; Mobitz I asintomático no."
+    },
+    {
+      "id": "m13",
+      "titulo": "Síndrome de Wolff-Parkinson-White",
+      "puntos": [
+        "Vía accesoria (haz de Kent) que conecta aurículas y ventrículos sin pasar por el nodo AV. Patrón WPW: preexcitación en ECG; síndrome WPW: preexcitación + taquiarritmias.",
+        "ECG: PR corto (< 120 ms), onda delta (empastamiento inicial del QRS) y QRS ancho.",
+        "Taquicardia ortodrómica (la más común): QRS estrecho; se maneja como TSV. FA preexcitada: QRS ancho e irregular, puede degenerar en FV.",
+        "En FA preexcitada están contraindicados los bloqueadores del nodo AV (adenosina, verapamilo, diltiazem, digoxina, betabloqueadores); usar procainamida o cardioversión. Tratamiento definitivo: ablación de la vía."
+      ],
+      "perla": "FA con QRS ancho e irregular en un joven: piensa en WPW y no des bloqueadores del nodo AV."
+    },
+    {
+      "id": "m14",
+      "titulo": "Endocarditis infecciosa",
+      "puntos": [
+        "Infección del endocardio, generalmente valvular. Agentes: S. aureus (el más común en general, usuarios de drogas IV y válvula tricúspide), estreptococos del grupo viridans (válvula nativa con mala higiene dental), S. epidermidis (prótesis temprana), Enterococcus, grupo HACEK.",
+        "Clínica: fiebre + soplo nuevo; fenómenos embólicos (lesiones de Janeway, hemorragias en astilla) e inmunológicos (nódulos de Osler, manchas de Roth, glomerulonefritis).",
+        "Criterios de Duke: mayores = hemocultivos positivos con microorganismo típico (3 tomas) y evidencia ecocardiográfica (vegetación, absceso). Ecocardiograma transesofágico más sensible, sobre todo en prótesis.",
+        "Tratamiento empírico de válvula nativa: ampicilina + oxacilina/cloxacilina + gentamicina o vancomicina + gentamicina, por 4–6 semanas. Cirugía si hay IC por destrucción valvular, absceso, infección no controlada o embolias recurrentes."
+      ],
+      "perla": "Profilaxis antibiótica solo en procedimientos dentales de riesgo en pacientes de alto riesgo: prótesis valvular, endocarditis previa y algunas cardiopatías congénitas. Amoxicilina 2 g VO."
+    },
+    {
+      "id": "m15",
+      "titulo": "Pericarditis y derrame pericárdico",
+      "puntos": [
+        "Pericarditis aguda: la causa más común es viral o idiopática. Dolor torácico pleurítico que mejora al inclinarse hacia adelante y empeora en decúbito; frote pericárdico.",
+        "ECG: elevación difusa del ST cóncava con depresión del PR (en aVR el inverso). Diagnóstico con 2 de 4: dolor típico, frote, cambios ECG, derrame.",
+        "Tratamiento: AINE (ibuprofeno) o aspirina + colchicina por 3 meses (reduce recurrencias). Esteroides solo en casos seleccionados.",
+        "Taponamiento: tríada de Beck (hipotensión, ingurgitación yugular, ruidos cardiacos apagados), pulso paradójico y complejos de bajo voltaje o alternancia eléctrica. Tratamiento: pericardiocentesis urgente."
+      ],
+      "perla": "Elevación difusa del ST + depresión del PR que mejora al sentarse inclinado: pericarditis, no infarto."
+    },
+    {
+      "id": "m16",
+      "titulo": "Válvula aórtica: estenosis e insuficiencia",
+      "puntos": [
+        "Estenosis aórtica: causa más común en adultos mayores, degenerativa (calcificación); en jóvenes, válvula bicúspide. Soplo sistólico expulsivo en foco aórtico irradiado a carótidas; pulso parvus et tardus.",
+        "Síntomas de estenosis aórtica grave: angina, síncope y disnea (IC); cuando aparecen, la sobrevida cae mucho sin tratamiento.",
+        "Insuficiencia aórtica: soplo diastólico aspirativo en el borde esternal izquierdo; pulso saltón (de Corrigan), presión diferencial amplia, signo de Musset (movimiento de la cabeza).",
+        "Tratamiento: reemplazo valvular (quirúrgico o TAVI) en estenosis grave sintomática o con FEVI < 50 %. La TAVI se prefiere en adultos mayores o de alto riesgo quirúrgico."
+      ],
+      "perla": "Estenosis aórtica grave sintomática: el único tratamiento eficaz es el reemplazo valvular; los fármacos no cambian el pronóstico."
+    },
+    {
+      "id": "m17",
+      "titulo": "Válvula mitral: estenosis e insuficiencia",
+      "puntos": [
+        "Estenosis mitral: casi siempre secuela de fiebre reumática. Soplo diastólico en retumbo en el ápex con chasquido de apertura y primer ruido intenso. Se asocia a FA y embolias.",
+        "Clínica de estenosis mitral: disnea, hemoptisis, ronquera (signo de Ortner), FA. Tratamiento de elección en válvula favorable: valvuloplastia mitral percutánea con balón.",
+        "Insuficiencia mitral: soplo holosistólico en el ápex irradiado a la axila. Causas: prolapso mitral, dilatación del VI, isquemia; aguda por ruptura de cuerdas o músculo papilar tras IAM.",
+        "FA con estenosis mitral moderada-grave: anticoagular con warfarina."
+      ],
+      "perla": "Soplo diastólico en retumbo con chasquido de apertura en una mujer joven: estenosis mitral reumática."
+    },
+    {
+      "id": "m18",
+      "titulo": "Válvula tricúspide: estenosis e insuficiencia",
+      "puntos": [
+        "Insuficiencia tricuspídea: casi siempre funcional por dilatación del VD (hipertensión pulmonar, IC izquierda). Primarias: endocarditis en usuarios de drogas IV, síndrome carcinoide, Ebstein.",
+        "Soplo holosistólico en el borde esternal izquierdo bajo que aumenta con la inspiración (signo de Rivero-Carvallo); onda v gigante en el pulso yugular, hígado pulsátil.",
+        "Estenosis tricuspídea: rara, casi siempre reumática y asociada a valvulopatía mitral.",
+        "Tratamiento: de la causa y diuréticos para la congestión; reparación (anuloplastia) cuando se operan otras válvulas o en insuficiencia grave sintomática."
+      ],
+      "perla": "Los soplos de cavidades derechas aumentan con la inspiración (Rivero-Carvallo)."
+    },
+    {
+      "id": "m19",
+      "titulo": "Coartación de la aorta",
+      "puntos": [
+        "Estrechamiento de la aorta, casi siempre distal a la subclavia izquierda. Se asocia a válvula aórtica bicúspide y síndrome de Turner.",
+        "Clínica: HTA en miembros superiores con TA baja y pulsos femorales débiles o retrasados; claudicación; soplo interescapular.",
+        "Radiografía: signo del 3 (aorta) y muescas costales (signo de Roesler) por circulación colateral intercostal. Confirmación con angio-TC o resonancia.",
+        "Tratamiento: angioplastia con stent o corrección quirúrgica. Aun corregida, requiere vigilancia de por vida por HTA residual."
+      ],
+      "perla": "HTA en joven con pulsos femorales débiles: mide la TA en las 4 extremidades y busca coartación."
+    },
+    {
+      "id": "m20",
+      "titulo": "Disección aórtica",
+      "puntos": [
+        "Desgarro de la íntima con paso de sangre a la media. Factor de riesgo más importante: HTA; otros: Marfan, Ehlers-Danlos, válvula bicúspide, cocaína, embarazo.",
+        "Clínica: dolor torácico súbito, desgarrante, irradiado a la espalda; diferencia de TA o de pulsos entre brazos; mediastino ensanchado en la radiografía.",
+        "Diagnóstico: angio-TC (de elección en paciente estable); ecocardiograma transesofágico si está inestable. Stanford A: afecta aorta ascendente. Stanford B: solo descendente.",
+        "Control inmediato con betabloqueador IV (esmolol, labetalol) para FC < 60 y TAS < 120, luego vasodilatador si hace falta. Stanford A: cirugía urgente. Stanford B no complicada: tratamiento médico."
+      ],
+      "perla": "Stanford A = cirugía urgente. Stanford B no complicada = tratamiento médico."
+    }
+  ],
+  "infografias": [
+    {
+      "id": "infografia",
+      "titulo": "Cardiología de un vistazo",
+      "imagen": "assets/img/infografias/cardiologia-infografia.svg",
+      "alt": "Infografía de Cardiología: HTA, SICA, insuficiencia cardiaca y arritmias"
+    },
+    {
+      "id": "algoritmo",
+      "titulo": "Diagrama de flujo: dolor torácico y SICA",
+      "imagen": "assets/img/infografias/cardiologia-algoritmo.svg",
+      "alt": "Algoritmo del paciente con dolor torácico y sospecha de síndrome coronario agudo"
+    }
+  ],
+  "flashcards": [
+    {
+      "tema": "HTA",
+      "frente": "Cifra diagnóstica de HTA (AHA/ACC)",
+      "reverso": "≥ 130/80 mmHg confirmada en 2 visitas."
+    },
+    {
+      "tema": "HTA",
+      "frente": "Fármaco de elección en HTA con diabetes y proteinuria",
+      "reverso": "IECA o ARA II."
+    },
+    {
+      "tema": "HTA",
+      "frente": "Antihipertensivos seguros en el embarazo",
+      "reverso": "Metildopa, labetalol y nifedipino."
+    },
+    {
+      "tema": "HTA",
+      "frente": "¿Cuándo iniciar con 2 fármacos?",
+      "reverso": "Si la TA está ≥ 20/10 mmHg por arriba de la meta."
+    },
+    {
+      "tema": "Crisis hipertensiva",
+      "frente": "Urgencia vs emergencia hipertensiva",
+      "reverso": "Ambas ≥ 180/120; la emergencia tiene daño agudo a órgano blanco."
+    },
+    {
+      "tema": "Crisis hipertensiva",
+      "frente": "Meta de descenso en emergencia hipertensiva",
+      "reverso": "No más de 25 % de la TA media en la primera hora."
+    },
+    {
+      "tema": "Crisis hipertensiva",
+      "frente": "Meta en disección aórtica",
+      "reverso": "TAS < 120 mmHg en 20 minutos, con betabloqueador primero."
+    },
+    {
+      "tema": "Crisis hipertensiva",
+      "frente": "Fármaco que NO se recomienda en urgencia hipertensiva",
+      "reverso": "Nifedipino sublingual (hipotensión brusca)."
+    },
+    {
+      "tema": "Angina",
+      "frente": "Criterios de angina típica",
+      "reverso": "Dolor retroesternal característico + desencadenado por esfuerzo + cede con reposo o nitratos."
+    },
+    {
+      "tema": "Angina",
+      "frente": "Antianginoso de primera línea en angina estable",
+      "reverso": "Betabloqueador."
+    },
+    {
+      "tema": "Angina",
+      "frente": "Estudio inicial no invasivo en angina estable",
+      "reverso": "Prueba de esfuerzo (si puede caminar y el ECG es interpretable)."
+    },
+    {
+      "tema": "Angina",
+      "frente": "Fármacos que reducen eventos en cardiopatía isquémica",
+      "reverso": "Aspirina y estatina de alta intensidad."
+    },
+    {
+      "tema": "SICA SEST",
+      "frente": "Angina inestable vs IAM SEST",
+      "reverso": "Ambos sin elevación del ST; el IAM SEST tiene troponina elevada."
+    },
+    {
+      "tema": "SICA SEST",
+      "frente": "Biomarcador de elección en SICA",
+      "reverso": "Troponina ultrasensible."
+    },
+    {
+      "tema": "SICA SEST",
+      "frente": "Doble antiagregación en SICA",
+      "reverso": "Aspirina + inhibidor P2Y12 (ticagrelor, prasugrel o clopidogrel)."
+    },
+    {
+      "tema": "SICA SEST",
+      "frente": "¿Se trombolisa el SICA SEST?",
+      "reverso": "No; la trombólisis solo está indicada en el SICA CEST."
+    },
+    {
+      "tema": "SICA CEST",
+      "frente": "Reperfusión de elección en IAM CEST",
+      "reverso": "Angioplastia primaria si se logra en < 120 min; si no, trombólisis."
+    },
+    {
+      "tema": "SICA CEST",
+      "frente": "IAM inferior: derivaciones y arteria",
+      "reverso": "DII, DIII y aVF; coronaria derecha."
+    },
+    {
+      "tema": "SICA CEST",
+      "frente": "Manejo del infarto del ventrículo derecho",
+      "reverso": "Volumen IV; evitar nitratos, morfina y diuréticos."
+    },
+    {
+      "tema": "SICA CEST",
+      "frente": "Causa más frecuente de muerte temprana en el IAM",
+      "reverso": "Arritmias ventriculares (fibrilación ventricular)."
+    },
+    {
+      "tema": "Riesgo CV",
+      "frente": "Estatinas de alta intensidad",
+      "reverso": "Atorvastatina 40–80 mg y rosuvastatina 20–40 mg."
+    },
+    {
+      "tema": "Riesgo CV",
+      "frente": "Meta de LDL en prevención secundaria (muy alto riesgo)",
+      "reverso": "< 55 mg/dL."
+    },
+    {
+      "tema": "Riesgo CV",
+      "frente": "LDL ≥ 190 mg/dL: conducta",
+      "reverso": "Estatina de alta intensidad sin necesidad de calcular el riesgo."
+    },
+    {
+      "tema": "Riesgo CV",
+      "frente": "Edad para calcular el riesgo a 10 años con escalas",
+      "reverso": "40 a 75 años sin enfermedad CV establecida."
+    },
+    {
+      "tema": "Cardiopatía isquémica",
+      "frente": "Causa más común de cardiopatía isquémica",
+      "reverso": "Aterosclerosis coronaria."
+    },
+    {
+      "tema": "Cardiopatía isquémica",
+      "frente": "Indicaciones clásicas de cirugía de revascularización",
+      "reverso": "Tronco de la coronaria izquierda, 3 vasos, diabético multivaso."
+    },
+    {
+      "tema": "Cardiopatía isquémica",
+      "frente": "Pilares del tratamiento médico óptimo",
+      "reverso": "Aspirina, estatina, betabloqueador y control de factores de riesgo."
+    },
+    {
+      "tema": "Cardiopatía isquémica",
+      "frente": "Isquemia silente: grupo de riesgo",
+      "reverso": "Diabéticos y adultos mayores."
+    },
+    {
+      "tema": "IC crónica",
+      "frente": "IC con FEVI reducida",
+      "reverso": "FEVI ≤ 40 %."
+    },
+    {
+      "tema": "IC crónica",
+      "frente": "Los 4 pilares de la IC con FEVI reducida",
+      "reverso": "ARNI/IECA/ARA II, betabloqueador, espironolactona e iSGLT2."
+    },
+    {
+      "tema": "IC crónica",
+      "frente": "Estudio para medir la fracción de eyección",
+      "reverso": "Ecocardiograma transtorácico."
+    },
+    {
+      "tema": "IC crónica",
+      "frente": "Clase NYHA III",
+      "reverso": "Síntomas con actividad menor a la habitual; cómodo en reposo."
+    },
+    {
+      "tema": "IC aguda",
+      "frente": "Perfil más común de IC aguda",
+      "reverso": "Caliente y húmedo (congestión con buena perfusión)."
+    },
+    {
+      "tema": "IC aguda",
+      "frente": "Tratamiento del edema agudo pulmonar hipertensivo",
+      "reverso": "Oxígeno/VMNI, furosemida IV y nitroglicerina."
+    },
+    {
+      "tema": "IC aguda",
+      "frente": "Inotrópico en IC aguda con bajo gasto",
+      "reverso": "Dobutamina."
+    },
+    {
+      "tema": "IC aguda",
+      "frente": "Vasopresor de elección en choque cardiogénico",
+      "reverso": "Norepinefrina."
+    },
+    {
+      "tema": "Fibrilación auricular",
+      "frente": "ECG de la fibrilación auricular",
+      "reverso": "Ritmo irregularmente irregular, sin ondas P, ondas f."
+    },
+    {
+      "tema": "Fibrilación auricular",
+      "frente": "Escala para decidir anticoagulación en FA",
+      "reverso": "CHA₂DS₂-VASc."
+    },
+    {
+      "tema": "Fibrilación auricular",
+      "frente": "FA con inestabilidad hemodinámica",
+      "reverso": "Cardioversión eléctrica sincronizada inmediata."
+    },
+    {
+      "tema": "Fibrilación auricular",
+      "frente": "Anticoagulante en FA con válvula mecánica",
+      "reverso": "Warfarina (antagonista de vitamina K)."
+    },
+    {
+      "tema": "TSV",
+      "frente": "Mecanismo más común de TSV",
+      "reverso": "Reentrada en el nodo AV."
+    },
+    {
+      "tema": "TSV",
+      "frente": "Primer paso en TSV estable",
+      "reverso": "Maniobras vagales."
+    },
+    {
+      "tema": "TSV",
+      "frente": "Fármaco de elección si fallan las maniobras",
+      "reverso": "Adenosina IV en bolo rápido (6 mg, luego 12 mg)."
+    },
+    {
+      "tema": "TSV",
+      "frente": "Tratamiento definitivo de la TSV recurrente",
+      "reverso": "Ablación con catéter."
+    },
+    {
+      "tema": "Bloqueo AV",
+      "frente": "Bloqueo AV de primer grado",
+      "reverso": "PR > 200 ms constante; todas las P conducen."
+    },
+    {
+      "tema": "Bloqueo AV",
+      "frente": "Mobitz I (Wenckebach)",
+      "reverso": "PR que se alarga progresivamente hasta una P bloqueada."
+    },
+    {
+      "tema": "Bloqueo AV",
+      "frente": "Mobitz II",
+      "reverso": "PR constante con P que de pronto no conducen; requiere marcapasos."
+    },
+    {
+      "tema": "Bloqueo AV",
+      "frente": "Primer fármaco en bradicardia sintomática",
+      "reverso": "Atropina."
+    },
+    {
+      "tema": "WPW",
+      "frente": "Hallazgos ECG del WPW",
+      "reverso": "PR corto, onda delta y QRS ancho."
+    },
+    {
+      "tema": "WPW",
+      "frente": "Vía accesoria del WPW",
+      "reverso": "Haz de Kent."
+    },
+    {
+      "tema": "WPW",
+      "frente": "Fármacos contraindicados en FA preexcitada",
+      "reverso": "Bloqueadores del nodo AV: adenosina, verapamilo, digoxina, betabloqueadores."
+    },
+    {
+      "tema": "WPW",
+      "frente": "Tratamiento definitivo del WPW",
+      "reverso": "Ablación de la vía accesoria."
+    },
+    {
+      "tema": "Endocarditis",
+      "frente": "Agente más común de endocarditis en usuarios de drogas IV",
+      "reverso": "Staphylococcus aureus (válvula tricúspide)."
+    },
+    {
+      "tema": "Endocarditis",
+      "frente": "Criterios mayores de Duke",
+      "reverso": "Hemocultivos positivos típicos y evidencia ecocardiográfica de afección endocárdica."
+    },
+    {
+      "tema": "Endocarditis",
+      "frente": "Nódulos de Osler vs lesiones de Janeway",
+      "reverso": "Osler: dolorosos (inmunológicos). Janeway: indoloros (embólicos)."
+    },
+    {
+      "tema": "Endocarditis",
+      "frente": "Profilaxis dental en paciente de alto riesgo",
+      "reverso": "Amoxicilina 2 g VO 30–60 min antes."
+    },
+    {
+      "tema": "Pericarditis",
+      "frente": "ECG de la pericarditis aguda",
+      "reverso": "Elevación difusa y cóncava del ST con depresión del PR."
+    },
+    {
+      "tema": "Pericarditis",
+      "frente": "Tratamiento de la pericarditis aguda",
+      "reverso": "AINE o aspirina + colchicina (3 meses)."
+    },
+    {
+      "tema": "Pericarditis",
+      "frente": "Tríada de Beck",
+      "reverso": "Hipotensión, ingurgitación yugular y ruidos cardiacos apagados."
+    },
+    {
+      "tema": "Pericarditis",
+      "frente": "Tratamiento del taponamiento cardiaco",
+      "reverso": "Pericardiocentesis urgente."
+    },
+    {
+      "tema": "Valvulopatía aórtica",
+      "frente": "Tríada de la estenosis aórtica grave",
+      "reverso": "Angina, síncope y disnea."
+    },
+    {
+      "tema": "Valvulopatía aórtica",
+      "frente": "Soplo de la estenosis aórtica",
+      "reverso": "Sistólico expulsivo en foco aórtico, irradiado a carótidas."
+    },
+    {
+      "tema": "Valvulopatía aórtica",
+      "frente": "Soplo de la insuficiencia aórtica",
+      "reverso": "Diastólico aspirativo en el borde esternal izquierdo."
+    },
+    {
+      "tema": "Valvulopatía aórtica",
+      "frente": "Pulso típico de la insuficiencia aórtica",
+      "reverso": "Pulso saltón (de Corrigan) con presión diferencial amplia."
+    },
+    {
+      "tema": "Valvulopatía mitral",
+      "frente": "Causa más común de estenosis mitral",
+      "reverso": "Fiebre reumática."
+    },
+    {
+      "tema": "Valvulopatía mitral",
+      "frente": "Soplo de la estenosis mitral",
+      "reverso": "Diastólico en retumbo en el ápex con chasquido de apertura."
+    },
+    {
+      "tema": "Valvulopatía mitral",
+      "frente": "Soplo de la insuficiencia mitral",
+      "reverso": "Holosistólico en el ápex irradiado a la axila."
+    },
+    {
+      "tema": "Valvulopatía mitral",
+      "frente": "Tratamiento de la estenosis mitral con válvula favorable",
+      "reverso": "Valvuloplastia mitral percutánea con balón."
+    },
+    {
+      "tema": "Valvulopatía tricuspídea",
+      "frente": "Causa más común de insuficiencia tricuspídea",
+      "reverso": "Funcional, por dilatación del VD."
+    },
+    {
+      "tema": "Valvulopatía tricuspídea",
+      "frente": "Signo de Rivero-Carvallo",
+      "reverso": "El soplo tricuspídeo aumenta con la inspiración."
+    },
+    {
+      "tema": "Valvulopatía tricuspídea",
+      "frente": "Onda del pulso yugular en insuficiencia tricuspídea",
+      "reverso": "Onda v gigante."
+    },
+    {
+      "tema": "Valvulopatía tricuspídea",
+      "frente": "Endocarditis tricuspídea: grupo de riesgo",
+      "reverso": "Usuarios de drogas intravenosas."
+    },
+    {
+      "tema": "Coartación aórtica",
+      "frente": "Signo radiográfico clásico de coartación",
+      "reverso": "Muescas costales (Roesler) y signo del 3."
+    },
+    {
+      "tema": "Coartación aórtica",
+      "frente": "Síndrome genético asociado a coartación",
+      "reverso": "Síndrome de Turner."
+    },
+    {
+      "tema": "Coartación aórtica",
+      "frente": "Valvulopatía asociada a coartación",
+      "reverso": "Válvula aórtica bicúspide."
+    },
+    {
+      "tema": "Coartación aórtica",
+      "frente": "Hallazgo clínico clave",
+      "reverso": "HTA en brazos con pulsos femorales débiles o retrasados."
+    },
+    {
+      "tema": "Disección aórtica",
+      "frente": "Factor de riesgo más importante de disección aórtica",
+      "reverso": "Hipertensión arterial."
+    },
+    {
+      "tema": "Disección aórtica",
+      "frente": "Stanford A vs B",
+      "reverso": "A: afecta la aorta ascendente (cirugía). B: solo descendente (médico)."
+    },
+    {
+      "tema": "Disección aórtica",
+      "frente": "Estudio de elección en paciente estable",
+      "reverso": "Angiotomografía de aorta."
+    },
+    {
+      "tema": "Disección aórtica",
+      "frente": "Primer fármaco en disección aórtica",
+      "reverso": "Betabloqueador IV (esmolol o labetalol)."
+    }
+  ],
+  "podcast": [
+    {
+      "id": "p1",
+      "titulo": "HTA",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p2",
+      "titulo": "Crisis hipertensiva",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p3",
+      "titulo": "Angina",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p4",
+      "titulo": "SICA SEST",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p5",
+      "titulo": "SICA CEST",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p6",
+      "titulo": "Riesgo CV",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p7",
+      "titulo": "Cardiopatía isquémica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p8",
+      "titulo": "IC crónica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p9",
+      "titulo": "IC aguda",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p10",
+      "titulo": "Fibrilación auricular",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p11",
+      "titulo": "TSV",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p12",
+      "titulo": "Bloqueo AV",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p13",
+      "titulo": "WPW",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p14",
+      "titulo": "Endocarditis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p15",
+      "titulo": "Pericarditis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p16",
+      "titulo": "Valvulopatía aórtica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p17",
+      "titulo": "Valvulopatía mitral",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p18",
+      "titulo": "Valvulopatía tricuspídea",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p19",
+      "titulo": "Coartación aórtica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p20",
+      "titulo": "Disección aórtica",
+      "minutos": 6,
+      "audio": ""
+    }
+  ],
+  "examen": {
+    "minutos": 20,
+    "cantidad": 20,
+    "muestraCantidad": 5,
+    "aprobatorio": 70,
+    "codigoDemo": "KRONOS-DEMO",
+    "preguntas": [
+      {
+        "tema": "HTA",
+        "modulo": "m1",
+        "caso": "Hombre de 50 años, diabético, con TA de 148/92 en dos visitas y microalbuminuria.",
+        "pregunta": "¿Cuál es el fármaco de elección?",
+        "opciones": [
+          "Hidroclorotiazida",
+          "Losartán",
+          "Propranolol",
+          "Hidralazina"
+        ],
+        "correcta": 1,
+        "explicacion": "En diabéticos con albuminuria, IECA o ARA II protegen el riñón además de bajar la TA."
+      },
+      {
+        "tema": "HTA",
+        "modulo": "m1",
+        "caso": "Mujer de 28 años con 20 semanas de embarazo y TA de 150/100 en dos tomas.",
+        "pregunta": "¿Qué antihipertensivo indicas?",
+        "opciones": [
+          "Enalapril",
+          "Metildopa",
+          "Losartán",
+          "Espironolactona"
+        ],
+        "correcta": 1,
+        "explicacion": "Metildopa, labetalol o nifedipino son seguros; IECA y ARA II están contraindicados."
+      },
+      {
+        "tema": "HTA",
+        "modulo": "m1",
+        "caso": "Hombre de 45 años con TA promedio de 162/104 en varias visitas, sin otras enfermedades.",
+        "pregunta": "¿Cómo inicias el tratamiento?",
+        "opciones": [
+          "Solo dieta y ejercicio 6 meses",
+          "Betabloqueador solo",
+          "Combinación de 2 fármacos (p. ej., IECA + amlodipino)",
+          "IECA + ARA II"
+        ],
+        "correcta": 2,
+        "explicacion": "Más de 20/10 por arriba de la meta: iniciar con combinación de 2 fármacos de primera línea."
+      },
+      {
+        "tema": "Crisis hipertensiva",
+        "modulo": "m2",
+        "caso": "Hombre de 60 años con TA 200/125, asintomático, sin alteraciones en la exploración ni en laboratorios.",
+        "pregunta": "¿Cuál es el diagnóstico y manejo?",
+        "opciones": [
+          "Urgencia; fármacos orales y descenso en 24–48 h",
+          "Emergencia; nitroprusiato IV",
+          "Emergencia; nifedipino sublingual",
+          "No requiere tratamiento"
+        ],
+        "correcta": 0,
+        "explicacion": "Sin daño a órgano blanco es urgencia: tratamiento oral con descenso gradual."
+      },
+      {
+        "tema": "Crisis hipertensiva",
+        "modulo": "m2",
+        "caso": "Mujer con TA 210/130, cefalea intensa, confusión y papiledema.",
+        "pregunta": "¿Cuál es la meta de descenso inicial?",
+        "opciones": [
+          "Normalizar la TA en 10 minutos",
+          "No bajarla",
+          "Reducir la TA media no más de 25 % en la primera hora",
+          "Llegar a 120/80 en una hora"
+        ],
+        "correcta": 2,
+        "explicacion": "Encefalopatía hipertensiva = emergencia: reducción controlada ≤ 25 % en la primera hora."
+      },
+      {
+        "tema": "Crisis hipertensiva",
+        "modulo": "m2",
+        "caso": "Hombre con dolor torácico desgarrante irradiado a la espalda y TA de 190/110.",
+        "pregunta": "¿Cuál es la meta de TA?",
+        "opciones": [
+          "Reducir 25 % en 24 horas",
+          "TAS < 180 mmHg",
+          "No tratar la TA",
+          "TAS < 120 mmHg en 20 minutos"
+        ],
+        "correcta": 3,
+        "explicacion": "En disección aórtica el descenso es rápido: TAS < 120 en 20 min, iniciando con betabloqueador."
+      },
+      {
+        "tema": "Angina",
+        "modulo": "m3",
+        "caso": "Hombre de 58 años con dolor opresivo al subir escaleras que cede en 5 min al detenerse, desde hace 6 meses, sin cambios.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Angina inestable",
+          "IAM sin elevación del ST",
+          "Pericarditis",
+          "Angina estable"
+        ],
+        "correcta": 3,
+        "explicacion": "Dolor de esfuerzo, breve, que cede con reposo y estable en el tiempo: angina estable."
+      },
+      {
+        "tema": "Angina",
+        "modulo": "m3",
+        "caso": "Paciente con angina estable que puede caminar y tiene ECG basal normal.",
+        "pregunta": "¿Qué estudio solicitas para estratificar?",
+        "opciones": [
+          "Prueba de esfuerzo",
+          "Coronariografía urgente",
+          "Troponina seriada",
+          "Ecocardiograma transesofágico"
+        ],
+        "correcta": 0,
+        "explicacion": "Con ECG interpretable y capacidad de ejercicio, la prueba de esfuerzo es el estudio inicial."
+      },
+      {
+        "tema": "Angina",
+        "modulo": "m3",
+        "caso": "Hombre con angina estable sin contraindicaciones.",
+        "pregunta": "¿Qué fármaco antianginoso de base indicas?",
+        "opciones": [
+          "Digoxina",
+          "Furosemida",
+          "Hidralazina",
+          "Metoprolol"
+        ],
+        "correcta": 3,
+        "explicacion": "El betabloqueador reduce el consumo de oxígeno y es primera línea."
+      },
+      {
+        "tema": "SICA SEST",
+        "modulo": "m4",
+        "caso": "Hombre de 62 años con dolor torácico en reposo de 30 min, infradesnivel del ST en V4–V6 y troponina elevada.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "IAM sin elevación del ST",
+          "Angina estable",
+          "Angina inestable",
+          "IAM con elevación del ST"
+        ],
+        "correcta": 0,
+        "explicacion": "Isquemia sin elevación del ST con troponina positiva: IAM SEST."
+      },
+      {
+        "tema": "SICA SEST",
+        "modulo": "m4",
+        "caso": "Paciente con IAM SEST, estable, sin dolor.",
+        "pregunta": "¿Qué tratamiento está contraindicado?",
+        "opciones": [
+          "Trombólisis con alteplasa",
+          "Aspirina",
+          "Enoxaparina",
+          "Atorvastatina 80 mg"
+        ],
+        "correcta": 0,
+        "explicacion": "No hay beneficio de la trombólisis en SEST; aumenta el sangrado."
+      },
+      {
+        "tema": "SICA SEST",
+        "modulo": "m4",
+        "caso": "Paciente con SICA SEST que persiste con dolor pese a tratamiento óptimo e hipotensión.",
+        "pregunta": "¿Cuándo debe hacerse la coronariografía?",
+        "opciones": [
+          "En 72 h",
+          "Inmediata (< 2 h)",
+          "En 1 mes",
+          "No está indicada"
+        ],
+        "correcta": 1,
+        "explicacion": "Inestabilidad hemodinámica o dolor refractario indican estrategia invasiva inmediata."
+      },
+      {
+        "tema": "SICA CEST",
+        "modulo": "m5",
+        "caso": "Hombre de 55 años con dolor torácico de 2 h y elevación del ST en DII, DIII y aVF. El hospital más cercano con hemodinamia está a 3 h.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Esperar la troponina",
+          "Trombólisis inmediata",
+          "Trasladar para angioplastia sin trombólisis",
+          "Solo aspirina y observar"
+        ],
+        "correcta": 1,
+        "explicacion": "Si la angioplastia no puede hacerse en < 120 min y van menos de 12 h, se trombolisa."
+      },
+      {
+        "tema": "SICA CEST",
+        "modulo": "m5",
+        "caso": "Paciente con IAM inferior, TA 80/50, campos pulmonares limpios e ingurgitación yugular.",
+        "pregunta": "¿Qué medida es la más adecuada?",
+        "opciones": [
+          "Cargas de solución salina",
+          "Nitroglicerina IV",
+          "Furosemida IV",
+          "Morfina"
+        ],
+        "correcta": 0,
+        "explicacion": "Infarto del VD: depende de la precarga; requiere volumen y se evitan nitratos y diuréticos."
+      },
+      {
+        "tema": "SICA CEST",
+        "modulo": "m5",
+        "caso": "Cinco días después de un IAM, el paciente presenta soplo holosistólico nuevo en el ápex y edema agudo pulmonar.",
+        "pregunta": "¿Cuál es la complicación más probable?",
+        "opciones": [
+          "Pericarditis de Dressler",
+          "Ruptura del músculo papilar",
+          "Aneurisma ventricular",
+          "Bloqueo AV de primer grado"
+        ],
+        "correcta": 1,
+        "explicacion": "Insuficiencia mitral aguda por ruptura del músculo papilar, típica entre el día 2 y 7."
+      },
+      {
+        "tema": "Riesgo CV",
+        "modulo": "m6",
+        "caso": "Hombre de 60 años que tuvo un IAM hace 6 meses; LDL de 110 mg/dL con atorvastatina 10 mg.",
+        "pregunta": "¿Qué indicas?",
+        "opciones": [
+          "Atorvastatina 80 mg",
+          "Mantener la dosis",
+          "Suspender la estatina",
+          "Solo dieta"
+        ],
+        "correcta": 0,
+        "explicacion": "Prevención secundaria: estatina de alta intensidad con meta de LDL < 55 mg/dL."
+      },
+      {
+        "tema": "Riesgo CV",
+        "modulo": "m6",
+        "caso": "Mujer de 35 años con LDL de 230 mg/dL y xantomas tendinosos.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Estatina de alta intensidad",
+          "Calcular el riesgo antes de tratar",
+          "Repetir el perfil en 5 años",
+          "Fibrato"
+        ],
+        "correcta": 0,
+        "explicacion": "LDL ≥ 190 (probable hipercolesterolemia familiar): estatina de alta intensidad directamente."
+      },
+      {
+        "tema": "Riesgo CV",
+        "modulo": "m6",
+        "caso": "En la consulta se busca reducir el riesgo cardiovascular de un fumador hipertenso de 50 años.",
+        "pregunta": "¿Qué intervención reduce el riesgo más rápido?",
+        "opciones": [
+          "Bajar 1 kg",
+          "Tomar vitaminas",
+          "Dormir más",
+          "Dejar de fumar"
+        ],
+        "correcta": 3,
+        "explicacion": "Suspender el tabaco reduce el riesgo cardiovascular de forma rápida y significativa."
+      },
+      {
+        "tema": "Cardiopatía isquémica",
+        "modulo": "m7",
+        "caso": "Diabético de 64 años con angina y coronariografía con enfermedad significativa de 3 vasos.",
+        "pregunta": "¿Qué revascularización es la de elección?",
+        "opciones": [
+          "Angioplastia de un vaso",
+          "Solo tratamiento médico",
+          "Trombólisis",
+          "Cirugía de revascularización (bypass)"
+        ],
+        "correcta": 3,
+        "explicacion": "En diabéticos multivaso, la cirugía reduce mortalidad frente a la angioplastia."
+      },
+      {
+        "tema": "Cardiopatía isquémica",
+        "modulo": "m7",
+        "caso": "Paciente con cardiopatía isquémica estable sin contraindicaciones.",
+        "pregunta": "¿Qué combinación forma parte del tratamiento óptimo?",
+        "opciones": [
+          "Warfarina y digoxina",
+          "Clopidogrel y prasugrel",
+          "Aspirina y estatina de alta intensidad",
+          "AINE diario"
+        ],
+        "correcta": 2,
+        "explicacion": "Aspirina y estatina reducen eventos y mortalidad."
+      },
+      {
+        "tema": "Cardiopatía isquémica",
+        "modulo": "m7",
+        "caso": "Mujer diabética de 70 años con disnea de esfuerzo como único síntoma; la prueba de estrés muestra isquemia.",
+        "pregunta": "¿Qué fenómeno explica la ausencia de dolor?",
+        "opciones": [
+          "Angina de Prinzmetal",
+          "Isquemia silente por neuropatía",
+          "Pericarditis",
+          "Ansiedad"
+        ],
+        "correcta": 1,
+        "explicacion": "Los diabéticos pueden tener isquemia sin dolor por neuropatía autonómica."
+      },
+      {
+        "tema": "IC crónica",
+        "modulo": "m8",
+        "caso": "Hombre de 65 años con disnea de medianos esfuerzos, edema de miembros inferiores y FEVI de 30 %, con IECA y furosemida.",
+        "pregunta": "¿Qué otros fármacos reducen su mortalidad?",
+        "opciones": [
+          "Verapamilo y digoxina",
+          "AINE y diurético tiazídico",
+          "Betabloqueador, espironolactona e iSGLT2",
+          "Nifedipino"
+        ],
+        "correcta": 2,
+        "explicacion": "Completar los 4 pilares de la IC con FEVI reducida."
+      },
+      {
+        "tema": "IC crónica",
+        "modulo": "m8",
+        "caso": "Paciente con disnea y edema; se sospecha IC.",
+        "pregunta": "¿Qué estudio confirma la fracción de eyección?",
+        "opciones": [
+          "Radiografía de tórax",
+          "Troponina",
+          "Ecocardiograma",
+          "Prueba de esfuerzo"
+        ],
+        "correcta": 2,
+        "explicacion": "El ecocardiograma mide la FEVI y define el fenotipo de la IC."
+      },
+      {
+        "tema": "IC crónica",
+        "modulo": "m8",
+        "caso": "Paciente con IC que presenta disnea al caminar una cuadra pero no en reposo.",
+        "pregunta": "¿Qué clase funcional NYHA tiene?",
+        "opciones": [
+          "I",
+          "II",
+          "IV",
+          "III"
+        ],
+        "correcta": 3,
+        "explicacion": "Síntomas con actividad menor a la ordinaria y asintomático en reposo: clase III."
+      },
+      {
+        "tema": "IC aguda",
+        "modulo": "m9",
+        "caso": "Mujer de 70 años con disnea súbita, estertores bilaterales, SatO₂ 85 % y TA de 180/100.",
+        "pregunta": "¿Qué combinación es la más adecuada?",
+        "opciones": [
+          "Solución salina 2 L",
+          "Oxígeno, furosemida IV y nitroglicerina",
+          "Dobutamina sola",
+          "Betabloqueador IV a dosis alta"
+        ],
+        "correcta": 1,
+        "explicacion": "Edema agudo pulmonar hipertensivo: oxígeno/VMNI, diurético IV y vasodilatador."
+      },
+      {
+        "tema": "IC aguda",
+        "modulo": "m9",
+        "caso": "Paciente con IC aguda, extremidades frías, oliguria, estertores y TAS de 85 mmHg.",
+        "pregunta": "¿Cuál es su perfil hemodinámico?",
+        "opciones": [
+          "Frío y húmedo",
+          "Caliente y seco",
+          "Caliente y húmedo",
+          "Frío y seco"
+        ],
+        "correcta": 0,
+        "explicacion": "Hipoperfusión (frío) con congestión (húmedo)."
+      },
+      {
+        "tema": "IC aguda",
+        "modulo": "m9",
+        "caso": "Paciente en choque cardiogénico por IAM extenso.",
+        "pregunta": "¿Qué vasopresor es el de elección?",
+        "opciones": [
+          "Dopamina a dosis bajas",
+          "Norepinefrina",
+          "Vasopresina sola",
+          "Fenilefrina"
+        ],
+        "correcta": 1,
+        "explicacion": "La norepinefrina es el vasopresor preferido en choque cardiogénico."
+      },
+      {
+        "tema": "Fibrilación auricular",
+        "modulo": "m10",
+        "caso": "Hombre de 72 años, hipertenso y diabético, con FA permanente y frecuencia controlada.",
+        "pregunta": "¿Qué tratamiento antitrombótico indicas?",
+        "opciones": [
+          "Ninguno",
+          "Aspirina",
+          "Anticoagulante oral (p. ej., apixabán)",
+          "Clopidogrel"
+        ],
+        "correcta": 2,
+        "explicacion": "CHA₂DS₂-VASc = 3 (edad 65–74, HTA, DM): anticoagulación oral."
+      },
+      {
+        "tema": "Fibrilación auricular",
+        "modulo": "m10",
+        "caso": "Mujer con FA de inicio reciente, FC 160, TA 70/40 y confusión.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Diltiazem IV",
+          "Amiodarona oral",
+          "Cardioversión eléctrica sincronizada",
+          "Digoxina IV"
+        ],
+        "correcta": 2,
+        "explicacion": "FA con inestabilidad hemodinámica: cardioversión eléctrica inmediata."
+      },
+      {
+        "tema": "Fibrilación auricular",
+        "modulo": "m10",
+        "caso": "Paciente con FA de 5 días de evolución, estable, en quien se planea cardioversión.",
+        "pregunta": "¿Qué se requiere antes?",
+        "opciones": [
+          "Nada, puede cardiovertirse ya",
+          "Solo aspirina 1 día",
+          "Prueba de esfuerzo",
+          "Anticoagular 3 semanas o ecocardiograma transesofágico sin trombo"
+        ],
+        "correcta": 3,
+        "explicacion": "Más de 48 h de evolución implica riesgo de trombo en la orejuela."
+      },
+      {
+        "tema": "TSV",
+        "modulo": "m11",
+        "caso": "Mujer de 28 años con palpitaciones de inicio súbito, FC 190, QRS estrecho regular, TA normal.",
+        "pregunta": "¿Cuál es el primer paso?",
+        "opciones": [
+          "Cardioversión eléctrica",
+          "Amiodarona IV",
+          "Maniobras vagales",
+          "Digoxina"
+        ],
+        "correcta": 2,
+        "explicacion": "En TSV estable se inicia con maniobras vagales."
+      },
+      {
+        "tema": "TSV",
+        "modulo": "m11",
+        "caso": "La paciente anterior no responde a la maniobra de Valsalva.",
+        "pregunta": "¿Qué fármaco administras?",
+        "opciones": [
+          "Lidocaína",
+          "Atropina",
+          "Adenosina 6 mg IV en bolo rápido",
+          "Furosemida"
+        ],
+        "correcta": 2,
+        "explicacion": "La adenosina es el fármaco de elección tras fallar las maniobras vagales."
+      },
+      {
+        "tema": "TSV",
+        "modulo": "m11",
+        "caso": "Paciente con TSV recurrente que no desea medicación diaria.",
+        "pregunta": "¿Qué tratamiento definitivo se ofrece?",
+        "opciones": [
+          "Marcapasos",
+          "Ablación con catéter",
+          "Anticoagulación",
+          "Cirugía de revascularización"
+        ],
+        "correcta": 1,
+        "explicacion": "La ablación elimina el circuito de reentrada con alta tasa de curación."
+      },
+      {
+        "tema": "Bloqueo AV",
+        "modulo": "m12",
+        "caso": "ECG con PR que se prolonga progresivamente hasta que una onda P no se sigue de QRS.",
+        "pregunta": "¿Qué bloqueo es?",
+        "opciones": [
+          "Mobitz I",
+          "Primer grado",
+          "Mobitz II",
+          "Tercer grado"
+        ],
+        "correcta": 0,
+        "explicacion": "El alargamiento progresivo del PR con caída de un latido es Wenckebach."
+      },
+      {
+        "tema": "Bloqueo AV",
+        "modulo": "m12",
+        "caso": "Hombre de 75 años con síncope; ECG con P y QRS sin relación entre sí, FC ventricular 35.",
+        "pregunta": "¿Cuál es el tratamiento definitivo?",
+        "opciones": [
+          "Marcapasos definitivo",
+          "Atropina oral",
+          "Betabloqueador",
+          "Observación"
+        ],
+        "correcta": 0,
+        "explicacion": "Bloqueo AV completo sintomático: marcapasos definitivo."
+      },
+      {
+        "tema": "Bloqueo AV",
+        "modulo": "m12",
+        "caso": "Paciente con bradicardia sintomática por bloqueo AV e hipotensión.",
+        "pregunta": "¿Qué administras primero mientras se prepara el marcapasos?",
+        "opciones": [
+          "Adenosina",
+          "Metoprolol",
+          "Atropina IV",
+          "Verapamilo"
+        ],
+        "correcta": 2,
+        "explicacion": "La atropina es el primer fármaco en bradicardia sintomática."
+      },
+      {
+        "tema": "WPW",
+        "modulo": "m13",
+        "caso": "Joven de 20 años con ECG en reposo con PR de 100 ms y empastamiento inicial del QRS.",
+        "pregunta": "¿Cuál es el hallazgo?",
+        "opciones": [
+          "Bloqueo AV de primer grado",
+          "Bloqueo de rama derecha",
+          "Hipertrofia ventricular",
+          "Preexcitación (patrón WPW)"
+        ],
+        "correcta": 3,
+        "explicacion": "PR corto + onda delta = preexcitación por vía accesoria."
+      },
+      {
+        "tema": "WPW",
+        "modulo": "m13",
+        "caso": "Paciente con WPW conocido llega con FA de QRS ancho e irregular, FC 220, estable.",
+        "pregunta": "¿Qué fármaco está contraindicado?",
+        "opciones": [
+          "Verapamilo",
+          "Procainamida",
+          "Cardioversión eléctrica",
+          "Ibutilida"
+        ],
+        "correcta": 0,
+        "explicacion": "Bloquear el nodo AV favorece la conducción por la vía accesoria y puede causar FV."
+      },
+      {
+        "tema": "WPW",
+        "modulo": "m13",
+        "caso": "Paciente joven con WPW sintomático y episodios recurrentes.",
+        "pregunta": "¿Cuál es el tratamiento de elección?",
+        "opciones": [
+          "Digoxina crónica",
+          "Ablación con catéter de la vía accesoria",
+          "Marcapasos",
+          "Anticoagulación"
+        ],
+        "correcta": 1,
+        "explicacion": "La ablación es curativa en la mayoría de los casos."
+      },
+      {
+        "tema": "Endocarditis",
+        "modulo": "m14",
+        "caso": "Hombre de 30 años usuario de drogas IV con fiebre, soplo sistólico que aumenta con la inspiración y nódulos pulmonares.",
+        "pregunta": "¿Cuál es el agente más probable?",
+        "opciones": [
+          "Streptococcus viridans",
+          "Candida albicans",
+          "Staphylococcus aureus",
+          "Enterococcus faecalis"
+        ],
+        "correcta": 2,
+        "explicacion": "En usuarios de drogas IV predomina S. aureus con afección tricuspídea y émbolos sépticos pulmonares."
+      },
+      {
+        "tema": "Endocarditis",
+        "modulo": "m14",
+        "caso": "Paciente con prótesis valvular y fiebre; el ecocardiograma transtorácico no muestra vegetaciones.",
+        "pregunta": "¿Cuál es el siguiente estudio?",
+        "opciones": [
+          "Ecocardiograma transesofágico",
+          "Tomografía de cráneo",
+          "Repetir el transtorácico en 6 meses",
+          "Resonancia de columna"
+        ],
+        "correcta": 0,
+        "explicacion": "El transesofágico es más sensible, sobre todo en prótesis."
+      },
+      {
+        "tema": "Endocarditis",
+        "modulo": "m14",
+        "caso": "Mujer con válvula protésica que acudirá a extracción dental.",
+        "pregunta": "¿Qué profilaxis indicas?",
+        "opciones": [
+          "Amoxicilina 2 g VO antes del procedimiento",
+          "Ninguna",
+          "Ciprofloxacino 7 días",
+          "Vancomicina 2 semanas"
+        ],
+        "correcta": 0,
+        "explicacion": "La prótesis valvular es de alto riesgo: profilaxis con amoxicilina 2 g antes del procedimiento."
+      },
+      {
+        "tema": "Pericarditis",
+        "modulo": "m15",
+        "caso": "Hombre de 25 años con dolor torácico punzante que mejora al inclinarse hacia adelante, tras un cuadro gripal. ECG con elevación difusa del ST y depresión del PR.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Trombólisis",
+          "Ibuprofeno + colchicina",
+          "Anticoagulación",
+          "Angioplastia primaria"
+        ],
+        "correcta": 1,
+        "explicacion": "Pericarditis aguda viral: AINE + colchicina."
+      },
+      {
+        "tema": "Pericarditis",
+        "modulo": "m15",
+        "caso": "Paciente con derrame pericárdico conocido que presenta hipotensión, ingurgitación yugular y ruidos apagados.",
+        "pregunta": "¿Cuál es la conducta inmediata?",
+        "opciones": [
+          "Furosemida IV",
+          "Pericardiocentesis",
+          "Nitroglicerina",
+          "Betabloqueador"
+        ],
+        "correcta": 1,
+        "explicacion": "Tríada de Beck = taponamiento: pericardiocentesis urgente."
+      },
+      {
+        "tema": "Pericarditis",
+        "modulo": "m15",
+        "caso": "En el taponamiento, la TA sistólica cae más de 10 mmHg con la inspiración.",
+        "pregunta": "¿Cómo se llama este signo?",
+        "opciones": [
+          "Signo de Kussmaul",
+          "Pulso alternante",
+          "Pulso paradójico",
+          "Signo de Musset"
+        ],
+        "correcta": 2,
+        "explicacion": "El pulso paradójico es característico del taponamiento cardiaco."
+      },
+      {
+        "tema": "Valvulopatía aórtica",
+        "modulo": "m16",
+        "caso": "Hombre de 78 años con síncope de esfuerzo y soplo sistólico expulsivo en foco aórtico irradiado a carótidas.",
+        "pregunta": "¿Cuál es el diagnóstico más probable?",
+        "opciones": [
+          "Estenosis aórtica",
+          "Insuficiencia mitral",
+          "Estenosis mitral",
+          "Comunicación interauricular"
+        ],
+        "correcta": 0,
+        "explicacion": "Soplo sistólico aórtico irradiado a carótidas con síncope de esfuerzo en adulto mayor."
+      },
+      {
+        "tema": "Valvulopatía aórtica",
+        "modulo": "m16",
+        "caso": "Paciente con estenosis aórtica grave y angina de esfuerzo.",
+        "pregunta": "¿Cuál es el tratamiento indicado?",
+        "opciones": [
+          "Vasodilatadores a dosis altas",
+          "Observación",
+          "Reemplazo valvular aórtico",
+          "Diurético solo"
+        ],
+        "correcta": 2,
+        "explicacion": "Estenosis aórtica grave sintomática: reemplazo valvular (cirugía o TAVI)."
+      },
+      {
+        "tema": "Valvulopatía aórtica",
+        "modulo": "m16",
+        "caso": "Hombre con presión diferencial amplia, pulso saltón y soplo diastólico en el borde esternal izquierdo.",
+        "pregunta": "¿Qué valvulopatía presenta?",
+        "opciones": [
+          "Estenosis aórtica",
+          "Estenosis pulmonar",
+          "Insuficiencia aórtica",
+          "Prolapso mitral"
+        ],
+        "correcta": 2,
+        "explicacion": "Signos periféricos de hiperdinamia + soplo diastólico aspirativo: insuficiencia aórtica."
+      },
+      {
+        "tema": "Valvulopatía mitral",
+        "modulo": "m17",
+        "caso": "Mujer de 32 años con disnea progresiva, hemoptisis y soplo diastólico en retumbo con chasquido de apertura.",
+        "pregunta": "¿Cuál es la causa más probable?",
+        "opciones": [
+          "Endocarditis",
+          "Fiebre reumática",
+          "Isquemia",
+          "Válvula bicúspide"
+        ],
+        "correcta": 1,
+        "explicacion": "La estenosis mitral es casi siempre de origen reumático."
+      },
+      {
+        "tema": "Valvulopatía mitral",
+        "modulo": "m17",
+        "caso": "Paciente con soplo holosistólico en el ápex que se irradia a la axila.",
+        "pregunta": "¿Qué valvulopatía presenta?",
+        "opciones": [
+          "Estenosis aórtica",
+          "Insuficiencia tricuspídea",
+          "Insuficiencia mitral",
+          "Estenosis mitral"
+        ],
+        "correcta": 2,
+        "explicacion": "Holosistólico apical irradiado a la axila: insuficiencia mitral."
+      },
+      {
+        "tema": "Valvulopatía mitral",
+        "modulo": "m17",
+        "caso": "Mujer con estenosis mitral moderada y fibrilación auricular.",
+        "pregunta": "¿Qué anticoagulante es el indicado?",
+        "opciones": [
+          "Apixabán",
+          "Aspirina",
+          "Ninguno",
+          "Warfarina"
+        ],
+        "correcta": 3,
+        "explicacion": "En FA con estenosis mitral moderada-grave se usa warfarina, no anticoagulantes directos."
+      },
+      {
+        "tema": "Valvulopatía tricuspídea",
+        "modulo": "m18",
+        "caso": "Paciente con soplo holosistólico en el borde esternal izquierdo bajo que aumenta con la inspiración.",
+        "pregunta": "¿Qué valvulopatía es?",
+        "opciones": [
+          "Insuficiencia mitral",
+          "Estenosis aórtica",
+          "Estenosis pulmonar",
+          "Insuficiencia tricuspídea"
+        ],
+        "correcta": 3,
+        "explicacion": "El aumento con la inspiración indica origen derecho: insuficiencia tricuspídea."
+      },
+      {
+        "tema": "Valvulopatía tricuspídea",
+        "modulo": "m18",
+        "caso": "Paciente con hipertensión pulmonar e insuficiencia tricuspídea.",
+        "pregunta": "¿Cuál es el mecanismo más probable de la insuficiencia?",
+        "opciones": [
+          "Fiebre reumática",
+          "Válvula bicúspide",
+          "Calcificación degenerativa",
+          "Dilatación del VD (funcional)"
+        ],
+        "correcta": 3,
+        "explicacion": "La insuficiencia tricuspídea secundaria a dilatación del VD es la forma más común."
+      },
+      {
+        "tema": "Valvulopatía tricuspídea",
+        "modulo": "m18",
+        "caso": "Hombre con diarrea, rubor facial y soplo tricuspídeo nuevo; tumor hepático.",
+        "pregunta": "¿Qué síndrome explica la valvulopatía?",
+        "opciones": [
+          "Fiebre reumática",
+          "Marfan",
+          "Síndrome carcinoide",
+          "Lupus"
+        ],
+        "correcta": 2,
+        "explicacion": "La serotonina del síndrome carcinoide afecta las válvulas derechas."
+      },
+      {
+        "tema": "Coartación aórtica",
+        "modulo": "m19",
+        "caso": "Joven de 17 años con HTA en brazos, pulsos femorales débiles y soplo interescapular.",
+        "pregunta": "¿Cuál es el diagnóstico más probable?",
+        "opciones": [
+          "HTA esencial",
+          "Feocromocitoma",
+          "Estenosis renal",
+          "Coartación de la aorta"
+        ],
+        "correcta": 3,
+        "explicacion": "Diferencia de TA y pulsos entre extremidades superiores e inferiores sugiere coartación."
+      },
+      {
+        "tema": "Coartación aórtica",
+        "modulo": "m19",
+        "caso": "En la radiografía de tórax del paciente anterior se esperan muescas en las costillas.",
+        "pregunta": "¿Qué las produce?",
+        "opciones": [
+          "Metástasis óseas",
+          "Fracturas antiguas",
+          "Osteoporosis",
+          "Circulación colateral por arterias intercostales"
+        ],
+        "correcta": 3,
+        "explicacion": "Las intercostales dilatadas erosionan el borde inferior de las costillas."
+      },
+      {
+        "tema": "Coartación aórtica",
+        "modulo": "m19",
+        "caso": "Adolescente con talla baja, cuello alado y HTA en brazos.",
+        "pregunta": "¿Qué alteración cardiovascular es la más probable?",
+        "opciones": [
+          "Tetralogía de Fallot",
+          "Transposición de grandes vasos",
+          "Coartación de la aorta",
+          "Canal AV"
+        ],
+        "correcta": 2,
+        "explicacion": "El síndrome de Turner se asocia con coartación aórtica y válvula bicúspide."
+      },
+      {
+        "tema": "Disección aórtica",
+        "modulo": "m20",
+        "caso": "Hombre hipertenso de 60 años con dolor torácico súbito desgarrante irradiado a la espalda y diferencia de TA entre brazos de 30 mmHg.",
+        "pregunta": "¿Qué estudio confirma el diagnóstico si está estable?",
+        "opciones": [
+          "Angiotomografía de aorta",
+          "Prueba de esfuerzo",
+          "Troponina",
+          "Gammagrafía"
+        ],
+        "correcta": 0,
+        "explicacion": "La angio-TC es el estudio de elección para disección en paciente estable."
+      },
+      {
+        "tema": "Disección aórtica",
+        "modulo": "m20",
+        "caso": "La angio-TC muestra disección que involucra la aorta ascendente.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Solo betabloqueador",
+          "Cirugía urgente",
+          "Trombólisis",
+          "Anticoagulación"
+        ],
+        "correcta": 1,
+        "explicacion": "Stanford A requiere cirugía urgente."
+      },
+      {
+        "tema": "Disección aórtica",
+        "modulo": "m20",
+        "caso": "Paciente con disección tipo B no complicada.",
+        "pregunta": "¿Cuál es el primer fármaco para controlar FC y TA?",
+        "opciones": [
+          "Hidralazina IV sola",
+          "Esmolol IV",
+          "Nifedipino sublingual",
+          "Alteplasa"
+        ],
+        "correcta": 1,
+        "explicacion": "Se inicia con betabloqueador para reducir la fuerza de eyección; el vasodilatador solo nunca es primero."
+      }
+    ]
+  },
+  "descargas": {
+    "flashcards": [
+      {
+        "titulo": "Flash cards para imprimir (PDF)",
+        "archivo": "assets/descargas/cardiologia_flash-cards.pdf"
+      }
+    ],
+    "diagramas": [
+      {
+        "titulo": "Infografía (PDF)",
+        "archivo": "assets/descargas/cardiologia_infografia.pdf"
+      },
+      {
+        "titulo": "Diagrama de flujo (PDF)",
+        "archivo": "assets/descargas/cardiologia_diagrama.pdf"
+      }
+    ],
+    "examenes": [
+      {
+        "titulo": "Examen para imprimir (PDF)",
+        "archivo": "assets/descargas/cardiologia_examen.pdf"
+      },
+      {
+        "titulo": "Hoja de respuestas (PDF)",
+        "archivo": "assets/descargas/cardiologia_hoja.pdf"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "cursos": [
+    {
+      "id": "alergologia",
+      "titulo": "Alergología",
+      "descripcion": "Hipersensibilidad, rinitis alérgica, urticaria, angioedema y anafilaxia con enfoque ENARM",
+      "especialidad": "Alergología e Inmunología",
+      "nivel": "CURSO ENARM",
+      "poster": "assets/img/posters/curso-alergologia.jpg",
+      "modulos": 4,
+      "horas": 1.9,
+      "preguntas": 20,
+      "flashcards": 28
+    },
+    {
+      "id": "cardiologia",
+      "titulo": "Cardiología",
+      "descripcion": "De la hipertensión al síndrome coronario agudo, arritmias, valvulopatías y aorta, con enfoque ENARM",
+      "especialidad": "Cardiología",
+      "nivel": "CURSO ENARM",
+      "poster": "assets/img/posters/curso-cardiologia.jpg",
+      "modulos": 20,
+      "horas": 7.8,
+      "preguntas": 60,
+      "flashcards": 80
+    },
+    {
+      "id": "cirugia",
+      "titulo": "Cirugía General",
+      "descripcion": "Abdomen agudo, vía biliar, hernias, patología anorrectal, vascular y quemaduras con enfoque ENARM",
+      "especialidad": "Cirugía General",
+      "nivel": "CURSO ENARM",
+      "poster": "assets/img/posters/curso-cirugia.jpg",
+      "modulos": 16,
+      "horas": 6.2,
+      "preguntas": 48,
+      "flashcards": 64
+    },
+    {
+      "id": "dermatologia",
+      "titulo": "Dermatología",
+      "descripcion": "Cáncer de piel, dermatosis inflamatorias, infecciones y toxicodermias con enfoque ENARM",
+      "especialidad": "Dermatología",
+      "nivel": "CURSO ENARM",
+      "poster": "assets/img/posters/curso-dermatologia.jpg",
+      "modulos": 20,
+      "horas": 7.7,
+      "preguntas": 60,
+      "flashcards": 80
+    }
+  ]
+}

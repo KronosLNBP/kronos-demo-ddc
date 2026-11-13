@@ -107,23 +107,28 @@
                 const qs = await getDocs(collection(db, 'cursos'));
                 if (qs.empty) { grid.innerHTML = `<p class="text-slate-400 col-span-full py-12 text-center">No hay cursos disponibles.</p>`; return; }
                 let html = '';
-                qs.forEach((d) => {
+                const docs = qs.docs.sort((a, b) => (a.data().orden || 99) - (b.data().orden || 99));
+                docs.forEach((d) => {
                     const c = d.data(), id = d.id;
                     const titulo = esc(c.titulo || 'Curso sin título'), desc = esc(c.descripcion || 'Sin descripción disponible.'), nivel = esc(c.nivel || 'General');
+                    const meta = c.modulos ? `<p class="text-xs text-teal-300 mb-3">${esc(c.modulos)} módulos · ${esc(c.horas)} h · ${esc(c.flashcards)} flash cards · banco de ${esc(c.preguntas)} preguntas</p>` : '';
                     const inscrito = misCursos.includes(id);
-                    const media = c.videoUrl
+                    const destino = c.contenido ? `curso.html?id=${encodeURIComponent(c.contenido)}` : `aula.html?id=${id}`;
+                    const media = c.poster
+                        ? `<img src="${esc(c.poster)}" alt="" class="w-full h-48 object-cover" loading="lazy">`
+                        : c.videoUrl
                         ? `<iframe class="w-full h-48 bg-black pointer-events-none" src="${esc(c.videoUrl)}?controls=0&mute=1" title="${titulo}" frameborder="0" loading="lazy"></iframe>`
                         : `<div class="h-48 bg-gradient-to-br from-slate-700 to-slate-800 flex items-center justify-center"><img src="assets/img/logo.png" alt="" class="h-20 opacity-40"></div>`;
                     let boton;
                     if (!isPremium) boton = `<a href="planes.html" class="w-full bg-slate-800 hover:bg-amber-500 border border-slate-700 hover:border-amber-400 text-slate-300 hover:text-slate-900 py-2.5 rounded-lg text-sm font-bold transition text-center mt-auto">🔒 Desbloquear Premium</a>`;
-                    else if (inscrito) boton = `<a href="aula.html?id=${id}" class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-lg text-sm font-semibold transition text-center mt-auto">Continuar aprendiendo →</a>`;
+                    else if (inscrito || c.contenido) boton = `<a href="${destino}" class="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-lg text-sm font-semibold transition text-center mt-auto">Continuar aprendiendo →</a>`;
                     else boton = `<button id="btn-add-${id}" onclick="agregarCurso('${id}')" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-lg text-sm font-semibold transition mt-auto">Agregar a mis cursos +</button>`;
                     html += `
                     <div class="bg-slate-800 border border-slate-700 rounded-2xl overflow-hidden hover:border-slate-500 transition flex flex-col relative ${!isPremium ? 'opacity-80' : ''}">
                         <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-[10px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider z-10 border border-slate-700">${nivel}</span>
                         <div class="relative">${media}</div>
                         <div class="p-6 flex-1 flex flex-col">
-                            <h3 class="text-lg font-bold text-white mb-2 leading-tight">${titulo}</h3>
+                            <h3 class="text-lg font-bold text-white mb-2 leading-tight">${titulo}</h3>${meta}
                             <p class="text-slate-400 text-sm mb-6 flex-1 line-clamp-3">${desc}</p>
                             ${boton}
                         </div>

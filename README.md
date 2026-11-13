@@ -38,6 +38,28 @@ Cada módulo abre con una **cápsula animada** de unos 2 minutos (`assets/videos
 
 Para agregar un curso nuevo, crea `content/<id>.json` con la misma estructura que `ddc.json` y agrégalo al catálogo en `content/plataforma.json`.
 
+## Cursos del catálogo
+
+| Curso | Módulos | Flash cards | Banco de preguntas |
+| --- | --- | --- | --- |
+| Alergología | 4 | 28 | 20 |
+| Cardiología | 20 | 80 | 60 |
+| Cirugía General (con Quemaduras) | 16 | 64 | 48 |
+| Dermatología | 20 | 80 | 60 |
+
+Cada curso se abre en `curso.html?id=<curso>` con el mismo paquete que el demo: ruta de estudio, podcast, resúmenes con perla ENARM, infografía, diagrama de flujo, flash cards por tema y examen cronometrado. El examen saca 20 preguntas distintas en cada intento, repartidas entre los temas. Los cursos del catálogo son Premium; el curso demo de Displasia es gratis.
+
+**Cómo se generan:** el contenido de cada curso está en `tools/cursos/<curso>.py`. Para regenerarlo:
+
+```bash
+python3 tools/build_course.py alergologia cardiologia cirugia dermatologia
+python3 tools/build_graficos.py alergologia cardiologia cirugia dermatologia   # infografía, diagrama y portada
+python3 tools/build_pdfs.py cardiologia                                      # PDFs imprimibles (uno por curso)
+python3 tools/build_catalogo.py                                              # content/catalogo.json
+```
+
+**Publicar en Firebase:** abre `admin.html` con una cuenta administradora (documento `admins/<UID>` en Firestore) → **Borrar todos** → **Publicar todos**.
+
 ## Plataforma con cuentas (Firebase)
 
 | Página | Qué hace |
@@ -48,6 +70,7 @@ Para agregar un curso nuevo, crea `content/<id>.json` con la misma estructura qu
 | `app.html` | Perfil, plan, avance del curso demo, último examen y diplomados inscritos |
 | `curso.html?id=ddc` | Curso demo (gratis con cuenta o como invitado); guarda avance y resultados en la cuenta |
 | `aula.html?id=…` | Aula de los diplomados de Firestore (solo Premium) |
+| `admin.html` | Borrar y publicar los cursos del catálogo en Firestore (solo administradores) |
 | `planes.html` → Stripe → `exito.html` | Membresía mensual ($199) o anual ($1,599) |
 | `shorts.html` | Videos cortos tipo reels desde Firestore |
 

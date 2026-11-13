@@ -48,7 +48,7 @@ fetch(`content/${CURSO}.json`)
 function init(data) {
   DATA = data;
   document.title = `${data.titulo} | KronosMedicine`;
-  $('crumb').innerHTML = `<a href="./">Inicio</a> · ${esc(data.especialidad)} · ${esc(data.titulo)}`;
+  $('crumb').innerHTML = `<a href="catalogo.html">Catálogo</a> · ${data.especialidad === data.titulo ? '' : `${esc(data.especialidad)} · `}${esc(data.titulo)}`;
   $('drawerTitulo').textContent = data.titulo;
 
   renderMenu();
@@ -300,18 +300,30 @@ function pintarCard() {
 /* ---------- Exámenes ---------- */
 function setupExamen() {
   const ex = DATA.examen;
-  const muestra = ex.muestra.map((n) => ex.preguntas[n]);
-  $('muestraInfo').textContent = `${muestra.length} preguntas · sin límite de tiempo · resultado al final`;
-  $('examInfo').textContent = `${ex.preguntas.length} preguntas en ${ex.minutos} minutos · aprobatorio ${ex.aprobatorio}%`;
+  // Banco de preguntas: si hay más de las que se piden, cada intento saca una selección distinta.
+  const barajar = (arr) => { const a = [...arr]; for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const cantidad = Math.min(ex.cantidad || ex.preguntas.length, ex.preguntas.length);
+  const seleccion = (n) => {
+    // Reparte las preguntas entre los temas para que el examen cubra todo el curso.
+    const porTema = {};
+    barajar(ex.preguntas).forEach((p) => { (porTema[p.tema] = porTema[p.tema] || []).push(p); });
+    const grupos = barajar(Object.values(porTema)); const out = [];
+    while (out.length < n && grupos.some((g) => g.length)) grupos.forEach((g) => { if (g.length && out.length < n) out.push(g.shift()); });
+    return barajar(out);
+  };
+  const muestraFija = Array.isArray(ex.muestra) ? ex.muestra.map((n) => ex.preguntas[n]).filter(Boolean) : null;
+  const nMuestra = muestraFija ? muestraFija.length : Math.min(ex.muestraCantidad || 5, ex.preguntas.length);
+  $('muestraInfo').textContent = `${nMuestra} preguntas · sin límite de tiempo · resultado al final`;
+  $('examInfo').textContent = `${cantidad} preguntas en ${ex.minutos} minutos · aprobatorio ${ex.aprobatorio}%` + (ex.preguntas.length > cantidad ? ` · banco de ${ex.preguntas.length}` : '');
 
   let reloj = null; let actuales = []; let segundosTotal = null; let restante = 0; let inicio = 0; let modo = '';
 
-  $('empezarMuestra').addEventListener('click', () => iniciar(muestra, null, 'muestra'));
+  $('empezarMuestra').addEventListener('click', () => iniciar(muestraFija || seleccion(nMuestra), null, 'muestra'));
   $('empezar').addEventListener('click', () => {
     // DEMO: código fijo. En producción el código llega por mensaje tras el pago y se valida en el servidor.
     if ($('codigo').value.trim().toUpperCase() !== ex.codigoDemo) { $('codigoError').textContent = 'Código incorrecto.'; return; }
     $('codigoError').textContent = '';
-    iniciar(ex.preguntas, ex.minutos * 60, 'cronometrado');
+    iniciar(seleccion(cantidad), ex.minutos * 60, 'cronometrado');
   });
 
   function iniciar(preguntas, segundos, m) {

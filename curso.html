@@ -12,7 +12,7 @@
     <button class="burger" id="burger" aria-label="Abrir menú del curso" aria-controls="drawer" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
-    <a class="brand" href="./"><img src="assets/img/logo.png" alt="" class="brand-logo">Kronos<span>Medicine</span></a>
+    <a class="brand" href="./"><img src="assets/img/logo.png" alt="" class="brand-logo"><b>Kronos<span>Medicine</span></b></a>
     <div class="top-progress" title="Avance del curso">
       <span id="avanceTxt">0%</span>
       <span class="bar"><span id="avanceBar"></span></span>
@@ -134,7 +134,7 @@
       }
       if (p.get('invitado') === '1' && (p.get('id') || 'ddc') === 'ddc') invitado();
       // Si Firebase no carga (sin conexión a sus servidores), el curso demo sigue disponible como invitado.
-      setTimeout(function () { if (document.getElementById('app-body').classList.contains('hidden') && !window.KronosCuenta) invitado(); }, 8000);
+      if ((p.get('id') || 'ddc') === 'ddc') setTimeout(function () { if (document.getElementById('app-body').classList.contains('hidden') && !window.KronosCuenta) invitado(); }, 8000);
     })();
   </script>
   <script type="module">
@@ -146,10 +146,16 @@
     if (!window.KRONOS_INVITADO) requireUser(async (user) => {
       let progreso = [];
       let nombre = user.displayName || user.email;
+      let premium = false;
       try {
         const snap = await getDoc(doc(db, 'users', user.uid));
-        if (snap.exists()) { const d = snap.data(); nombre = d.nombre || nombre; progreso = (d.progreso && d.progreso[curso]) || []; }
+        if (snap.exists()) {
+          const d = snap.data(); nombre = d.nombre || nombre; progreso = (d.progreso && d.progreso[curso]) || [];
+          premium = d.isPremium === true && (!d.fechaExpiracion || d.fechaExpiracion.toDate() > new Date());
+        }
       } catch (e) { console.warn('Sin acceso al perfil:', e); }
+      // El curso demo es gratis; los demás cursos del catálogo son Premium.
+      if (curso !== 'ddc' && !premium) { location.href = 'planes.html'; return; }
       document.getElementById('userName').textContent = nombre;
       let t = null;
       window.KronosCuenta = {

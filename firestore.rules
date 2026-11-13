@@ -23,10 +23,19 @@ service cloud.firestore {
       }
     }
 
-    // Catálogo y shorts: lectura para usuarios con sesión; escritura solo desde la consola o el servidor.
+    // Administradores: documentos admins/{uid} creados a mano en la consola.
+    function esAdmin() {
+      return request.auth != null && exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+    match /admins/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // Catálogo: lectura para usuarios con sesión; solo administradores publican (admin.html).
     match /cursos/{id} {
       allow read: if request.auth != null;
-      allow write: if false;
+      allow write: if esAdmin();
     }
     match /shorts/{id} {
       allow read: if request.auth != null;

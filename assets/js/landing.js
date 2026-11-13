@@ -31,7 +31,7 @@ function init(data) {
 
   $('catalogo').innerHTML = data.cursos.map((c) => c.disponible ? `
     <a class="course-card" href="curso.html?id=${esc(c.id)}">
-      <span class="badge ok">Demo disponible</span>
+      <span class="badge ${c.premium ? '' : 'ok'}">${c.premium ? 'Premium' : 'Demo gratis'}</span>
       <h3>${esc(c.titulo)}</h3>
       <p class="muted">${esc(c.especialidad)} · ${esc(c.horas)} horas</p>
       <ul class="chips">${c.recursos.map((r) => `<li>${esc(r)}</li>`).join('')}</ul>

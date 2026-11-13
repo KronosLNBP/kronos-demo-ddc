@@ -1,0 +1,2545 @@
+{
+  "_nota": "Contenido redactado por Kronos a partir de los temas de los resúmenes de referencia y las GPC. Debe validarlo el Creador de producto.",
+  "id": "dermatologia",
+  "titulo": "Dermatología",
+  "subtitulo": "Cáncer de piel, dermatosis inflamatorias, infecciones y toxicodermias con enfoque ENARM",
+  "especialidad": "Dermatología",
+  "duracionMin": 463,
+  "nivel": "Pregrado, internado y preparación ENARM",
+  "palabrasClave": [
+    "ABCDE",
+    "Breslow",
+    "Nikolsky",
+    "Isotretinoína",
+    "Wood",
+    "Permetrina 5 %",
+    "Auspitz"
+  ],
+  "secciones": [
+    {
+      "id": "inicio",
+      "titulo": "Inicio del curso",
+      "icono": "⏳",
+      "video": "",
+      "intro": ""
+    },
+    {
+      "id": "clases",
+      "titulo": "Ruta de estudio",
+      "icono": "🗺️",
+      "video": "assets/videos/clases-grabadas.mp4",
+      "intro": "Sigue los módulos en orden: video, lectura, podcast y flash cards. Marca cada actividad al terminarla.",
+      "poster": "assets/img/posters/clases-grabadas.jpg"
+    },
+    {
+      "id": "podcast",
+      "titulo": "Podcast",
+      "icono": "🎧",
+      "video": "",
+      "intro": "Escucha cada tema mientras te arreglas, vas en el transporte o estás en el gym."
+    },
+    {
+      "id": "resumenes",
+      "titulo": "Resúmenes",
+      "icono": "📄",
+      "video": "assets/videos/resumenes.mp4",
+      "intro": "Resúmenes cortos para comprender, reforzar y recordar. Cada tema cierra con su perla ENARM.",
+      "poster": "assets/img/posters/resumenes.jpg"
+    },
+    {
+      "id": "diagramas",
+      "titulo": "Infografía y diagrama de flujo",
+      "icono": "🧭",
+      "video": "assets/videos/diagramas.mp4",
+      "intro": "Lo esencial del curso en una imagen y el algoritmo clave. Léelos después del resumen.",
+      "poster": "assets/img/posters/diagramas.jpg"
+    },
+    {
+      "id": "flashcards",
+      "titulo": "Flash cards",
+      "icono": "🃏",
+      "video": "assets/videos/flashcards.mp4",
+      "intro": "Repaso rápido por tema. Después de leer el resumen, repasa las tarjetas poco a poco durante la semana.",
+      "poster": "assets/img/posters/flashcards.jpg"
+    },
+    {
+      "id": "examenes",
+      "titulo": "Exámenes",
+      "icono": "⏱️",
+      "video": "assets/videos/examenes.mp4",
+      "intro": "Cada intento saca preguntas distintas del banco del curso. Al final tienes tu resultado completo por tema.",
+      "poster": "assets/img/posters/examenes.jpg"
+    }
+  ],
+  "modulos": [
+    {
+      "id": "m1",
+      "titulo": "Carcinoma basocelular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer el carcinoma basocelular",
+        "Elegir el tratamiento según el riesgo"
+      ],
+      "temas": [
+        "Epidemiología y factores de riesgo",
+        "Variedades clínicas",
+        "Cirugía y Mohs"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Carcinoma basocelular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Basocelular",
+          "minutos": 5,
+          "destino": "m1"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 1: Basocelular",
+          "minutos": 6,
+          "destino": "p1"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Basocelular",
+          "minutos": 3,
+          "destino": "Basocelular"
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "titulo": "Carcinoma espinocelular",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer el carcinoma espinocelular y sus precursores",
+        "Valorar el riesgo de metástasis"
+      ],
+      "temas": [
+        "Precursores: queratosis actínica",
+        "Clínica y sitios de alto riesgo",
+        "Tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Carcinoma espinocelular",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Espinocelular",
+          "minutos": 5,
+          "destino": "m2"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 2: Espinocelular",
+          "minutos": 6,
+          "destino": "p2"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Espinocelular",
+          "minutos": 3,
+          "destino": "Espinocelular"
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "titulo": "Melanoma",
+      "minutos": 25,
+      "video": "",
+      "objetivos": [
+        "Aplicar el ABCDE",
+        "Interpretar el índice de Breslow"
+      ],
+      "temas": [
+        "Factores de riesgo",
+        "Tipos clínicos",
+        "Breslow, biopsia y ganglio centinela"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Melanoma",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Melanoma",
+          "minutos": 5,
+          "destino": "m3"
+        },
+        {
+          "tipo": "infografia",
+          "titulo": "Diagrama de flujo: lesión pigmentada sospechosa",
+          "minutos": 3,
+          "destino": "algoritmo"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 3: Melanoma",
+          "minutos": 6,
+          "destino": "p3"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Melanoma",
+          "minutos": 3,
+          "destino": "Melanoma"
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "titulo": "Toxicodermias",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer las reacciones cutáneas por fármacos",
+        "Distinguir Stevens-Johnson de necrólisis epidérmica tóxica"
+      ],
+      "temas": [
+        "Exantema morbiliforme y urticaria",
+        "Stevens-Johnson y NET",
+        "DRESS y manejo"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Toxicodermias",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Toxicodermias",
+          "minutos": 5,
+          "destino": "m4"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 4: Toxicodermias",
+          "minutos": 6,
+          "destino": "p4"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Toxicodermias",
+          "minutos": 3,
+          "destino": "Toxicodermias"
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "titulo": "Pénfigos y penfigoide",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diferenciar pénfigo vulgar de penfigoide ampolloso",
+        "Indicar el tratamiento"
+      ],
+      "temas": [
+        "Autoanticuerpos y nivel de la ampolla",
+        "Signo de Nikolsky",
+        "Esteroides e inmunosupresores"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Pénfigos y penfigoide",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Pénfigos",
+          "minutos": 5,
+          "destino": "m5"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 5: Pénfigos",
+          "minutos": 6,
+          "destino": "p5"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Pénfigos",
+          "minutos": 3,
+          "destino": "Pénfigos"
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "titulo": "Acné",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Clasificar el acné",
+        "Elegir el tratamiento escalonado"
+      ],
+      "temas": [
+        "Fisiopatología",
+        "Comedónico, inflamatorio y noduloquístico",
+        "Tópicos, antibióticos e isotretinoína"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Acné",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Acné",
+          "minutos": 5,
+          "destino": "m6"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 6: Acné",
+          "minutos": 6,
+          "destino": "p6"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Acné",
+          "minutos": 3,
+          "destino": "Acné"
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "titulo": "Rosácea",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer los fenotipos de rosácea",
+        "Indicar el tratamiento según el fenotipo"
+      ],
+      "temas": [
+        "Desencadenantes",
+        "Eritematotelangiectásica, pápulo-pustular, fimatosa y ocular",
+        "Tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Rosácea",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Rosácea",
+          "minutos": 5,
+          "destino": "m7"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 7: Rosácea",
+          "minutos": 6,
+          "destino": "p7"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Rosácea",
+          "minutos": 3,
+          "destino": "Rosácea"
+        }
+      ]
+    },
+    {
+      "id": "m8",
+      "titulo": "Dermatitis atópica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la dermatitis atópica por edad",
+        "Indicar el tratamiento escalonado"
+      ],
+      "temas": [
+        "Barrera cutánea y marcha atópica",
+        "Distribución por edad",
+        "Emolientes, esteroides e inhibidores de calcineurina"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Dermatitis atópica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Dermatitis atópica",
+          "minutos": 5,
+          "destino": "m8"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 8: Dermatitis atópica",
+          "minutos": 6,
+          "destino": "p8"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Dermatitis atópica",
+          "minutos": 3,
+          "destino": "Dermatitis atópica"
+        }
+      ]
+    },
+    {
+      "id": "m9",
+      "titulo": "Dermatitis por contacto",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diferenciar dermatitis irritativa de alérgica",
+        "Indicar la prueba del parche"
+      ],
+      "temas": [
+        "Irritativa vs alérgica",
+        "Alérgenos frecuentes",
+        "Prueba del parche y tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Dermatitis por contacto",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Dermatitis por contacto",
+          "minutos": 5,
+          "destino": "m9"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 9: Dermatitis por contacto",
+          "minutos": 6,
+          "destino": "p9"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Dermatitis por contacto",
+          "minutos": 3,
+          "destino": "Dermatitis por contacto"
+        }
+      ]
+    },
+    {
+      "id": "m10",
+      "titulo": "Piodermitis",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer las infecciones bacterianas de la piel",
+        "Elegir el antibiótico adecuado"
+      ],
+      "temas": [
+        "Impétigo",
+        "Foliculitis, forúnculo y ántrax",
+        "Erisipela y celulitis"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Piodermitis",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Piodermitis",
+          "minutos": 5,
+          "destino": "m10"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 10: Piodermitis",
+          "minutos": 6,
+          "destino": "p10"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Piodermitis",
+          "minutos": 3,
+          "destino": "Piodermitis"
+        }
+      ]
+    },
+    {
+      "id": "m11",
+      "titulo": "Lepra",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diferenciar las formas clínicas de lepra",
+        "Indicar el tratamiento multifármaco"
+      ],
+      "temas": [
+        "Mycobacterium leprae y transmisión",
+        "Tuberculoide vs lepromatosa",
+        "Esquemas de la OMS y leprorreacciones"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Lepra",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Lepra",
+          "minutos": 5,
+          "destino": "m11"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 11: Lepra",
+          "minutos": 6,
+          "destino": "p11"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Lepra",
+          "minutos": 3,
+          "destino": "Lepra"
+        }
+      ]
+    },
+    {
+      "id": "m12",
+      "titulo": "Escabiosis",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Diagnosticar escabiosis",
+        "Indicar tratamiento al paciente y sus contactos"
+      ],
+      "temas": [
+        "Sarcoptes scabiei y transmisión",
+        "Prurito nocturno y túneles",
+        "Permetrina e ivermectina"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Escabiosis",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Escabiosis",
+          "minutos": 5,
+          "destino": "m12"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 12: Escabiosis",
+          "minutos": 6,
+          "destino": "p12"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Escabiosis",
+          "minutos": 3,
+          "destino": "Escabiosis"
+        }
+      ]
+    },
+    {
+      "id": "m13",
+      "titulo": "Tiñas (dermatofitosis)",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer las tiñas por localización",
+        "Indicar tratamiento tópico u oral"
+      ],
+      "temas": [
+        "Dermatofitos",
+        "Tiña capitis, corporis, pedis, cruris y onicomicosis",
+        "Diagnóstico y tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Tiñas (dermatofitosis)",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Tiñas",
+          "minutos": 5,
+          "destino": "m13"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 13: Tiñas",
+          "minutos": 6,
+          "destino": "p13"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Tiñas",
+          "minutos": 3,
+          "destino": "Tiñas"
+        }
+      ]
+    },
+    {
+      "id": "m14",
+      "titulo": "Pitiriasis versicolor",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la pitiriasis versicolor",
+        "Indicar tratamiento y prevención de recaídas"
+      ],
+      "temas": [
+        "Malassezia",
+        "Clínica y lámpara de Wood",
+        "Tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Pitiriasis versicolor",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Pitiriasis versicolor",
+          "minutos": 5,
+          "destino": "m14"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 14: Pitiriasis versicolor",
+          "minutos": 6,
+          "destino": "p14"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Pitiriasis versicolor",
+          "minutos": 3,
+          "destino": "Pitiriasis versicolor"
+        }
+      ]
+    },
+    {
+      "id": "m15",
+      "titulo": "Dermatitis seborreica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la dermatitis seborreica en lactantes y adultos",
+        "Indicar el tratamiento"
+      ],
+      "temas": [
+        "Malassezia y zonas seborreicas",
+        "Costra láctea",
+        "Tratamiento y asociación con VIH"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Dermatitis seborreica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Dermatitis seborreica",
+          "minutos": 5,
+          "destino": "m15"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 15: Dermatitis seborreica",
+          "minutos": 6,
+          "destino": "p15"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Dermatitis seborreica",
+          "minutos": 3,
+          "destino": "Dermatitis seborreica"
+        }
+      ]
+    },
+    {
+      "id": "m16",
+      "titulo": "Pitiriasis rosada de Gibert",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la pitiriasis rosada",
+        "Diferenciarla de sífilis secundaria"
+      ],
+      "temas": [
+        "Placa heráldica",
+        "Patrón en árbol de Navidad",
+        "Evolución y tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Pitiriasis rosada de Gibert",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Pitiriasis rosada",
+          "minutos": 5,
+          "destino": "m16"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 16: Pitiriasis rosada",
+          "minutos": 6,
+          "destino": "p16"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Pitiriasis rosada",
+          "minutos": 3,
+          "destino": "Pitiriasis rosada"
+        }
+      ]
+    },
+    {
+      "id": "m17",
+      "titulo": "Queratosis actínica",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la queratosis actínica",
+        "Indicar su tratamiento como lesión premaligna"
+      ],
+      "temas": [
+        "Daño solar crónico",
+        "Clínica",
+        "Crioterapia y tratamiento de campo"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Queratosis actínica",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Queratosis actínica",
+          "minutos": 5,
+          "destino": "m17"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 17: Queratosis actínica",
+          "minutos": 6,
+          "destino": "p17"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Queratosis actínica",
+          "minutos": 3,
+          "destino": "Queratosis actínica"
+        }
+      ]
+    },
+    {
+      "id": "m18",
+      "titulo": "Nevos displásicos",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer el nevo displásico",
+        "Indicar vigilancia y biopsia"
+      ],
+      "temas": [
+        "Nevo común vs displásico",
+        "Síndrome de nevos displásicos",
+        "Dermatoscopia y seguimiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Nevos displásicos",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Nevos displásicos",
+          "minutos": 5,
+          "destino": "m18"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 18: Nevos displásicos",
+          "minutos": 6,
+          "destino": "p18"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Nevos displásicos",
+          "minutos": 3,
+          "destino": "Nevos displásicos"
+        }
+      ]
+    },
+    {
+      "id": "m19",
+      "titulo": "Psoriasis",
+      "minutos": 22,
+      "video": "",
+      "objetivos": [
+        "Reconocer la psoriasis y sus formas clínicas",
+        "Indicar tratamiento según la extensión"
+      ],
+      "temas": [
+        "Placas, Auspitz y Koebner",
+        "Formas clínicas y artritis psoriásica",
+        "Tópicos, fototerapia, sistémicos y biológicos"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Psoriasis",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Psoriasis",
+          "minutos": 5,
+          "destino": "m19"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 19: Psoriasis",
+          "minutos": 6,
+          "destino": "p19"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Psoriasis",
+          "minutos": 3,
+          "destino": "Psoriasis"
+        }
+      ]
+    },
+    {
+      "id": "m20",
+      "titulo": "Liquen plano",
+      "minutos": 42,
+      "video": "",
+      "objetivos": [
+        "Reconocer el liquen plano",
+        "Identificar sus asociaciones"
+      ],
+      "temas": [
+        "Las 6 P",
+        "Estrías de Wickham y afección oral",
+        "Asociación con hepatitis C y tratamiento"
+      ],
+      "actividades": [
+        {
+          "tipo": "video",
+          "titulo": "Clase: Liquen plano",
+          "minutos": 8,
+          "destino": ""
+        },
+        {
+          "tipo": "lectura",
+          "titulo": "Resumen: Liquen plano",
+          "minutos": 5,
+          "destino": "m20"
+        },
+        {
+          "tipo": "podcast",
+          "titulo": "Episodio 20: Liquen plano",
+          "minutos": 6,
+          "destino": "p20"
+        },
+        {
+          "tipo": "flashcards",
+          "titulo": "Flash cards: Liquen plano",
+          "minutos": 3,
+          "destino": "Liquen plano"
+        },
+        {
+          "tipo": "examen",
+          "titulo": "Examen cronometrado: 20 preguntas",
+          "minutos": 20,
+          "destino": ""
+        }
+      ]
+    }
+  ],
+  "resumen": [
+    {
+      "id": "m1",
+      "titulo": "Carcinoma basocelular",
+      "puntos": [
+        "Cáncer de piel más frecuente. Se origina en las células basales; crece lento, es localmente invasor y casi nunca da metástasis. Factor principal: radiación UV intermitente; piel clara.",
+        "Localización: cara (sobre todo nariz), zonas fotoexpuestas. Variedad más común: nodular, pápula perlada con telangiectasias y ulceración central (úlcera roedora).",
+        "Otras variedades: superficial (placa eritematosa en tronco), pigmentado, esclerodermiforme (morfeiforme, más agresivo y con bordes mal definidos).",
+        "Tratamiento: escisión quirúrgica con márgenes; cirugía de Mohs en cara, recurrentes o de alto riesgo. Superficial: imiquimod, 5-fluorouracilo o crioterapia."
+      ],
+      "perla": "Pápula perlada con telangiectasias en la nariz: carcinoma basocelular nodular."
+    },
+    {
+      "id": "m2",
+      "titulo": "Carcinoma espinocelular",
+      "puntos": [
+        "Segundo cáncer de piel más frecuente; se origina en queratinocitos. Factor principal: radiación UV acumulada. Precursor más común: queratosis actínica; in situ: enfermedad de Bowen.",
+        "Clínica: nódulo o placa queratósica, que puede ulcerarse, en zonas fotoexpuestas (cara, labio inferior, dorso de manos). Puede surgir en cicatrices de quemaduras o úlceras crónicas (úlcera de Marjolin).",
+        "A diferencia del basocelular, puede dar metástasis ganglionares; mayor riesgo en labio, oreja, inmunosuprimidos (trasplantados) y tumores > 2 cm o profundos.",
+        "Tratamiento: escisión quirúrgica con márgenes; Mohs en zonas de alto riesgo; radioterapia si no es candidato a cirugía. Explorar ganglios regionales."
+      ],
+      "perla": "Úlcera crónica o cicatriz de quemadura que cambia o no cicatriza: biopsia para descartar úlcera de Marjolin."
+    },
+    {
+      "id": "m3",
+      "titulo": "Melanoma",
+      "puntos": [
+        "Cáncer de melanocitos; el más letal de la piel. Riesgo: quemaduras solares en la infancia, piel clara, múltiples nevos o nevos displásicos, antecedente familiar.",
+        "ABCDE: Asimetría, Bordes irregulares, Color heterogéneo, Diámetro > 6 mm, Evolución (cambio). Signo del patito feo: el lunar distinto a los demás.",
+        "Tipos: extensión superficial (el más común en población blanca), nodular (el más agresivo, crece en vertical), léntigo maligno (cara de ancianos) y lentiginoso acral (palmas, plantas, uñas; el más común en México y en piel oscura).",
+        "Diagnóstico: biopsia escisional con márgenes estrechos. El factor pronóstico más importante es el índice de Breslow (profundidad en mm). Tratamiento: escisión amplia; ganglio centinela si Breslow > 0.8 mm o ulcerado."
+      ],
+      "perla": "Factor pronóstico más importante del melanoma localizado: índice de Breslow."
+    },
+    {
+      "id": "m4",
+      "titulo": "Toxicodermias",
+      "puntos": [
+        "Exantema morbiliforme: la toxicodermia más común; máculas y pápulas eritematosas 4–14 días después de iniciar el fármaco (aminopenicilinas, sulfas, anticonvulsivos). Urticaria por fármacos: inmediata.",
+        "Stevens-Johnson (SJS) y necrólisis epidérmica tóxica (NET) son el mismo espectro: SJS < 10 % de superficie; SJS/NET 10–30 %; NET > 30 %. Lesiones en diana atípicas, ampollas, Nikolsky positivo y afección de mucosas.",
+        "Fármacos causales: alopurinol, carbamazepina, fenitoína, lamotrigina, sulfonamidas, AINE oxicams, nevirapina. SCORTEN estima la mortalidad.",
+        "Manejo: suspender el fármaco de inmediato (lo más importante), unidad de quemados o cuidados intensivos, cuidados de piel y mucosas, valoración oftalmológica. DRESS: exantema, fiebre, eosinofilia y daño hepático 2–8 semanas después."
+      ],
+      "perla": "Lo más importante en Stevens-Johnson/NET es suspender el fármaco sospechoso lo antes posible."
+    },
+    {
+      "id": "m5",
+      "titulo": "Pénfigos y penfigoide",
+      "puntos": [
+        "Pénfigo vulgar: autoanticuerpos IgG contra desmogleína 3 (y 1); ampolla intraepidérmica suprabasal, flácida, que se rompe fácil. Afecta mucosa oral casi siempre (a menudo primero). Adultos de 40–60 años.",
+        "Nikolsky positivo en pénfigo. Biopsia: acantólisis; inmunofluorescencia directa: IgG intercelular 'en panal'.",
+        "Penfigoide ampolloso: contra BP180/BP230; ampolla subepidérmica, tensa, en ancianos, muy pruriginosa, rara vez en mucosas, Nikolsky negativo; inmunofluorescencia lineal en la membrana basal.",
+        "Tratamiento del pénfigo: esteroides sistémicos + ahorradores (azatioprina, micofenolato) o rituximab (primera línea en moderado-grave). Penfigoide: esteroides tópicos potentes o sistémicos."
+      ],
+      "perla": "Pénfigo: ampollas flácidas, mucosas y Nikolsky +. Penfigoide: ampollas tensas, ancianos, Nikolsky −."
+    },
+    {
+      "id": "m6",
+      "titulo": "Acné",
+      "puntos": [
+        "Enfermedad de la unidad pilosebácea: aumento de sebo, hiperqueratinización folicular, Cutibacterium acnes e inflamación. Lesión inicial: comedón (abierto o cerrado).",
+        "Leve (comedónico): retinoide tópico (adapaleno, tretinoína) ± peróxido de benzoilo.",
+        "Moderado (pápulo-pustular): retinoide + peróxido de benzoilo + antibiótico tópico; si es extenso, antibiótico oral (doxiciclina, minociclina) máximo 3 meses, siempre con peróxido de benzoilo.",
+        "Grave (nodular-quístico) o refractario: isotretinoína oral. Es teratogénica: 2 métodos anticonceptivos y prueba de embarazo; vigilar lípidos y enzimas hepáticas. En mujeres también sirven anticonceptivos o espironolactona."
+      ],
+      "perla": "Isotretinoína: teratogénica; exige prueba de embarazo y doble anticoncepción."
+    },
+    {
+      "id": "m7",
+      "titulo": "Rosácea",
+      "puntos": [
+        "Dermatosis inflamatoria crónica del centro de la cara en adultos (30–50 años), más en mujeres de piel clara. Desencadenantes: sol, calor, alcohol, picantes, bebidas calientes, estrés; se relaciona con Demodex.",
+        "Fenotipos: eritematotelangiectásica (rubor, eritema persistente), pápulo-pustular (pápulas y pústulas SIN comedones), fimatosa (rinofima, más en hombres) y ocular (blefaritis, conjuntivitis).",
+        "La ausencia de comedones la distingue del acné.",
+        "Tratamiento: fotoprotección y evitar desencadenantes; pápulo-pustular: metronidazol, ivermectina o ácido azelaico tópicos; doxiciclina a dosis baja si es moderada; brimonidina para eritema; láser para telangiectasias; rinofima: cirugía o láser."
+      ],
+      "perla": "Pápulas y pústulas faciales SIN comedones en un adulto con rubor: rosácea, no acné."
+    },
+    {
+      "id": "m8",
+      "titulo": "Dermatitis atópica",
+      "puntos": [
+        "Dermatosis inflamatoria crónica y recurrente con prurito intenso, por alteración de la barrera (filagrina) y respuesta Th2. Inicia en la infancia; parte de la marcha atópica (con rinitis y asma).",
+        "Distribución: lactantes en mejillas y superficies extensoras (respeta el área del pañal); niños mayores y adultos en pliegues (fosas antecubitales y poplíteas), con liquenificación.",
+        "Base del tratamiento: emolientes diarios y baños cortos con agua tibia; evitar irritantes. Brotes: esteroides tópicos de potencia según zona; en cara y pliegues, inhibidores de calcineurina (tacrolimus, pimecrolimus).",
+        "Graves o refractarias: fototerapia, inmunosupresores (ciclosporina, metotrexato) o biológicos (dupilumab). Complicaciones: infección por S. aureus, eccema herpético."
+      ],
+      "perla": "Los emolientes diarios son la base del tratamiento de la dermatitis atópica, incluso sin brote."
+    },
+    {
+      "id": "m9",
+      "titulo": "Dermatitis por contacto",
+      "puntos": [
+        "Dermatitis por contacto irritativa: la más común; daño directo por agentes (agua, jabones, detergentes, solventes); no requiere sensibilización; frecuente en manos de trabajadores.",
+        "Dermatitis por contacto alérgica: hipersensibilidad tipo IV; requiere sensibilización previa; aparece 24–72 h tras la reexposición. Alérgeno más común: níquel; otros: fragancias, conservadores, cromo (cemento), látex.",
+        "Clínica: eccema (eritema, vesículas, costras, liquenificación) limitado al área de contacto, con prurito.",
+        "Diagnóstico de la alérgica: prueba del parche (patch test). Tratamiento: evitar el agente, emolientes, esteroides tópicos; sistémicos si es extensa."
+      ],
+      "perla": "Dermatitis por contacto alérgica = tipo IV; se confirma con prueba del parche (no con prick test)."
+    },
+    {
+      "id": "m10",
+      "titulo": "Piodermitis",
+      "puntos": [
+        "Impétigo: la piodermitis más común en niños. Costras melicéricas (color miel) alrededor de nariz y boca; ampolloso por S. aureus (toxina exfoliativa). Tratamiento: mupirocina o ácido fusídico tópico; oral (dicloxacilina, cefalexina) si es extenso.",
+        "Foliculitis (infección del folículo), forúnculo (folículo profundo con necrosis) y ántrax (varios forúnculos confluentes, más en diabéticos): S. aureus. Forúnculos grandes: incisión y drenaje.",
+        "Erisipela: dermis superficial y linfáticos; placa roja, brillante, bien delimitada y elevada, con fiebre; S. pyogenes; pierna o cara. Tratamiento: penicilina.",
+        "Celulitis: dermis profunda y tejido subcutáneo; bordes mal definidos; S. pyogenes y S. aureus. Tratamiento: dicloxacilina o cefalexina; buscar datos de fascitis necrosante (dolor desproporcionado, crepitación, bulas)."
+      ],
+      "perla": "Erisipela: bordes bien delimitados y elevados (estreptococo). Celulitis: bordes difusos."
+    },
+    {
+      "id": "m11",
+      "titulo": "Lepra",
+      "puntos": [
+        "Infección crónica por Mycobacterium leprae; afecta piel y nervios periféricos. Transmisión por vía respiratoria con contacto prolongado. Sigue presente en algunos estados de México.",
+        "Tuberculoide (paucibacilar, buena respuesta celular): pocas placas hipopigmentadas, anestésicas, bien delimitadas; nervios engrosados. Lepromatosa (multibacilar): lesiones múltiples, nódulos (lepromas), facies leonina, madarosis.",
+        "Diagnóstico: clínica (lesión con pérdida de sensibilidad, nervio engrosado), baciloscopia y biopsia.",
+        "Tratamiento OMS: rifampicina + dapsona + clofazimina; 6 meses en paucibacilar y 12 meses en multibacilar. Leprorreacción tipo 2 (eritema nodoso leproso): talidomida o esteroides."
+      ],
+      "perla": "Mancha hipocrómica anestésica con nervio periférico engrosado: piensa en lepra."
+    },
+    {
+      "id": "m12",
+      "titulo": "Escabiosis",
+      "puntos": [
+        "Infestación por el ácaro Sarcoptes scabiei var. hominis; contagio por contacto directo prolongado. Frecuente en familias, escuelas, asilos.",
+        "Clínica: prurito intenso de predominio nocturno, que afecta a varios convivientes. Lesión patognomónica: túnel o surco acarino. Sitios: espacios interdigitales, muñecas, axilas, cintura, genitales, areolas. En lactantes, también palmas, plantas y cara.",
+        "Sarna costrosa (noruega): inmunosuprimidos y ancianos; costras gruesas con miles de ácaros, muy contagiosa.",
+        "Tratamiento: permetrina al 5 % de cuello a pies (en lactantes también cabeza), repetir a los 7 días; tratar a todos los convivientes al mismo tiempo y lavar ropa con agua caliente. Alternativa: ivermectina oral. El prurito puede persistir semanas."
+      ],
+      "perla": "Prurito nocturno en varios miembros de la familia: escabiosis. Se trata a todos los convivientes a la vez."
+    },
+    {
+      "id": "m13",
+      "titulo": "Tiñas (dermatofitosis)",
+      "puntos": [
+        "Infecciones por dermatofitos (Trichophyton, Microsporum, Epidermophyton) de piel, pelo y uñas. Agente más común en adultos: Trichophyton rubrum. Tiña de la cabeza en niños: Microsporum canis o T. tonsurans.",
+        "Tiña corporis: placa anular eritematosa con borde activo descamativo y centro claro. Pedis (pie de atleta), cruris (ingles, respeta escroto), unguium (onicomicosis).",
+        "Diagnóstico: examen directo con KOH (hifas) y cultivo; lámpara de Wood en algunas tiñas de la cabeza (Microsporum, fluorescencia verde).",
+        "Tratamiento: tópico (terbinafina, clotrimazol) en corporis, cruris y pedis limitadas. Orales en tiña de la cabeza (griseofulvina o terbinafina) y onicomicosis (terbinafina 3 meses en uñas de pies)."
+      ],
+      "perla": "Tiña de la cabeza y onicomicosis requieren tratamiento oral; el tópico no basta."
+    },
+    {
+      "id": "m14",
+      "titulo": "Pitiriasis versicolor",
+      "puntos": [
+        "Infección superficial por levaduras del género Malassezia (flora normal) favorecida por calor, humedad, sudoración y piel grasa; adolescentes y adultos jóvenes.",
+        "Clínica: máculas hipo o hipercrómicas con descamación fina (signo de la uñada), en tronco, cuello y brazos; poco o nada de prurito.",
+        "Lámpara de Wood: fluorescencia amarillo-dorada. KOH: imagen de 'espagueti con albóndigas' (hifas cortas y levaduras).",
+        "Tratamiento: tópicos (sulfuro de selenio, ketoconazol champú, azoles); orales (itraconazol, fluconazol) si es extensa o recurrente. La hipopigmentación tarda meses en resolverse; recurrencias frecuentes."
+      ],
+      "perla": "KOH en 'espagueti con albóndigas' = Malassezia (pitiriasis versicolor)."
+    },
+    {
+      "id": "m15",
+      "titulo": "Dermatitis seborreica",
+      "puntos": [
+        "Dermatosis inflamatoria crónica de zonas ricas en glándulas sebáceas, relacionada con Malassezia. Picos: lactantes (primeros 3 meses) y adultos de 30–60 años.",
+        "Lactantes: costra láctea (escamas amarillentas grasosas en piel cabelluda), también pliegues y área del pañal; poco prurito; se resuelve sola.",
+        "Adultos: eritema con escamas grasosas en piel cabelluda (caspa), cejas, surcos nasogenianos, pabellones auriculares y región preesternal. Formas graves o de inicio súbito: descartar VIH o Parkinson.",
+        "Tratamiento: champú con ketoconazol, sulfuro de selenio o piritione de zinc; ketoconazol crema en cara; esteroides tópicos de baja potencia por periodos cortos en brotes. Lactantes: emolientes y retiro suave de escamas."
+      ],
+      "perla": "Dermatitis seborreica extensa y refractaria en un adulto joven: solicita prueba de VIH."
+    },
+    {
+      "id": "m16",
+      "titulo": "Pitiriasis rosada de Gibert",
+      "puntos": [
+        "Dermatosis aguda y autolimitada, probablemente viral (herpesvirus 6 y 7), en adolescentes y adultos jóvenes.",
+        "Inicia con la placa heráldica: placa ovalada rosada con collarete descamativo, en tronco. Días después aparecen lesiones más pequeñas siguiendo las líneas de tensión, en patrón de 'árbol de Navidad'.",
+        "Prurito leve o ausente; se resuelve sola en 6–8 semanas. Si afecta palmas y plantas o hay factores de riesgo, descartar sífilis secundaria (VDRL).",
+        "Tratamiento sintomático: emolientes, antihistamínicos, esteroides tópicos de baja potencia; aciclovir en casos extensos tempranos."
+      ],
+      "perla": "Placa heráldica seguida de lesiones en árbol de Navidad: pitiriasis rosada. Si hay palmas y plantas, VDRL."
+    },
+    {
+      "id": "m17",
+      "titulo": "Queratosis actínica",
+      "puntos": [
+        "Lesión premaligna por daño solar acumulado; precursora del carcinoma espinocelular. Adultos mayores de piel clara.",
+        "Clínica: máculas o pápulas eritematosas con escama áspera, que se perciben mejor al tacto que a la vista ('lija'), en cara, piel cabelluda calva, dorso de manos y antebrazos.",
+        "Una proporción baja evoluciona a espinocelular; datos de alarma: induración, crecimiento rápido, dolor o ulceración (biopsia).",
+        "Tratamiento: crioterapia con nitrógeno líquido en lesiones aisladas; tratamiento de campo con 5-fluorouracilo, imiquimod o terapia fotodinámica en lesiones múltiples. Fotoprotección diaria."
+      ],
+      "perla": "Queratosis actínica = lesión premaligna del espinocelular; se trata y se indica fotoprotección."
+    },
+    {
+      "id": "m18",
+      "titulo": "Nevos displásicos",
+      "puntos": [
+        "Nevo displásico (atípico): nevo melanocítico con rasgos clínicos atípicos; marcador de riesgo de melanoma más que precursor obligado.",
+        "Clínica: > 5–6 mm, bordes irregulares o difusos, color variado, componente macular y papular ('huevo frito'), más en tronco.",
+        "Síndrome de nevos displásicos (nevo atípico familiar): muchos nevos atípicos + antecedente familiar de melanoma; riesgo muy alto.",
+        "Manejo: dermatoscopia y fotografía de seguimiento; autoexploración mensual y fotoprotección. Biopsia escisional de lesiones que cambian o cumplen criterios ABCDE."
+      ],
+      "perla": "Los nevos displásicos son marcadores de riesgo: vigila al paciente de por vida, no extirpes todos los lunares."
+    },
+    {
+      "id": "m19",
+      "titulo": "Psoriasis",
+      "puntos": [
+        "Enfermedad inflamatoria crónica inmunomediada (eje IL-23/Th17) con hiperproliferación de queratinocitos. La forma más común: psoriasis en placas (vulgar).",
+        "Placas eritematosas bien delimitadas con escama blanco-plateada en codos, rodillas, piel cabelluda y región lumbosacra. Signos: Auspitz (sangrado puntiforme al retirar la escama), Koebner (lesiones en zonas de trauma); uñas con piqueteado y mancha en aceite.",
+        "Psoriasis en gotas: niños y jóvenes tras faringitis estreptocócica. Artritis psoriásica hasta en 30 %. Se asocia a síndrome metabólico.",
+        "Leve: esteroides tópicos + análogos de vitamina D (calcipotriol). Moderada-grave: fototerapia, metotrexato, ciclosporina o biológicos (anti-TNF, anti-IL-17, anti-IL-23). Evitar esteroides sistémicos (rebote o psoriasis pustulosa)."
+      ],
+      "perla": "No uses esteroides sistémicos en psoriasis: al retirarlos puede aparecer psoriasis pustulosa generalizada."
+    },
+    {
+      "id": "m20",
+      "titulo": "Liquen plano",
+      "puntos": [
+        "Dermatosis inflamatoria mediada por linfocitos T, en adultos de mediana edad.",
+        "Las 6 P: pápulas planas, poligonales, purpúricas (violáceas), pruriginosas, en placas. Estrías de Wickham (red blanquecina) en la superficie. Sitios: cara flexora de muñecas, tobillos, región lumbar; presenta Koebner.",
+        "Liquen plano oral: red reticulada blanca en mucosa yugal; la forma erosiva crónica tiene riesgo de carcinoma espinocelular. Se asocia a hepatitis C.",
+        "Tratamiento: esteroides tópicos potentes; formas extensas: esteroides sistémicos por poco tiempo, fototerapia o acitretina. Solicitar serología para hepatitis C."
+      ],
+      "perla": "Pápulas violáceas poligonales pruriginosas con estrías de Wickham: liquen plano; pide serología de hepatitis C."
+    }
+  ],
+  "infografias": [
+    {
+      "id": "infografia",
+      "titulo": "Dermatología de un vistazo",
+      "imagen": "assets/img/infografias/dermatologia-infografia.svg",
+      "alt": "Infografía de Dermatología: cáncer de piel, dermatosis inflamatorias e infecciones"
+    },
+    {
+      "id": "algoritmo",
+      "titulo": "Diagrama de flujo: lesión pigmentada sospechosa",
+      "imagen": "assets/img/infografias/dermatologia-algoritmo.svg",
+      "alt": "Algoritmo ante una lesión pigmentada sospechosa de melanoma"
+    }
+  ],
+  "flashcards": [
+    {
+      "tema": "Basocelular",
+      "frente": "Cáncer de piel más frecuente",
+      "reverso": "Carcinoma basocelular."
+    },
+    {
+      "tema": "Basocelular",
+      "frente": "Variedad más común de basocelular",
+      "reverso": "Nodular: pápula perlada con telangiectasias."
+    },
+    {
+      "tema": "Basocelular",
+      "frente": "Variedad de basocelular más agresiva",
+      "reverso": "Esclerodermiforme (morfeiforme)."
+    },
+    {
+      "tema": "Basocelular",
+      "frente": "Cirugía de elección en basocelular facial de alto riesgo",
+      "reverso": "Cirugía micrográfica de Mohs."
+    },
+    {
+      "tema": "Espinocelular",
+      "frente": "Precursor más común del espinocelular",
+      "reverso": "Queratosis actínica."
+    },
+    {
+      "tema": "Espinocelular",
+      "frente": "Espinocelular in situ",
+      "reverso": "Enfermedad de Bowen."
+    },
+    {
+      "tema": "Espinocelular",
+      "frente": "Úlcera de Marjolin",
+      "reverso": "Espinocelular sobre cicatriz de quemadura o úlcera crónica."
+    },
+    {
+      "tema": "Espinocelular",
+      "frente": "Grupo con mayor riesgo de espinocelular agresivo",
+      "reverso": "Inmunosuprimidos (trasplantados)."
+    },
+    {
+      "tema": "Melanoma",
+      "frente": "ABCDE del melanoma",
+      "reverso": "Asimetría, bordes, color, diámetro > 6 mm, evolución."
+    },
+    {
+      "tema": "Melanoma",
+      "frente": "Factor pronóstico más importante",
+      "reverso": "Índice de Breslow (profundidad en mm)."
+    },
+    {
+      "tema": "Melanoma",
+      "frente": "Melanoma más frecuente en México",
+      "reverso": "Lentiginoso acral."
+    },
+    {
+      "tema": "Melanoma",
+      "frente": "Biopsia de elección ante sospecha de melanoma",
+      "reverso": "Biopsia escisional con márgenes estrechos."
+    },
+    {
+      "tema": "Toxicodermias",
+      "frente": "Toxicodermia más común",
+      "reverso": "Exantema morbiliforme."
+    },
+    {
+      "tema": "Toxicodermias",
+      "frente": "SJS vs NET por superficie",
+      "reverso": "SJS < 10 %; NET > 30 %; superposición 10–30 %."
+    },
+    {
+      "tema": "Toxicodermias",
+      "frente": "Fármacos clásicos de SJS/NET",
+      "reverso": "Alopurinol, carbamazepina, fenitoína, lamotrigina, sulfas."
+    },
+    {
+      "tema": "Toxicodermias",
+      "frente": "Medida más importante en SJS/NET",
+      "reverso": "Suspender el fármaco causal."
+    },
+    {
+      "tema": "Pénfigos",
+      "frente": "Antígeno del pénfigo vulgar",
+      "reverso": "Desmogleína 3 (y 1)."
+    },
+    {
+      "tema": "Pénfigos",
+      "frente": "Nivel de la ampolla en pénfigo",
+      "reverso": "Intraepidérmica suprabasal (acantólisis)."
+    },
+    {
+      "tema": "Pénfigos",
+      "frente": "Ampolla del penfigoide ampolloso",
+      "reverso": "Subepidérmica, tensa; Nikolsky negativo."
+    },
+    {
+      "tema": "Pénfigos",
+      "frente": "Inmunofluorescencia del penfigoide",
+      "reverso": "Depósito lineal de IgG y C3 en la membrana basal."
+    },
+    {
+      "tema": "Acné",
+      "frente": "Lesión elemental del acné",
+      "reverso": "Comedón."
+    },
+    {
+      "tema": "Acné",
+      "frente": "Tratamiento del acné comedónico",
+      "reverso": "Retinoide tópico."
+    },
+    {
+      "tema": "Acné",
+      "frente": "Antibiótico oral en acné moderado",
+      "reverso": "Doxiciclina o minociclina, máximo 3 meses, con peróxido de benzoilo."
+    },
+    {
+      "tema": "Acné",
+      "frente": "Tratamiento del acné noduloquístico grave",
+      "reverso": "Isotretinoína oral."
+    },
+    {
+      "tema": "Rosácea",
+      "frente": "Dato que distingue rosácea de acné",
+      "reverso": "La rosácea no tiene comedones."
+    },
+    {
+      "tema": "Rosácea",
+      "frente": "Rinofima",
+      "reverso": "Forma fimatosa de rosácea, más en hombres."
+    },
+    {
+      "tema": "Rosácea",
+      "frente": "Tratamiento tópico de rosácea pápulo-pustular",
+      "reverso": "Metronidazol, ivermectina o ácido azelaico."
+    },
+    {
+      "tema": "Rosácea",
+      "frente": "Ácaro relacionado con rosácea",
+      "reverso": "Demodex folliculorum."
+    },
+    {
+      "tema": "Dermatitis atópica",
+      "frente": "Proteína de barrera alterada en dermatitis atópica",
+      "reverso": "Filagrina."
+    },
+    {
+      "tema": "Dermatitis atópica",
+      "frente": "Distribución en el lactante",
+      "reverso": "Mejillas y superficies extensoras (respeta el área del pañal)."
+    },
+    {
+      "tema": "Dermatitis atópica",
+      "frente": "Distribución en niños mayores y adultos",
+      "reverso": "Pliegues antecubitales y poplíteos."
+    },
+    {
+      "tema": "Dermatitis atópica",
+      "frente": "Tratamiento en cara y pliegues para evitar esteroides",
+      "reverso": "Inhibidores de calcineurina tópicos (tacrolimus)."
+    },
+    {
+      "tema": "Dermatitis por contacto",
+      "frente": "Dermatitis por contacto más frecuente",
+      "reverso": "Irritativa."
+    },
+    {
+      "tema": "Dermatitis por contacto",
+      "frente": "Mecanismo de la dermatitis por contacto alérgica",
+      "reverso": "Hipersensibilidad tipo IV."
+    },
+    {
+      "tema": "Dermatitis por contacto",
+      "frente": "Alérgeno de contacto más frecuente",
+      "reverso": "Níquel."
+    },
+    {
+      "tema": "Dermatitis por contacto",
+      "frente": "Prueba diagnóstica de la dermatitis alérgica de contacto",
+      "reverso": "Prueba del parche (epicutánea)."
+    },
+    {
+      "tema": "Piodermitis",
+      "frente": "Lesión típica del impétigo",
+      "reverso": "Costras melicéricas (color miel)."
+    },
+    {
+      "tema": "Piodermitis",
+      "frente": "Tratamiento del impétigo localizado",
+      "reverso": "Mupirocina o ácido fusídico tópico."
+    },
+    {
+      "tema": "Piodermitis",
+      "frente": "Agente de la erisipela",
+      "reverso": "Streptococcus pyogenes."
+    },
+    {
+      "tema": "Piodermitis",
+      "frente": "Ántrax cutáneo (estafilocócico)",
+      "reverso": "Varios forúnculos confluentes; más en diabéticos."
+    },
+    {
+      "tema": "Lepra",
+      "frente": "Agente de la lepra",
+      "reverso": "Mycobacterium leprae."
+    },
+    {
+      "tema": "Lepra",
+      "frente": "Lepra tuberculoide",
+      "reverso": "Paucibacilar; pocas placas anestésicas bien delimitadas."
+    },
+    {
+      "tema": "Lepra",
+      "frente": "Lepra lepromatosa",
+      "reverso": "Multibacilar; lepromas, facies leonina, madarosis."
+    },
+    {
+      "tema": "Lepra",
+      "frente": "Tratamiento de la lepra (OMS)",
+      "reverso": "Rifampicina + dapsona + clofazimina."
+    },
+    {
+      "tema": "Escabiosis",
+      "frente": "Agente de la escabiosis",
+      "reverso": "Sarcoptes scabiei."
+    },
+    {
+      "tema": "Escabiosis",
+      "frente": "Lesión patognomónica",
+      "reverso": "Túnel o surco acarino."
+    },
+    {
+      "tema": "Escabiosis",
+      "frente": "Tratamiento de elección",
+      "reverso": "Permetrina 5 % de cuello a pies, repetir a los 7 días."
+    },
+    {
+      "tema": "Escabiosis",
+      "frente": "Sarna costrosa (noruega)",
+      "reverso": "Inmunosuprimidos; costras con miles de ácaros, muy contagiosa."
+    },
+    {
+      "tema": "Tiñas",
+      "frente": "Dermatofito más común en adultos",
+      "reverso": "Trichophyton rubrum."
+    },
+    {
+      "tema": "Tiñas",
+      "frente": "Lesión de la tiña corporis",
+      "reverso": "Placa anular con borde activo descamativo y centro claro."
+    },
+    {
+      "tema": "Tiñas",
+      "frente": "Tratamiento de la tiña de la cabeza",
+      "reverso": "Antifúngico oral (griseofulvina o terbinafina)."
+    },
+    {
+      "tema": "Tiñas",
+      "frente": "Examen directo para hongos",
+      "reverso": "KOH: muestra hifas."
+    },
+    {
+      "tema": "Pitiriasis versicolor",
+      "frente": "Agente de la pitiriasis versicolor",
+      "reverso": "Malassezia spp."
+    },
+    {
+      "tema": "Pitiriasis versicolor",
+      "frente": "Imagen al KOH",
+      "reverso": "Espagueti con albóndigas (hifas cortas y levaduras)."
+    },
+    {
+      "tema": "Pitiriasis versicolor",
+      "frente": "Fluorescencia con lámpara de Wood",
+      "reverso": "Amarillo-dorada."
+    },
+    {
+      "tema": "Pitiriasis versicolor",
+      "frente": "Tratamiento tópico",
+      "reverso": "Sulfuro de selenio o ketoconazol."
+    },
+    {
+      "tema": "Dermatitis seborreica",
+      "frente": "Agente relacionado con dermatitis seborreica",
+      "reverso": "Malassezia."
+    },
+    {
+      "tema": "Dermatitis seborreica",
+      "frente": "Costra láctea",
+      "reverso": "Dermatitis seborreica del lactante en piel cabelluda."
+    },
+    {
+      "tema": "Dermatitis seborreica",
+      "frente": "Zonas afectadas en el adulto",
+      "reverso": "Piel cabelluda, cejas, surcos nasogenianos, orejas, preesternal."
+    },
+    {
+      "tema": "Dermatitis seborreica",
+      "frente": "Asociaciones de formas graves",
+      "reverso": "VIH y enfermedad de Parkinson."
+    },
+    {
+      "tema": "Pitiriasis rosada",
+      "frente": "Lesión inicial de la pitiriasis rosada",
+      "reverso": "Placa heráldica."
+    },
+    {
+      "tema": "Pitiriasis rosada",
+      "frente": "Patrón de distribución",
+      "reverso": "Árbol de Navidad en el tronco."
+    },
+    {
+      "tema": "Pitiriasis rosada",
+      "frente": "Duración habitual",
+      "reverso": "6–8 semanas; autolimitada."
+    },
+    {
+      "tema": "Pitiriasis rosada",
+      "frente": "Diagnóstico diferencial principal",
+      "reverso": "Sífilis secundaria."
+    },
+    {
+      "tema": "Queratosis actínica",
+      "frente": "Queratosis actínica: ¿precursora de qué cáncer?",
+      "reverso": "Carcinoma espinocelular."
+    },
+    {
+      "tema": "Queratosis actínica",
+      "frente": "Clínica característica",
+      "reverso": "Pápula eritematosa con escama áspera, mejor palpada que vista."
+    },
+    {
+      "tema": "Queratosis actínica",
+      "frente": "Tratamiento de lesión aislada",
+      "reverso": "Crioterapia con nitrógeno líquido."
+    },
+    {
+      "tema": "Queratosis actínica",
+      "frente": "Tratamiento de campo",
+      "reverso": "5-fluorouracilo, imiquimod o terapia fotodinámica."
+    },
+    {
+      "tema": "Nevos displásicos",
+      "frente": "Nevo displásico: significado",
+      "reverso": "Marcador de riesgo de melanoma."
+    },
+    {
+      "tema": "Nevos displásicos",
+      "frente": "Aspecto típico",
+      "reverso": "Más de 5–6 mm, bordes irregulares, color variado, imagen en 'huevo frito'."
+    },
+    {
+      "tema": "Nevos displásicos",
+      "frente": "Herramienta de seguimiento",
+      "reverso": "Dermatoscopia y mapeo fotográfico."
+    },
+    {
+      "tema": "Nevos displásicos",
+      "frente": "Indicación de biopsia",
+      "reverso": "Cambio en la lesión o criterios ABCDE."
+    },
+    {
+      "tema": "Psoriasis",
+      "frente": "Signo de Auspitz",
+      "reverso": "Sangrado puntiforme al retirar la escama."
+    },
+    {
+      "tema": "Psoriasis",
+      "frente": "Fenómeno de Koebner",
+      "reverso": "Aparición de lesiones en sitios de trauma."
+    },
+    {
+      "tema": "Psoriasis",
+      "frente": "Psoriasis en gotas: antecedente",
+      "reverso": "Infección estreptocócica faríngea."
+    },
+    {
+      "tema": "Psoriasis",
+      "frente": "Tratamiento tópico de la psoriasis leve",
+      "reverso": "Esteroide tópico + calcipotriol."
+    },
+    {
+      "tema": "Liquen plano",
+      "frente": "Las 6 P del liquen plano",
+      "reverso": "Pápulas planas, poligonales, purpúricas, pruriginosas, en placas."
+    },
+    {
+      "tema": "Liquen plano",
+      "frente": "Estrías de Wickham",
+      "reverso": "Red blanquecina sobre las pápulas o en mucosa oral."
+    },
+    {
+      "tema": "Liquen plano",
+      "frente": "Infección asociada al liquen plano",
+      "reverso": "Hepatitis C."
+    },
+    {
+      "tema": "Liquen plano",
+      "frente": "Tratamiento de primera línea",
+      "reverso": "Esteroides tópicos potentes."
+    }
+  ],
+  "podcast": [
+    {
+      "id": "p1",
+      "titulo": "Basocelular",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p2",
+      "titulo": "Espinocelular",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p3",
+      "titulo": "Melanoma",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p4",
+      "titulo": "Toxicodermias",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p5",
+      "titulo": "Pénfigos",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p6",
+      "titulo": "Acné",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p7",
+      "titulo": "Rosácea",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p8",
+      "titulo": "Dermatitis atópica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p9",
+      "titulo": "Dermatitis por contacto",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p10",
+      "titulo": "Piodermitis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p11",
+      "titulo": "Lepra",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p12",
+      "titulo": "Escabiosis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p13",
+      "titulo": "Tiñas",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p14",
+      "titulo": "Pitiriasis versicolor",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p15",
+      "titulo": "Dermatitis seborreica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p16",
+      "titulo": "Pitiriasis rosada",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p17",
+      "titulo": "Queratosis actínica",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p18",
+      "titulo": "Nevos displásicos",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p19",
+      "titulo": "Psoriasis",
+      "minutos": 6,
+      "audio": ""
+    },
+    {
+      "id": "p20",
+      "titulo": "Liquen plano",
+      "minutos": 6,
+      "audio": ""
+    }
+  ],
+  "examen": {
+    "minutos": 20,
+    "cantidad": 20,
+    "muestraCantidad": 5,
+    "aprobatorio": 70,
+    "codigoDemo": "KRONOS-DEMO",
+    "preguntas": [
+      {
+        "tema": "Basocelular",
+        "modulo": "m1",
+        "caso": "Hombre de 65 años, agricultor, con pápula perlada con telangiectasias y úlcera central en el ala nasal.",
+        "pregunta": "¿Cuál es el diagnóstico más probable?",
+        "opciones": [
+          "Melanoma",
+          "Queratosis seborreica",
+          "Molusco contagioso",
+          "Carcinoma basocelular"
+        ],
+        "correcta": 3,
+        "explicacion": "Pápula perlada con telangiectasias y ulceración central en zona fotoexpuesta."
+      },
+      {
+        "tema": "Basocelular",
+        "modulo": "m1",
+        "caso": "Paciente con carcinoma basocelular en el párpado inferior, de bordes mal definidos.",
+        "pregunta": "¿Cuál es el tratamiento de elección?",
+        "opciones": [
+          "Imiquimod",
+          "Observación",
+          "Radioterapia de primera línea siempre",
+          "Cirugía micrográfica de Mohs"
+        ],
+        "correcta": 3,
+        "explicacion": "En zonas faciales críticas y de alto riesgo, Mohs conserva tejido con máxima tasa de curación."
+      },
+      {
+        "tema": "Basocelular",
+        "modulo": "m1",
+        "caso": "En la consulta preguntan sobre el pronóstico del carcinoma basocelular.",
+        "pregunta": "¿Qué característica lo distingue?",
+        "opciones": [
+          "Metastatiza temprano a pulmón",
+          "Siempre es pigmentado",
+          "Afecta solo mucosas",
+          "Rara vez da metástasis"
+        ],
+        "correcta": 3,
+        "explicacion": "Es localmente invasivo pero casi nunca metastatiza."
+      },
+      {
+        "tema": "Espinocelular",
+        "modulo": "m2",
+        "caso": "Hombre de 70 años con lesión queratósica ulcerada en el labio inferior que crece desde hace meses.",
+        "pregunta": "¿Cuál es el diagnóstico más probable?",
+        "opciones": [
+          "Carcinoma espinocelular",
+          "Herpes labial",
+          "Basocelular superficial",
+          "Aftas"
+        ],
+        "correcta": 0,
+        "explicacion": "El labio inferior fotoexpuesto es sitio típico de espinocelular, con mayor riesgo de metástasis."
+      },
+      {
+        "tema": "Espinocelular",
+        "modulo": "m2",
+        "caso": "Paciente con cicatriz de quemadura de hace 20 años que ahora presenta úlcera que no cicatriza.",
+        "pregunta": "¿Qué debe descartarse?",
+        "opciones": [
+          "Pioderma gangrenoso",
+          "Úlcera de Marjolin (espinocelular)",
+          "Úlcera venosa",
+          "Psoriasis"
+        ],
+        "correcta": 1,
+        "explicacion": "Las cicatrices crónicas pueden malignizarse a espinocelular."
+      },
+      {
+        "tema": "Espinocelular",
+        "modulo": "m2",
+        "caso": "Receptor de trasplante renal con múltiples lesiones queratósicas en dorso de manos.",
+        "pregunta": "¿Qué cáncer de piel tiene mayor incremento de riesgo?",
+        "opciones": [
+          "Melanoma acral",
+          "Carcinoma espinocelular",
+          "Dermatofibroma",
+          "Lipoma"
+        ],
+        "correcta": 1,
+        "explicacion": "La inmunosupresión aumenta mucho el riesgo de espinocelular."
+      },
+      {
+        "tema": "Melanoma",
+        "modulo": "m3",
+        "caso": "Mujer de 40 años con lunar en la espalda de 9 mm, asimétrico, de bordes irregulares y varios colores, que ha crecido.",
+        "pregunta": "¿Qué conducta es la correcta?",
+        "opciones": [
+          "Crioterapia",
+          "Biopsia escisional",
+          "Biopsia por rasurado superficial",
+          "Observación 1 año"
+        ],
+        "correcta": 1,
+        "explicacion": "Lesión sospechosa de melanoma: biopsia escisional completa para medir el Breslow."
+      },
+      {
+        "tema": "Melanoma",
+        "modulo": "m3",
+        "caso": "El reporte de patología de un melanoma informa profundidad de 2.5 mm.",
+        "pregunta": "¿Qué indica este dato?",
+        "opciones": [
+          "El nivel de Clark obligatorio",
+          "El tamaño en superficie",
+          "El índice de Breslow, principal factor pronóstico",
+          "La cantidad de pigmento"
+        ],
+        "correcta": 2,
+        "explicacion": "El Breslow mide la profundidad y define pronóstico y estadificación."
+      },
+      {
+        "tema": "Melanoma",
+        "modulo": "m3",
+        "caso": "Hombre mexicano de 60 años con mancha negra irregular en la planta del pie que ha crecido.",
+        "pregunta": "¿Qué tipo de melanoma es más probable?",
+        "opciones": [
+          "Léntigo maligno",
+          "Lentiginoso acral",
+          "Extensión superficial",
+          "Nodular amelanótico"
+        ],
+        "correcta": 1,
+        "explicacion": "El melanoma acral es el más frecuente en México y en palmas y plantas."
+      },
+      {
+        "tema": "Toxicodermias",
+        "modulo": "m4",
+        "caso": "Hombre que inició carbamazepina hace 2 semanas con fiebre, lesiones ampollosas en 40 % de la superficie, Nikolsky positivo y erosiones orales.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Pénfigo vulgar",
+          "Exantema morbiliforme",
+          "Necrólisis epidérmica tóxica",
+          "Urticaria"
+        ],
+        "correcta": 2,
+        "explicacion": "Más de 30 % de despegamiento con mucosas afectadas tras un fármaco típico: NET."
+      },
+      {
+        "tema": "Toxicodermias",
+        "modulo": "m4",
+        "caso": "Paciente con Stevens-Johnson por alopurinol.",
+        "pregunta": "¿Cuál es la primera medida?",
+        "opciones": [
+          "Aumentar la dosis",
+          "Suspender el alopurinol",
+          "Agregar penicilina",
+          "Dar alta con antihistamínico"
+        ],
+        "correcta": 1,
+        "explicacion": "Retirar el fármaco temprano mejora la sobrevida."
+      },
+      {
+        "tema": "Toxicodermias",
+        "modulo": "m4",
+        "caso": "Niña que recibe amoxicilina y al día 7 presenta máculas y pápulas eritematosas generalizadas, sin mucosas afectadas ni ampollas.",
+        "pregunta": "¿Qué reacción presenta?",
+        "opciones": [
+          "NET",
+          "Pénfigo",
+          "Exantema morbiliforme",
+          "Eritema nodoso"
+        ],
+        "correcta": 2,
+        "explicacion": "Exantema maculopapular tardío sin datos de gravedad: exantema morbiliforme."
+      },
+      {
+        "tema": "Pénfigos",
+        "modulo": "m5",
+        "caso": "Mujer de 50 años con erosiones orales dolorosas de meses y después ampollas flácidas en tronco; Nikolsky positivo.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Penfigoide ampolloso",
+          "Pénfigo vulgar",
+          "Dermatitis herpetiforme",
+          "Impétigo ampolloso"
+        ],
+        "correcta": 1,
+        "explicacion": "Ampollas flácidas con afección oral y Nikolsky +: pénfigo vulgar."
+      },
+      {
+        "tema": "Pénfigos",
+        "modulo": "m5",
+        "caso": "Hombre de 80 años con ampollas tensas pruriginosas en abdomen y muslos, sin lesiones orales.",
+        "pregunta": "¿Qué patrón de inmunofluorescencia esperas?",
+        "opciones": [
+          "Intercelular en panal",
+          "Granular en papilas",
+          "Negativa siempre",
+          "Lineal en la membrana basal"
+        ],
+        "correcta": 3,
+        "explicacion": "Penfigoide ampolloso: depósito lineal en la unión dermoepidérmica."
+      },
+      {
+        "tema": "Pénfigos",
+        "modulo": "m5",
+        "caso": "Paciente con pénfigo vulgar moderado-grave.",
+        "pregunta": "¿Qué tratamiento es de primera línea?",
+        "opciones": [
+          "Antibiótico tópico",
+          "Antihistamínico",
+          "Solo hidratación",
+          "Esteroide sistémico más rituximab o ahorrador"
+        ],
+        "correcta": 3,
+        "explicacion": "El pénfigo requiere inmunosupresión sistémica."
+      },
+      {
+        "tema": "Acné",
+        "modulo": "m6",
+        "caso": "Adolescente de 15 años con comedones abiertos y cerrados en la frente, sin lesiones inflamatorias.",
+        "pregunta": "¿Cuál es el tratamiento de primera línea?",
+        "opciones": [
+          "Isotretinoína oral",
+          "Retinoide tópico",
+          "Doxiciclina oral",
+          "Esteroide tópico"
+        ],
+        "correcta": 1,
+        "explicacion": "Acné comedónico: retinoide tópico."
+      },
+      {
+        "tema": "Acné",
+        "modulo": "m6",
+        "caso": "Mujer de 20 años con acné noduloquístico con cicatrices, refractario a antibióticos orales.",
+        "pregunta": "¿Qué tratamiento indicas y qué requisito?",
+        "opciones": [
+          "Esteroide oral prolongado",
+          "Isotretinoína con prueba de embarazo y doble anticoncepción",
+          "Antibiótico tópico solo",
+          "Crioterapia"
+        ],
+        "correcta": 1,
+        "explicacion": "La isotretinoína es la opción en acné grave, con estricta prevención del embarazo."
+      },
+      {
+        "tema": "Acné",
+        "modulo": "m6",
+        "caso": "Paciente con acné pápulo-pustular moderado en cara y espalda.",
+        "pregunta": "¿Qué esquema es el adecuado?",
+        "opciones": [
+          "Antibiótico oral solo por 1 año",
+          "Esteroide tópico",
+          "Isotretinoína de inicio en todos",
+          "Doxiciclina oral + retinoide + peróxido de benzoilo"
+        ],
+        "correcta": 3,
+        "explicacion": "Antibiótico oral por tiempo limitado combinado con tópicos para evitar resistencias."
+      },
+      {
+        "tema": "Rosácea",
+        "modulo": "m7",
+        "caso": "Mujer de 42 años con eritema centrofacial, telangiectasias, pápulas y pústulas sin comedones; empeora con el vino y el calor.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Acné vulgar",
+          "Rosácea pápulo-pustular",
+          "Lupus discoide",
+          "Dermatitis seborreica"
+        ],
+        "correcta": 1,
+        "explicacion": "Sin comedones, con rubor y desencadenantes típicos: rosácea."
+      },
+      {
+        "tema": "Rosácea",
+        "modulo": "m7",
+        "caso": "Hombre de 65 años con nariz engrosada, bulbosa y con poros dilatados.",
+        "pregunta": "¿Qué presenta?",
+        "opciones": [
+          "Rinofima (rosácea fimatosa)",
+          "Basocelular",
+          "Lepra lepromatosa",
+          "Sarcoidosis"
+        ],
+        "correcta": 0,
+        "explicacion": "La rinofima es la forma fimatosa de la rosácea."
+      },
+      {
+        "tema": "Rosácea",
+        "modulo": "m7",
+        "caso": "Paciente con rosácea pápulo-pustular leve.",
+        "pregunta": "¿Qué tratamiento tópico indicas?",
+        "opciones": [
+          "Ivermectina o metronidazol tópico",
+          "Esteroide tópico potente",
+          "Retinoide oral de inicio",
+          "Antifúngico"
+        ],
+        "correcta": 0,
+        "explicacion": "Los esteroides empeoran la rosácea; se usan metronidazol, ivermectina o azelaico."
+      },
+      {
+        "tema": "Dermatitis atópica",
+        "modulo": "m8",
+        "caso": "Lactante de 6 meses con placas eccematosas pruriginosas en mejillas y superficies extensoras; padre con asma.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Dermatitis atópica",
+          "Dermatitis seborreica",
+          "Escabiosis",
+          "Psoriasis"
+        ],
+        "correcta": 0,
+        "explicacion": "Eccema pruriginoso en mejillas de lactante con antecedente atópico."
+      },
+      {
+        "tema": "Dermatitis atópica",
+        "modulo": "m8",
+        "caso": "Niño con dermatitis atópica sin brote activo.",
+        "pregunta": "¿Qué medida es la base del tratamiento?",
+        "opciones": [
+          "Esteroide oral continuo",
+          "Emolientes diarios",
+          "Antibiótico oral",
+          "Baños largos con agua caliente"
+        ],
+        "correcta": 1,
+        "explicacion": "Restaurar la barrera con emolientes reduce los brotes."
+      },
+      {
+        "tema": "Dermatitis atópica",
+        "modulo": "m8",
+        "caso": "Niño con dermatitis atópica que presenta vesículas umbilicadas agrupadas y fiebre sobre las placas.",
+        "pregunta": "¿Qué complicación presenta?",
+        "opciones": [
+          "Impétigo",
+          "Eccema herpético",
+          "Molusco contagioso",
+          "Varicela típica"
+        ],
+        "correcta": 1,
+        "explicacion": "La infección diseminada por herpes simple es una urgencia: aciclovir."
+      },
+      {
+        "tema": "Dermatitis por contacto",
+        "modulo": "m9",
+        "caso": "Mujer con eccema pruriginoso en el área del broche del pantalón y en los lóbulos de las orejas.",
+        "pregunta": "¿Qué alérgeno es el más probable?",
+        "opciones": [
+          "Látex",
+          "Polen",
+          "Ácaros",
+          "Níquel"
+        ],
+        "correcta": 3,
+        "explicacion": "El níquel de broches y bisutería es el alérgeno de contacto más común."
+      },
+      {
+        "tema": "Dermatitis por contacto",
+        "modulo": "m9",
+        "caso": "Albañil con eccema crónico en las manos; se sospecha alergia al cromo del cemento.",
+        "pregunta": "¿Qué estudio confirma la sensibilización?",
+        "opciones": [
+          "Prick test",
+          "Prueba del parche",
+          "IgE total",
+          "Biopsia de piel siempre"
+        ],
+        "correcta": 1,
+        "explicacion": "La prueba del parche detecta hipersensibilidad tipo IV."
+      },
+      {
+        "tema": "Dermatitis por contacto",
+        "modulo": "m9",
+        "caso": "Trabajadora de limpieza con manos secas, fisuradas y eritematosas por lavado frecuente y detergentes.",
+        "pregunta": "¿Qué tipo de dermatitis es?",
+        "opciones": [
+          "Por contacto irritativa",
+          "Por contacto alérgica",
+          "Atópica",
+          "Psoriasis palmar"
+        ],
+        "correcta": 0,
+        "explicacion": "Daño directo por irritantes sin sensibilización: dermatitis irritativa."
+      },
+      {
+        "tema": "Piodermitis",
+        "modulo": "m10",
+        "caso": "Niño de 5 años con lesiones con costras color miel alrededor de la nariz y la boca.",
+        "pregunta": "¿Cuál es el tratamiento si son pocas lesiones?",
+        "opciones": [
+          "Esteroide tópico",
+          "Aciclovir",
+          "Antifúngico",
+          "Mupirocina tópica"
+        ],
+        "correcta": 3,
+        "explicacion": "Impétigo localizado: antibiótico tópico."
+      },
+      {
+        "tema": "Piodermitis",
+        "modulo": "m10",
+        "caso": "Mujer con placa roja, brillante, elevada y de bordes bien definidos en la pierna, con fiebre.",
+        "pregunta": "¿Cuál es el diagnóstico y el agente?",
+        "opciones": [
+          "Erisipela por S. pyogenes",
+          "Celulitis por Pseudomonas",
+          "Tiña corporis",
+          "Eritema nodoso"
+        ],
+        "correcta": 0,
+        "explicacion": "Bordes netos y elevados: erisipela estreptocócica."
+      },
+      {
+        "tema": "Piodermitis",
+        "modulo": "m10",
+        "caso": "Diabético con celulitis en la pierna que evoluciona en horas con dolor desproporcionado, bulas violáceas y crepitación.",
+        "pregunta": "¿Qué sospechas?",
+        "opciones": [
+          "Erisipela simple",
+          "Trombosis venosa",
+          "Dermatitis por contacto",
+          "Fascitis necrosante"
+        ],
+        "correcta": 3,
+        "explicacion": "Requiere desbridamiento quirúrgico urgente y antibióticos de amplio espectro."
+      },
+      {
+        "tema": "Lepra",
+        "modulo": "m11",
+        "caso": "Hombre con 2 manchas hipocrómicas bien delimitadas en el brazo, sin sensibilidad, y nervio cubital engrosado.",
+        "pregunta": "¿Qué forma de lepra es más probable?",
+        "opciones": [
+          "Lepromatosa",
+          "Dimorfa lepromatosa",
+          "Tuberculoide",
+          "Histoide"
+        ],
+        "correcta": 2,
+        "explicacion": "Pocas lesiones anestésicas bien delimitadas: lepra tuberculoide (paucibacilar)."
+      },
+      {
+        "tema": "Lepra",
+        "modulo": "m11",
+        "caso": "Paciente con nódulos múltiples, infiltración facial, pérdida de cejas y baciloscopia muy positiva.",
+        "pregunta": "¿Cuánto dura el tratamiento?",
+        "opciones": [
+          "12 meses con rifampicina, dapsona y clofazimina",
+          "6 meses con isoniazida",
+          "2 semanas con penicilina",
+          "No tiene tratamiento"
+        ],
+        "correcta": 0,
+        "explicacion": "Lepra multibacilar: esquema triple por 12 meses."
+      },
+      {
+        "tema": "Lepra",
+        "modulo": "m11",
+        "caso": "Paciente con lepra lepromatosa en tratamiento que presenta nódulos dolorosos, fiebre y artralgias.",
+        "pregunta": "¿Qué complicación es?",
+        "opciones": [
+          "Resistencia a rifampicina",
+          "Erisipela",
+          "Leprorreacción tipo 2 (eritema nodoso leproso)",
+          "Tuberculosis"
+        ],
+        "correcta": 2,
+        "explicacion": "Reacción por inmunocomplejos que se trata con talidomida o esteroides."
+      },
+      {
+        "tema": "Escabiosis",
+        "modulo": "m12",
+        "caso": "Niño con prurito intenso nocturno y pápulas en espacios interdigitales y muñecas; su madre y hermano tienen los mismos síntomas.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Esteroide tópico solo al niño",
+          "Permetrina 5 % al paciente y a todos los convivientes",
+          "Antihistamínico",
+          "Antibiótico oral"
+        ],
+        "correcta": 1,
+        "explicacion": "Escabiosis: tratar simultáneamente a todo el núcleo familiar."
+      },
+      {
+        "tema": "Escabiosis",
+        "modulo": "m12",
+        "caso": "En la exploración de un paciente con escabiosis se observa una lesión lineal fina y serpiginosa entre los dedos.",
+        "pregunta": "¿Qué es?",
+        "opciones": [
+          "Túnel acarino",
+          "Larva migrans",
+          "Liquenificación",
+          "Fisura"
+        ],
+        "correcta": 0,
+        "explicacion": "El túnel es la lesión patognomónica."
+      },
+      {
+        "tema": "Escabiosis",
+        "modulo": "m12",
+        "caso": "Paciente con VIH avanzado con costras gruesas generalizadas, poco prurito y alta contagiosidad.",
+        "pregunta": "¿Qué variante presenta?",
+        "opciones": [
+          "Sarna costrosa (noruega)",
+          "Escabiosis nodular",
+          "Pediculosis",
+          "Psoriasis"
+        ],
+        "correcta": 0,
+        "explicacion": "La sarna costrosa ocurre en inmunosuprimidos con gran carga de ácaros."
+      },
+      {
+        "tema": "Tiñas",
+        "modulo": "m13",
+        "caso": "Niño de 6 años con placa alopécica descamativa en la piel cabelluda; tiene un gato.",
+        "pregunta": "¿Cuál es el tratamiento?",
+        "opciones": [
+          "Clotrimazol tópico solo",
+          "Antifúngico oral (griseofulvina o terbinafina)",
+          "Esteroide tópico",
+          "Antibiótico"
+        ],
+        "correcta": 1,
+        "explicacion": "La tiña de la cabeza requiere tratamiento sistémico."
+      },
+      {
+        "tema": "Tiñas",
+        "modulo": "m13",
+        "caso": "Hombre con placa anular eritematosa en el antebrazo, borde descamativo activo y centro claro.",
+        "pregunta": "¿Qué estudio confirma el diagnóstico?",
+        "opciones": [
+          "Biopsia profunda",
+          "Prick test",
+          "Examen directo con KOH",
+          "Hemocultivo"
+        ],
+        "correcta": 2,
+        "explicacion": "El KOH muestra las hifas de los dermatofitos."
+      },
+      {
+        "tema": "Tiñas",
+        "modulo": "m13",
+        "caso": "Paciente con uñas de los pies engrosadas, amarillentas y quebradizas; KOH positivo.",
+        "pregunta": "¿Qué tratamiento es de elección?",
+        "opciones": [
+          "Esmalte de uñas cosmético",
+          "Terbinafina oral por 3 meses",
+          "Nistatina oral",
+          "Antibiótico tópico"
+        ],
+        "correcta": 1,
+        "explicacion": "La onicomicosis por dermatofitos responde a terbinafina oral."
+      },
+      {
+        "tema": "Pitiriasis versicolor",
+        "modulo": "m14",
+        "caso": "Joven de 19 años con manchas hipocrómicas con descamación fina en tronco que aparecieron en verano.",
+        "pregunta": "¿Qué hallazgo esperas en el KOH?",
+        "opciones": [
+          "Espagueti con albóndigas",
+          "Hifas tabicadas largas",
+          "Ácaros",
+          "Cocos en racimo"
+        ],
+        "correcta": 0,
+        "explicacion": "Pitiriasis versicolor por Malassezia."
+      },
+      {
+        "tema": "Pitiriasis versicolor",
+        "modulo": "m14",
+        "caso": "Paciente con pitiriasis versicolor limitada al tronco.",
+        "pregunta": "¿Cuál es el tratamiento inicial?",
+        "opciones": [
+          "Griseofulvina 3 meses",
+          "Sulfuro de selenio o ketoconazol tópico",
+          "Esteroide tópico",
+          "Antibiótico oral"
+        ],
+        "correcta": 1,
+        "explicacion": "Los tópicos son de primera línea en formas limitadas."
+      },
+      {
+        "tema": "Pitiriasis versicolor",
+        "modulo": "m14",
+        "caso": "Tras tratar correctamente una pitiriasis versicolor, persisten manchas claras sin descamación.",
+        "pregunta": "¿Qué explica esto?",
+        "opciones": [
+          "La repigmentación tarda meses",
+          "Falla del tratamiento",
+          "Vitíligo asociado obligatorio",
+          "Lepra"
+        ],
+        "correcta": 0,
+        "explicacion": "La hipopigmentación residual mejora lentamente aunque la infección ya se resolvió."
+      },
+      {
+        "tema": "Dermatitis seborreica",
+        "modulo": "m15",
+        "caso": "Lactante de 2 meses con escamas amarillentas y grasosas en la piel cabelluda, sin prurito.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Emolientes y retiro suave de escamas",
+          "Antifúngico oral",
+          "Esteroide potente",
+          "Biopsia"
+        ],
+        "correcta": 0,
+        "explicacion": "La costra láctea es benigna y autolimitada."
+      },
+      {
+        "tema": "Dermatitis seborreica",
+        "modulo": "m15",
+        "caso": "Hombre de 40 años con eritema y escamas grasosas en surcos nasogenianos, cejas y piel cabelluda.",
+        "pregunta": "¿Qué tratamiento indicas?",
+        "opciones": [
+          "Ketoconazol tópico (champú y crema)",
+          "Isotretinoína",
+          "Antibiótico oral",
+          "Permetrina"
+        ],
+        "correcta": 0,
+        "explicacion": "Los antifúngicos tópicos controlan la dermatitis seborreica."
+      },
+      {
+        "tema": "Dermatitis seborreica",
+        "modulo": "m15",
+        "caso": "Hombre de 28 años con dermatitis seborreica grave, de inicio reciente y refractaria, además de pérdida de peso.",
+        "pregunta": "¿Qué estudio solicitas?",
+        "opciones": [
+          "Prueba de VIH",
+          "Prick test",
+          "Perfil de lípidos",
+          "Prueba del parche"
+        ],
+        "correcta": 0,
+        "explicacion": "Las formas graves se asocian a infección por VIH."
+      },
+      {
+        "tema": "Pitiriasis rosada",
+        "modulo": "m16",
+        "caso": "Joven de 20 años con una placa ovalada rosada con collarete en el tronco y, una semana después, múltiples placas pequeñas en patrón de árbol de Navidad.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Psoriasis en gotas",
+          "Pitiriasis rosada",
+          "Tiña corporis",
+          "Lupus"
+        ],
+        "correcta": 1,
+        "explicacion": "Placa heráldica seguida de erupción secundaria típica."
+      },
+      {
+        "tema": "Pitiriasis rosada",
+        "modulo": "m16",
+        "caso": "Paciente con cuadro similar a pitiriasis rosada pero con lesiones en palmas y plantas.",
+        "pregunta": "¿Qué estudio solicitas?",
+        "opciones": [
+          "KOH",
+          "Prueba del parche",
+          "VDRL",
+          "IgE total"
+        ],
+        "correcta": 2,
+        "explicacion": "La sífilis secundaria afecta palmas y plantas y es el gran diferencial."
+      },
+      {
+        "tema": "Pitiriasis rosada",
+        "modulo": "m16",
+        "caso": "Paciente con pitiriasis rosada típica y prurito leve.",
+        "pregunta": "¿Cuál es el manejo?",
+        "opciones": [
+          "Antibiótico IV",
+          "Isotretinoína",
+          "Biopsia urgente",
+          "Sintomático; se resuelve sola"
+        ],
+        "correcta": 3,
+        "explicacion": "Es autolimitada; solo requiere manejo sintomático."
+      },
+      {
+        "tema": "Queratosis actínica",
+        "modulo": "m17",
+        "caso": "Agricultor de 68 años con múltiples lesiones eritematosas ásperas en frente y dorso de manos.",
+        "pregunta": "¿Qué lesiones son?",
+        "opciones": [
+          "Queratosis seborreicas",
+          "Verrugas virales",
+          "Psoriasis",
+          "Queratosis actínicas"
+        ],
+        "correcta": 3,
+        "explicacion": "Lesiones ásperas por daño solar crónico: queratosis actínicas."
+      },
+      {
+        "tema": "Queratosis actínica",
+        "modulo": "m17",
+        "caso": "Paciente con una sola queratosis actínica en la mejilla.",
+        "pregunta": "¿Qué tratamiento es adecuado?",
+        "opciones": [
+          "Isotretinoína",
+          "Crioterapia",
+          "Antifúngico",
+          "Radioterapia"
+        ],
+        "correcta": 1,
+        "explicacion": "La crioterapia es eficaz en lesiones aisladas."
+      },
+      {
+        "tema": "Queratosis actínica",
+        "modulo": "m17",
+        "caso": "Una queratosis actínica se vuelve indurada, dolorosa y crece rápido.",
+        "pregunta": "¿Cuál es la conducta?",
+        "opciones": [
+          "Crioterapia sin biopsia",
+          "Observación 1 año",
+          "Biopsia para descartar espinocelular",
+          "Esteroide tópico"
+        ],
+        "correcta": 2,
+        "explicacion": "Los cambios sugieren transformación a carcinoma espinocelular."
+      },
+      {
+        "tema": "Nevos displásicos",
+        "modulo": "m18",
+        "caso": "Mujer de 30 años con 60 nevos, varios atípicos, y madre con melanoma.",
+        "pregunta": "¿Cuál es el manejo?",
+        "opciones": [
+          "Extirpar todos los nevos",
+          "Ninguna vigilancia",
+          "Crioterapia de todos",
+          "Vigilancia con dermatoscopia y fotografía, autoexploración y fotoprotección"
+        ],
+        "correcta": 3,
+        "explicacion": "Síndrome de nevos displásicos: seguimiento estrecho de por vida."
+      },
+      {
+        "tema": "Nevos displásicos",
+        "modulo": "m18",
+        "caso": "En el seguimiento de un paciente con nevos displásicos, uno cambió de color y creció.",
+        "pregunta": "¿Qué haces?",
+        "opciones": [
+          "Seguir observando 1 año",
+          "Biopsia escisional",
+          "Crioterapia",
+          "Láser"
+        ],
+        "correcta": 1,
+        "explicacion": "Los cambios obligan a biopsia escisional."
+      },
+      {
+        "tema": "Nevos displásicos",
+        "modulo": "m18",
+        "caso": "¿Qué representa principalmente un nevo displásico?",
+        "pregunta": "Selecciona la respuesta correcta.",
+        "opciones": [
+          "Un marcador de mayor riesgo de melanoma",
+          "Un melanoma in situ siempre",
+          "Una lesión infecciosa",
+          "Una queratosis"
+        ],
+        "correcta": 0,
+        "explicacion": "La mayoría no progresa, pero indica mayor riesgo global de melanoma."
+      },
+      {
+        "tema": "Psoriasis",
+        "modulo": "m19",
+        "caso": "Hombre de 35 años con placas eritematosas con escama plateada en codos y rodillas; al raspar aparece sangrado puntiforme.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Psoriasis en placas",
+          "Dermatitis atópica",
+          "Tiña corporis",
+          "Liquen plano"
+        ],
+        "correcta": 0,
+        "explicacion": "Placas en superficies extensoras con signo de Auspitz."
+      },
+      {
+        "tema": "Psoriasis",
+        "modulo": "m19",
+        "caso": "Paciente con psoriasis en 5 % de la superficie corporal.",
+        "pregunta": "¿Qué tratamiento inicial es adecuado?",
+        "opciones": [
+          "Esteroide tópico + calcipotriol",
+          "Prednisona oral",
+          "Biológico de inicio",
+          "Antibiótico"
+        ],
+        "correcta": 0,
+        "explicacion": "La psoriasis leve se trata con tópicos."
+      },
+      {
+        "tema": "Psoriasis",
+        "modulo": "m19",
+        "caso": "Niño de 10 años con múltiples lesiones pequeñas en gota en tronco, 2 semanas después de faringoamigdalitis.",
+        "pregunta": "¿Qué variante presenta?",
+        "opciones": [
+          "Pitiriasis versicolor",
+          "Psoriasis en gotas",
+          "Varicela",
+          "Escabiosis"
+        ],
+        "correcta": 1,
+        "explicacion": "La psoriasis en gotas sigue a infecciones estreptocócicas."
+      },
+      {
+        "tema": "Liquen plano",
+        "modulo": "m20",
+        "caso": "Mujer de 45 años con pápulas violáceas, poligonales y muy pruriginosas en la cara flexora de las muñecas, con estrías blanquecinas.",
+        "pregunta": "¿Cuál es el diagnóstico?",
+        "opciones": [
+          "Psoriasis",
+          "Dermatitis por contacto",
+          "Escabiosis",
+          "Liquen plano"
+        ],
+        "correcta": 3,
+        "explicacion": "Las 6 P y las estrías de Wickham son típicas."
+      },
+      {
+        "tema": "Liquen plano",
+        "modulo": "m20",
+        "caso": "Paciente con liquen plano extenso.",
+        "pregunta": "¿Qué estudio de laboratorio solicitas?",
+        "opciones": [
+          "Serología para hepatitis C",
+          "Prueba del parche",
+          "Prick test",
+          "KOH"
+        ],
+        "correcta": 0,
+        "explicacion": "El liquen plano se asocia a infección por virus de la hepatitis C."
+      },
+      {
+        "tema": "Liquen plano",
+        "modulo": "m20",
+        "caso": "Paciente con liquen plano oral erosivo de larga evolución.",
+        "pregunta": "¿Qué riesgo debe vigilarse?",
+        "opciones": [
+          "Melanoma",
+          "Linfoma cutáneo",
+          "Basocelular",
+          "Carcinoma espinocelular oral"
+        ],
+        "correcta": 3,
+        "explicacion": "Las formas erosivas crónicas pueden malignizarse."
+      }
+    ]
+  },
+  "descargas": {
+    "flashcards": [
+      {
+        "titulo": "Flash cards para imprimir (PDF)",
+        "archivo": "assets/descargas/dermatologia_flash-cards.pdf"
+      }
+    ],
+    "diagramas": [
+      {
+        "titulo": "Infografía (PDF)",
+        "archivo": "assets/descargas/dermatologia_infografia.pdf"
+      },
+      {
+        "titulo": "Diagrama de flujo (PDF)",
+        "archivo": "assets/descargas/dermatologia_diagrama.pdf"
+      }
+    ],
+    "examenes": [
+      {
+        "titulo": "Examen para imprimir (PDF)",
+        "archivo": "assets/descargas/dermatologia_examen.pdf"
+      },
+      {
+        "titulo": "Hoja de respuestas (PDF)",
+        "archivo": "assets/descargas/dermatologia_hoja.pdf"
+      }
+    ]
+  }
+}
