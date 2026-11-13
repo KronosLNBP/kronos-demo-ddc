@@ -115,7 +115,9 @@
           "minutos": 3,
           "destino": "Definición"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m1.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m1.jpg"
     },
     {
       "id": "m2",
@@ -164,7 +166,9 @@
           "minutos": 2,
           "destino": "Epidemiología"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m2.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m2.jpg"
     },
     {
       "id": "m3",
@@ -213,7 +217,9 @@
           "minutos": 3,
           "destino": "Tamizaje"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m3.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m3.jpg"
     },
     {
       "id": "m4",
@@ -256,7 +262,9 @@
           "minutos": 4,
           "destino": "Clínica"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m4.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m4.jpg"
     },
     {
       "id": "m5",
@@ -305,7 +313,9 @@
           "minutos": 4,
           "destino": "Imagen"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m5.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m5.jpg"
     },
     {
       "id": "m6",
@@ -354,7 +364,9 @@
           "minutos": 4,
           "destino": "Tratamiento"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m6.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m6.jpg"
     },
     {
       "id": "m7",
@@ -397,7 +409,9 @@
           "minutos": 8,
           "destino": "p7"
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m7.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m7.jpg"
     },
     {
       "id": "m8",
@@ -440,7 +454,9 @@
           "minutos": 20,
           "destino": ""
         }
-      ]
+      ],
+      "capsula": "assets/videos/capsula-m8.mp4",
+      "capsulaPoster": "assets/img/posters/capsula-m8.jpg"
     }
   ],
   "resumen": [
@@ -1005,5 +1021,41 @@
       "minutos": 8,
       "audio": ""
     }
-  ]
+  ],
+  "descargas": {
+    "flashcards": [
+      {
+        "titulo": "Flash cards para imprimir (PDF)",
+        "archivo": "assets/descargas/DDC_flash-cards_imprimibles.pdf"
+      }
+    ],
+    "diagramas": [
+      {
+        "titulo": "Infografía (PDF)",
+        "archivo": "assets/descargas/DDC_infografia.pdf"
+      },
+      {
+        "titulo": "Infografía (PNG)",
+        "archivo": "assets/descargas/DDC_infografia.png"
+      },
+      {
+        "titulo": "Diagrama de flujo (PDF)",
+        "archivo": "assets/descargas/DDC_diagrama-de-flujo.pdf"
+      },
+      {
+        "titulo": "Diagrama de flujo (PNG)",
+        "archivo": "assets/descargas/DDC_diagrama-de-flujo.png"
+      }
+    ],
+    "examenes": [
+      {
+        "titulo": "Examen para imprimir (PDF)",
+        "archivo": "assets/descargas/DDC_examen-cronometrado.pdf"
+      },
+      {
+        "titulo": "Hoja de respuestas (PDF)",
+        "archivo": "assets/descargas/DDC_hoja-de-respuestas.pdf"
+      }
+    ]
+  }
 }

@@ -274,3 +274,8 @@ a.course-card:hover { border-color: var(--accent); transform: translateY(-3px); 
 
 .pager { display: flex; justify-content: space-between; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); }
 @media (max-width: 480px) { .top-progress .bar { width: 70px; } .topbar { padding: 10px 14px; } }
+
+.capsula{margin-bottom:18px}
+.capsula video{width:100%;aspect-ratio:16/9;border-radius:12px;background:#000;display:block}
+.capsula p{font-size:.85rem;margin:6px 0 0}
+.downloads{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:26px;padding-top:18px;border-top:1px solid var(--line)}

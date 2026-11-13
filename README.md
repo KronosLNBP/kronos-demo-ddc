@@ -32,7 +32,9 @@ El código del examen demo es `KRONOS-DEMO`.
 
 La ruta de estudio suma 240 min en 8 módulos que mezclan video (96 min), podcast (55), lectura (29), flash cards (22), examen (20) e infografía (18). El alumno marca cada actividad y su avance se guarda en el navegador.
 
-Los guiones de las clases y del podcast están en `docs/guiones-curso-ddc.md`.
+Cada módulo abre con una **cápsula animada** de unos 2 minutos (`assets/videos/capsula-m1.mp4` … `m8`): motion graphics en español con música, sin voz. Los guiones de las clases completas y del podcast están en `docs/guiones-curso-ddc.md`.
+
+**Descargables** (`assets/descargas/`): flash cards para imprimir a doble cara, infografía y diagrama de flujo en PDF y PNG, examen y hoja de respuestas. La clave de respuestas no se publica; se entrega aparte al docente.
 
 Para agregar un curso nuevo, crea `content/<id>.json` con la misma estructura que `ddc.json` y agrégalo al catálogo en `content/plataforma.json`.
 

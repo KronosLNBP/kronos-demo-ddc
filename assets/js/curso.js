@@ -41,6 +41,7 @@ function init(data) {
   renderPodcast();
   renderResumen();
   renderInfografias();
+  renderDescargas();
   setupFlashcards();
   setupExamen();
   setupDrawer();
@@ -145,6 +146,7 @@ function renderRuta() {
         <span class="mod-done" id="done-${esc(m.id)}"></span>
       </summary>
       <div class="mod-body">
+        ${m.capsula ? `<div class="capsula"><video src="${esc(m.capsula)}" poster="${esc(m.capsulaPoster || '')}" controls preload="none" playsinline></video><p class="muted">🎬 Cápsula animada del módulo ${mi + 1}</p></div>` : ''}
         <div class="mod-cols">
           <div><h4>Objetivos</h4><ul>${m.objetivos.map((o) => `<li>${esc(o)}</li>`).join('')}</ul></div>
           <div><h4>Temas</h4><ul>${m.temas.map((t) => `<li>${esc(t)}</li>`).join('')}</ul></div>
@@ -162,7 +164,7 @@ function renderRuta() {
         }).join('')}</ol>
         <div class="mod-video" id="video-${esc(m.id)}" hidden>
           ${m.video ? `<video src="${esc(m.video)}" controls preload="none" playsinline></video>`
-            : '<div class="placeholder wide">🎬 Clase en producción por el área de Videos<br><span class="muted">El guion de este módulo ya está listo.</span></div>'}
+            : `<div class="placeholder wide">🎬 La clase completa está en producción por el área de Videos.<br><span class="muted">${m.capsula ? 'Mientras tanto, mira la cápsula animada al inicio del módulo.' : 'El guion de este módulo ya está listo.'}</span></div>`}
         </div>
       </div>
     </details>`).join('');
@@ -231,6 +233,16 @@ function renderInfografias() {
       <figcaption><strong>${esc(i.titulo)}</strong> <a href="${esc(i.imagen)}" target="_blank" rel="noopener">Abrir en tamaño completo ↗</a></figcaption>
       <img src="${esc(i.imagen)}" alt="${esc(i.alt)}" loading="lazy">
     </figure>`).join('');
+}
+
+/* ---------- Descargas ---------- */
+function renderDescargas() {
+  const d = DATA.descargas || {};
+  Object.entries(d).forEach(([sec, items]) => {
+    const panel = document.querySelector(`[data-panel="${sec}"]`);
+    if (!panel || !items.length) return;
+    panel.insertAdjacentHTML('beforeend', `<div class="downloads"><span class="muted">Descargar:</span>${items.map((i) => `<a class="btn sm ghost" href="${esc(i.archivo)}" download>⬇ ${esc(i.titulo)}</a>`).join('')}</div>`);
+  });
 }
 
 /* ---------- Flash cards ---------- */
