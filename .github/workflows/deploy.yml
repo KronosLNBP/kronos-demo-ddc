@@ -8,6 +8,8 @@
 #   FTP_DIR        carpeta destino, con / al final (ej. /public_html/demo/)
 #   FTP_PROTOCOL   (opcional) ftps, ftp o ftps-legacy. Por defecto ftps.
 #   FTP_PORT       (opcional) puerto. Por defecto 21 (usa 990 con ftps-legacy).
+#   FTP_SECURITY   (opcional) strict o loose. loose cifra igual, pero acepta certificados
+#                  a nombre del servidor del hosting (común en hosting compartido).
 # Mientras no existan, el workflow se salta la publicación sin fallar.
 
 name: Publicar demo
@@ -53,6 +55,7 @@ jobs:
           server-dir: ${{ secrets.FTP_DIR }}
           protocol: ${{ secrets.FTP_PROTOCOL || 'ftps' }}
           port: ${{ secrets.FTP_PORT || 21 }}
+          security: ${{ secrets.FTP_SECURITY || 'strict' }}
           timeout: 120000
           log-level: verbose
           exclude: |
